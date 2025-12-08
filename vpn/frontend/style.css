@@ -29,7 +29,9 @@ body {
     color: var(--text-main);
     font-family: 'Outfit', sans-serif;
     overflow-x: hidden;
-    line-height: 1.6;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    /* Opened up tracking globally */
 }
 
 /* Ambient Background Glow */
@@ -37,7 +39,7 @@ body {
     position: fixed;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(123, 44, 191, 0.2) 0%, rgba(5, 5, 16, 0) 70%);
+    background: radial-gradient(circle, rgba(123, 44, 191, 0.08) 0%, rgba(5, 5, 16, 0) 70%);
     top: -100px;
     left: -100px;
     z-index: -1;
@@ -49,7 +51,7 @@ body {
     position: fixed;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(0, 255, 136, 0.15) 0%, rgba(5, 5, 16, 0) 70%);
+    background: radial-gradient(circle, rgba(0, 255, 136, 0.06) 0%, rgba(5, 5, 16, 0) 70%);
     bottom: -100px;
     right: -100px;
     z-index: -1;
@@ -69,12 +71,24 @@ body {
 }
 
 /* Neon 'i' SVG Logo alignment */
+
 .neon-i-img {
-    height: 1.1em;
-    /* Scales with font size */
-    vertical-align: middle;
-    margin-bottom: 0.2em;
-    /* Fine-tune alignment */
+    height: 0.73em;
+    /* Further slightly reduced to match x-height perfectly */
+    vertical-align: baseline;
+    margin-left: -3px;
+    margin-right: -1px;
+    /* RGB animation handled by SVG internally */
+}
+
+@keyframes hue-rotate-cycle {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }
 
 .glass-card {
@@ -83,14 +97,7 @@ body {
     transition: var(--transition-speed);
 }
 
-.glass-card:hover {
-    background: rgba(255, 255, 255, 0.08);
-    /* Lighten on hover */
-    border-color: rgba(255, 255, 255, 0.25);
-    transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-    /* Deep shadow, not glow */
-}
+/* .glass-card:hover removed to eliminate UI shift on mouseover */
 
 /* Layout */
 .container {
@@ -107,7 +114,9 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    padding: 1rem 2rem;
+    z-index: 1000;
+    /* Dynamically align header content with .container (1200px max-width + 2rem padding) */
+    padding: 1rem max(2rem, calc((100% - 1200px) / 2 + 2rem));
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -136,7 +145,10 @@ header {
 .nav-links a:hover,
 .nav-links a.active {
     color: #fff;
-    /* text-shadow: 0 0 10px rgba(255,255,255,0.3); Optional subtle glow instead of line */
+}
+
+.nav-links a.active {
+    text-shadow: 0 0 8px rgba(0, 255, 136, 0.4), 0 0 20px rgba(0, 255, 136, 1);
 }
 
 /* Removed Underline as requested */
@@ -155,10 +167,55 @@ header {
 }
 */
 
+/* Navigation Utility Buttons */
+.nav-utils {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.btn-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-icon:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-login {
+    padding: 0.5rem 1.25rem;
+    border-radius: 100px;
+    border: 1px solid var(--primary-accent);
+    background: transparent;
+    color: var(--primary-accent);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    background: var(--primary-accent);
+    color: var(--bg-color);
+}
+
 .logo {
     font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
+    font-weight: 800;
+    /* letter-spacing removed to reduce tightness */
     color: #fff;
     text-decoration: none;
     cursor: pointer;
@@ -182,9 +239,8 @@ h1 {
     font-size: 4rem;
     line-height: 1.1;
     margin-bottom: 1.5rem;
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    /* Tight IOS tracking */
+    font-weight: 800;
+    /* Track tightness removed */
 }
 
 .text-gradient {
@@ -336,4 +392,131 @@ p.lead {
     h1 {
         font-size: 2.5rem;
     }
+}
+
+/* --- Added for VPN Page --- */
+
+/* Cyber Hero */
+.cyber-hero {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 50% 50%, rgba(5, 5, 16, 0.8) 0%, rgba(5, 5, 16, 1) 100%),
+        repeating-linear-gradient(transparent 0, transparent 49px, rgba(0, 255, 136, 0.05) 50px),
+        repeating-linear-gradient(90deg, transparent 0, transparent 49px, rgba(0, 255, 136, 0.05) 50px);
+    background-size: 100% 100%, 100px 100px, 100px 100px;
+    animation: cyber-grid-scroll 20s linear infinite;
+}
+
+@keyframes cyber-grid-scroll {
+    0% {
+        background-position: center, 0 0, 0 0;
+    }
+
+    100% {
+        background-position: center, 50px 50px, 50px 50px;
+    }
+}
+
+/* Terminal UI */
+.terminal-window {
+    background: rgba(10, 10, 20, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    font-family: 'Courier New', monospace;
+    padding: 0;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.terminal-header {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red {
+    background: #ff5f56;
+}
+
+.yellow {
+    background: #ffbd2e;
+}
+
+.green {
+    background: #27c93f;
+}
+
+.terminal-title {
+    margin-left: 15px;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.terminal-body {
+    padding: 1.5rem;
+    color: var(--primary-accent);
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.command {
+    margin-bottom: 0.5rem;
+}
+
+.output {
+    color: #ccc;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 15px;
+    background: var(--primary-accent);
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Process Step Icons (Shared with Plant AI) */
+.process-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2.5rem;
+    color: var(--primary-accent);
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.1);
 }

@@ -1,10 +1,9 @@
 <svg width="25" height="40" viewBox="0 0 25 40" fill="none" xmlns="http://www.w3.org/2000/svg">
   <!-- Body of 'i' -->
-  <rect x="7" y="14" width="11" height="26" fill="white"/>
+  <rect x="7.8" y="14" width="9.1" height="26" fill="white"/>
   <!-- The Dot (Lighthouse) -->
-  <circle cx="12.5" cy="5" r="5" fill="#00ff88">
-    <animate attributeName="fill" values="#00ff88;#00ffff;#ff00ff;#ffff00;#00ff88" dur="4s" repeatCount="indefinite" />
-    <animate attributeName="opacity" values="1;0.8;1" dur="2s" repeatCount="indefinite" />
+  <circle cx="12.5" cy="5" r="5" fill="#ff0000">
+    <animate attributeName="fill" values="#ff0000;#ff8800;#ffff00;#00ff00;#00ffff;#0088ff;#0000ff;#8800ff;#ff00ff;#ff0088;#ff0000" dur="5s" repeatCount="indefinite" />
   </circle>
   <!-- Glow effect filter -->
   <defs>

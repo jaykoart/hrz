@@ -20,22 +20,38 @@
             <nav class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="plant-ai.html">Plant AI</a>
-                <a href="about.html" class="active">VPN</a>
+                <a href="vpn.html" class="active">VPN</a>
                 <a href="download.html">Download</a>
             </nav>
+            <div class="nav-utils">
+                <button class="btn-icon" id="lang-btn" title="Language">
+                    <ion-icon name="globe-outline"></ion-icon>
+                </button>
+                <button class="btn-icon" id="theme-btn" title="Toggle Theme">
+                    <ion-icon name="moon-outline"></ion-icon>
+                </button>
+                <a href="#" class="btn-login" id="login-btn">Login</a>
+            </div>
         </header>
 
-        <section class="hero" style="min-height: 50vh; padding-top: 4rem;">
-            <div class="hero-content" style="max-width: 800px;">
-                <h1>The Ethical <span class="text-gradient">VPN.</span></h1>
-                <p class="lead">Horizon isn't just a shield; it's a contribution. We've redesigned the VPN to protect
-                    you while empowering the planet's largest AI research.</p>
+        <section class="hero" style="min-height: 60vh; padding-top: 8rem; text-align: center;">
+            <div class="container" style="z-index: 2;">
+                <h1 style="font-size: 4rem; text-shadow: 0 10px 30px rgba(0,0,0,0.8); margin-bottom: 1.5rem;">The <span
+                        class="text-gradient">Ethical Shield.</span></h1>
+                <p class="lead"
+                    style="max-width: 700px; margin: 0 auto 2rem; text-shadow: 0 2px 10px rgba(0,0,0,0.8); color: #fff; font-size: 1.2rem;">
+                    We've redesigned the VPN to protect you while empowering the planet's largest AI research. <br>
+                    <span style="color: var(--primary-accent); font-weight: 600;">Zero Logs. Zero Cost. 100%
+                        Impact.</span>
+                </p>
+                <a href="download.html" class="btn btn-primary">Download Node</a>
             </div>
         </section>
 
         <section class="features">
             <!-- Core VPN Features -->
-            <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 6rem;">
+            <div class="grid"
+                style="grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: -6rem; margin-bottom: 0rem;">
                 <div class="glass glass-card" style="text-align: center;">
                     <div style="font-size: 3rem; color: var(--primary-accent); margin-bottom: 1rem;">
                         <ion-icon name="shield-checkmark-outline"></ion-icon>
@@ -67,6 +83,64 @@
                         Bypass censorship and geo-blocks. Access content from anywhere in the world as if you were a
                         local.
                     </p>
+                </div>
+            </div>
+
+            <!-- Technical Deep Dive: Terminal Visual -->
+            <div class="grid" style="align-items: center; margin: 8rem 0; gap: 4rem;">
+                <div>
+                    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Invisible <span class="text-gradient">to
+                            Everyone.</span></h2>
+                    <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.1rem;">
+                        Your ISP sees nothing. Hackers see random noise. Even <strong>we</strong> see nothing.
+                    </p>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: #fff; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 10px;">
+                            <ion-icon name="key-outline" style="color: var(--primary-accent);"></ion-icon>
+                            Ephemeral Keys
+                        </h3>
+                        <p style="color: var(--text-muted);">
+                            Encryption keys are generated in RAM and destroyed every 60 minutes.
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: #fff; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 10px;">
+                            <ion-icon name="git-network-outline" style="color: var(--secondary-accent);"></ion-icon>
+                            Multi-Hop Routing
+                        </h3>
+                        <p style="color: var(--text-muted);">
+                            Traffic jumps through 3 random nodes before exiting. No single node knows the full path.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                        <span class="terminal-title">node-x7z-daemon — bash — 80x24</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="command">$ horizon-cli status --verbose</div>
+                        <div class="output">
+                            > Connecting to Mesh Network... <span style="color:var(--primary-accent)">[OK]</span><br>
+                            > Handshake: Curve25519 <span style="color:var(--primary-accent)">[SECURE]</span><br>
+                            > Tunnel ID: #9928-AX-22<br>
+                            > Log Status: <span style="color:#ff5f56">DISABLED (RAM-ONLY MODE)</span>
+                        </div>
+
+                        <div class="command">$ traceroute target.com</div>
+                        <div class="output">
+                            1 192.168.1.1 (Local)<br>
+                            2 * * * (Masked)<br>
+                            3 * * * (Masked)<br>
+                            4 * * * (Masked)<br>
+                            5 target.com [203.0.113.5]
+                        </div>
+
+                        <div class="command">$ <span class="cursor"></span></div>
+                    </div>
                 </div>
             </div>
 
@@ -109,6 +183,32 @@
                             infrastructure, keeping the VPN 100% free for you forever.</p>
                     </div>
 
+                </div>
+            </div>
+
+            <!-- Use Cases -->
+            <h2 style="text-align: center; margin-bottom: 3rem;">Who is <span class="text-gradient">Horizon For?</span>
+            </h2>
+            <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 8rem;">
+                <div class="glass glass-card" style="padding: 2rem;">
+                    <div class="process-icon"><ion-icon name="newspaper-outline"></ion-icon></div>
+                    <h3 style="margin-bottom: 1rem; text-align: center; color: #fff;">Journalists</h3>
+                    <p style="color: var(--text-muted); text-align: center;">Bypass censorship and report the truth
+                        safely from conflict zones.</p>
+                </div>
+                <div class="glass glass-card" style="padding: 2rem;">
+                    <div class="process-icon" style="color: #4facfe;"><ion-icon
+                            name="game-controller-outline"></ion-icon></div>
+                    <h3 style="margin-bottom: 1rem; text-align: center; color: #fff;">Gamers</h3>
+                    <p style="color: var(--text-muted); text-align: center;">Avoid DDoS attacks and access geo-locked
+                        servers with minimal lag.</p>
+                </div>
+                <div class="glass glass-card" style="padding: 2rem;">
+                    <div class="process-icon" style="color: var(--secondary-accent);"><ion-icon
+                            name="briefcase-outline"></ion-icon></div>
+                    <h3 style="margin-bottom: 1rem; text-align: center; color: #fff;">Remote Workers</h3>
+                    <p style="color: var(--text-muted); text-align: center;">Secure public Wi-Fi access while working
+                        from cafes or airports.</p>
                 </div>
             </div>
 
@@ -219,6 +319,16 @@
                     internal VPN tunnel where your personal traffic flows. The two worlds never touch.
                 </p>
             </div>
+        </div>
+
+        <!-- Final Verdict -->
+        <div style="text-align: center; margin: 6rem 0;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">The Last VPN You'll <span class="text-gradient">Ever
+                    Need.</span></h2>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">Stop paying for privacy. Start contributing to the
+                future.</p>
+            <a href="download.html" class="btn btn-primary" style="font-size: 1.2rem; padding: 1.2rem 3rem;">Get Horizon
+                Free</a>
         </div>
 
         <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.8rem;">

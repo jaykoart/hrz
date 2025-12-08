@@ -1,0 +1,59 @@
+<svg width="300" height="60" viewBox="0 0 300 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800&amp;display=swap');
+      .logo-text {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 800;
+        font-size: 40px;
+        fill: white;
+        letter-spacing: 0.08em;
+      }
+    </style>
+    <filter id="glow-i" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Text: Hor -->
+  <text x="10" y="45" class="logo-text">Hor</text>
+
+  <!-- Neon 'i' Graphic 
+       Placement Logic:
+       - Font Size 40px.
+       - "Hor" approx width with 0.08em tracking approx 90-95px.
+       - 'i' margin-left: -3px relative to font -> -3px approx.
+       - Scale 0.73 (vs 40px height canvas) -> 29.2px visual height.
+       - Y offset: Aligned to baseline. Canvas is 40h. Baseline y=45. 
+         We need to visually center or base align. Original had vertical-align: baseline.
+         The SVG 'i' is full height (40). Scaling it 0.73 makes it ~29.
+         To sit on baseline (y=45), we push it down? 
+         HTML vertical-align: baseline aligns the bottom of the image with the baseline.
+         So bottom of 'i' (scaled) should be at y=45.
+         Original height 40 * 0.73 = 29.2.
+         So y pos = 45 - 29.2 = 15.8.
+  -->
+  <g transform="translate(98, 15.8) scale(0.73)">
+    <!-- Body of 'i' (User Modified: width 9.1, x 7.8) -->
+    <rect x="7.8" y="14" width="9.1" height="26" fill="white"/>
+    
+    <!-- The Dot (Lighthouse) -->
+    <circle cx="12.5" cy="5" r="5" fill="#00ff88">
+      <animate attributeName="fill" values="#00ff88;#00ffff;#ff00ff;#ffff00;#00ff88" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0.8;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Text: zon 
+       Placement Logic:
+       - 'i' width = 25 * 0.73 = 18.25px.
+       - Start X = 98. End X = 98 + 18.25 = 116.25.
+       - Margin-right: -1px.
+       - Zon X = 116.25 - 1 = 115.25.
+  -->
+  <text x="115" y="45" class="logo-text">zon</text>
+</svg>

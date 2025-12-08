@@ -8,6 +8,165 @@
     <link rel="stylesheet" href="style.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        .download-hero {
+            min-height: 50vh;
+            padding-top: 8rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .version-badge {
+            display: inline-block;
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            color: var(--primary-accent);
+            padding: 0.5rem 1.5rem;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .platform-card {
+            text-align: center;
+            padding: 2.5rem 2rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .platform-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .platform-card .icon-wrapper {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .platform-card:hover .icon-wrapper {
+            transform: scale(1.1);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .platform-card ion-icon {
+            font-size: 2.5rem;
+        }
+
+        .platform-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .platform-card .version {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 2rem;
+            border-radius: 100px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-download:hover {
+            background: var(--primary-accent);
+            border-color: var(--primary-accent);
+            color: var(--bg-color);
+        }
+
+        .coming-soon {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        .coming-soon::after {
+            content: 'Coming Soon';
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.25rem 0.75rem;
+            border-radius: 100px;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+
+        .section-divider {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin: 4rem 0 3rem;
+        }
+
+        .section-divider::before,
+        .section-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+        }
+
+        .section-divider h2 {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .info-item {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .info-item ion-icon {
+            font-size: 2rem;
+            color: var(--primary-accent);
+            margin-bottom: 1rem;
+        }
+
+        .info-item h4 {
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-item p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -20,75 +179,155 @@
             <nav class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="plant-ai.html">Plant AI</a>
-                <a href="about.html">VPN</a>
+                <a href="vpn.html">VPN</a>
                 <a href="download.html" class="active">Download</a>
             </nav>
+            <div class="nav-utils">
+                <button class="btn-icon" id="lang-btn" title="Language">
+                    <ion-icon name="globe-outline"></ion-icon>
+                </button>
+                <button class="btn-icon" id="theme-btn" title="Toggle Theme">
+                    <ion-icon name="moon-outline"></ion-icon>
+                </button>
+                <a href="#" class="btn-login" id="login-btn">Login</a>
+            </div>
         </header>
 
-        <section class="hero" style="min-height: 40vh; padding-top: 4rem; text-align: center; display: block;">
-            <h1>Get <span class="text-gradient">Horizon</span></h1>
-            <p class="lead" style="margin: 0 auto; max-width: 500px;">Choose your platform to start browsing freely.</p>
-        </section>
-
-        <section class="features" style="padding-top: 0;">
-            <!-- Desktop Section -->
-            <h2 style="text-align: center; margin-bottom: 2rem; margin-top: 1rem;">Desktop Clients</h2>
-            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin-bottom: 4rem;">
-                <!-- Windows -->
-                <div class="glass glass-card" style="text-align: center;">
-                    <ion-icon name="logo-windows"
-                        style="font-size: 3rem; margin-bottom: 1rem; color: #00a4ef;"></ion-icon>
-                    <h3>Windows</h3>
-                    <p style="margin-bottom: 2rem; font-size: 0.9rem;">Windows 10/11 (64-bit)</p>
-                    <a href="#" class="btn btn-primary" onclick="alert('Windows build coming soon!')">Download .exe</a>
-                </div>
-
-                <!-- macOS -->
-                <div class="glass glass-card" style="text-align: center;">
-                    <ion-icon name="logo-apple" style="font-size: 3rem; margin-bottom: 1rem; color: #fff;"></ion-icon>
-                    <h3>macOS</h3>
-                    <p style="margin-bottom: 2rem; font-size: 0.9rem;">Ventura or later</p>
-                    <a href="#" class="btn btn-primary" onclick="alert('macOS build coming soon!')">Download .dmg</a>
-                </div>
-
-                <!-- Linux -->
-                <div class="glass glass-card" style="text-align: center;">
-                    <ion-icon name="logo-tux" style="font-size: 3rem; margin-bottom: 1rem; color: #fcc624;"></ion-icon>
-                    <h3>Linux</h3>
-                    <p style="margin-bottom: 2rem; font-size: 0.9rem;">Ubuntu/Debian/Arch</p>
-                    <a href="#" class="btn btn-primary" onclick="alert('Linux build coming soon!')">Download .deb</a>
-                </div>
-            </div>
-
-            <!-- Mobile Section -->
-            <h2 style="text-align: center; margin-bottom: 2rem;">Mobile Apps</h2>
-            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
-                <!-- Android -->
-                <div class="glass glass-card" style="text-align: center;">
-                    <ion-icon name="logo-android"
-                        style="font-size: 3rem; margin-bottom: 1rem; color: #3ddc84;"></ion-icon>
-                    <h3>Android</h3>
-                    <p style="margin-bottom: 2rem; font-size: 0.9rem;">Android 10+</p>
-                    <a href="#" class="btn btn-primary" onclick="alert('Android APK coming soon!')">Download APK</a>
-                </div>
-
-                <!-- iOS -->
-                <div class="glass glass-card" style="text-align: center;">
-                    <ion-icon name="logo-apple-appstore"
-                        style="font-size: 3rem; margin-bottom: 1rem; color: #007aff;"></ion-icon>
-                    <h3>iOS</h3>
-                    <p style="margin-bottom: 2rem; font-size: 0.9rem;">iOS 15+</p>
-                    <a href="#" class="btn btn-primary" onclick="alert('App Store link coming soon!')">App Store</a>
-                </div>
-            </div>
-
-            <div style="margin-top: 4rem; text-align: center;">
-                <p style="color: var(--text-muted); font-size: 0.8rem;">
-                    SHA-256 Checksums will be available on our GitHub release page.<br>
-                    All builds are Open Source and verified.
-                </p>
+        <!-- Hero Section -->
+        <section class="download-hero">
+            <span class="version-badge">
+                <ion-icon name="rocket-outline" style="vertical-align: middle; margin-right: 5px;"></ion-icon>
+                v0.1.0 Beta
+            </span>
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Download <span class="text-gradient">Horizon</span></h1>
+            <p class="lead" style="margin: 0 auto 2rem; max-width: 600px;">
+                Join the decentralized privacy network. Your device becomes a node in the global mesh, protecting
+                millions while earning rewards.
+            </p>
+            <div
+                style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; color: var(--text-muted); font-size: 0.9rem;">
+                <span><ion-icon name="shield-checkmark"
+                        style="color: var(--primary-accent); vertical-align: middle;"></ion-icon> Zero Logs</span>
+                <span><ion-icon name="flash" style="color: #4facfe; vertical-align: middle;"></ion-icon> WireGuard
+                    Protocol</span>
+                <span><ion-icon name="leaf" style="color: #2ed573; vertical-align: middle;"></ion-icon> Powers Plant
+                    AI</span>
             </div>
         </section>
+
+        <!-- Desktop Section -->
+        <div class="section-divider">
+            <h2>Desktop</h2>
+        </div>
+
+        <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+            <!-- Windows -->
+            <div class="glass glass-card platform-card coming-soon">
+                <div class="icon-wrapper">
+                    <ion-icon name="logo-windows" style="color: #00a4ef;"></ion-icon>
+                </div>
+                <h3>Windows</h3>
+                <p class="version">Windows 10/11 (64-bit)</p>
+                <a href="#" class="btn-download">
+                    <ion-icon name="download-outline"></ion-icon>
+                    Download .exe
+                </a>
+            </div>
+
+            <!-- macOS -->
+            <div class="glass glass-card platform-card coming-soon">
+                <div class="icon-wrapper">
+                    <ion-icon name="logo-apple" style="color: #fff;"></ion-icon>
+                </div>
+                <h3>macOS</h3>
+                <p class="version">Ventura or later (Apple Silicon)</p>
+                <a href="#" class="btn-download">
+                    <ion-icon name="download-outline"></ion-icon>
+                    Download .dmg
+                </a>
+            </div>
+
+            <!-- Linux -->
+            <div class="glass glass-card platform-card coming-soon">
+                <div class="icon-wrapper">
+                    <ion-icon name="logo-tux" style="color: #fcc624;"></ion-icon>
+                </div>
+                <h3>Linux</h3>
+                <p class="version">Ubuntu / Debian / Arch</p>
+                <a href="#" class="btn-download">
+                    <ion-icon name="download-outline"></ion-icon>
+                    Download .deb
+                </a>
+            </div>
+        </div>
+
+        <!-- Mobile Section -->
+        <div class="section-divider">
+            <h2>Mobile</h2>
+        </div>
+
+        <div class="grid" style="grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 700px; margin: 0 auto;">
+            <!-- Android -->
+            <div class="glass glass-card platform-card coming-soon">
+                <div class="icon-wrapper">
+                    <ion-icon name="logo-android" style="color: #3ddc84;"></ion-icon>
+                </div>
+                <h3>Android</h3>
+                <p class="version">Android 10+</p>
+                <a href="#" class="btn-download">
+                    <ion-icon name="download-outline"></ion-icon>
+                    Download APK
+                </a>
+            </div>
+
+            <!-- iOS -->
+            <div class="glass glass-card platform-card coming-soon">
+                <div class="icon-wrapper">
+                    <ion-icon name="logo-apple-appstore" style="color: #007aff;"></ion-icon>
+                </div>
+                <h3>iOS</h3>
+                <p class="version">iOS 15+</p>
+                <a href="#" class="btn-download">
+                    <ion-icon name="logo-apple-appstore"></ion-icon>
+                    App Store
+                </a>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="info-grid">
+            <div class="info-item">
+                <ion-icon name="code-slash-outline"></ion-icon>
+                <h4>Open Source</h4>
+                <p>Every line of code is auditable on GitHub. Trust through transparency.</p>
+            </div>
+            <div class="info-item">
+                <ion-icon name="finger-print-outline"></ion-icon>
+                <h4>SHA-256 Verified</h4>
+                <p>All binaries are cryptographically signed and hash-verified.</p>
+            </div>
+            <div class="info-item">
+                <ion-icon name="git-branch-outline"></ion-icon>
+                <h4>Auto Updates</h4>
+                <p>Seamless background updates keep you protected with zero effort.</p>
+            </div>
+        </div>
+
+        <!-- GitHub CTA -->
+        <div class="glass glass-card" style="text-align: center; margin: 4rem 0; padding: 3rem;">
+            <ion-icon name="logo-github" style="font-size: 3rem; margin-bottom: 1rem;"></ion-icon>
+            <h3 style="margin-bottom: 1rem;">Build from Source</h3>
+            <p
+                style="color: var(--text-muted); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto;">
+                For developers and security researchers who prefer to compile from source. Full build instructions
+                included.
+            </p>
+            <a href="https://github.com/jaykoart/hrz" target="_blank" class="btn btn-primary"
+                style="background: #333; border-color: #555;">
+                <ion-icon name="logo-github" style="vertical-align: middle; margin-right: 8px;"></ion-icon>
+                View on GitHub
+            </a>
+        </div>
 
         <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.8rem;">
             <p style="margin-bottom: 1rem;">
