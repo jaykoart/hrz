@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant AI | Horizon VPN</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        .nature-hero {
+            position: relative;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Slider Container */
+        .hero-bg-slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .hero-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+        }
+
+        .hero-slide.active {
+            opacity: 1;
+            transition: opacity 2s ease-in-out;
+        }
+
+        /* Dark Gradient Overlay */
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(5, 5, 16, 0.3), rgba(5, 5, 16, 1));
+            z-index: 1;
+        }
+
+        .process-diagram {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin: 4rem 0;
+            flex-wrap: wrap;
+        }
+
+        .process-step {
+            width: 250px;
+            text-align: center;
+            position: relative;
+        }
+
+        .process-icon {
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 3rem;
+            color: var(--primary-accent);
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.1);
+        }
+
+        .arrow-next {
+            font-size: 2rem;
+            color: var(--text-muted);
+            opacity: 0.5;
+        }
+
+        @media (max-width: 768px) {
+            .arrow-next {
+                transform: rotate(90deg);
+                margin: 1rem 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ambient-glow"></div>
+    <div class="ambient-glow-2"></div>
+
+    <div class="container">
+        <header>
+            <a href="index.html" class="logo">Hor<img src="assets/neon-i.svg" class="neon-i-img" alt="i">zon</a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="plant-ai.html" class="active">Plant AI</a>
+                <a href="about.html">VPN</a>
+                <a href="download.html">Download</a>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Full Width Nature Hero -->
+    <section class="nature-hero">
+        <div class="hero-bg-slider" id="heroSlider">
+            <!-- Slide 1 -->
+            <div class="hero-slide active" style="background-image: url('assets/1.webp');"></div>
+            <!-- Slide 2 -->
+            <div class="hero-slide" style="background-image: url('assets/2.webp');"></div>
+            <!-- Slide 3 -->
+            <div class="hero-slide" style="background-image: url('assets/3.webp');"></div>
+            <!-- Slide 4 -->
+            <div class="hero-slide" style="background-image: url('assets/4.webp');"></div>
+            <!-- Slide 5 -->
+            <div class="hero-slide" style="background-image: url('assets/5.webp');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="container" style="z-index: 2;">
+            <h1 style="font-size: 5rem; text-shadow: 0 10px 30px rgba(0,0,0,0.8);">Intelligence for <br><span
+                    style="color: var(--primary-accent);">Nature.</span></h1>
+            <p class="lead"
+                style="max-width: 700px; margin: 0 auto; text-shadow: 0 2px 10px rgba(0,0,0,0.8); color: #fff;">
+                We are building the world's largest decentralized data engine to decode the language of plants and
+                optimize global food production.
+            </p>
+        </div>
+    </section>
+
+    <!-- Slider Script -->
+    <script>
+        const slides = document.querySelectorAll('.hero-slide');
+        let currentSlide = 0;
+
+        // Rotate every 5 seconds
+        setInterval(() => {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }, 5000);
+    </script>
+
+
+    <div class="container">
+        <section class="features">
+            <!-- 1. Definition & Vision -->
+            <div style="text-align: center; max-width: 800px; margin: 0 auto 6rem;">
+                <h2 style="font-size: 3rem; margin-bottom: 2rem;">What is <span class="text-gradient">Plant AI?</span>
+                </h2>
+                <p class="lead" style="color: #fff; font-weight: 400;">
+                    Plant AI is a <strong>Specialized Artificial Intelligence</strong> trained on the world's largest
+                    agricultural big data.
+                    Unlike general LLMs, it is designed for one specific purpose: <br>
+                    <span style="color: var(--primary-accent); font-weight: 600;">To autonomy every farm on
+                        Earth.</span>
+                </p>
+            </div>
+
+            <!-- 2. The Core Intelligence (Vision & Action) -->
+            <div class="grid"
+                style="grid-template-columns: 1fr 1fr; align-items: center; gap: 4rem; margin-bottom: 8rem;">
+                <div class="glass glass-card" style="padding: 3rem;">
+                    <div style="display: flex; gap: 1.5rem; margin-bottom: 2rem;">
+                        <ion-icon name="eye" style="font-size: 3rem; color: var(--primary-accent);"></ion-icon>
+                        <div>
+                            <h3 style="margin-bottom: 0.5rem; color: #fff;">Vision & Diagnosis</h3>
+                            <p style="color: var(--text-muted); font-size: 0.95rem;">
+                                Cameras replace human eyes. The AI analyzes leaf color changes, spot patterns, and
+                                thermal stress in real-time.
+                            </p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 1.5rem;">
+                        <ion-icon name="hand-left" style="font-size: 3rem; color: var(--secondary-accent);"></ion-icon>
+                        <div>
+                            <h3 style="margin-bottom: 0.5rem; color: #fff;">Decision & Action</h3>
+                            <p style="color: var(--text-muted); font-size: 0.95rem;">
+                                Autonomous systems take over. High temperature triggers shade deployment; dry soil
+                                activates precision sprinklers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">The <span class="text-gradient">Unknown
+                            Data</span> problem.</h2>
+                    <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 2rem 0;">
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                        To build this, we need data that Big Tech doesn't have. They have Wikipedia; we need
+                        <strong>Soil Reports</strong>, <strong>Harvest Records</strong>, and <strong>Local Climate
+                            Logs</strong>.
+                    </p>
+                    <p style="color: var(--text-muted);">
+                        This is where <strong>Horizon VPN</strong> comes in. Your node collects this "Niche Data" from
+                        thousands of local sources, creating the "Green Synapse" of our tailored AI.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3. Mission Impact Pillars -->
+            <h2 style="text-align: center; margin-bottom: 3rem;">Driving <span class="text-gradient">Planetary
+                    Change</span></h2>
+            <div class="grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 8rem;">
+                <!-- Food Security -->
+                <div class="glass glass-card" style="text-align: center;">
+                    <div class="process-icon" style="margin-bottom: 1.5rem;">
+                        <ion-icon name="nutrition-outline"></ion-icon>
+                    </div>
+                    <h3 style="margin-bottom: 1rem;">Food Security</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
+                        Solving global hunger by optimizing crop yields. We ensure every seed planted reaches its full
+                        potential.
+                    </p>
+                    <span
+                        style="font-size: 0.8rem; color: var(--primary-accent); border: 1px solid var(--primary-accent); padding: 2px 8px; border-radius: 4px;">Zero
+                        Hunger</span>
+                </div>
+
+                <!-- Climate Response -->
+                <div class="glass glass-card" style="text-align: center;">
+                    <div class="process-icon" style="color: #4facfe; margin-bottom: 1.5rem;">
+                        <ion-icon name="earth-outline"></ion-icon>
+                    </div>
+                    <h3 style="margin-bottom: 1rem;">Climate Response</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
+                        Drastically reducing water and pesticide usage. We fight climate change by making agriculture
+                        smarter and cleaner.
+                    </p>
+                    <span
+                        style="font-size: 0.8rem; color: #4facfe; border: 1px solid #4facfe; padding: 2px 8px; border-radius: 4px;">Eco-Sustainability</span>
+                </div>
+
+                <!-- Human Empowerment -->
+                <div class="glass glass-card" style="text-align: center;">
+                    <div class="process-icon" style="color: #fff; margin-bottom: 1.5rem;">
+                        <ion-icon name="people-outline"></ion-icon>
+                    </div>
+                    <h3 style="margin-bottom: 1rem;">Digital Contributor</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
+                        You are not a consumer; you are a guardian. Your idle bandwidth contributes directly to saving
+                        the planet.
+                    </p>
+                    <span
+                        style="font-size: 0.8rem; color: #fff; border: 1px solid #fff; padding: 2px 8px; border-radius: 4px;">Global
+                        Citizen</span>
+                </div>
+            </div>
+
+            <!-- 4. Deep Dive Content: The One-Person Farm -->
+            <div class="grid" style="margin-top: 6rem; align-items: start; gap: 4rem;">
+                <!-- Left: Text Content -->
+                <div>
+                    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">The Goal: <span class="text-gradient">One-Person
+                            Farm</span></h2>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: #fff; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 10px;">
+                            <ion-icon name="happy-outline" style="color: var(--primary-accent);"></ion-icon>
+                            Liberation from Labor
+                        </h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">
+                            Farming shouldn't mean breaking your back. With Plant AI, a single person can manage 100
+                            acres via a dashboard. The AI handles the micro-management.
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: #fff; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 10px;">
+                            <ion-icon name="school-outline" style="color: var(--secondary-accent);"></ion-icon>
+                            Expertise for All
+                        </h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">
+                            Whether you are a veteran agronomist or a city dweller with a rooftop garden, Plant AI
+                            provides professional-grade insights.
+                        </p>
+                    </div>
+
+                    <a href="download.html" class="btn btn-primary" style="margin-top: 1rem;">Power This
+                        Intelligence</a>
+                </div>
+
+                <!-- Right: Visual Representation -->
+                <div class="glass glass-card" style="padding: 3rem; position: relative;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <span
+                            style="background: rgba(0, 255, 136, 0.1); color: var(--primary-accent); padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(0,255,136,0.2);">Live
+                            System Status</span>
+                    </div>
+
+                    <!-- Simulated Dashboard UI -->
+                    <div
+                        style="border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1.5rem; margin-bottom: 1.5rem;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span style="color: #fff;">Zone A-1 (Tomato)</span>
+                            <span style="color: #ff4757;">Attention Needed</span>
+                        </div>
+                        <div
+                            style="height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; overflow: hidden;">
+                            <div style="width: 85%; height: 100%; background: #ff4757;"></div>
+                        </div>
+                        <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 5px;">Nitrogen Deficit
+                            Detected (Action: Auto-Dosing Started)</p>
+                    </div>
+
+                    <div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span style="color: #fff;">Zone B-3 (Lettuce)</span>
+                            <span style="color: var(--primary-accent);">Optimal</span>
+                        </div>
+                        <div
+                            style="height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; overflow: hidden;">
+                            <div style="width: 98%; height: 100%; background: var(--primary-accent);"></div>
+                        </div>
+                        <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 5px;">Growth Analysis: +15%
+                            Prediction vs Last Year</p>
+                    </div>
+
+                    <!-- Overlay Icon -->
+                    <ion-icon name="hardware-chip"
+                        style="position: absolute; bottom: 20px; right: 20px; font-size: 4rem; color: rgba(255,255,255,0.05);"></ion-icon>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Technical Deep Dive: Distributed Nodes -->
+        <div style="margin-top: 8rem; margin-bottom: 6rem;">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem;">Powered by <span
+                    class="text-gradient">Distributed Intelligence</span></h2>
+
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <!-- Node Architecture -->
+                <div class="glass glass-card">
+                    <h3
+                        style="color: #fff; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1rem; margin-bottom: 1.5rem;">
+                        <ion-icon name="server-outline"
+                            style="color: var(--primary-accent); vertical-align: middle; margin-right: 10px;"></ion-icon>
+                        The Horizon Node
+                    </h3>
+                    <p style="color: var(--text-muted); line-height: 1.6;">
+                        Every user running Horizon VPN becomes a <strong>micro-data center</strong>. Instead of building
+                        massive, energy-hungry server farms, we utilize the idle computing power of millions of devices.
+                    </p>
+                    <ul style="margin-top: 1.5rem; color: var(--text-muted); padding-left: 1.2rem;">
+                        <li><strong>Edge Computing:</strong> Data is processed locally on-device.</li>
+                        <li><strong>Encrypted Transport:</strong> All contributions are anonymized via WireGuard
+                            tunnels.</li>
+                    </ul>
+                </div>
+
+                <!-- Federated Learning -->
+                <div class="glass glass-card">
+                    <h3
+                        style="color: #fff; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1rem; margin-bottom: 1.5rem;">
+                        <ion-icon name="share-social-outline"
+                            style="color: var(--secondary-accent); vertical-align: middle; margin-right: 10px;"></ion-icon>
+                        Federated Learning
+                    </h3>
+                    <p style="color: var(--text-muted); line-height: 1.6;">
+                        We don't just collect data; we train the AI collectively. Your device downloads a small model,
+                        improves it with local data (e.g., local weather patterns), and sends only the
+                        <em>improvement</em> back.
+                    </p>
+                    <ul style="margin-top: 1.5rem; color: var(--text-muted); padding-left: 1.2rem;">
+                        <li><strong>Privacy First:</strong> Raw data never leaves your device.</li>
+                        <li><strong>Swarm Intelligence:</strong> The network gets smarter with every user.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. Plant AI in Action (Use Cases) -->
+        <h2 style="text-align: center; margin-bottom: 3rem;">Plant AI in <span class="text-gradient">Action</span></h2>
+        <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 8rem;">
+            <!-- Case 1: Urban Home -->
+            <div class="glass glass-card" style="padding: 2rem;">
+                <!-- Image Background: Homeplant -->
+                <div
+                    style="height: 250px; background: url('assets/homeplant.webp') center/cover no-repeat; border-radius: 10px; margin-bottom: 1.5rem; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+                </div>
+
+                <h3 style="margin-bottom: 0.5rem; color: #fff;">Urban Home Farming</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">
+                    <strong>Scenario:</strong> You are growing basil on a balcony, but it keeps wilting.
+                </p>
+                <p style="color: #fff; font-size: 0.9rem;">
+                    <ion-icon name="checkmark-circle"
+                        style="color: var(--primary-accent); vertical-align: middle;"></ion-icon>
+                    AI diagnoses "Under-watering".<br>
+                    <ion-icon name="checkmark-circle"
+                        style="color: var(--primary-accent); vertical-align: middle;"></ion-icon>
+                    IoT sprinkler activates automatically.
+                </p>
+            </div>
+
+            <!-- Case 2: Precision Ag -->
+            <div class="glass glass-card" style="padding: 2rem;">
+                <!-- Image Background: Land -->
+                <div
+                    style="height: 250px; background: url('assets/land.webp') center/cover no-repeat; border-radius: 10px; margin-bottom: 1.5rem; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+                </div>
+
+                <h3 style="margin-bottom: 0.5rem; color: #fff;">Precision Agriculture</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">
+                    <strong>Scenario:</strong> A 10,000-acre corn field faces an unknown pest outbreak.
+                </p>
+                <p style="color: #fff; font-size: 0.9rem;">
+                    <ion-icon name="checkmark-circle"
+                        style="color: var(--primary-accent); vertical-align: middle;"></ion-icon>
+                    Drone scans identify "Sector 7".<br>
+                    <ion-icon name="checkmark-circle"
+                        style="color: var(--primary-accent); vertical-align: middle;"></ion-icon>
+                    Pinpoint treatment reduces pesticide by 90%.
+                </p>
+            </div>
+
+            <!-- Case 3: Global Research -->
+            <div class="glass glass-card" style="padding: 2rem;">
+                <!-- Image Background: Earth -->
+                <div
+                    style="height: 250px; background: url('assets/earth.webp') center/cover no-repeat; border-radius: 10px; margin-bottom: 1.5rem; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+                </div>
+
+                <h3 style="margin-bottom: 0.5rem; color: #fff;">Climate Research</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">
+                    <strong>Scenario:</strong> Predicting crop yields amidst erratic climate change.
+                </p>
+                <p style="color: #fff; font-size: 0.9rem;">
+                    <ion-icon name="checkmark-circle"
+                        style="color: var(--primary-accent); vertical-align: middle;"></ion-icon>
+                    Hyper-local data from millions of nodes.<br>
+                    <ion-icon name="checkmark-circle"
+                        style="color: var(--primary-accent); vertical-align: middle;"></ion-icon>
+                    Drought-resistant seed simulation.
+                </p>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div style="max-width: 800px; margin: 0 auto 6rem;">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Common Questions</h2>
+
+            <div class="glass glass-card" style="margin-bottom: 1rem; padding: 1.5rem;">
+                <h4 style="color: #fff; margin-bottom: 0.5rem;">Does this slow down my internet?</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">
+                    No. The Horizon Node creates a "Lightweight Background Process" that only uses idle bandwidth when
+                    you aren't streaming or gaming.
+                </p>
+            </div>
+
+            <div class="glass glass-card" style="margin-bottom: 1rem; padding: 1.5rem;">
+                <h4 style="color: #fff; margin-bottom: 0.5rem;">Is my personal data safe?</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">
+                    Absolutely. We only collect public environmental data. Your personal files, browsing history, and
+                    identity are strictly off-limits and technically inaccessible to the node software.
+                </p>
+            </div>
+            <!-- 6. Special Report: The 2050 Vision -->
+            <div
+                style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 4rem; margin: 8rem 0;">
+                <h4
+                    style="color: var(--primary-accent); letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 1rem;">
+                    Project Report: V3.0</h4>
+                <h2 style="font-size: 2.5rem; margin-bottom: 3rem; line-height: 1.2;">The Architecture of <br><span
+                        class="text-gradient">Abundance</span></h2>
+
+                <div
+                    style="column-count: 2; column-gap: 4rem; color: var(--text-muted); line-height: 1.8; text-align: justify;">
+                    <p style="margin-bottom: 2rem;">
+                        <strong style="color: #fff; font-size: 1.1rem; display: block; margin-bottom: 0.5rem;">I. The
+                            Crisis: 10 Billion Mouths vs. One Planet</strong>
+                        By 2050, the global population will exceed 9.8 billion. To feed everyone, we must produce
+                        <strong>70% more food</strong> than we do today. Yet, we are losing arable land at a rate of
+                        100,000 square kilometers per year due to desertification and urbanization. Traditional
+                        "Industrial Agriculture"—which relies on blanket pesticide use and excessive water
+                        consumption—has reached its limit. It is destroying the very soil we depend on.
+                    </p>
+
+                    <p style="margin-bottom: 2rem;">
+                        <strong style="color: #fff; font-size: 1.1rem; display: block; margin-bottom: 0.5rem;">II. The
+                            Solution: Precision vs. Guesswork</strong>
+                        Farming has historically been a game of estimation. Plant AI changes this paradigm by
+                        introducing <strong>Hyper-Precision</strong>. By analyzing thousands of data points—from leaf
+                        stomatal conductance to soil microbial activity—we can optimize every drop of water and
+                        milligram of nutrient. This isn't just "Smart Farming"; it is <strong>Computational
+                            Agriculture</strong>. We are turning biological uncertainty into mathematical
+                        predictability.
+                    </p>
+
+                    <p style="margin-bottom: 2rem;">
+                        <strong style="color: #fff; font-size: 1.1rem; display: block; margin-bottom: 0.5rem;">III.
+                            Scalability: The Decentralized Advantage</strong>
+                        A centralized supercomputer can manage a few corporate mega-farms. It cannot manage the billions
+                        of small-holder farms that produce 70% of the world's food. <strong
+                            style="color: var(--primary-accent);">Horizon Nodes</strong> bridge this gap. By
+                        distributing the computational load to millions of personal devices, we create an
+                        <strong>Infinite Mesh Network</strong> capable of processing data from a backyard garden in
+                        Seoul to a wheat field in Ukraine simultaneously.
+                    </p>
+
+                    <p>
+                        <strong style="color: #fff; font-size: 1.1rem; display: block; margin-bottom: 0.5rem;">IV. The
+                            Outcome: A Self-Healing Earth</strong>
+                        The ultimate goal of Plant AI is **Regeneration**. By minimizing chemical inputs and optimizing
+                        growth cycles, we allow the soil to heal. We envision a future where agriculture acts as a
+                        carbon sink rather than a source, where food security is guaranteed by code, and where every
+                        human being can contribute to global survival simply by keeping their computer on.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 7. Final Verdict: Why We Need This -->
+            <div style="text-align: center; margin-bottom: 8rem;">
+                <h2 style="font-size: 2rem; margin-bottom: 3rem; color: #fff;">The Final Verdict: <span
+                        class="text-gradient">Why Now?</span></h2>
+
+                <div class="grid" style="grid-template-columns: repeat(4, 1fr); gap: 2rem;">
+                    <!-- 1. Survival -->
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+                        <ion-icon name="warning-outline" style="font-size: 3rem; color: #ff4757;"></ion-icon>
+                        <h3 style="font-size: 1.2rem;">Survival</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Current farming cannot feed 10 billion
+                            people. We need an upgrade.</p>
+                    </div>
+
+                    <!-- 2. Restoration -->
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+                        <ion-icon name="rose-outline" style="font-size: 3rem; color: #2ed573;"></ion-icon>
+                        <h3 style="font-size: 1.2rem;">Restoration</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">We must heal the soil from decades of
+                            chemical abuse.</p>
+                    </div>
+
+                    <!-- 3. Equity -->
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+                        <ion-icon name="scale-outline" style="font-size: 3rem; color: #1e90ff;"></ion-icon>
+                        <h3 style="font-size: 1.2rem;">Equity</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Food technology should belong to the
+                            people, not corporations.</p>
+                    </div>
+
+                    <!-- 4. Legacy -->
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+                        <ion-icon name="infinite-outline" style="font-size: 3rem; color: #a55eea;"></ion-icon>
+                        <h3 style="font-size: 1.2rem;">Legacy</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Leaving a self-sustaining planet for the
+                            next generation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+```
