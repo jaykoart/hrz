@@ -1,5 +1,5 @@
 /**
- * Horizon VPN - Internationalization (i18n) Library
+ * HQMX VPN - Internationalization (i18n) Library
  * Supports 12 languages with JSON-based translations
  * 
  * Usage:
@@ -8,7 +8,7 @@
  * 3. Translations are auto-applied based on stored/detected language
  */
 
-const HorizonI18n = (function () {
+const HQMXI18n = (function () {
     'use strict';
 
     // Supported languages
@@ -28,7 +28,7 @@ const HorizonI18n = (function () {
     };
 
     const DEFAULT_LANGUAGE = 'en';
-    const STORAGE_KEY = 'horizon_language';
+    const STORAGE_KEY = 'hqmx_language';
 
     let translations = {};
     let currentLang = DEFAULT_LANGUAGE;
@@ -144,11 +144,11 @@ const HorizonI18n = (function () {
      */
     function createDropdown() {
         // Remove existing dropdown if any
-        const existing = document.getElementById('horizon-lang-dropdown');
+        const existing = document.getElementById('hqmx-lang-dropdown');
         if (existing) existing.remove();
 
         const dropdown = document.createElement('div');
-        dropdown.id = 'horizon-lang-dropdown';
+        dropdown.id = 'hqmx-lang-dropdown';
         dropdown.className = 'lang-dropdown glass';
         dropdown.innerHTML = Object.entries(SUPPORTED_LANGUAGES).map(([code, lang]) => `
             <button class="lang-option ${code === currentLang ? 'active' : ''}" data-lang="${code}">
@@ -174,7 +174,7 @@ const HorizonI18n = (function () {
      * Update dropdown selection indicator
      */
     function updateDropdownSelection() {
-        const dropdown = document.getElementById('horizon-lang-dropdown');
+        const dropdown = document.getElementById('hqmx-lang-dropdown');
         if (!dropdown) return;
 
         dropdown.querySelectorAll('.lang-option').forEach(btn => {
@@ -187,7 +187,7 @@ const HorizonI18n = (function () {
      * Show language dropdown
      */
     function showDropdown() {
-        let dropdown = document.getElementById('horizon-lang-dropdown');
+        let dropdown = document.getElementById('hqmx-lang-dropdown');
         if (!dropdown) {
             dropdown = createDropdown();
             const langBtn = document.getElementById('lang-btn');
@@ -206,7 +206,7 @@ const HorizonI18n = (function () {
      * Hide language dropdown
      */
     function hideDropdown() {
-        const dropdown = document.getElementById('horizon-lang-dropdown');
+        const dropdown = document.getElementById('hqmx-lang-dropdown');
         if (dropdown) {
             dropdown.classList.remove('visible');
             dropdownVisible = false;
@@ -252,7 +252,7 @@ const HorizonI18n = (function () {
 
         // Close dropdown when clicking outside
         document.addEventListener('click', (e) => {
-            if (dropdownVisible && !e.target.closest('#horizon-lang-dropdown')) {
+            if (dropdownVisible && !e.target.closest('#hqmx-lang-dropdown')) {
                 hideDropdown();
             }
         });
@@ -277,7 +277,7 @@ const HorizonI18n = (function () {
 
 // Auto-initialize when DOM is ready
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', HorizonI18n.init);
+    document.addEventListener('DOMContentLoaded', HQMXI18n.init);
 } else {
-    HorizonI18n.init();
+    HQMXI18n.init();
 }

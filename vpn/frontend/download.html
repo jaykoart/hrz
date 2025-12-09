@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="download.title">Download HQMX VPN | Join the Mesh</title>
-    <link rel="stylesheet" href="style.css?v=2.0.1">
+    <link rel="stylesheet" href="style.css?v=2.2.1">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <style>
@@ -45,7 +45,7 @@
             width: 80px;
             height: 80px;
             margin: 0 auto 1.5rem;
-            background: rgba(255, 255, 255, 0.05);
+            background: var(--glass-bg-dynamic);
             border-radius: 20px;
             display: flex;
             align-items: center;
@@ -55,7 +55,7 @@
 
         .platform-card:hover .icon-wrapper {
             transform: scale(1.1);
-            background: rgba(255, 255, 255, 0.08);
+            background: var(--glass-bg-dynamic);
         }
 
         .platform-card ion-icon {
@@ -79,9 +79,9 @@
             gap: 0.5rem;
             padding: 0.8rem 2rem;
             border-radius: 100px;
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            color: #fff;
+            background: var(--glass-bg-dynamic);
+            border: 1px solid var(--glass-border-dynamic);
+            color: var(--text-dynamic);
             text-decoration: none;
             font-weight: 500;
             transition: all 0.3s ease;
@@ -152,7 +152,7 @@
         }
 
         .info-item h4 {
-            color: #fff;
+            color: var(--text-dynamic);
             margin-bottom: 0.5rem;
         }
 
@@ -182,6 +182,7 @@
                 <a href="vpn.html" data-i18n="nav.vpn">VPN</a>
                 <a href="download.html" class="active" data-i18n="nav.download">Download</a>
                 <a href="cloud.html" data-i18n="nav.cloud">Cloud</a>
+                <a href="https://hqmx.net/webtools.html" data-i18n="nav.tools">Tools</a>
             </nav>
             <div class="nav-utils">
                 <button class="btn-icon" id="lang-btn" title="Language">
@@ -201,7 +202,7 @@
                 v0.1.0 Beta
             </span>
             <h1 style="font-size: 3.5rem; margin-bottom: 1rem;" data-i18n="download.hero.title">Download <span
-                    class="text-gradient">Horizon</span></h1>
+                    class="text-gradient">HQMX</span></h1>
             <p class="lead" style="margin: 0 auto 2rem; max-width: 600px;" data-i18n="download.hero.subtitle">
                 Join the decentralized privacy network. Your device becomes a node in the global mesh, protecting
                 millions while earning rewards.
@@ -239,7 +240,7 @@
             <!-- macOS -->
             <div class="glass glass-card platform-card coming-soon" data-i18n-after="download.coming_soon">
                 <div class="icon-wrapper">
-                    <ion-icon name="logo-apple" style="color: #fff;"></ion-icon>
+                    <ion-icon name="logo-apple" style="color: var(--text-dynamic);"></ion-icon>
                 </div>
                 <h3 data-i18n="download.desktop.macos">macOS</h3>
                 <p class="version" data-i18n="download.desktop.macos_desc">Ventura or later (Apple Silicon)</p>
@@ -335,16 +336,16 @@
 
         <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.8rem;">
             <p style="margin-bottom: 1rem;">
-                <a href="terms.html" style="color: var(--text-main); text-decoration: none; margin: 0 10px;"
+                <a href="terms.html" style="color: var(--text-dynamic); text-decoration: none; margin: 0 10px;"
                     data-i18n="plant_ai.footer.terms">Terms</a>
-                <a href="privacy.html" style="color: var(--text-main); text-decoration: none; margin: 0 10px;"
+                <a href="privacy.html" style="color: var(--text-dynamic); text-decoration: none; margin: 0 10px;"
                     data-i18n="plant_ai.footer.privacy">Privacy</a>
             </p>
             <p data-i18n="plant_ai.footer.copyright">&copy; 2025 HQMX VPN Project. Open Source & Decentralized.</p>
         </footer>
     </div>
     <script src="i18n.js"></script>
-    <script src="script.js?v=2.0.1"></script>
+    <script src="script.js?v=2.2.1"></script>
 </body>
 
 </html>

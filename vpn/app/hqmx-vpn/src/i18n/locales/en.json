@@ -1,0 +1,69 @@
+{
+    "common": {
+        "loading": "Loading...",
+        "connect": "Connect",
+        "disconnect": "Disconnect",
+        "connecting": "Connecting...",
+        "disconnecting": "Disconnecting...",
+        "protected": "Protected",
+        "unprotected": "Unprotected",
+        "error": "Error"
+    },
+    "nav": {
+        "connect": "Connect",
+        "stats": "Stats",
+        "settings": "Settings"
+    },
+    "login": {
+        "title": "Welcome Back",
+        "subtitle": "Secure your digital life with HQMX",
+        "email_placeholder": "Enter your email",
+        "password_placeholder": "Password",
+        "sign_in": "Sign In",
+        "continue_with_google": "Continue with Google",
+        "new_account": "Don't have an account?",
+        "sign_up": "Sign up"
+    },
+    "node": {
+        "select_location": "Select Location",
+        "node_mode_active": "Node Mode Active",
+        "earning_credits": "Earning credits by sharing bandwidth",
+        "ping": "ms"
+    },
+    "stats": {
+        "title": "Network Stats",
+        "contribution": "Your Contribution",
+        "download": "Download",
+        "upload": "Upload",
+        "total_shared": "Total Shared",
+        "active_time": "Active Time"
+    },
+    "settings": {
+        "title": "Settings",
+        "general": {
+            "title": "General",
+            "auto_connect": "Auto-connect on launch",
+            "kill_switch": "Kill Switch"
+        },
+        "appearance": {
+            "title": "Appearance",
+            "theme": "Theme",
+            "dark": "Dark",
+            "light": "Light",
+            "system": "System"
+        },
+        "language": {
+            "title": "Language"
+        },
+        "contribution": {
+            "title": "Node Contribution",
+            "enable_mode": "Enable Node Mode",
+            "enable_desc": "Share bandwidth for free use",
+            "wifi_only": "Wi-Fi Only"
+        },
+        "account": {
+            "logout": "Log Out",
+            "version": "HQMX VPN v0.1.0"
+        }
+    }
+}

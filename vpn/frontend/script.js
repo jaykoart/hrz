@@ -1,84 +1,71 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Horizon VPN Frontend Loaded');
+    console.log('HQMX VPN Frontend Loaded');
 
     // ============================================
     // Theme Toggle (Dark/Light Mode)
     // ============================================
-    const THEME_STORAGE_KEY = 'horizon_theme_mode';
-    let currentTheme = 'dark';
+    // ============================================
+    // Theme Toggle (Dark/Light Mode)
+    // ============================================
+    const THEME_STORAGE_KEY = 'hqmx_theme_mode';
+
+    // Check system preference or localStorage
+    const getPreferredTheme = () => {
+        const storedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+        if (storedTheme) {
+            return storedTheme;
+        }
+        return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    };
+
+    let currentTheme = getPreferredTheme();
 
     function applyTheme(mode) {
         const root = document.documentElement;
+        root.setAttribute('data-theme', mode);
 
-        if (mode === 'light') {
-            // 라이트 모드 (6% 디밍)
-            root.style.setProperty('--bg-dynamic', '#f0f1f3');
-            root.style.setProperty('--text-dynamic', '#1a1a2e');
-            root.style.setProperty('--text-muted-dynamic', '#4a5568');
-            root.style.setProperty('--glass-bg-dynamic', 'rgba(0, 0, 0, 0.05)');
-            root.style.setProperty('--glass-border-dynamic', 'rgba(0, 0, 0, 0.12)');
-        } else {
-            // 다크 모드
-            root.style.setProperty('--bg-dynamic', '#050510');
-            root.style.setProperty('--text-dynamic', '#ffffff');
-            root.style.setProperty('--text-muted-dynamic', '#b8c5d6');
-            root.style.setProperty('--glass-bg-dynamic', 'rgba(255, 255, 255, 0.05)');
-            root.style.setProperty('--glass-border-dynamic', 'rgba(255, 255, 255, 0.1)');
-        }
-
-        root.dataset.themeMode = mode;
         currentTheme = mode;
+        localStorage.setItem(THEME_STORAGE_KEY, mode);
+
         updateLogo(mode);
+        updateThemeButton(mode);
     }
 
     function updateLogo(mode) {
         const logoImg = document.querySelector('.logo-img');
         if (logoImg) {
-            if (mode === 'light') {
-                logoImg.src = 'assets/logo-hqmx-light.svg';
-            } else {
-                logoImg.src = 'assets/logo-hqmx-dark.svg';
-            }
+            // mode가 'light'이면 light 로고, 아니면 dark 로고
+            logoImg.src = mode === 'light' ? 'assets/logo-hqmx-light.svg' : 'assets/logo-hqmx-dark.svg';
         }
     }
 
-    function updateThemeButton() {
+    function updateThemeButton(mode) {
         const btn = document.getElementById('theme-btn');
         if (!btn) return;
         const icon = btn.querySelector('ion-icon');
         if (!icon) return;
 
-        if (currentTheme === 'light') {
-            icon.setAttribute('name', 'sunny');
-            btn.title = 'Light Mode - Click for Dark';
+        if (mode === 'light') {
+            icon.setAttribute('name', 'sunny-outline');
+            btn.title = 'Switch to Dark Mode';
         } else {
-            icon.setAttribute('name', 'moon');
-            btn.title = 'Dark Mode - Click for Light';
+            icon.setAttribute('name', 'moon-outline');
+            btn.title = 'Switch to Light Mode';
         }
     }
 
     function toggleTheme() {
-        const newMode = currentTheme === 'dark' ? 'light' : 'dark';
-        currentTheme = newMode;
-        localStorage.setItem(THEME_STORAGE_KEY, newMode);
-        applyTheme(newMode);
-        updateThemeButton();
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        applyTheme(newTheme);
     }
 
     // Initialize theme
-    const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
-    if (savedTheme && ['light', 'dark'].includes(savedTheme)) {
-        currentTheme = savedTheme;
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-        currentTheme = 'light';
-    }
     applyTheme(currentTheme);
 
     const themeBtn = document.getElementById('theme-btn');
     if (themeBtn) {
         themeBtn.addEventListener('click', toggleTheme);
     }
-    updateThemeButton();
 
     // ============================================
     // Download Button
@@ -88,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (downloadBtn) {
         downloadBtn.addEventListener('click', (e) => {
             e.preventDefault();
-            alert('Horizon VPN Beta is coming soon!\n\nWe are currently building the WireGuard-Go core.');
+            alert('HQMX VPN Beta is coming soon!\n\nWe are currently building the WireGuard-Go core.');
         });
     }
 

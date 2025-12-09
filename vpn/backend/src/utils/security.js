@@ -5,7 +5,7 @@
 
 const jwt = require('jsonwebtoken');
 
-const JWT_SECRET = process.env.JWT_SECRET || 'horizon-vpn-dev-secret-change-in-production';
+const JWT_SECRET = process.env.JWT_SECRET || 'hqmx-vpn-dev-secret-change-in-production';
 const TOKEN_EXPIRY = '7d';
 
 /**
@@ -90,7 +90,7 @@ function isValidWireGuardKey(key) {
  */
 function generateApiKey() {
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    let result = 'hvpn_';
+    let result = 'hqmx_';
     for (let i = 0; i < 32; i++) {
         result += chars.charAt(Math.floor(Math.random() * chars.length));
     }

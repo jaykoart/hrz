@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="cloud.title">HQMX Cloud | The Future of Infrastructure</title>
-    <link rel="stylesheet" href="style.css?v=2.0.1">
+    <link rel="stylesheet" href="style.css?v=2.2.1">
     <!-- Ionicons for clean iconography -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -20,7 +20,7 @@
         .phase-card {
             position: relative;
             padding-left: 2rem;
-            border-left: 2px solid rgba(255, 255, 255, 0.1);
+            border-left: 2px solid var(--glass-border-dynamic);
             transition: all 0.3s ease;
         }
 
@@ -67,6 +67,7 @@
                 <a href="vpn.html" data-i18n="nav.vpn">VPN</a>
                 <a href="download.html" data-i18n="nav.download">Download</a>
                 <a href="cloud.html" class="active" data-i18n="nav.cloud">Cloud</a>
+                <a href="https://hqmx.net/webtools.html" data-i18n="nav.tools">Tools</a>
             </nav>
             <div class="nav-utils">
                 <button class="btn-icon" id="lang-btn" title="Language">
@@ -99,7 +100,7 @@
                     <a href="#vision" class="btn btn-primary" style="padding: 1rem 2.5rem;"
                         data-i18n="cloud.hero.cta1">Explore Our Values</a>
                     <a href="#specs" class="btn"
-                        style="background: rgba(255,255,255,0.05); border: 1px solid var(--primary-accent); box-shadow: 0 0 10px var(--primary-accent); color: #fff;"
+                        style="background: var(--glass-bg-dynamic); border: 1px solid var(--primary-accent); box-shadow: 0 0 10px var(--primary-accent); color: var(--text-dynamic);"
                         data-i18n="cloud.hero.cta2">Technical
                         Specs</a>
                 </div>
@@ -121,7 +122,7 @@
                 <div style="font-family: monospace; font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
                     <span data-i18n="cloud.hero.status1">> Initializing Region: KR-CORE-1</span><br>
                     <span data-i18n="cloud.hero.status2">> Node Count: <span
-                            style="color: #fff;">Active</span></span><br>
+                            style="color: var(--text-dynamic);">Active</span></span><br>
                     <span data-i18n="cloud.hero.status3">> Hybrid Uplink: <span style="color: #4facfe;">AWS Direct
                             Connect</span></span><br>
                     <span data-i18n="cloud.hero.status4">> Security: <span
@@ -148,7 +149,7 @@
                 <div class="glass glass-card" style="padding: 3rem;">
                     <ion-icon name="lock-closed-outline"
                         style="font-size: 3rem; color: var(--primary-accent); margin-bottom: 1.5rem;"></ion-icon>
-                    <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: #fff;"
+                    <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: var(--text-dynamic);"
                         data-i18n="cloud.values.card1_title">Infrastructure Sovereignty</h3>
                     <p style="color: var(--text-muted); line-height: 1.6;" data-i18n="cloud.values.card1_desc">
                         True control starts with the hardware. We own our physical servers. By maintaining our own
@@ -161,7 +162,7 @@
                 <div class="glass glass-card" style="padding: 3rem;">
                     <ion-icon name="flash-outline"
                         style="font-size: 3rem; color: #4facfe; margin-bottom: 1.5rem;"></ion-icon>
-                    <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: #fff;"
+                    <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: var(--text-dynamic);"
                         data-i18n="cloud.values.card2_title">Hybrid Performance</h3>
                     <p style="color: var(--text-muted); line-height: 1.6;" data-i18n="cloud.values.card2_desc">
                         We combine the raw power and security of on-premise hardware with the elasticity of AWS. This
@@ -174,7 +175,7 @@
                 <div class="glass glass-card" style="padding: 3rem;">
                     <ion-icon name="globe-outline"
                         style="font-size: 3rem; color: var(--secondary-accent); margin-bottom: 1.5rem;"></ion-icon>
-                    <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: #fff;"
+                    <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: var(--text-dynamic);"
                         data-i18n="cloud.values.card3_title">Global Vision</h3>
                     <p style="color: var(--text-muted); line-height: 1.6;" data-i18n="cloud.values.card3_desc">
                         Our roadmap is borderless. From our initial physical footprint to a strategic global
@@ -201,7 +202,7 @@
                             style="color: var(--primary-accent); font-weight: 600; letter-spacing: 1px; text-transform: uppercase;"
                             data-i18n="cloud.roadmap.phase1_tag">Phase
                             1: The Foundation</span>
-                        <h3 style="font-size: 2rem; margin: 0.5rem 0 1rem; color: #fff;"
+                        <h3 style="font-size: 2rem; margin: 0.5rem 0 1rem; color: var(--text-dynamic);"
                             data-i18n="cloud.roadmap.phase1_title">Physical Core & MVP</h3>
                         <p style="color: var(--text-muted); margin-bottom: 1.5rem;"
                             data-i18n="cloud.roadmap.phase1_desc">
@@ -210,7 +211,8 @@
                         </p>
                         <div class="tech-grid" style="margin-top: 0;">
                             <div>
-                                <h4 style="color: #fff; margin-bottom: 0.5rem;"><ion-icon name="server-outline"
+                                <h4 style="color: var(--text-dynamic); margin-bottom: 0.5rem;"><ion-icon
+                                        name="server-outline"
                                         style="color: var(--primary-accent); vertical-align: middle;"></ion-icon>
                                     <span data-i18n="cloud.roadmap.phase1_item1_title">Physical Asset</span>
                                 </h4>
@@ -219,7 +221,8 @@
                                 </p>
                             </div>
                             <div>
-                                <h4 style="color: #fff; margin-bottom: 0.5rem;"><ion-icon name="cube-outline"
+                                <h4 style="color: var(--text-dynamic); margin-bottom: 0.5rem;"><ion-icon
+                                        name="cube-outline"
                                         style="color: var(--primary-accent); vertical-align: middle;"></ion-icon>
                                     <span data-i18n="cloud.roadmap.phase1_item2_title">Service Launch</span>
                                 </h4>
@@ -237,7 +240,7 @@
                         <span style="color: #4facfe; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;"
                             data-i18n="cloud.roadmap.phase2_tag">Phase
                             2: Use Case Expansion</span>
-                        <h3 style="font-size: 2rem; margin: 0.5rem 0 1rem; color: #fff;"
+                        <h3 style="font-size: 2rem; margin: 0.5rem 0 1rem; color: var(--text-dynamic);"
                             data-i18n="cloud.roadmap.phase2_title">Platform Scaling</h3>
                         <p style="color: var(--text-muted); margin-bottom: 1.5rem;"
                             data-i18n="cloud.roadmap.phase2_desc">
@@ -265,7 +268,7 @@
                             style="color: var(--secondary-accent); font-weight: 600; letter-spacing: 1px; text-transform: uppercase;"
                             data-i18n="cloud.roadmap.phase3_tag">Phase
                             3: Global Dominance</span>
-                        <h3 style="font-size: 2rem; margin: 0.5rem 0 1rem; color: #fff;"
+                        <h3 style="font-size: 2rem; margin: 0.5rem 0 1rem; color: var(--text-dynamic);"
                             data-i18n="cloud.roadmap.phase3_title">Dubai Global HQ</h3>
                         <p style="color: var(--text-muted); margin-bottom: 1.5rem;"
                             data-i18n="cloud.roadmap.phase3_desc">
@@ -273,15 +276,15 @@
                             a hyper-efficient legal and financial structure for global operations.
                         </p>
                         <div class="tech-grid" style="margin-top: 0;">
-                            <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 10px;">
-                                <h4 style="color: #fff; margin-bottom: 0.5rem;"
+                            <div style="background: var(--glass-bg-dynamic); padding: 1.5rem; border-radius: 10px;">
+                                <h4 style="color: var(--text-dynamic); margin-bottom: 0.5rem;"
                                     data-i18n="cloud.roadmap.phase3_item1_title">Global IPO Goal</h4>
                                 <p style="font-size: 0.9rem; color: var(--text-muted);"
                                     data-i18n="cloud.roadmap.phase3_item1_desc">Targeting global capital
                                     markets.</p>
                             </div>
-                            <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 10px;">
-                                <h4 style="color: #fff; margin-bottom: 0.5rem;"
+                            <div style="background: var(--glass-bg-dynamic); padding: 1.5rem; border-radius: 10px;">
+                                <h4 style="color: var(--text-dynamic); margin-bottom: 0.5rem;"
                                     data-i18n="cloud.roadmap.phase3_item2_title">Strategic Hub</h4>
                                 <p style="font-size: 0.9rem; color: var(--text-muted);"
                                     data-i18n="cloud.roadmap.phase3_item2_desc">Connecting East and West
@@ -301,38 +304,44 @@
             <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 4rem;">
                 <!-- Hardware Specs -->
                 <div>
-                    <h3 style="margin-bottom: 2rem; color: #fff; display: flex; align-items: center; gap: 10px;">
+                    <h3
+                        style="margin-bottom: 2rem; color: var(--text-dynamic); display: flex; align-items: center; gap: 10px;">
                         <ion-icon name="hardware-chip-outline"
                             style="font-size: 2rem; color: var(--primary-accent);"></ion-icon>
                         <span data-i18n="cloud.specs.hardware_title">The Iron: Dell PowerEdge R730xd</span>
                     </h3>
                     <div class="glass glass-card" style="padding: 2rem;">
                         <div class="spec-item">
-                            <span style="color: #fff;" data-i18n="cloud.specs.hw_spec1_name">CPU Architecture</span>
+                            <span style="color: var(--text-dynamic);" data-i18n="cloud.specs.hw_spec1_name">CPU
+                                Architecture</span>
                             <span style="color: var(--text-muted); font-family: monospace;"
                                 data-i18n="cloud.specs.hw_spec1_val">Dual Intel Xeon E5-2600
                                 v4</span>
                         </div>
                         <div class="spec-item">
-                            <span style="color: #fff;" data-i18n="cloud.specs.hw_spec2_name">Memory Capacity</span>
+                            <span style="color: var(--text-dynamic);" data-i18n="cloud.specs.hw_spec2_name">Memory
+                                Capacity</span>
                             <span style="color: var(--text-muted); font-family: monospace;"
                                 data-i18n="cloud.specs.hw_spec2_val">DDR4 ECC (Expandable to
                                 768GB)</span>
                         </div>
                         <div class="spec-item">
-                            <span style="color: #fff;" data-i18n="cloud.specs.hw_spec3_name">Storage Fabric</span>
+                            <span style="color: var(--text-dynamic);" data-i18n="cloud.specs.hw_spec3_name">Storage
+                                Fabric</span>
                             <span style="color: var(--text-muted); font-family: monospace;"
                                 data-i18n="cloud.specs.hw_spec3_val">24-Bay NVMe/SAS Hybrid
                                 Array</span>
                         </div>
                         <div class="spec-item">
-                            <span style="color: #fff;" data-i18n="cloud.specs.hw_spec4_name">File System</span>
+                            <span style="color: var(--text-dynamic);" data-i18n="cloud.specs.hw_spec4_name">File
+                                System</span>
                             <span style="color: var(--text-muted); font-family: monospace;"
                                 data-i18n="cloud.specs.hw_spec4_val">ZFS (Zettabyte File
                                 System)</span>
                         </div>
                         <div class="spec-item" style="border-bottom: none;">
-                            <span style="color: #fff;" data-i18n="cloud.specs.hw_spec5_name">Raid Controller</span>
+                            <span style="color: var(--text-dynamic);" data-i18n="cloud.specs.hw_spec5_name">Raid
+                                Controller</span>
                             <span style="color: var(--text-muted); font-family: monospace;"
                                 data-i18n="cloud.specs.hw_spec5_val">PERC H730P (IT Mode
                                 Flashed)</span>
@@ -342,37 +351,43 @@
 
                 <!-- Software Stack -->
                 <div>
-                    <h3 style="margin-bottom: 2rem; color: #fff; display: flex; align-items: center; gap: 10px;">
+                    <h3
+                        style="margin-bottom: 2rem; color: var(--text-dynamic); display: flex; align-items: center; gap: 10px;">
                         <ion-icon name="code-working-outline" style="font-size: 2rem; color: #4facfe;"></ion-icon>
                         <span data-i18n="cloud.specs.software_title">The Brain: Hybrid Cloud Stack</span>
                     </h3>
                     <div class="glass glass-card" style="padding: 2rem;">
                         <div class="spec-item">
-                            <span style="color: #fff;" data-i18n="cloud.specs.sw_spec1_name">Hypervisor</span>
+                            <span style="color: var(--text-dynamic);"
+                                data-i18n="cloud.specs.sw_spec1_name">Hypervisor</span>
                             <span style="color: var(--text-muted); font-family: monospace;"
                                 data-i18n="cloud.specs.sw_spec1_val">Proxmox VE 8.x (Debian
                                 Based)</span>
                         </div>
                         <div class="spec-item">
-                            <span style="color: #fff;" data-i18n="cloud.specs.sw_spec2_name">Cloud Bridge</span>
+                            <span style="color: var(--text-dynamic);" data-i18n="cloud.specs.sw_spec2_name">Cloud
+                                Bridge</span>
                             <span style="color: var(--text-muted); font-family: monospace;"
                                 data-i18n="cloud.specs.sw_spec2_val">AWS Site-to-Site VPN /
                                 Direct Connect</span>
                         </div>
                         <div class="spec-item">
-                            <span style="color: #fff;" data-i18n="cloud.specs.sw_spec3_name">Containerization</span>
+                            <span style="color: var(--text-dynamic);"
+                                data-i18n="cloud.specs.sw_spec3_name">Containerization</span>
                             <span style="color: var(--text-muted); font-family: monospace;"
                                 data-i18n="cloud.specs.sw_spec3_val">Docker & LXC Native
                                 Support</span>
                         </div>
                         <div class="spec-item">
-                            <span style="color: #fff;" data-i18n="cloud.specs.sw_spec4_name">Security Core</span>
+                            <span style="color: var(--text-dynamic);" data-i18n="cloud.specs.sw_spec4_name">Security
+                                Core</span>
                             <span style="color: var(--text-muted); font-family: monospace;"
                                 data-i18n="cloud.specs.sw_spec4_val">OPNsense + Snort
                                 IDS/IPS</span>
                         </div>
                         <div class="spec-item" style="border-bottom: none;">
-                            <span style="color: #fff;" data-i18n="cloud.specs.sw_spec5_name">Monitoring</span>
+                            <span style="color: var(--text-dynamic);"
+                                data-i18n="cloud.specs.sw_spec5_name">Monitoring</span>
                             <span style="color: var(--text-muted); font-family: monospace;"
                                 data-i18n="cloud.specs.sw_spec5_val">Zabbix + Grafana
                                 Dashboards</span>
@@ -385,16 +400,17 @@
         <!-- Infrastructure Diagram (CSS representation) -->
         <section style="padding: 4rem 0;">
             <div class="glass glass-card" style="padding: 4rem; text-align: center;">
-                <h3 style="margin-bottom: 3rem; color: #fff;" data-i18n="cloud.diagram.title">Hybrid Cloud
+                <h3 style="margin-bottom: 3rem; color: var(--text-dynamic);" data-i18n="cloud.diagram.title">Hybrid
+                    Cloud
                     Architecture</h3>
                 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap;">
 
                     <!-- On-Premise -->
                     <div
-                        style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 15px; border: 1px solid var(--primary-accent);">
+                        style="background: var(--glass-bg-dynamic); padding: 2rem; border-radius: 15px; border: 1px solid var(--primary-accent);">
                         <ion-icon name="server"
                             style="font-size: 3rem; color: var(--primary-accent); margin-bottom: 1rem;"></ion-icon>
-                        <h4 style="color: #fff;" data-i18n="cloud.diagram.box1_title">Secure Core</h4>
+                        <h4 style="color: var(--text-dynamic);" data-i18n="cloud.diagram.box1_title">Secure Core</h4>
                         <p style="font-size: 0.8rem; color: var(--text-muted);" data-i18n="cloud.diagram.box1_desc">
                             Sensitive Data & High IOPS</p>
                     </div>
@@ -412,10 +428,10 @@
 
                     <!-- Public Cloud -->
                     <div
-                        style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 15px; border: 1px solid #FF9900;">
+                        style="background: var(--glass-bg-dynamic); padding: 2rem; border-radius: 15px; border: 1px solid #FF9900;">
                         <ion-icon name="cloudy"
                             style="font-size: 3rem; color: #FF9900; margin-bottom: 1rem;"></ion-icon>
-                        <h4 style="color: #fff;" data-i18n="cloud.diagram.box2_title">AWS Burst</h4>
+                        <h4 style="color: var(--text-dynamic);" data-i18n="cloud.diagram.box2_title">AWS Burst</h4>
                         <p style="font-size: 0.8rem; color: var(--text-muted);" data-i18n="cloud.diagram.box2_desc">
                             Global CDN & Elastic Scaling</p>
                     </div>
@@ -432,16 +448,16 @@
             <p style="color: var(--text-muted); margin-bottom: 2rem;" data-i18n="cloud.cta.desc">Join the pilot program
                 for HQMX Cloud Phase 1.
             </p>
-            <a href="mailto:invest@horizon-vpn.io" class="btn btn-primary"
-                style="font-size: 1.2rem; padding: 1.2rem 3rem;" data-i18n="cloud.cta.button">Contact Investor
+            <a href="mailto:invest@hqmx.net" class="btn btn-primary" style="font-size: 1.2rem; padding: 1.2rem 3rem;"
+                data-i18n="cloud.cta.button">Contact Investor
                 Relations</a>
         </div>
 
         <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.8rem;">
             <p style="margin-bottom: 1rem;">
-                <a href="terms.html" style="color: var(--text-main); text-decoration: none; margin: 0 10px;"
+                <a href="terms.html" style="color: var(--text-dynamic); text-decoration: none; margin: 0 10px;"
                     data-i18n="plant_ai.footer.terms">Terms</a>
-                <a href="privacy.html" style="color: var(--text-main); text-decoration: none; margin: 0 10px;"
+                <a href="privacy.html" style="color: var(--text-dynamic); text-decoration: none; margin: 0 10px;"
                     data-i18n="plant_ai.footer.privacy">Privacy</a>
             </p>
             <p data-i18n="plant_ai.footer.copyright">&copy; 2025 HQMX VPN Project. Open Source & Decentralized.</p>
@@ -449,7 +465,7 @@
     </div>
 
     <script src="i18n.js"></script>
-    <script src="script.js?v=2.0.1"></script>
+    <script src="script.js?v=2.2.1"></script>
 </body>
 
 </html>

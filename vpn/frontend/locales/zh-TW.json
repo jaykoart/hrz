@@ -8,13 +8,13 @@
         "hero": {
             "badge": "Plant AI 計劃",
             "title": "捍衛<br>您的隱私，<br><gradient>拯救我們的星球。</gradient>",
-            "subtitle": "Horizon VPN 不僅僅是一個工具。透過分享您的閒置頻寬，您正在為解決全球糧食危機的引擎 —— <strong>Plant AI</strong> 提供訓練動力。",
+            "subtitle": "HQMX VPN 不僅僅是一個工具。透過分享您的閒置頻寬，您正在為解決全球糧食危機的引擎 —— <strong>Plant AI</strong> 提供訓練動力。",
             "cta": "加入使命",
             "version": "v0.1.0",
             "tagline": "永久免費 • 地球至上"
         },
         "features": {
-            "title": "為何選擇 <gradient>Horizon?</gradient>",
+            "title": "為何選擇 <gradient>HQMX?</gradient>",
             "subtitle": "您的伺服器每運行一秒，都在為保護糧食的未來貢獻數據。",
             "card1": {
                 "title": "WireGuard® 加密",
@@ -46,7 +46,7 @@
         },
         "cloud_section": {
             "title": "主權<gradient>基礎設施</gradient>",
-            "desc": "Horizon Cloud 重新定義了去中心化基礎設施。建立在<strong>企業級硬體</strong>和<strong>混合雲架構</strong>之上，我們確保數據主權和無鎖定的無限擴展性。",
+            "desc": "HQMX Cloud 重新定義了去中心化基礎設施。建立在<strong>企業級硬體</strong>和<strong>混合雲架構</strong>之上，我們確保數據主權和無鎖定的無限擴展性。",
             "pill1": "裸金屬核心",
             "pill2": "高頻 VPS",
             "pill3": "全球邊緣",
@@ -87,7 +87,7 @@
             "action_desc": "自主系統接管一切。高溫會觸發遮陽部署；乾燥的土壤會啟動精準噴灌器。",
             "problem_title": "<gradient>未知資料</gradient>問題。",
             "problem_desc1": "要建構這個系統，我們需要大型科技公司所沒有的資料。他們有維基百科；我們需要的是<strong>土壤報告</strong>、<strong>收成記錄</strong>和<strong>當地氣候日誌</strong>。",
-            "problem_desc2": "這就是<strong>Horizon VPN</strong>發揮作用的地方。您的節點從數千個本地來源收集這些「利基資料」，為我們量身訂製的人工智慧創建「綠色突觸」。"
+            "problem_desc2": "這就是<strong>HQMX VPN</strong>發揮作用的地方。您的節點從數千個本地來源收集這些「利基資料」，為我們量身訂製的人工智慧創建「綠色突觸」。"
         },
         "mission": {
             "title": "推動<gradient>全球變革</gradient>",
@@ -120,8 +120,8 @@
         },
         "distributed": {
             "title": "由<gradient>分散式智慧</gradient>驅動",
-            "node_title": "地平線節點",
-            "node_desc": "每個執行 Horizon VPN 的使用者都成為一個<strong>微型資料中心</strong>。我們不建立龐大、耗能的伺服器農場，而是利用數百萬設備的閒置計算能力。",
+            "node_title": "HQMX節點",
+            "node_desc": "每個執行 HQMX VPN 的使用者都成為一個<strong>微型資料中心</strong>。我們不建立龐大、耗能的伺服器農場，而是利用數百萬設備的閒置計算能力。",
             "node_item1": "<strong>邊緣運算：</strong>資料在設備上本地處理。",
             "node_item2": "<strong>加密傳輸：</strong>所有貢獻都透過 WireGuard 隧道進行匿名化處理。",
             "learning_title": "聯邦學習",
@@ -147,7 +147,7 @@
         "faq": {
             "title": "常見問題",
             "q1": "這會減慢我的網速嗎？",
-            "a1": "不會。地平線節點創建了一個「輕量級後台進程」，只在您不進行流媒體或遊戲時使用閒置頻寬。",
+            "a1": "不會。HQMX節點創建了一個「輕量級後台進程」，只在您不進行流媒體或遊戲時使用閒置頻寬。",
             "q2": "我的個人資料安全嗎？",
             "a2": "絕對安全。我們只收集公共環境資料。您的個人文件、瀏覽歷史和身份都嚴格在限制範圍之外，節點軟體在技術上無法存取。"
         },
@@ -159,7 +159,7 @@
             "p2_title": "II. 解決方案：精準 vs. 猜測",
             "p2_content": "農業在歷史上一直是一場估計的遊戲。Plant AI透過引入<strong>超高精準度</strong>來改變這一模式。透過分析數千個資料點——從葉片氣孔導度到土壤微生物活動——我們可以優化每一滴水和每一毫克的養分。這不僅僅是「智慧農業」；這是<strong>計算農業</strong>。我們正在將生物學的不確定性轉化為數學的可預測性。",
             "p3_title": "III. 可擴展性：去中心化的優勢",
-            "p3_content": "一台中央集權的超級電腦可以管理幾家大型企業農場。但它無法管理生產全球70%糧食的數十億個小農戶。<strong style='color: var(--primary-accent);'>地平線節點</strong>彌合了這一差距。透過將計算負荷分配給數百萬台個人設備，我們創建了一個能夠同時處理從首爾的後院花園到烏克蘭的麥田資料的<strong>無限網狀網路</strong>。",
+            "p3_content": "一台中央集權的超級電腦可以管理幾家大型企業農場。但它無法管理生產全球70%糧食的數十億個小農戶。<strong style='color: var(--primary-accent);'>HQMX節點</strong>彌合了這一差距。透過將計算負荷分配給數百萬台個人設備，我們創建了一個能夠同時處理從首爾的後院花園到烏克蘭的麥田資料的<strong>無限網狀網路</strong>。",
             "p4_title": "IV. 結果：一個自我修復的地球",
             "p4_content": "Plant AI的最終目標是<strong>再生</strong>。透過最大限度地減少化學投入和優化生長周期，我們讓土壤得以恢復。我們設想未來，農業將充當碳匯而不是碳源，糧食安全由程式碼保障，每個人都可以透過簡單地保持電腦開機來為全球生存做出貢獻。"
         },
@@ -176,13 +176,13 @@
         },
         "cta": {
             "title": "成為解決方案的一部分",
-            "desc": "您運行的每一個地平線節點都有助於構建世界上最全面的農業人工智慧。您今天的閒置頻寬將成為明天的糧食安全。",
-            "button": "下載地平線節點"
+            "desc": "您運行的每一個HQMX節點都有助於構建世界上最全面的農業人工智慧。您今天的閒置頻寬將成為明天的糧食安全。",
+            "button": "下載HQMX節點"
         },
         "footer": {
             "terms": "條款",
             "privacy": "隱私權",
-            "copyright": "© 2025 Horizon VPN 專案。開源與去中心化。"
+            "copyright": "© 2025 HQMX VPN 專案。開源與去中心化。"
         }
     },
     "vpn": {
@@ -195,7 +195,7 @@
             "card1_title": "軍用級護盾",
             "card1_desc": "AES-256加密隧道確保您的資料對ISP、駭客甚至我們都不可見。我們遵守嚴格的<strong>無日誌政策</strong>。",
             "card2_title": "WireGuard®速度",
-            "card2_desc": "基於現代WireGuard協議構建，Horizon提供極快的速度和最小的延遲，非常適合流媒體和遊戲。",
+            "card2_desc": "基於現代WireGuard協議構建，HQMX提供極快的速度和最小的延遲，非常適合流媒體和遊戲。",
             "card3_title": "全球存取",
             "card3_desc": "繞過審查和地理封鎖。像本地人一樣從世界任何地方存取內容。"
         },
@@ -209,7 +209,7 @@
         },
         "terminal": {
             "title": "node-x7z-daemon — bash — 80x24",
-            "cmd1": "$ horizon-cli status --verbose",
+            "cmd1": "$ hqmx-cli status --verbose",
             "res1_1": "> 正在連接到網狀網路... ",
             "res1_2": "<span style=\"color:var(--primary-accent)\">[確定]</span>",
             "res1_3": "> 交握協議: Curve25519 ",
@@ -234,7 +234,7 @@
             "step3_desc": "商業合作夥伴支付網路基礎設施費用，使VPN永遠對您100%免費。"
         },
         "who": {
-            "title": "<gradient>Horizon</gradient>為誰而生？",
+            "title": "<gradient>HQMX</gradient>為誰而生？",
             "user1": "記者",
             "user1_desc": "繞過審查，從衝突地區安全地報導真相。",
             "user2": "遊戲玩家",
@@ -244,38 +244,38 @@
         },
         "faq": {
             "title": "常見<br><gradient>問題</gradient>",
-            "q1": "Horizon會看到我的瀏覽歷史嗎？",
+            "q1": "HQMX會看到我的瀏覽歷史嗎？",
             "a1": "<strong>絕不。</strong>我們嚴格執行零日誌政策。從技術上講，我們的節點無法檢查您個人VPN隧道內的加密流量。您的私人瀏覽行為將保持私密。",
             "q2": "它會減慢我的網速嗎？",
             "a2": "<strong>幾乎不會。</strong>後台進程是「資源感知」的。它僅在您的系統閒置時（例如，您離開電腦時）啟動，並嚴格限制頻寬使用，以確保您的流媒體或遊戲永遠不會中斷。",
             "q3": "它真的永遠免費嗎？",
             "a3": "<strong>是的。</strong>我們不需要您的訂閱費，因為我們的商業模式建立在B2B資料智慧之上，而不是B2C軟體銷售。只要您為網路做出貢獻，高級服務就屬於您。",
             "q4": "我的IP會被用於非法活動嗎？",
-            "a4": "<strong>不會。</strong>與其他P2P網路不同，Horizon將「商業代理」（企業使用）與您的住宅IP分開。我們對所有存取資料網路的商業夥伴都有嚴格的KYC（了解您的客戶）審查。"
+            "a4": "<strong>不會。</strong>與其他P2P網路不同，HQMX將「商業代理」（企業使用）與您的住宅IP分開。我們對所有存取資料網路的商業夥伴都有嚴格的KYC（了解您的客戶）審查。"
         },
         "transparency": {
             "header": "工程深度解析",
             "title": "透明度<br><gradient>報告</gradient>",
             "p1_title": "I. 純RAM基礎設施",
-            "p1_content": "傳統的VPN會將日誌寫入硬碟，這些硬碟可能會被查封或檢查。Horizon完全在<strong>純RAM伺服器</strong>上運行。這意味著一旦伺服器重新啟動——或者斷電——每一位元組的資料都會被立即清除。沒有可以從中恢復資料的實體磁碟。我們將您的瀏覽歷史視為我們拒絕儲存的「有毒資料」。",
+            "p1_content": "傳統的VPN會將日誌寫入硬碟，這些硬碟可能會被查封或檢查。HQMX完全在<strong>純RAM伺服器</strong>上運行。這意味著一旦伺服器重新啟動——或者斷電——每一位元組的資料都會被立即清除。沒有可以從中恢復資料的實體磁碟。我們將您的瀏覽歷史視為我們拒絕儲存的「有毒資料」。",
             "p2_title": "II. 「盲」中繼架構",
             "p2_content": "我們為初始交握採用「雙跳」架構。知道<em>您是誰</em>的節點（入口節點）不知道<em>您在做什麼</em>。知道<em>您在做什麼</em>的節點（出口節點）不知道<em>您是誰</em>。這種加密分離確保我們網路中的任何一台機器都無法擁有您活動的全貌。",
             "p3_title": "III. 臨時金鑰與完全正向保密",
-            "p3_content": "Horizon使用<strong>完全正向保密（PFS）</strong>。我們為每個會話生成一個新的加密金鑰，並每60分鐘輪換一次。即使超級電腦破解了過去會話的金鑰（這將需要數十億年），它也無法用於解密任何未來或過去的會話。您的隱私是數學上得到保證的，而不僅僅是承諾。",
+            "p3_content": "HQMX使用<strong>完全正向保密（PFS）</strong>。我們為每個會話生成一個新的加密金鑰，並每60分鐘輪換一次。即使超級電腦破解了過去會話的金鑰（這將需要數十億年），它也無法用於解密任何未來或過去的會話。您的隱私是數學上得到保證的，而不僅僅是承諾。",
             "p4_title": "IV. 商業防火牆",
             "p4_content": "批評者會問：「如果你們出售資料，我的資料不是有風險嗎？」不會。「商業代理」網路是一個完全獨立的邏輯層。商業夥伴透過我們的節點存取<em>公共網路</em>以查詢機票價格或廣告投放位置。他們<strong>永遠</strong>無法存取您個人流量流動的內部VPN隧道。這兩個世界永遠不會接觸。"
         },
         "final": {
             "title": "您<br><gradient>永遠需要的最後一個VPN。</gradient>",
             "desc": "停止為隱私付費。開始為未來做貢獻。",
-            "cta": "免費獲取Horizon"
+            "cta": "免費獲取HQMX"
         }
     },
     "download": {
-        "title": "下載Horizon VPN | 加入網路",
+        "title": "下載HQMX VPN | 加入網路",
         "hero": {
             "badge": "v0.1.0 Beta",
-            "title": "下載<gradient>Horizon</gradient>",
+            "title": "下載<gradient>HQMX</gradient>",
             "subtitle": "加入去中心化隱私網路。您的設備將成為全球網路中的一個節點，在保護數百萬人的同時賺取獎勵。",
             "tag1": "零日誌",
             "tag2": "WireGuard協議",
@@ -318,16 +318,16 @@
         }
     },
     "cloud": {
-        "title": "Horizon Cloud | 基礎設施的未來",
+        "title": "HQMX Cloud | 基礎設施的未來",
         "hero": {
             "pre_title": "全球基礎設施倡議",
             "title": "主權。規模。<br><gradient>效能。</gradient>",
-            "subtitle": "Horizon Cloud 正在重新定義去中心化基礎設施的標準。它建立在<strong>企業級硬體</strong>之上，並由專為安全和無限可擴展性而設計的<strong>混合雲架構</strong>提供支援。",
+            "subtitle": "HQMX Cloud 正在重新定義去中心化基礎設施的標準。它建立在<strong>企業級硬體</strong>之上，並由專為安全和無限可擴展性而設計的<strong>混合雲架構</strong>提供支援。",
             "cta1": "探索我們的價值觀",
             "cta2": "技術規格",
             "status_title": "系統狀態：線上",
             "status1": "> 正在初始化區域：KR-CORE-1",
-            "status2": "> 節點數：<span style=\"color: #fff;\">活動</span>",
+            "status2": "> 節點數：<span style=\"color: var(--text-dynamic);\">活動</span>",
             "status3": "> 混合上行鏈路：<span style=\"color: #4facfe;\">AWS Direct Connect</span>",
             "status4": "> 安全性：<span style=\"color: var(--secondary-accent);\">OPNsense 防火牆已啟用</span>",
             "status5": "> 儲存：ZFS RAID-Z2 已優化"
@@ -401,7 +401,7 @@
         },
         "cta": {
             "title": "準備好<br><gradient>擴展了嗎？</gradient>",
-            "desc": "加入Horizon Cloud第一階段的試點計畫。",
+            "desc": "加入HQMX Cloud第一階段的試點計畫。",
             "button": "聯絡投資者關係"
         }
     }

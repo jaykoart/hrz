@@ -1,7 +1,7 @@
 {
     "name": "vpn-backend",
     "version": "1.0.0",
-    "description": "Backend for Horizon VPN Service",
+    "description": "Backend for HQMX VPN Service",
     "main": "src/server.js",
     "scripts": {
         "start": "node src/server.js",

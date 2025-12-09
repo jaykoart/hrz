@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global VPN Node | Horizon</title>
-    <link rel="stylesheet" href="style.css?v=2.0.1">
+    <title>Global VPN Node | HQMX</title>
+    <link rel="stylesheet" href="style.css?v=2.2.1">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -23,6 +23,7 @@
                 <a href="vpn.html" class="active" data-i18n="nav.vpn">VPN</a>
                 <a href="download.html" data-i18n="nav.download">Download</a>
                 <a href="cloud.html" data-i18n="nav.cloud">Cloud</a>
+                <a href="https://hqmx.net/webtools.html" data-i18n="nav.tools">Tools</a>
             </nav>
             <div class="nav-utils">
                 <button class="btn-icon" id="lang-btn" title="Language">
@@ -37,10 +38,11 @@
 
         <section class="hero" style="min-height: 60vh; padding-top: 8rem; text-align: center;">
             <div class="container" style="z-index: 2;">
-                <h1 style="font-size: 4rem; text-shadow: 0 10px 30px rgba(0,0,0,0.8); margin-bottom: 1.5rem;" data-i18n="vpn.hero.title">The <span
-                        class="text-gradient">Ethical Shield.</span></h1>
+                <h1 style="font-size: 4rem; text-shadow: 0 10px 30px rgba(0,0,0,0.8); margin-bottom: 1.5rem;"
+                    data-i18n="vpn.hero.title">The <span class="text-gradient">Ethical Shield.</span></h1>
                 <p class="lead"
-                    style="max-width: 700px; margin: 0 auto 2rem; text-shadow: 0 2px 10px rgba(0,0,0,0.8); color: #fff; font-size: 1.2rem;" data-i18n="vpn.hero.subtitle">
+                    style="max-width: 700px; margin: 0 auto 2rem; text-shadow: 0 2px 10px rgba(0,0,0,0.8); color: var(--text-dynamic); font-size: 1.2rem;"
+                    data-i18n="vpn.hero.subtitle">
                     We've redesigned the VPN to protect you while empowering the planet's largest AI research. <br>
                     <span style="color: var(--primary-accent); font-weight: 600;">Zero Logs. Zero Cost. 100%
                         Impact.</span>
@@ -57,7 +59,8 @@
                     <div style="font-size: 3rem; color: var(--primary-accent); margin-bottom: 1rem;">
                         <ion-icon name="shield-checkmark-outline"></ion-icon>
                     </div>
-                    <h3 style="color: #fff; margin-bottom: 1rem;" data-i18n="vpn.features.card1_title">Military-Grade Shield</h3>
+                    <h3 style="color: var(--text-dynamic); margin-bottom: 1rem;" data-i18n="vpn.features.card1_title">
+                        Military-Grade Shield</h3>
                     <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="vpn.features.card1_desc">
                         AES-256 encryption tunnels ensure your data is invisible to ISPs, hackers, and even us. We
                         adhere to a strict <strong>No-Logs Policy</strong>.
@@ -68,7 +71,8 @@
                     <div style="font-size: 3rem; color: #4facfe; margin-bottom: 1rem;">
                         <ion-icon name="flash-outline"></ion-icon>
                     </div>
-                    <h3 style="color: #fff; margin-bottom: 1rem;" data-i18n="vpn.features.card2_title">WireGuard® Speed</h3>
+                    <h3 style="color: var(--text-dynamic); margin-bottom: 1rem;" data-i18n="vpn.features.card2_title">
+                        WireGuard® Speed</h3>
                     <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="vpn.features.card2_desc">
                         Built on the modern WireGuard protocol, HQMX delivers blazing fast speeds with minimal
                         latency, perfect for streaming and gaming.
@@ -79,7 +83,8 @@
                     <div style="font-size: 3rem; color: var(--secondary-accent); margin-bottom: 1rem;">
                         <ion-icon name="globe-outline"></ion-icon>
                     </div>
-                    <h3 style="color: #fff; margin-bottom: 1rem;" data-i18n="vpn.features.card3_title">Global Access</h3>
+                    <h3 style="color: var(--text-dynamic); margin-bottom: 1rem;" data-i18n="vpn.features.card3_title">
+                        Global Access</h3>
                     <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="vpn.features.card3_desc">
                         Bypass censorship and geo-blocks. Access content from anywhere in the world as if you were a
                         local.
@@ -90,14 +95,17 @@
             <!-- Technical Deep Dive: Terminal Visual -->
             <div class="grid" style="align-items: center; margin: 8rem 0; gap: 4rem;">
                 <div>
-                    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;" data-i18n="vpn.invisible.title">Invisible <span class="text-gradient">to
+                    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;" data-i18n="vpn.invisible.title">Invisible <span
+                            class="text-gradient">to
                             Everyone.</span></h2>
-                    <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.1rem;" data-i18n="vpn.invisible.desc">
+                    <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.1rem;"
+                        data-i18n="vpn.invisible.desc">
                         Your ISP sees nothing. Hackers see random noise. Even <strong>we</strong> see nothing.
                     </p>
 
                     <div style="margin-bottom: 2rem;">
-                        <h3 style="color: #fff; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 10px;">
+                        <h3
+                            style="color: var(--text-dynamic); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 10px;">
                             <ion-icon name="key-outline" style="color: var(--primary-accent);"></ion-icon>
                             <span data-i18n="vpn.invisible.feature1_title">Ephemeral Keys</span>
                         </h3>
@@ -107,7 +115,8 @@
                     </div>
 
                     <div style="margin-bottom: 2rem;">
-                        <h3 style="color: #fff; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 10px;">
+                        <h3
+                            style="color: var(--text-dynamic); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 10px;">
                             <ion-icon name="git-network-outline" style="color: var(--secondary-accent);"></ion-icon>
                             <span data-i18n="vpn.invisible.feature2_title">Multi-Hop Routing</span>
                         </h3>
@@ -120,15 +129,19 @@
                 <div class="terminal-window">
                     <div class="terminal-header">
                         <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                        <span class="terminal-title" data-i18n="vpn.terminal.title">node-x7z-daemon — bash — 80x24</span>
+                        <span class="terminal-title" data-i18n="vpn.terminal.title">node-x7z-daemon — bash —
+                            80x24</span>
                     </div>
                     <div class="terminal-body">
-                        <div class="command" data-i18n="vpn.terminal.cmd1">$ horizon-cli status --verbose</div>
+                        <div class="command" data-i18n="vpn.terminal.cmd1">$ hqmx-cli status --verbose</div>
                         <div class="output">
-                            <span data-i18n="vpn.terminal.res1_1">> Connecting to Mesh Network... </span><span data-i18n="vpn.terminal.res1_2" style="color:var(--primary-accent)">[OK]</span><br>
-                            <span data-i18n="vpn.terminal.res1_3">> Handshake: Curve25519 </span><span data-i18n="vpn.terminal.res1_4" style="color:var(--primary-accent)">[SECURE]</span><br>
+                            <span data-i18n="vpn.terminal.res1_1">> Connecting to Mesh Network... </span><span
+                                data-i18n="vpn.terminal.res1_2" style="color:var(--primary-accent)">[OK]</span><br>
+                            <span data-i18n="vpn.terminal.res1_3">> Handshake: Curve25519 </span><span
+                                data-i18n="vpn.terminal.res1_4" style="color:var(--primary-accent)">[SECURE]</span><br>
                             <span data-i18n="vpn.terminal.res1_5">> Tunnel ID: #9928-AX-22</span><br>
-                            <span data-i18n="vpn.terminal.res1_6">> Log Status: </span><span data-i18n="vpn.terminal.res1_7" style="color:#ff5f56">DISABLED (RAM-ONLY MODE)</span>
+                            <span data-i18n="vpn.terminal.res1_6">> Log Status: </span><span
+                                data-i18n="vpn.terminal.res1_7" style="color:#ff5f56">DISABLED (RAM-ONLY MODE)</span>
                         </div>
 
                         <div class="command" data-i18n="vpn.terminal.cmd2">$ traceroute target.com</div>
@@ -147,16 +160,18 @@
 
             <!-- How It Works Diagram -->
             <div style="margin-bottom: 8rem;">
-                <h2 style="text-align: center; margin-bottom: 3rem;" data-i18n="vpn.how.title">How the <span class="text-gradient">Network
+                <h2 style="text-align: center; margin-bottom: 3rem;" data-i18n="vpn.how.title">How the <span
+                        class="text-gradient">Network
                         Works</span></h2>
                 <div class="glass glass-card"
                     style="padding: 3rem; display: flex; align-items: center; justify-content: Space-between; gap: 2rem; flex-wrap: wrap;">
 
                     <div style="flex: 1; min-width: 250px; text-align: center;">
-                        <div style="font-size: 4rem; color: #fff; margin-bottom: 1rem;"><ion-icon
+                        <div style="font-size: 4rem; color: var(--text-dynamic); margin-bottom: 1rem;"><ion-icon
                                 name="laptop-outline"></ion-icon></div>
-                        <h4 style="color: #fff;" data-i18n="vpn.how.step1_title">You (The Node)</h4>
-                        <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="vpn.how.step1_desc">You get free, premium VPN protection. In
+                        <h4 style="color: var(--text-dynamic);" data-i18n="vpn.how.step1_title">You (The Node)</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="vpn.how.step1_desc">You get
+                            free, premium VPN protection. In
                             exchange, your device processes small, anonymized public data chunks.</p>
                     </div>
 
@@ -167,8 +182,9 @@
                     <div style="flex: 1; min-width: 250px; text-align: center;">
                         <div style="font-size: 4rem; color: var(--primary-accent); margin-bottom: 1rem;"><ion-icon
                                 name="cloud-upload-outline"></ion-icon></div>
-                        <h4 style="color: #fff;" data-i18n="vpn.how.step2_title">The Intelligence</h4>
-                        <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="vpn.how.step2_desc">This public data (climate logs, market
+                        <h4 style="color: var(--text-dynamic);" data-i18n="vpn.how.step2_title">The Intelligence</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="vpn.how.step2_desc">This
+                            public data (climate logs, market
                             prices) feeds the Plant AI brain, helping to solve global food scarcity.</p>
                     </div>
 
@@ -177,10 +193,11 @@
                     </div>
 
                     <div style="flex: 1; min-width: 250px; text-align: center;">
-                        <div style="font-size: 4rem; color: #fff; margin-bottom: 1rem;"><ion-icon
+                        <div style="font-size: 4rem; color: var(--text-dynamic); margin-bottom: 1rem;"><ion-icon
                                 name="business-outline"></ion-icon></div>
-                        <h4 style="color: #fff;" data-i18n="vpn.how.step3_title">Sustainability</h4>
-                        <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="vpn.how.step3_desc">Commercial partners pay for the network
+                        <h4 style="color: var(--text-dynamic);" data-i18n="vpn.how.step3_title">Sustainability</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="vpn.how.step3_desc">
+                            Commercial partners pay for the network
                             infrastructure, keeping the VPN 100% free for you forever.</p>
                     </div>
 
@@ -188,27 +205,34 @@
             </div>
 
             <!-- Use Cases -->
-            <h2 style="text-align: center; margin-bottom: 3rem;" data-i18n="vpn.who.title">Who is <span class="text-gradient">HQMX For?</span>
+            <h2 style="text-align: center; margin-bottom: 3rem;" data-i18n="vpn.who.title">Who is <span
+                    class="text-gradient">HQMX For?</span>
             </h2>
             <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 8rem;">
                 <div class="glass glass-card" style="padding: 2rem;">
                     <div class="process-icon"><ion-icon name="newspaper-outline"></ion-icon></div>
-                    <h3 style="margin-bottom: 1rem; text-align: center; color: #fff;" data-i18n="vpn.who.user1">Journalists</h3>
-                    <p style="color: var(--text-muted); text-align: center;" data-i18n="vpn.who.user1_desc">Bypass censorship and report the truth
+                    <h3 style="margin-bottom: 1rem; text-align: center; color: var(--text-dynamic);"
+                        data-i18n="vpn.who.user1">Journalists</h3>
+                    <p style="color: var(--text-muted); text-align: center;" data-i18n="vpn.who.user1_desc">Bypass
+                        censorship and report the truth
                         safely from conflict zones.</p>
                 </div>
                 <div class="glass glass-card" style="padding: 2rem;">
                     <div class="process-icon" style="color: #4facfe;"><ion-icon
                             name="game-controller-outline"></ion-icon></div>
-                    <h3 style="margin-bottom: 1rem; text-align: center; color: #fff;" data-i18n="vpn.who.user2">Gamers</h3>
-                    <p style="color: var(--text-muted); text-align: center;" data-i18n="vpn.who.user2_desc">Avoid DDoS attacks and access geo-locked
+                    <h3 style="margin-bottom: 1rem; text-align: center; color: var(--text-dynamic);"
+                        data-i18n="vpn.who.user2">Gamers</h3>
+                    <p style="color: var(--text-muted); text-align: center;" data-i18n="vpn.who.user2_desc">Avoid DDoS
+                        attacks and access geo-locked
                         servers with minimal lag.</p>
                 </div>
                 <div class="glass glass-card" style="padding: 2rem;">
                     <div class="process-icon" style="color: var(--secondary-accent);"><ion-icon
                             name="briefcase-outline"></ion-icon></div>
-                    <h3 style="margin-bottom: 1rem; text-align: center; color: #fff;" data-i18n="vpn.who.user3">Remote Workers</h3>
-                    <p style="color: var(--text-muted); text-align: center;" data-i18n="vpn.who.user3_desc">Secure public Wi-Fi access while working
+                    <h3 style="margin-bottom: 1rem; text-align: center; color: var(--text-dynamic);"
+                        data-i18n="vpn.who.user3">Remote Workers</h3>
+                    <p style="color: var(--text-muted); text-align: center;" data-i18n="vpn.who.user3_desc">Secure
+                        public Wi-Fi access while working
                         from cafes or airports.</p>
                 </div>
             </div>
@@ -220,9 +244,10 @@
 
                 <div class="glass glass-card" style="margin-bottom: 1.5rem; padding: 2rem;">
                     <h4
-                        style="color: #fff; margin-bottom: 0.8rem; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
-                        <ion-icon name="lock-closed-outline" style="color: var(--primary-accent);"></ion-icon> <span data-i18n="vpn.faq.q1">Does
-                        Horizon see my browsing history?</span>
+                        style="color: var(--text-dynamic); margin-bottom: 0.8rem; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
+                        <ion-icon name="lock-closed-outline" style="color: var(--primary-accent);"></ion-icon> <span
+                            data-i18n="vpn.faq.q1">Does
+                            HQMX see my browsing history?</span>
                     </h4>
                     <p style="color: var(--text-muted); line-height: 1.6;" data-i18n="vpn.faq.a1">
                         <strong>Never.</strong> We operate on a strict Zero-Logs basis. Technically, our nodes cannot
@@ -233,9 +258,10 @@
 
                 <div class="glass glass-card" style="margin-bottom: 1.5rem; padding: 2rem;">
                     <h4
-                        style="color: #fff; margin-bottom: 0.8rem; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
-                        <ion-icon name="speedometer-outline" style="color: #4facfe;"></ion-icon> <span data-i18n="vpn.faq.q2">Will it slow down my
-                        internet connection?</span>
+                        style="color: var(--text-dynamic); margin-bottom: 0.8rem; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
+                        <ion-icon name="speedometer-outline" style="color: #4facfe;"></ion-icon> <span
+                            data-i18n="vpn.faq.q2">Will it slow down my
+                            internet connection?</span>
                     </h4>
                     <p style="color: var(--text-muted); line-height: 1.6;" data-i18n="vpn.faq.a2">
                         <strong>Imperceptibly.</strong> The background process is 'Resource-Aware'. It only activates
@@ -246,9 +272,10 @@
 
                 <div class="glass glass-card" style="margin-bottom: 1.5rem; padding: 2rem;">
                     <h4
-                        style="color: #fff; margin-bottom: 0.8rem; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
-                        <ion-icon name="wallet-outline" style="color: var(--secondary-accent);"></ion-icon> <span data-i18n="vpn.faq.q3">Is it really
-                        free forever?</span>
+                        style="color: var(--text-dynamic); margin-bottom: 0.8rem; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
+                        <ion-icon name="wallet-outline" style="color: var(--secondary-accent);"></ion-icon> <span
+                            data-i18n="vpn.faq.q3">Is it really
+                            free forever?</span>
                     </h4>
                     <p style="color: var(--text-muted); line-height: 1.6;" data-i18n="vpn.faq.a3">
                         <strong>Yes.</strong> We don't need your subscription money because our business model is built
@@ -259,12 +286,13 @@
 
                 <div class="glass glass-card" style="margin-bottom: 1.5rem; padding: 2rem;">
                     <h4
-                        style="color: #fff; margin-bottom: 0.8rem; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
-                        <ion-icon name="warning-outline" style="color: #ff4757;"></ion-icon> <span data-i18n="vpn.faq.q4">Can my IP be used for
-                        illegal activities?</span>
+                        style="color: var(--text-dynamic); margin-bottom: 0.8rem; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
+                        <ion-icon name="warning-outline" style="color: #ff4757;"></ion-icon> <span
+                            data-i18n="vpn.faq.q4">Can my IP be used for
+                            illegal activities?</span>
                     </h4>
                     <p style="color: var(--text-muted); line-height: 1.6;" data-i18n="vpn.faq.a4">
-                        <strong>No.</strong> Unlike other P2P networks, Horizon separates the "Commercial Proxy" (used
+                        <strong>No.</strong> Unlike other P2P networks, HQMX separates the "Commercial Proxy" (used
                         by businesses) from your residential IP. We have strict KYC (Know Your Customer) vetting for all
                         business partners accessing the data network.
                     </p>
@@ -275,68 +303,90 @@
         <!-- Transparency Report (Deep Dive) -->
         <div
             style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 4rem; margin: 8rem 0;">
-            <h4
-                style="color: var(--secondary-accent); letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 1rem;" data-i18n="vpn.transparency.header">
+            <h4 style="color: var(--secondary-accent); letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 1rem;"
+                data-i18n="vpn.transparency.header">
                 Engineering Deep Dive</h4>
-            <h2 style="font-size: 2.5rem; margin-bottom: 3rem; line-height: 1.2;" data-i18n="vpn.transparency.title">Transparency <br><span
-                    class="text-gradient">Report</span></h2>
+            <h2 style="font-size: 2.5rem; margin-bottom: 3rem; line-height: 1.2;" data-i18n="vpn.transparency.title">
+                Transparency <br><span class="text-gradient">Report</span></h2>
 
             <div
                 style="column-count: 2; column-gap: 4rem; color: var(--text-muted); line-height: 1.8; text-align: justify;">
                 <p style="margin-bottom: 2rem;">
-                    <strong style="color: #fff; font-size: 1.1rem; display: block; margin-bottom: 0.5rem;" data-i18n="vpn.transparency.p1_title">I. RAM-Only
+                    <strong
+                        style="color: var(--text-dynamic); font-size: 1.1rem; display: block; margin-bottom: 0.5rem;"
+                        data-i18n="vpn.transparency.p1_title">I. RAM-Only
                         Infrastructure</strong>
-                    <span data-i18n="vpn.transparency.p1_content">Traditional VPNs write logs to hard drives, which can be seized or inspected. Horizon operates
-                    exclusively on <strong>RAM-Only Servers</strong>. This means that the moment a server is rebooted—or
-                    if power is cut—every single byte of data is instantly wiped. There is no physical disk to recover
-                    data from. We treat your browsing history as "Toxic Data" that we refuse to store.</span>
+                    <span data-i18n="vpn.transparency.p1_content">Traditional VPNs write logs to hard drives, which can
+                        be seized or inspected. HQMX operates
+                        exclusively on <strong>RAM-Only Servers</strong>. This means that the moment a server is
+                        rebooted—or
+                        if power is cut—every single byte of data is instantly wiped. There is no physical disk to
+                        recover
+                        data from. We treat your browsing history as "Toxic Data" that we refuse to store.</span>
                 </p>
 
                 <p style="margin-bottom: 2rem;">
-                    <strong style="color: #fff; font-size: 1.1rem; display: block; margin-bottom: 0.5rem;" data-i18n="vpn.transparency.p2_title">II. The
+                    <strong
+                        style="color: var(--text-dynamic); font-size: 1.1rem; display: block; margin-bottom: 0.5rem;"
+                        data-i18n="vpn.transparency.p2_title">II. The
                         'Blind' Relay Architecture</strong>
-                    <span data-i18n="vpn.transparency.p2_content">We utilize a "Double-Hop" architecture for the initial handshake. The node that knows <em>who you
-                        are</em> (the entry node) does not know <em>what you are doing</em>. The node that knows
-                    <em>what you are doing</em> (the exit node) does not know <em>who you are</em>. This cryptographic
-                    separation ensures that no single machine in our network possesses the complete picture of your
-                    activity.</span>
+                    <span data-i18n="vpn.transparency.p2_content">We utilize a "Double-Hop" architecture for the initial
+                        handshake. The node that knows <em>who you
+                            are</em> (the entry node) does not know <em>what you are doing</em>. The node that knows
+                        <em>what you are doing</em> (the exit node) does not know <em>who you are</em>. This
+                        cryptographic
+                        separation ensures that no single machine in our network possesses the complete picture of your
+                        activity.</span>
                 </p>
 
                 <p style="margin-bottom: 2rem;">
-                    <strong style="color: #fff; font-size: 1.1rem; display: block; margin-bottom: 0.5rem;" data-i18n="vpn.transparency.p3_title">III.
+                    <strong
+                        style="color: var(--text-dynamic); font-size: 1.1rem; display: block; margin-bottom: 0.5rem;"
+                        data-i18n="vpn.transparency.p3_title">III.
                         Ephemeral Keys & Forward Secrecy</strong>
-                    <span data-i18n="vpn.transparency.p3_content">Horizon uses <strong>Perfect Forward Secrecy (PFS)</strong>. We generate a new encryption key for
-                    every single session, and rotate them every 60 minutes. Even if a supercomputer were to crack a key
-                    from a past session (which would take billions of years), it could not be used to decrypt any future
-                    or past sessions. Your privacy is mathematically guaranteed, not just promised.</span>
+                    <span data-i18n="vpn.transparency.p3_content">HQMX uses <strong>Perfect Forward Secrecy
+                            (PFS)</strong>. We generate a new encryption key for
+                        every single session, and rotate them every 60 minutes. Even if a supercomputer were to crack a
+                        key
+                        from a past session (which would take billions of years), it could not be used to decrypt any
+                        future
+                        or past sessions. Your privacy is mathematically guaranteed, not just promised.</span>
                 </p>
 
                 <p>
-                    <strong style="color: #fff; font-size: 1.1rem; display: block; margin-bottom: 0.5rem;" data-i18n="vpn.transparency.p4_title">IV. The
+                    <strong
+                        style="color: var(--text-dynamic); font-size: 1.1rem; display: block; margin-bottom: 0.5rem;"
+                        data-i18n="vpn.transparency.p4_title">IV. The
                         Business Firewall</strong>
-                    <span data-i18n="vpn.transparency.p4_content">Critics ask: "If you sell data, isn't my data at risk?" No. The "Commercial Proxy" network is a
-                    completely separate logical layer. Business partners access the <em>public internet</em> through our
-                    nodes to check flight prices or ad placements. They <strong>never</strong> have access to the
-                    internal VPN tunnel where your personal traffic flows. The two worlds never touch.</span>
+                    <span data-i18n="vpn.transparency.p4_content">Critics ask: "If you sell data, isn't my data at
+                        risk?" No. The "Commercial Proxy" network is a
+                        completely separate logical layer. Business partners access the <em>public internet</em> through
+                        our
+                        nodes to check flight prices or ad placements. They <strong>never</strong> have access to the
+                        internal VPN tunnel where your personal traffic flows. The two worlds never touch.</span>
                 </p>
             </div>
         </div>
 
         <!-- Final Verdict -->
         <div style="text-align: center; margin: 6rem 0;">
-            <h2 style="font-size: 2.5rem; margin-bottom: 2rem;" data-i18n="vpn.final.title">The Last VPN You'll <span class="text-gradient">Ever
+            <h2 style="font-size: 2.5rem; margin-bottom: 2rem;" data-i18n="vpn.final.title">The Last VPN You'll <span
+                    class="text-gradient">Ever
                     Need.</span></h2>
-            <p style="color: var(--text-muted); margin-bottom: 2rem;" data-i18n="vpn.final.desc">Stop paying for privacy. Start contributing to the
+            <p style="color: var(--text-muted); margin-bottom: 2rem;" data-i18n="vpn.final.desc">Stop paying for
+                privacy. Start contributing to the
                 future.</p>
-            <a href="download.html" class="btn btn-primary" style="font-size: 1.2rem; padding: 1.2rem 3rem;" data-i18n="vpn.final.cta">Get Horizon
+            <a href="download.html" class="btn btn-primary" style="font-size: 1.2rem; padding: 1.2rem 3rem;"
+                data-i18n="vpn.final.cta">Get HQMX
                 Free</a>
         </div>
 
         <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.8rem;">
             <p style="margin-bottom: 1rem;">
-                <a href="terms.html" style="color: var(--text-main); text-decoration: none; margin: 0 10px;" data-i18n="plant_ai.footer.terms">Terms</a>
-                <a href="privacy.html"
-                    style="color: var(--text-main); text-decoration: none; margin: 0 10px;" data-i18n="plant_ai.footer.privacy">Privacy</a>
+                <a href="terms.html" style="color: var(--text-dynamic); text-decoration: none; margin: 0 10px;"
+                    data-i18n="plant_ai.footer.terms">Terms</a>
+                <a href="privacy.html" style="color: var(--text-dynamic); text-decoration: none; margin: 0 10px;"
+                    data-i18n="plant_ai.footer.privacy">Privacy</a>
             </p>
             <p data-i18n="plant_ai.footer.copyright">&copy; 2025 HQMX VPN Project. Open Source & Decentralized.</p>
         </footer>

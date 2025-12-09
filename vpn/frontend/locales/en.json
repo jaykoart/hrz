@@ -8,13 +8,13 @@
         "hero": {
             "badge": "Plant AI Project",
             "title": "Protect<br>Your Privacy,<br><gradient>Save the Planet.</gradient>",
-            "subtitle": "Horizon VPN is more than a tool. By sharing your idle bandwidth, you power the training of <strong>Plant AI</strong>, the engine solving the global food crisis.",
+            "subtitle": "HQMX VPN is more than a tool. By sharing your idle bandwidth, you power the training of <strong>Plant AI</strong>, the engine solving the global food crisis.",
             "cta": "Join the Mission",
             "version": "v0.1.0",
             "tagline": "Free Forever • Earth First"
         },
         "features": {
-            "title": "Why <gradient>Horizon?</gradient>",
+            "title": "Why <gradient>HQMX?</gradient>",
             "subtitle": "Every second your server is on, you are contributing data to secure the future of food.",
             "card1": {
                 "title": "WireGuard® Encrypted",
@@ -46,7 +46,7 @@
         },
         "cloud_section": {
             "title": "Sovereign <gradient>Infrastructure</gradient>",
-            "desc": "Horizon Cloud redefines decentralized infrastructure. Built on <strong>Enterprise-Grade Hardware</strong> and a <strong>Hybrid Cloud Architecture</strong>, we ensure data sovereignty and boundless scalability without lock-in.",
+            "desc": "HQMX Cloud redefines decentralized infrastructure. Built on <strong>Enterprise-Grade Hardware</strong> and a <strong>Hybrid Cloud Architecture</strong>, we ensure data sovereignty and boundless scalability without lock-in.",
             "pill1": "Bare Metal Core",
             "pill2": "High-Freq VPS",
             "pill3": "Global Edge",
@@ -69,6 +69,7 @@
         "vpn": "VPN",
         "download": "Download",
         "cloud": "Cloud",
+        "tools": "Tools",
         "login": "Login"
     },
     "plant_ai": {
@@ -87,7 +88,7 @@
             "action_desc": "Autonomous systems take over. High temperature triggers shade deployment; dry soil activates precision sprinklers.",
             "problem_title": "The <gradient>Unknown Data</gradient> problem.",
             "problem_desc1": "To build this, we need data that Big Tech doesn't have. They have Wikipedia; we need <strong>Soil Reports</strong>, <strong>Harvest Records</strong>, and <strong>Local Climate Logs</strong>.",
-            "problem_desc2": "This is where <strong>Horizon VPN</strong> comes in. Your node collects this \"Niche Data\" from thousands of local sources, creating the \"Green Synapse\" of our tailored AI."
+            "problem_desc2": "This is where <strong>HQMX VPN</strong> comes in. Your node collects this \"Niche Data\" from thousands of local sources, creating the \"Green Synapse\" of our tailored AI."
         },
         "mission": {
             "title": "Driving <gradient>Planetary Change</gradient>",
@@ -120,8 +121,8 @@
         },
         "distributed": {
             "title": "Powered by <gradient>Distributed Intelligence</gradient>",
-            "node_title": "The Horizon Node",
-            "node_desc": "Every user running Horizon VPN becomes a <strong>micro-data center</strong>. Instead of building massive, energy-hungry server farms, we utilize the idle computing power of millions of devices.",
+            "node_title": "The HQMX Node",
+            "node_desc": "Every user running HQMX VPN becomes a <strong>micro-data center</strong>. Instead of building massive, energy-hungry server farms, we utilize the idle computing power of millions of devices.",
             "node_item1": "<strong>Edge Computing:</strong> Data is processed locally on-device.",
             "node_item2": "<strong>Encrypted Transport:</strong> All contributions are anonymized via WireGuard tunnels.",
             "learning_title": "Federated Learning",
@@ -147,7 +148,7 @@
         "faq": {
             "title": "Common Questions",
             "q1": "Does this slow down my internet?",
-            "a1": "No. The Horizon Node creates a \"Lightweight Background Process\" that only uses idle bandwidth when you aren't streaming or gaming.",
+            "a1": "No. The HQMX Node creates a \"Lightweight Background Process\" that only uses idle bandwidth when you aren't streaming or gaming.",
             "q2": "Is my personal data safe?",
             "a2": "Absolutely. We only collect public environmental data. Your personal files, browsing history, and identity are strictly off-limits and technically inaccessible to the node software."
         },
@@ -159,7 +160,7 @@
             "p2_title": "II. The Solution: Precision vs. Guesswork",
             "p2_content": "Farming has historically been a game of estimation. Plant AI changes this paradigm by introducing <strong>Hyper-Precision</strong>. By analyzing thousands of data points—from leaf stomatal conductance to soil microbial activity—we can optimize every drop of water and milligram of nutrient. This isn't just \"Smart Farming\"; it is <strong>Computational Agriculture</strong>. We are turning biological uncertainty into mathematical predictability.",
             "p3_title": "III. Scalability: The Decentralized Advantage",
-            "p3_content": "A centralized supercomputer can manage a few corporate mega-farms. It cannot manage the billions of small-holder farms that produce 70% of the world's food. <strong style=\"color: var(--primary-accent);\">Horizon Nodes</strong> bridge this gap. By distributing the computational load to millions of personal devices, we create an <strong>Infinite Mesh Network</strong> capable of processing data from a backyard garden in Seoul to a wheat field in Ukraine simultaneously.",
+            "p3_content": "A centralized supercomputer can manage a few corporate mega-farms. It cannot manage the billions of small-holder farms that produce 70% of the world's food. <strong style=\"color: var(--primary-accent);\">HQMX Nodes</strong> bridge this gap. By distributing the computational load to millions of personal devices, we create an <strong>Infinite Mesh Network</strong> capable of processing data from a backyard garden in Seoul to a wheat field in Ukraine simultaneously.",
             "p4_title": "IV. The Outcome: A Self-Healing Earth",
             "p4_content": "The ultimate goal of Plant AI is <strong>Regeneration</strong>. By minimizing chemical inputs and optimizing growth cycles, we allow the soil to heal. We envision a future where agriculture acts as a carbon sink rather than a source, where food security is guaranteed by code, and where every human being can contribute to global survival simply by keeping their computer on."
         },
@@ -176,13 +177,13 @@
         },
         "cta": {
             "title": "Be Part of the Solution",
-            "desc": "Every Horizon node you run contributes to building the world's most comprehensive agricultural AI. Your idle bandwidth today becomes tomorrow's food security.",
-            "button": "Download Horizon Node"
+            "desc": "Every HQMX node you run contributes to building the world's most comprehensive agricultural AI. Your idle bandwidth today becomes tomorrow's food security.",
+            "button": "Download HQMX Node"
         },
         "footer": {
             "terms": "Terms",
             "privacy": "Privacy",
-            "copyright": "&copy; 2025 Horizon VPN Project. Open Source & Decentralized."
+            "copyright": "&copy; 2025 HQMX VPN Project. Open Source & Decentralized."
         }
     },
     "vpn": {
@@ -195,7 +196,7 @@
             "card1_title": "Military-Grade Shield",
             "card1_desc": "AES-256 encryption tunnels ensure your data is invisible to ISPs, hackers, and even us. We adhere to a strict <strong>No-Logs Policy</strong>.",
             "card2_title": "WireGuard® Speed",
-            "card2_desc": "Built on the modern WireGuard protocol, Horizon delivers blazing fast speeds with minimal latency, perfect for streaming and gaming.",
+            "card2_desc": "Built on the modern WireGuard protocol, HQMX delivers blazing fast speeds with minimal latency, perfect for streaming and gaming.",
             "card3_title": "Global Access",
             "card3_desc": "Bypass censorship and geo-blocks. Access content from anywhere in the world as if you were a local."
         },
@@ -209,7 +210,7 @@
         },
         "terminal": {
             "title": "node-x7z-daemon — bash — 80x24",
-            "cmd1": "$ horizon-cli status --verbose",
+            "cmd1": "$ hqmx-cli status --verbose",
             "res1_1": "> Connecting to Mesh Network... ",
             "res1_2": "<span style=\"color:var(--primary-accent)\">[OK]</span>",
             "res1_3": "> Handshake: Curve25519 ",
@@ -234,7 +235,7 @@
             "step3_desc": "Commercial partners pay for the network infrastructure, keeping the VPN 100% free for you forever."
         },
         "who": {
-            "title": "Who is <gradient>Horizon For?</gradient>",
+            "title": "Who is <gradient>HQMX For?</gradient>",
             "user1": "Journalists",
             "user1_desc": "Bypass censorship and report the truth safely from conflict zones.",
             "user2": "Gamers",
@@ -244,38 +245,38 @@
         },
         "faq": {
             "title": "Frequently Asked <gradient>Questions</gradient>",
-            "q1": "Does Horizon see my browsing history?",
+            "q1": "Does HQMX see my browsing history?",
             "a1": "<strong>Never.</strong> We operate on a strict Zero-Logs basis. Technically, our nodes cannot inspect the encrypted traffic inside your personal VPN tunnel. Your private browsing remains private.",
             "q2": "Will it slow down my internet connection?",
             "a2": "<strong>Imperceptibly.</strong> The background process is 'Resource-Aware'. It only activates when your system is idle (e.g., you are away from the computer) and strictly limits bandwidth usage to ensure your streaming or gaming is never interrupted.",
             "q3": "Is it really free forever?",
             "a3": "<strong>Yes.</strong> We don't need your subscription money because our business model is built on B2B data intelligence, not B2C software sales. As long as you contribute to the network, the premium service is yours.",
             "q4": "Can my IP be used for illegal activities?",
-            "a4": "<strong>No.</strong> Unlike other P2P networks, Horizon separates the \"Commercial Proxy\" (used by businesses) from your residential IP. We have strict KYC (Know Your Customer) vetting for all business partners accessing the data network."
+            "a4": "<strong>No.</strong> Unlike other P2P networks, HQMX separates the \"Commercial Proxy\" (used by businesses) from your residential IP. We have strict KYC (Know Your Customer) vetting for all business partners accessing the data network."
         },
         "transparency": {
             "header": "Engineering Deep Dive",
             "title": "Transparency <br><gradient>Report</gradient>",
             "p1_title": "I. RAM-Only Infrastructure",
-            "p1_content": "Traditional VPNs write logs to hard drives, which can be seized or inspected. Horizon operates exclusively on <strong>RAM-Only Servers</strong>. This means that the moment a server is rebooted—or if power is cut—every single byte of data is instantly wiped. There is no physical disk to recover data from. We treat your browsing history as \"Toxic Data\" that we refuse to store.",
+            "p1_content": "Traditional VPNs write logs to hard drives, which can be seized or inspected. HQMX operates exclusively on <strong>RAM-Only Servers</strong>. This means that the moment a server is rebooted—or if power is cut—every single byte of data is instantly wiped. There is no physical disk to recover data from. We treat your browsing history as \"Toxic Data\" that we refuse to store.",
             "p2_title": "II. The 'Blind' Relay Architecture",
             "p2_content": "We utilize a \"Double-Hop\" architecture for the initial handshake. The node that knows <em>who you are</em> (the entry node) does not know <em>what you are doing</em>. The node that knows <em>what you are doing</em> (the exit node) does not know <em>who you are</em>. This cryptographic separation ensures that no single machine in our network possesses the complete picture of your activity.",
             "p3_title": "III. Ephemeral Keys & Forward Secrecy",
-            "p3_content": "Horizon uses <strong>Perfect Forward Secrecy (PFS)</strong>. We generate a new encryption key for every single session, and rotate them every 60 minutes. Even if a supercomputer were to crack a key from a past session (which would take billions of years), it could not be used to decrypt any future or past sessions. Your privacy is mathematically guaranteed, not just promised.",
+            "p3_content": "HQMX uses <strong>Perfect Forward Secrecy (PFS)</strong>. We generate a new encryption key for every single session, and rotate them every 60 minutes. Even if a supercomputer were to crack a key from a past session (which would take billions of years), it could not be used to decrypt any future or past sessions. Your privacy is mathematically guaranteed, not just promised.",
             "p4_title": "IV. The Business Firewall",
             "p4_content": "Critics ask: \"If you sell data, isn't my data at risk?\" No. The \"Commercial Proxy\" network is a completely separate logical layer. Business partners access the <em>public internet</em> through our nodes to check flight prices or ad placements. They <strong>never</strong> have access to the internal VPN tunnel where your personal traffic flows. The two worlds never touch."
         },
         "final": {
             "title": "The Last VPN You'll <gradient>Ever Need.</gradient>",
             "desc": "Stop paying for privacy. Start contributing to the future.",
-            "cta": "Get Horizon Free"
+            "cta": "Get HQMX Free"
         }
     },
     "download": {
-        "title": "Download Horizon VPN | Join the Mesh",
+        "title": "Download HQMX VPN | Join the Mesh",
         "hero": {
             "badge": "v0.1.0 Beta",
-            "title": "Download <gradient>Horizon</gradient>",
+            "title": "Download <gradient>HQMX</gradient>",
             "subtitle": "Join the decentralized privacy network. Your device becomes a node in the global mesh, protecting millions while earning rewards.",
             "tag1": "Zero Logs",
             "tag2": "WireGuard Protocol",
@@ -318,16 +319,16 @@
         }
     },
     "cloud": {
-        "title": "Horizon Cloud | The Future of Infrastructure",
+        "title": "HQMX Cloud | The Future of Infrastructure",
         "hero": {
             "pre_title": "Global Infrastructure Initiative",
             "title": "Sovereignty. Scale. <br> <gradient>Performance.</gradient>",
-            "subtitle": "Horizon Cloud is redefining the standard for decentralized infrastructure. Built on <strong>Enterprise-Grade Hardware</strong> and powered by a <strong>Hybrid Cloud Architecture</strong> designed for security and boundless scalability.",
+            "subtitle": "HQMX Cloud is redefining the standard for decentralized infrastructure. Built on <strong>Enterprise-Grade Hardware</strong> and powered by a <strong>Hybrid Cloud Architecture</strong> designed for security and boundless scalability.",
             "cta1": "Explore Our Values",
             "cta2": "Technical Specs",
             "status_title": "SYSTEM STATUS: ONLINE",
             "status1": "> Initializing Region: KR-CORE-1",
-            "status2": "> Node Count: <span style=\"color: #fff;\">Active</span>",
+            "status2": "> Node Count: <span style=\"color: var(--text-dynamic);\">Active</span>",
             "status3": "> Hybrid Uplink: <span style=\"color: #4facfe;\">AWS Direct Connect</span>",
             "status4": "> Security: <span style=\"color: var(--secondary-accent);\">OPNsense Firewall Enabled</span>",
             "status5": "> Storage: ZFS RAID-Z2 Optimized"
@@ -401,7 +402,7 @@
         },
         "cta": {
             "title": "Ready to <gradient>Scale?</gradient>",
-            "desc": "Join the pilot program for Horizon Cloud Phase 1.",
+            "desc": "Join the pilot program for HQMX Cloud Phase 1.",
             "button": "Contact Investor Relations"
         }
     }

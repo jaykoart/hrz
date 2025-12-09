@@ -1,8 +1,8 @@
-/* Horizon VPN Design System */
+/* HQMX VPN Design System */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
 
 :root {
-    /* === Static Theme Colors (폴백용) === */
+    /* === Static Theme Colors (Fallback) === */
     --bg-color: #050510;
     --text-main: #ffffff;
     --text-muted: #b8c5d6;
@@ -18,28 +18,47 @@
 
     --transition-speed: 0.3s;
 
-    /* === Solar Adaptive Theme Variables (동적 테마) === */
-    /* 이 변수들은 solar-adaptive-theme.js에 의해 실시간 업데이트됩니다 */
-    --theme-brightness: 80;
-    /* 0 = 밝음, 100 = 어두움 */
-    --theme-factor: 0.8;
-    /* 0.0 ~ 1.0 */
-    --theme-inverse-factor: 0.2;
-
-    /* 동적 배경/텍스트 색상 */
+    /* === Dynamic Theme Colors (Default: Dark) === */
     --bg-dynamic: #050510;
     --text-dynamic: #ffffff;
     --text-muted-dynamic: #b8c5d6;
 
-    /* 동적 유리 효과 */
     --glass-bg-dynamic: rgba(255, 255, 255, 0.05);
     --glass-border-dynamic: rgba(255, 255, 255, 0.1);
 
-    /* 동적 그림자 */
     --shadow-intensity: 0.2;
+    --text-shadow-glow: rgba(0, 255, 136, 0.4);
 
-    /* 액센트 채도 조정 */
-    --accent-saturation: 100%;
+    --gradient-start: #ffffff;
+}
+
+/* === Light Mode Overrides === */
+[data-theme="light"] {
+    --bg-dynamic: #F2F4F8;
+    /* Soft Blue-Grey */
+    --text-dynamic: #1A1A2E;
+    /* Deep Navy */
+    --text-muted-dynamic: #4A5B75;
+    /* Darker Slate Grey for readability */
+    --text-muted: #4A5B75;
+    /* Sync static muted for light mode compatibility */
+
+    /* Override accents for Light Mode visibility */
+    --primary-accent: #00A355;
+    /* Darker Green for white backgrounds */
+    --secondary-accent: #6220A3;
+    /* Darker Purple */
+
+    /* Frosted White Glass */
+    --glass-bg-dynamic: rgba(255, 255, 255, 0.75);
+    /* More opaque for contrast */
+    --glass-border-dynamic: rgba(0, 0, 0, 0.1);
+
+    --shadow-intensity: 0.1;
+    --text-shadow-glow: rgba(0, 163, 85, 0.1);
+
+    /* Gradient text start */
+    --gradient-start: #1A1A2E;
 }
 
 * {
@@ -153,7 +172,7 @@ header {
 }
 
 .nav-links a.active {
-    text-shadow: 0 0 8px rgba(0, 255, 136, 0.4), 0 0 20px rgba(0, 255, 136, 1);
+    text-shadow: 0 0 8px var(--text-shadow-glow), 0 0 20px rgba(0, 255, 136, 1);
 }
 
 /* Removed Underline as requested */
@@ -235,10 +254,7 @@ header {
     color: var(--text-dynamic, #fff);
 }
 
-/* Light theme adaptation */
-[data-theme-mode="light"] .logo-img {
-    color: #222;
-}
+
 
 /* Neon 'i' Lighthouse Animation */
 .neon-i-img {
@@ -288,7 +304,7 @@ h1 {
 
 .text-gradient {
     /* Neon Green Gradient */
-    background: linear-gradient(135deg, #fff 0%, var(--primary-accent) 100%);
+    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--primary-accent) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -322,8 +338,8 @@ p.lead {
 .btn-primary {
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--glass-border-dynamic, rgba(255, 255, 255, 0.3));
+    box-shadow: 0 4px 15px rgba(0, 0, 0, var(--shadow-intensity, 0.2));
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -355,7 +371,23 @@ p.lead {
 }
 
 .btn-primary:hover::before {
-    filter: brightness(1.5);
+    filter: brightness(1.2);
+}
+
+[data-theme="light"] .btn-primary {
+    color: var(--text-dynamic);
+    /* Dark text for readability */
+    background: rgba(255, 255, 255, 0.6);
+    border-color: var(--primary-accent);
+    font-weight: 600;
+}
+
+[data-theme="light"] .btn-primary:hover {
+    background: rgba(0, 163, 85, 0.1);
+    /* Subtle green tint */
+    color: #000;
+    /* Strict black on hover for max contrast */
+    border-color: var(--primary-accent);
 }
 
 .btn-primary:hover {
@@ -602,6 +634,21 @@ p.lead {
     z-index: 1;
 }
 
+.card-overlay-dim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 15, 25, 0.6);
+    z-index: 1;
+}
+
+[data-theme="light"] .card-overlay-dim {
+    background: rgba(255, 255, 255, 0.1);
+    /* Much lighter overlay for Light Mode */
+}
+
 /* === Internationalization (i18n) Styles === */
 
 .nav-utils {
@@ -715,142 +762,4 @@ p.lead {
 .lang-dropdown::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 4px;
-}
-
-/* ============================================
-   Light Mode Overrides
-   ============================================ */
-[data-theme-mode="light"] {
-    /* Text colors */
-    color: var(--text-dynamic);
-}
-
-[data-theme-mode="light"] h1,
-[data-theme-mode="light"] h2,
-[data-theme-mode="light"] h3,
-[data-theme-mode="light"] h4 {
-    color: var(--text-dynamic);
-}
-
-[data-theme-mode="light"] .text-gradient {
-    background: linear-gradient(135deg, #1a1a2e 0%, #00aa66 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-[data-theme-mode="light"] .logo {
-    color: var(--text-dynamic);
-}
-
-[data-theme-mode="light"] .nav-links a {
-    color: var(--text-muted-dynamic);
-}
-
-[data-theme-mode="light"] .nav-links a:hover,
-[data-theme-mode="light"] .nav-links a.active {
-    color: var(--text-dynamic);
-}
-
-[data-theme-mode="light"] .btn-primary {
-    background: rgba(0, 0, 0, 0.05);
-    color: var(--text-dynamic);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-[data-theme-mode="light"] .btn-login {
-    color: #00aa66;
-    border-color: #00aa66;
-}
-
-[data-theme-mode="light"] .btn-login:hover {
-    background: #00aa66;
-    color: #fff;
-}
-
-[data-theme-mode="light"] .glass-card h3,
-[data-theme-mode="light"] .glass-card p {
-    color: var(--text-dynamic);
-}
-
-[data-theme-mode="light"] .glass-card p {
-    opacity: 0.8;
-}
-
-[data-theme-mode="light"] .btn-icon {
-    border-color: rgba(0, 0, 0, 0.15);
-    background: rgba(0, 0, 0, 0.03);
-    color: var(--text-muted-dynamic);
-}
-
-[data-theme-mode="light"] .btn-icon:hover {
-    background: rgba(0, 0, 0, 0.08);
-    color: var(--text-dynamic);
-}
-
-[data-theme-mode="light"] .lang-dropdown {
-    background: rgba(255, 255, 255, 0.95);
-    border-color: rgba(0, 0, 0, 0.1);
-}
-
-[data-theme-mode="light"] .lang-option {
-    color: var(--text-muted-dynamic);
-}
-
-[data-theme-mode="light"] .lang-option:hover {
-    background: rgba(0, 0, 0, 0.05);
-    color: var(--text-dynamic);
-}
-
-/* Light Mode Overrides for Icons & Specific Elements */
-[data-theme-mode="light"] ion-icon {
-    color: var(--text-dynamic);
-}
-
-/* Keep feature icons accented */
-[data-theme-mode="light"] .feature-icon {
-    color: #00aa66;
-}
-
-[data-theme-mode="light"] .nav-utils ion-icon {
-    color: inherit;
-}
-
-[data-theme-mode="light"] ul li {
-    color: var(--text-dynamic);
-}
-
-[data-theme-mode="light"] footer {
-    color: var(--text-muted-dynamic);
-}
-
-[data-theme-mode="light"] footer a {
-    color: var(--text-dynamic);
-}
-
-[data-theme-mode="light"] .process-icon {
-    background: rgba(0, 0, 0, 0.05);
-    border-color: rgba(0, 0, 0, 0.1);
-    color: #00aa66;
-    box-shadow: 0 0 20px rgba(0, 170, 102, 0.1);
-}
-
-[data-theme-mode="light"] .terminal-window {
-    background: #ffffff;
-    border-color: rgba(0, 0, 0, 0.1);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
-}
-
-[data-theme-mode="light"] .terminal-header {
-    background: #f0f1f3;
-    border-bottom-color: rgba(0, 0, 0, 0.1);
-}
-
-[data-theme-mode="light"] .terminal-title,
-[data-theme-mode="light"] .output {
-    color: #4a5568;
-}
-
-[data-theme-mode="light"] .terminal-body {
-    color: #00aa66;
 }

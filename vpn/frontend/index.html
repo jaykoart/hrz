@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HQMX VPN | The Future of Community Privacy</title>
-    <link rel="stylesheet" href="style.css?v=2.0.1">
+    <link rel="stylesheet" href="style.css?v=2.2.1">
     <!-- Ionicons for clean iconography -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -29,6 +29,7 @@
                 <a href="vpn.html">VPN</a>
                 <a href="download.html">Download</a>
                 <a href="cloud.html">Cloud</a>
+                <a href="https://hqmx.net/webtools.html">Tools</a>
             </nav>
             <div class="nav-utils">
                 <button class="btn-icon" id="lang-btn" title="Language">
@@ -88,9 +89,7 @@
                     </div>
                 </div>
                 <!-- Card overlay for glass effect -->
-                <div
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 15, 25, 0.6); z-index: 1;">
-                </div>
+                <div class="card-overlay-dim"></div>
                 <!-- Content -->
                 <div style="text-align: center; position: relative; z-index: 2;">
                     <ion-icon name="leaf-outline"
@@ -105,10 +104,10 @@
     <div class="container">
 
 
-        <!-- Features Section (Why Horizon?) -->
+        <!-- Features Section (Why HQMX?) -->
         <section class="features">
             <h2 style="font-size: 2.5rem; margin-bottom: 1rem;" data-i18n="index.features.title">Why <span
-                    class="text-gradient">Horizon?</span></h2>
+                    class="text-gradient">HQMX?</span></h2>
             <p style="color: var(--text-muted); max-width: 600px; margin-bottom: 3rem;"
                 data-i18n="index.features.subtitle">Every second your server is on, you are contributing
                 data to secure the future of food.</p>
@@ -161,7 +160,7 @@
                             <strong>Zero-Logs</strong> policy and powered by <strong>RAM-Only Servers</strong>, your
                             data vanishes the moment power is cut.
                         </p>
-                        <ul style="margin-top: 1.5rem; list-style: none; padding: 0; color: var(--text-main);">
+                        <ul style="margin-top: 1.5rem; list-style: none; padding: 0; color: var(--text-dynamic);">
                             <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
                                 <ion-icon name="checkmark-circle-outline"
                                     style="color: var(--primary-accent);"></ion-icon>
@@ -212,13 +211,13 @@
                         </p>
                         <div style="margin-top: 1.5rem; display: flex; gap: 1rem; justify-content: flex-end;">
                             <div style="text-align: center;">
-                                <h4 style="font-size: 1.5rem; color: var(--text-main);">10B+</h4>
+                                <h4 style="font-size: 1.5rem; color: var(--text-dynamic);">10B+</h4>
                                 <span style="font-size: 0.8rem; color: var(--text-muted);"
                                     data-i18n="index.plant_section.stat1">Data Points</span>
                             </div>
                             <div style="width: 1px; background: rgba(255,255,255,0.1);"></div>
                             <div style="text-align: center;">
-                                <h4 style="font-size: 1.5rem; color: var(--text-main);">Zero</h4>
+                                <h4 style="font-size: 1.5rem; color: var(--text-dynamic);">Zero</h4>
                                 <span style="font-size: 0.8rem; color: var(--text-muted);"
                                     data-i18n="index.plant_section.stat2">Carbon Cost</span>
                             </div>
@@ -255,17 +254,17 @@
                 </p>
                 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
                     <span class="glass"
-                        style="padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.9rem; color: var(--text-main);">
+                        style="padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.9rem; color: var(--text-dynamic);">
                         <ion-icon name="cube-outline" style="vertical-align: middle; margin-right: 5px;"></ion-icon>
                         <span data-i18n="index.cloud_section.pill1">Bare Metal Core</span>
                     </span>
                     <span class="glass"
-                        style="padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.9rem; color: var(--text-main);">
+                        style="padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.9rem; color: var(--text-dynamic);">
                         <ion-icon name="flash-outline" style="vertical-align: middle; margin-right: 5px;"></ion-icon>
                         <span data-i18n="index.cloud_section.pill2">High-Freq VPS</span>
                     </span>
                     <span class="glass"
-                        style="padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.9rem; color: var(--text-main);">
+                        style="padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.9rem; color: var(--text-dynamic);">
                         <ion-icon name="globe-outline" style="vertical-align: middle; margin-right: 5px;"></ion-icon>
                         <span data-i18n="index.cloud_section.pill3">Global Edge</span>
                     </span>
@@ -303,16 +302,17 @@
 
         <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.8rem;">
             <p style="margin-bottom: 1rem;">
-                <a href="terms.html" style="color: var(--text-main); text-decoration: none; margin: 0 10px;">Terms</a>
+                <a href="terms.html"
+                    style="color: var(--text-dynamic); text-decoration: none; margin: 0 10px;">Terms</a>
                 <a href="privacy.html"
-                    style="color: var(--text-main); text-decoration: none; margin: 0 10px;">Privacy</a>
+                    style="color: var(--text-dynamic); text-decoration: none; margin: 0 10px;">Privacy</a>
             </p>
             <p>&copy; 2025 HQMX VPN Project. Open Source & Decentralized.</p>
         </footer>
     </div>
 
     <script src="i18n.js"></script>
-    <script src="script.js?v=2.0.1"></script>
+    <script src="script.js?v=2.2.1"></script>
     <script>
         // Card background slider
         const cardSlides = document.querySelectorAll('.card-slide');

@@ -1,7 +1,7 @@
-# Horizon VPN Backend 개발 가이드
+# HQMX VPN Backend 개발 가이드
 
 ## 📌 Overview
-Horizon VPN은 P2P 기반의 분산형 VPN 서비스로, 사용자의 유휴 대역폭을 활용하여 상업용 프록시 네트워크를 구축합니다.
+HQMX는 P2P 기반의 분산형 VPN 서비스로, 사용자의 유휴 대역폭을 활용하여 상업용 프록시 네트워크를 구축합니다.
 
 ---
 

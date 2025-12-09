@@ -8,13 +8,13 @@
         "hero": {
             "badge": "Projekt Plant AI",
             "title": "Schützen Sie<br>Ihre Privatsphäre,<br><gradient>Retten Sie den Planeten.</gradient>",
-            "subtitle": "Horizon VPN ist mehr als ein Werkzeug. Durch das Teilen Ihrer ungenutzten Bandbreite treiben Sie das Training von <strong>Plant AI</strong> an, dem Motor zur Lösung der globalen Ernährungskrise.",
+            "subtitle": "HQMX VPN ist mehr als ein Werkzeug. Durch das Teilen Ihrer ungenutzten Bandbreite treiben Sie das Training von <strong>Plant AI</strong> an, dem Motor zur Lösung der globalen Ernährungskrise.",
             "cta": "Mission beitreten",
             "version": "v0.1.0",
             "tagline": "Für immer kostenlos • Die Erde zuerst"
         },
         "features": {
-            "title": "Warum <gradient>Horizon?</gradient>",
+            "title": "Warum <gradient>HQMX?</gradient>",
             "subtitle": "Jede Sekunde, die Ihr Server läuft, tragen Sie Daten bei, um die Zukunft der Ernährung zu sichern.",
             "card1": {
                 "title": "WireGuard® Verschlüsselung",
@@ -46,7 +46,7 @@
         },
         "cloud_section": {
             "title": "Souveräne <gradient>Infrastruktur</gradient>",
-            "desc": "Horizon Cloud definiert dezentrale Infrastruktur neu. Aufgebaut auf <strong>Enterprise-Grade-Hardware</strong> und einer <strong>Hybrid-Cloud-Architektur</strong>, gewährleisten wir Datensouveränität und grenzenlose Skalierbarkeit ohne Lock-in.",
+            "desc": "HQMX Cloud definiert dezentrale Infrastruktur neu. Aufgebaut auf <strong>Enterprise-Grade-Hardware</strong> und einer <strong>Hybrid-Cloud-Architektur</strong>, gewährleisten wir Datensouveränität und grenzenlose Skalierbarkeit ohne Lock-in.",
             "pill1": "Bare-Metal-Kern",
             "pill2": "Hochfrequenz-VPS",
             "pill3": "Global Edge",
@@ -87,7 +87,7 @@
             "action_desc": "Autonome Systeme übernehmen. Hohe Temperaturen lösen den Einsatz von Schatten aus; trockener Boden aktiviert Präzisionssprinkler.",
             "problem_title": "Das <gradient>unbekannte Datenproblem.</gradient>",
             "problem_desc1": "Um dies zu bauen, benötigen wir Daten, die Big Tech nicht hat. Sie haben Wikipedia; wir brauchen <strong>Bodenberichte</strong>, <strong>Ernteaufzeichnungen</strong> und <strong>lokale Klimaprotokolle</strong>.",
-            "problem_desc2": "Hier kommt <strong>Horizon VPN</strong> ins Spiel. Ihr Knoten sammelt diese 'Nischendaten' von Tausenden von lokalen Quellen und schafft so die 'grüne Synapse' unserer maßgeschneiderten KI."
+            "problem_desc2": "Hier kommt <strong>HQMX VPN</strong> ins Spiel. Ihr Knoten sammelt diese 'Nischendaten' von Tausenden von lokalen Quellen und schafft so die 'grüne Synapse' unserer maßgeschneiderten KI."
         },
         "mission": {
             "title": "Den <gradient>planetarischen Wandel</gradient> vorantreiben",
@@ -120,8 +120,8 @@
         },
         "distributed": {
             "title": "Angetrieben von <gradient>verteilter Intelligenz</gradient>",
-            "node_title": "Der Horizon-Knoten",
-            "node_desc": "Jeder Benutzer, der Horizon VPN ausführt, wird zu einem <strong>Mikro-Rechenzentrum</strong>. Anstatt massive, energiehungrige Serverfarmen zu bauen, nutzen wir die ungenutzte Rechenleistung von Millionen von Geräten.",
+            "node_title": "Der HQMX-Knoten",
+            "node_desc": "Jeder Benutzer, der HQMX VPN ausführt, wird zu einem <strong>Mikro-Rechenzentrum</strong>. Anstatt massive, energiehungrige Serverfarmen zu bauen, nutzen wir die ungenutzte Rechenleistung von Millionen von Geräten.",
             "node_item1": "<strong>Edge Computing:</strong> Daten werden lokal auf dem Gerät verarbeitet.",
             "node_item2": "<strong>Verschlüsselter Transport:</strong> Alle Beiträge werden über WireGuard-Tunnel anonymisiert.",
             "learning_title": "Föderiertes Lernen",
@@ -147,7 +147,7 @@
         "faq": {
             "title": "Häufig gestellte Fragen",
             "q1": "Verlangsamt dies meine Internetverbindung?",
-            "a1": "Nein. Der Horizon-Knoten erstellt einen 'leichten Hintergrundprozess', der nur ungenutzte Bandbreite verwendet, wenn Sie nicht streamen oder spielen.",
+            "a1": "Nein. Der HQMX-Knoten erstellt einen 'leichten Hintergrundprozess', der nur ungenutzte Bandbreite verwendet, wenn Sie nicht streamen oder spielen.",
             "q2": "Sind meine persönlichen Daten sicher?",
             "a2": "Absolut. Wir sammeln nur öffentliche Umweltdaten. Ihre persönlichen Dateien, Ihr Browserverlauf und Ihre Identität sind streng tabu und für die Knotensoftware technisch unzugänglich."
         },
@@ -159,7 +159,7 @@
             "p2_title": "II. Die Lösung: Präzision vs. Vermutung",
             "p2_content": "Die Landwirtschaft war historisch gesehen ein Spiel der Schätzungen. Plant AI ändert dieses Paradigma durch die Einführung von <strong>Hyper-Präzision</strong>. Durch die Analyse von Tausenden von Datenpunkten – von der stomatären Leitfähigkeit der Blätter bis zur mikrobiellen Aktivität im Boden – können wir jeden Tropfen Wasser und jedes Milligramm Nährstoff optimieren. Dies ist nicht nur 'Smart Farming'; es ist <strong>Computational Agriculture</strong>. Wir verwandeln biologische Unsicherheit in mathematische Vorhersagbarkeit.",
             "p3_title": "III. Skalierbarkeit: Der dezentrale Vorteil",
-            "p3_content": "Ein zentralisierter Supercomputer kann einige wenige riesige Unternehmensfarmen verwalten. Er kann nicht die Milliarden von Kleinbauernhöfen verwalten, die 70 % der weltweiten Nahrungsmittel produzieren. <strong style='color: var(--primary-accent);'>Horizon-Knoten</strong> überbrücken diese Lücke. Durch die Verteilung der Rechenlast auf Millionen von persönlichen Geräten schaffen wir ein <strong>unendliches Mesh-Netzwerk</strong>, das in der Lage ist, Daten von einem Hinterhofgarten in Seoul bis zu einem Weizenfeld in der Ukraine gleichzeitig zu verarbeiten.",
+            "p3_content": "Ein zentralisierter Supercomputer kann einige wenige riesige Unternehmensfarmen verwalten. Er kann nicht die Milliarden von Kleinbauernhöfen verwalten, die 70 % der weltweiten Nahrungsmittel produzieren. <strong style='color: var(--primary-accent);'>HQMX-Knoten</strong> überbrücken diese Lücke. Durch die Verteilung der Rechenlast auf Millionen von persönlichen Geräten schaffen wir ein <strong>unendliches Mesh-Netzwerk</strong>, das in der Lage ist, Daten von einem Hinterhofgarten in Seoul bis zu einem Weizenfeld in der Ukraine gleichzeitig zu verarbeiten.",
             "p4_title": "IV. Das Ergebnis: Eine sich selbst heilende Erde",
             "p4_content": "Das ultimative Ziel von Plant AI ist die <strong>Regeneration</strong>. Durch die Minimierung chemischer Einträge und die Optimierung von Wachstumszyklen ermöglichen wir dem Boden die Heilung. Wir stellen uns eine Zukunft vor, in der die Landwirtschaft als Kohlenstoffsenke und nicht als -quelle fungiert, in der die Ernährungssicherheit durch Code garantiert wird und in der jeder Mensch zum globalen Überleben beitragen kann, indem er einfach seinen Computer eingeschaltet lässt."
         },
@@ -176,13 +176,13 @@
         },
         "cta": {
             "title": "Seien Sie Teil der Lösung",
-            "desc": "Jeder von Ihnen betriebene Horizon-Knoten trägt zum Aufbau der umfassendsten landwirtschaftlichen KI der Welt bei. Ihre ungenutzte Bandbreite von heute wird zur Ernährungssicherheit von morgen.",
-            "button": "Horizon-Knoten herunterladen"
+            "desc": "Jeder von Ihnen betriebene HQMX-Knoten trägt zum Aufbau der umfassendsten landwirtschaftlichen KI der Welt bei. Ihre ungenutzte Bandbreite von heute wird zur Ernährungssicherheit von morgen.",
+            "button": "HQMX-Knoten herunterladen"
         },
         "footer": {
             "terms": "Bedingungen",
             "privacy": "Datenschutz",
-            "copyright": "© 2025 Horizon VPN-Projekt. Open Source & Dezentralisiert."
+            "copyright": "© 2025 HQMX VPN-Projekt. Open Source & Dezentralisiert."
         }
     },
     "vpn": {
@@ -195,7 +195,7 @@
             "card1_title": "Schild in Militärqualität",
             "card1_desc": "AES-256-Verschlüsselungstunnel stellen sicher, dass Ihre Daten für ISPs, Hacker und sogar uns unsichtbar sind. Wir halten uns an eine strikte <strong>Keine-Protokolle-Richtlinie</strong>.",
             "card2_title": "WireGuard®-Geschwindigkeit",
-            "card2_desc": "Horizon basiert auf dem modernen WireGuard-Protokoll und bietet blitzschnelle Geschwindigkeiten bei minimaler Latenz, perfekt für Streaming und Gaming.",
+            "card2_desc": "HQMX basiert auf dem modernen WireGuard-Protokoll und bietet blitzschnelle Geschwindigkeiten bei minimaler Latenz, perfekt für Streaming und Gaming.",
             "card3_title": "Globaler Zugriff",
             "card3_desc": "Umgehen Sie Zensur und Geosperren. Greifen Sie auf Inhalte von überall auf der Welt zu, als wären Sie ein Einheimischer."
         },
@@ -209,7 +209,7 @@
         },
         "terminal": {
             "title": "node-x7z-daemon — bash — 80x24",
-            "cmd1": "$ horizon-cli status --verbose",
+            "cmd1": "$ hqmx-cli status --verbose",
             "res1_1": "> Verbinde mit Mesh-Netzwerk... ",
             "res1_2": "<span style=\"color:var(--primary-accent)\">[OK]</span>",
             "res1_3": "> Handshake: Curve25519 ",
@@ -234,7 +234,7 @@
             "step3_desc": "Kommerzielle Partner bezahlen die Netzwerkinfrastruktur und halten das VPN für Sie für immer 100 % kostenlos."
         },
         "who": {
-            "title": "Für wen ist<br><gradient>Horizon?</gradient>",
+            "title": "Für wen ist<br><gradient>HQMX?</gradient>",
             "user1": "Journalisten",
             "user1_desc": "Umgehen Sie Zensur und berichten Sie sicher aus Konfliktgebieten über die Wahrheit.",
             "user2": "Spieler",
@@ -244,38 +244,38 @@
         },
         "faq": {
             "title": "Häufig gestellte<br><gradient>Fragen</gradient>",
-            "q1": "Sieht Horizon meinen Browserverlauf?",
+            "q1": "Sieht HQMX meinen Browserverlauf?",
             "a1": "<strong>Niemals.</strong> Wir arbeiten auf einer strikten Null-Protokoll-Basis. Technisch gesehen können unsere Knoten den verschlüsselten Datenverkehr in Ihrem persönlichen VPN-Tunnel nicht einsehen. Ihr privates Surfen bleibt privat.",
             "q2": "Wird meine Internetverbindung verlangsamt?",
             "a2": "<strong>Kaum wahrnehmbar.</strong> Der Hintergrundprozess ist 'ressourcenbewusst'. Er wird nur aktiviert, wenn Ihr System im Leerlauf ist (z. B. wenn Sie nicht am Computer sind) und begrenzt die Bandbreitennutzung streng, um sicherzustellen, dass Ihr Streaming oder Gaming niemals unterbrochen wird.",
             "q3": "Ist es wirklich für immer kostenlos?",
             "a3": "<strong>Ja.</strong> Wir benötigen Ihr Abonnementgeld nicht, da unser Geschäftsmodell auf B2B-Datenintelligenz und nicht auf dem Verkauf von B2C-Software basiert. Solange Sie zum Netzwerk beitragen, gehört der Premium-Service Ihnen.",
             "q4": "Kann meine IP für illegale Aktivitäten verwendet werden?",
-            "a4": "<strong>Nein.</strong> Im Gegensatz zu anderen P2P-Netzwerken trennt Horizon das 'kommerzielle Proxy' (das von Unternehmen verwendet wird) von Ihrer privaten IP. Wir haben eine strenge KYC-Prüfung (Know Your Customer) für alle Geschäftspartner, die auf das Datennetzwerk zugreifen."
+            "a4": "<strong>Nein.</strong> Im Gegensatz zu anderen P2P-Netzwerken trennt HQMX das 'kommerzielle Proxy' (das von Unternehmen verwendet wird) von Ihrer privaten IP. Wir haben eine strenge KYC-Prüfung (Know Your Customer) für alle Geschäftspartner, die auf das Datennetzwerk zugreifen."
         },
         "transparency": {
             "header": "Technischer Deep Dive",
             "title": "Transparenz-<br><gradient>bericht</gradient>",
             "p1_title": "I. Nur-RAM-Infrastruktur",
-            "p1_content": "Traditionelle VPNs schreiben Protokolle auf Festplatten, die beschlagnahmt oder inspiziert werden können. Horizon arbeitet ausschließlich auf <strong>Nur-RAM-Servern</strong>. Das bedeutet, dass in dem Moment, in dem ein Server neu gestartet wird – oder wenn der Strom ausfällt – jedes einzelne Byte an Daten sofort gelöscht wird. Es gibt keine physische Festplatte, von der Daten wiederhergestellt werden könnten. Wir behandeln Ihren Browserverlauf als 'toxische Daten', die wir nicht speichern.",
+            "p1_content": "Traditionelle VPNs schreiben Protokolle auf Festplatten, die beschlagnahmt oder inspiziert werden können. HQMX arbeitet ausschließlich auf <strong>Nur-RAM-Servern</strong>. Das bedeutet, dass in dem Moment, in dem ein Server neu gestartet wird – oder wenn der Strom ausfällt – jedes einzelne Byte an Daten sofort gelöscht wird. Es gibt keine physische Festplatte, von der Daten wiederhergestellt werden könnten. Wir behandeln Ihren Browserverlauf als 'toxische Daten', die wir nicht speichern.",
             "p2_title": "II. Die 'blinde' Relay-Architektur",
             "p2_content": "Wir verwenden eine 'Double-Hop'-Architektur für den ersten Handshake. Der Knoten, der weiß, <em>wer Sie sind</em> (der Eingangsknoten), weiß nicht, <em>was Sie tun</em>. Der Knoten, der weiß, <em>was Sie tun</em> (der Ausgangsknoten), weiß nicht, <em>wer Sie sind</em>. Diese kryptografische Trennung stellt sicher, dass keine einzige Maschine in unserem Netzwerk das vollständige Bild Ihrer Aktivität besitzt.",
             "p3_title": "III. Ephemere Schlüssel & Perfect Forward Secrecy",
-            "p3_content": "Horizon verwendet <strong>Perfect Forward Secrecy (PFS)</strong>. Wir generieren für jede einzelne Sitzung einen neuen Verschlüsselungsschlüssel und rotieren ihn alle 60 Minuten. Selbst wenn ein Supercomputer einen Schlüssel aus einer vergangenen Sitzung knacken würde (was Milliarden von Jahren dauern würde), könnte er nicht zur Entschlüsselung zukünftiger oder vergangener Sitzungen verwendet werden. Ihre Privatsphäre ist mathematisch garantiert, nicht nur versprochen.",
+            "p3_content": "HQMX verwendet <strong>Perfect Forward Secrecy (PFS)</strong>. Wir generieren für jede einzelne Sitzung einen neuen Verschlüsselungsschlüssel und rotieren ihn alle 60 Minuten. Selbst wenn ein Supercomputer einen Schlüssel aus einer vergangenen Sitzung knacken würde (was Milliarden von Jahren dauern würde), könnte er nicht zur Entschlüsselung zukünftiger oder vergangener Sitzungen verwendet werden. Ihre Privatsphäre ist mathematisch garantiert, nicht nur versprochen.",
             "p4_title": "IV. Die Business-Firewall",
             "p4_content": "Kritiker fragen: 'Wenn Sie Daten verkaufen, sind meine Daten dann nicht in Gefahr?' Nein. Das 'kommerzielle Proxy'-Netzwerk ist eine völlig separate logische Schicht. Geschäftspartner greifen über unsere Knoten auf das <em>öffentliche Internet</em> zu, um Flugpreise oder Anzeigenplatzierungen zu überprüfen. Sie haben <strong>niemals</strong> Zugriff auf den internen VPN-Tunnel, in dem Ihr persönlicher Datenverkehr fließt. Die beiden Welten berühren sich nie."
         },
         "final": {
             "title": "Das letzte VPN, das Sie<br><gradient>jemals brauchen werden.</gradient>",
             "desc": "Hören Sie auf, für Privatsphäre zu bezahlen. Fangen Sie an, zur Zukunft beizutragen.",
-            "cta": "Horizon kostenlos erhalten"
+            "cta": "HQMX kostenlos erhalten"
         }
     },
     "download": {
-        "title": "Horizon VPN herunterladen | Dem Mesh beitreten",
+        "title": "HQMX VPN herunterladen | Dem Mesh beitreten",
         "hero": {
             "badge": "v0.1.0 Beta",
-            "title": "<gradient>Horizon</gradient> herunterladen",
+            "title": "<gradient>HQMX</gradient> herunterladen",
             "subtitle": "Treten Sie dem dezentralen Datenschutznetzwerk bei. Ihr Gerät wird zu einem Knoten im globalen Mesh, schützt Millionen und verdient Belohnungen.",
             "tag1": "Keine Protokolle",
             "tag2": "WireGuard-Protokoll",
@@ -318,16 +318,16 @@
         }
     },
     "cloud": {
-        "title": "Horizon Cloud | Die Zukunft der Infrastruktur",
+        "title": "HQMX Cloud | Die Zukunft der Infrastruktur",
         "hero": {
             "pre_title": "Globale Infrastrukturinitiative",
             "title": "Souveränität. Skalierung.<br><gradient>Leistung.</gradient>",
-            "subtitle": "Horizon Cloud definiert den Standard für dezentrale Infrastruktur neu. Gebaut auf <strong>Hardware der Unternehmensklasse</strong> und angetrieben von einer <strong>Hybrid-Cloud-Architektur</strong>, die für Sicherheit und grenzenlose Skalierbarkeit entwickelt wurde.",
+            "subtitle": "HQMX Cloud definiert den Standard für dezentrale Infrastruktur neu. Gebaut auf <strong>Hardware der Unternehmensklasse</strong> und angetrieben von einer <strong>Hybrid-Cloud-Architektur</strong>, die für Sicherheit und grenzenlose Skalierbarkeit entwickelt wurde.",
             "cta1": "Unsere Werte entdecken",
             "cta2": "Technische Daten",
             "status_title": "SYSTEMSTATUS: ONLINE",
             "status1": "> Initialisiere Region: KR-CORE-1",
-            "status2": "> Knotenanzahl: <span style=\"color: #fff;\">Aktiv</span>",
+            "status2": "> Knotenanzahl: <span style=\"color: var(--text-dynamic);\">Aktiv</span>",
             "status3": "> Hybrid-Uplink: <span style=\"color: #4facfe;\">AWS Direct Connect</span>",
             "status4": "> Sicherheit: <span style=\"color: var(--secondary-accent);\">OPNsense Firewall aktiviert</span>",
             "status5": "> Speicher: ZFS RAID-Z2 optimiert"
@@ -401,7 +401,7 @@
         },
         "cta": {
             "title": "Bereit zum<br><gradient>Skalieren?</gradient>",
-            "desc": "Nehmen Sie am Pilotprogramm für Horizon Cloud Phase 1 teil.",
+            "desc": "Nehmen Sie am Pilotprogramm für HQMX Cloud Phase 1 teil.",
             "button": "Anlegerbeziehungen kontaktieren"
         }
     }

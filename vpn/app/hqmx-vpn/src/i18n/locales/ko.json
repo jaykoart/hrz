@@ -1,0 +1,66 @@
+{
+    "common": {
+        "loading": "로딩 중...",
+        "connect": "연결",
+        "disconnect": "연결 해제",
+        "connecting": "연결 중...",
+        "disconnecting": "해제 중...",
+        "protected": "보호됨",
+        "unprotected": "보호되지 않음",
+        "error": "오류"
+    },
+    "nav": {
+        "connect": "연결",
+        "stats": "통계",
+        "settings": "설정"
+    },
+    "login": {
+        "title": "다시 오신 것을 환영합니다",
+        "subtitle": "HQMX로 당신의 디지털 라이프를 보호하세요",
+        "email_placeholder": "이메일 주소 입력",
+        "password_placeholder": "비밀번호",
+        "sign_in": "로그인",
+        "continue_with_google": "Google로 계속하기",
+        "new_account": "계정이 없으신가요?",
+        "sign_up": "회원가입"
+    },
+    "node": {
+        "select_location": "위치 선택",
+        "node_mode_active": "노드 모드 활성화됨",
+        "earning_credits": "대역폭 공유로 크레딧 적립 중",
+        "ping": "ms"
+    },
+    "stats": {
+        "title": "네트워크 통계",
+        "contribution": "나의 기여",
+        "download": "다운로드",
+        "upload": "업로드",
+        "total_shared": "총 공유량",
+        "active_time": "가동 시간"
+    },
+    "settings": {
+        "title": "설정",
+        "general": {
+            "title": "일반",
+            "auto_connect": "앱 실행 시 자동 연결",
+            "kill_switch": "킬 스위치 (Kill Switch)"
+        },
+        "appearance": {
+            "title": "화면 설정",
+            "theme": "테마",
+            "dark": "다크",
+            "light": "라이트",
+            "system": "시스템"
+        },
+        "contribution": {
+            "title": "노드 기여 설정",
+            "enable_mode": "노드 모드 활성화",
+            "enable_desc": "대역폭 공유하고 무료로 사용",
+            "wifi_only": "Wi-Fi에서만 작동"
+        },
+        "account": {
+            "logout": "로그아웃",
+            "version": "HQMX VPN v0.1.0"
+        }
+    }
+}

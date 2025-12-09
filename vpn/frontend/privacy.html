@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | HQMX VPN</title>
-    <link rel="stylesheet" href="style.css?v=2.0.1">
+    <link rel="stylesheet" href="style.css?v=2.2.1">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <style>
@@ -18,7 +18,7 @@
         .legal-content h3 {
             margin-top: 1.5rem;
             margin-bottom: 0.5rem;
-            color: #fff;
+            color: var(--text-dynamic);
             font-size: 1.1rem;
         }
 
@@ -52,6 +52,7 @@
                 <a href="vpn.html">VPN</a>
                 <a href="download.html">Download</a>
                 <a href="cloud.html">Cloud</a>
+                <a href="https://hqmx.net/webtools.html">Tools</a>
             </nav>
             <div class="nav-utils">
                 <button class="btn-icon" id="lang-btn" title="Language">
@@ -70,11 +71,11 @@
 
         <section class="glass glass-card legal-content" style="margin-bottom: 4rem;">
             <h2>1. Our Commitment: Privacy First</h2>
-            <p>At Horizon, we believe in an ethical supply chain for data. We are transparent about what we collect, why
+            <p>At HQMX, we believe in an ethical supply chain for data. We are transparent about what we collect, why
                 we collect it, and how we protect it.</p>
 
             <h2>2. No-Logs Policy (VPN)</h2>
-            <p>When you use Horizon as a VPN client to browse the internet:</p>
+            <p>When you use HQMX as a VPN client to browse the internet:</p>
             <ul>
                 <li>We <strong>DO NOT</strong> log your browsing history.</li>
                 <li>We <strong>DO NOT</strong> log your DNS queries.</li>
@@ -111,7 +112,7 @@
 
             <h2>6. Contact Us</h2>
             <p>For any privacy concerns or data requests, please contact our Compliance Officer at:
-                <strong>privacy@horizon-vpn.io</strong>
+                <strong>privacy@hqmx.net</strong>
             </p>
             <p style="text-align: right; color: var(--text-muted); margin-top: 3rem; font-size: 0.9rem;">Effective Date:
                 December 8, 2025</p>
@@ -119,9 +120,10 @@
 
         <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.8rem;">
             <p style="margin-bottom: 1rem;">
-                <a href="terms.html" style="color: var(--text-main); text-decoration: none; margin: 0 10px;">Terms</a>
-                <a href="privacy.html"
-                    style="color: var(--text-main); text-decoration: none; margin: 0 10px;">Privacy</a>
+                <a href="terms.html" style="color: var(--text-dynamic); text-decoration: none; margin: 0 10px;"
+                    data-i18n="plant_ai.footer.terms">Terms</a>
+                <a href="privacy.html" style="color: var(--text-dynamic); text-decoration: none; margin: 0 10px;"
+                    data-i18n="plant_ai.footer.privacy">Privacy</a>
             </p>
             <p>&copy; 2025 HQMX VPN Project. Open Source & Decentralized.</p>
         </footer>

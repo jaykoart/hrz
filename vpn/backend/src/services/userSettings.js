@@ -76,12 +76,12 @@ const CONSENT_ITEMS = {
     termsOfService: {
         required: true,
         title: 'Terms of Service',
-        description: 'Accept terms of service to use Horizon VPN'
+        description: 'Accept terms of service to use HQMX VPN'
     },
     resourceSharing: {
         required: true,
         title: 'Resource Sharing Agreement',
-        description: 'Allow sharing your network resources with Horizon network'
+        description: 'Allow sharing your network resources with HQMX network'
     },
     dataCollection: {
         required: false,
