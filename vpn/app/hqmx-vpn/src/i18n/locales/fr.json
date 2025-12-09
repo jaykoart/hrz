@@ -1,0 +1,82 @@
+{
+    "common": {
+        "loading": "Chargement...",
+        "connect": "Connecter",
+        "disconnect": "Déconnecter",
+        "connecting": "Connexion...",
+        "disconnecting": "Déconnexion...",
+        "protected": "Protégé",
+        "unprotected": "Non protégé",
+        "error": "Erreur"
+    },
+    "nav": {
+        "connect": "Connecter",
+        "stats": "Statistiques",
+        "settings": "Paramètres"
+    },
+    "login": {
+        "title": "Bon retour",
+        "register_title": "Créer un compte",
+        "subtitle": "Sécurisez votre vie numérique avec HQMX",
+        "email_placeholder": "Entrez votre e-mail",
+        "password_placeholder": "Mot de passe",
+        "confirm_password_placeholder": "Confirmez le mot de passe",
+        "name_placeholder": "Nom (facultatif)",
+        "sign_in": "Se connecter",
+        "create_account": "Créer un compte",
+        "continue_with_google": "Continuer avec Google",
+        "new_account": "Pas de compte ? S'inscrire",
+        "have_account": "Vous avez déjà un compte ? Se connecter",
+        "sign_up": "S'inscrire",
+        "terms_agreement": "En continuant, vous acceptez nos",
+        "terms": "Conditions",
+        "privacy_policy": "Politique de confidentialité",
+        "error_required_fields": "L'e-mail et le mot de passe sont requis",
+        "error_password_length": "Le mot de passe doit comporter au moins 8 caractères",
+        "error_password_mismatch": "Les mots de passe ne correspondent pas",
+        "error_login_failed": "La connexion a échoué",
+        "error_register_failed": "L'inscription a échoué"
+    },
+    "node": {
+        "select_location": "Sélectionner l'emplacement",
+        "node_mode_active": "Mode nœud actif",
+        "earning_credits": "Gagner des crédits en partageant la bande passante",
+        "ping": "ms"
+    },
+    "stats": {
+        "title": "Statistiques du réseau",
+        "contribution": "Votre contribution",
+        "download": "Télécharger",
+        "upload": "Uploader",
+        "total_shared": "Total partagé",
+        "active_time": "Temps actif"
+    },
+    "settings": {
+        "title": "Paramètres",
+        "general": {
+            "title": "Général",
+            "auto_connect": "Connexion automatique au lancement",
+            "kill_switch": "Kill Switch"
+        },
+        "appearance": {
+            "title": "Apparence",
+            "theme": "Thème",
+            "dark": "Sombre",
+            "light": "Clair",
+            "system": "Système"
+        },
+        "language": {
+            "title": "Langue"
+        },
+        "contribution": {
+            "title": "Contribution du nœud",
+            "enable_mode": "Activer le mode nœud",
+            "enable_desc": "Partagez la bande passante pour une utilisation gratuite",
+            "wifi_only": "Wi-Fi uniquement"
+        },
+        "account": {
+            "logout": "Se déconnecter",
+            "version": "HQMX VPN v0.1.0"
+        }
+    }
+}

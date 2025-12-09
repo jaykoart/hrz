@@ -1,0 +1,82 @@
+{
+    "common": {
+        "loading": "加载中...",
+        "connect": "连接",
+        "disconnect": "断开连接",
+        "connecting": "连接中...",
+        "disconnecting": "断开中...",
+        "protected": "已受保护",
+        "unprotected": "未受保护",
+        "error": "错误"
+    },
+    "nav": {
+        "connect": "连接",
+        "stats": "统计",
+        "settings": "设置"
+    },
+    "login": {
+        "title": "欢迎回来",
+        "register_title": "创建账户",
+        "subtitle": "使用 HQMX 保护您的数字生活",
+        "email_placeholder": "输入您的电子邮件",
+        "password_placeholder": "密码",
+        "confirm_password_placeholder": "确认密码",
+        "name_placeholder": "名称（可选）",
+        "sign_in": "登录",
+        "create_account": "创建账户",
+        "continue_with_google": "使用 Google 继续",
+        "new_account": "没有账户？ 注册",
+        "have_account": "已有账户？ 登录",
+        "sign_up": "注册",
+        "terms_agreement": "继续即表示您同意我们的",
+        "terms": "条款",
+        "privacy_policy": "隐私政策",
+        "error_required_fields": "需要电子邮件和密码",
+        "error_password_length": "密码必须至少为8个字符",
+        "error_password_mismatch": "密码不匹配",
+        "error_login_failed": "登录失败",
+        "error_register_failed": "注册失败"
+    },
+    "node": {
+        "select_location": "选择位置",
+        "node_mode_active": "节点模式已激活",
+        "earning_credits": "通过共享带宽赚取积分",
+        "ping": "毫秒"
+    },
+    "stats": {
+        "title": "网络统计",
+        "contribution": "您的贡献",
+        "download": "下载",
+        "upload": "上传",
+        "total_shared": "总共享量",
+        "active_time": "活动时间"
+    },
+    "settings": {
+        "title": "设置",
+        "general": {
+            "title": "常规",
+            "auto_connect": "启动时自动连接",
+            "kill_switch": "紧急开关"
+        },
+        "appearance": {
+            "title": "外观",
+            "theme": "主题",
+            "dark": "深色",
+            "light": "浅色",
+            "system": "系统"
+        },
+        "language": {
+            "title": "语言"
+        },
+        "contribution": {
+            "title": "节点贡献",
+            "enable_mode": "启用节点模式",
+            "enable_desc": "共享带宽以免费使用",
+            "wifi_only": "仅限 Wi-Fi"
+        },
+        "account": {
+            "logout": "登出",
+            "version": "HQMX VPN v0.1.0"
+        }
+    }
+}

@@ -107,3 +107,34 @@ document.addEventListener('DOMContentLoaded', () => {
     updateHologramEffect();
 });
 
+// ============================================
+// Mobile Navigation (Hamburger)
+// ============================================
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const navLinks = document.querySelector('.nav-links');
+
+if (hamburgerBtn && navLinks) {
+    hamburgerBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-active');
+
+        // Toggle icon between "menu" and "close"
+        const icon = hamburgerBtn.querySelector('ion-icon');
+        if (icon) {
+            const currentIcon = icon.getAttribute('name');
+            icon.setAttribute('name', currentIcon === 'menu-outline' ? 'close-outline' : 'menu-outline');
+        }
+    });
+
+    // Close menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('mobile-active');
+            const icon = hamburgerBtn.querySelector('ion-icon');
+            if (icon) {
+                icon.setAttribute('name', 'menu-outline');
+            }
+        });
+    });
+}
+
+// ============================================

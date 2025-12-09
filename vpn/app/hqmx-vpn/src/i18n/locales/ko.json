@@ -16,13 +16,26 @@
     },
     "login": {
         "title": "다시 오신 것을 환영합니다",
+        "register_title": "계정 만들기",
         "subtitle": "HQMX로 당신의 디지털 라이프를 보호하세요",
         "email_placeholder": "이메일 주소 입력",
         "password_placeholder": "비밀번호",
+        "confirm_password_placeholder": "비밀번호 확인",
+        "name_placeholder": "이름 (선택사항)",
         "sign_in": "로그인",
+        "create_account": "계정 만들기",
         "continue_with_google": "Google로 계속하기",
-        "new_account": "계정이 없으신가요?",
-        "sign_up": "회원가입"
+        "new_account": "계정이 없으신가요? 회원가입",
+        "have_account": "이미 계정이 있으신가요? 로그인",
+        "sign_up": "회원가입",
+        "terms_agreement": "계속 진행하면 다음에 동의하는 것으로 간주됩니다:",
+        "terms": "이용약관",
+        "privacy_policy": "개인정보처리방침",
+        "error_required_fields": "이메일과 비밀번호를 입력해주세요",
+        "error_password_length": "비밀번호는 8자 이상이어야 합니다",
+        "error_password_mismatch": "비밀번호가 일치하지 않습니다",
+        "error_login_failed": "로그인에 실패했습니다",
+        "error_register_failed": "회원가입에 실패했습니다"
     },
     "node": {
         "select_location": "위치 선택",
@@ -51,6 +64,9 @@
             "dark": "다크",
             "light": "라이트",
             "system": "시스템"
+        },
+        "language": {
+            "title": "언어"
         },
         "contribution": {
             "title": "노드 기여 설정",

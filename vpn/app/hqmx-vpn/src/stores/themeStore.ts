@@ -14,6 +14,9 @@ interface ThemeState {
 const STORE_PATH = 'settings.json';
 const THEME_KEY = 'theme';
 
+// Tauri 환경 확인
+const isTauri = typeof window !== 'undefined' && '__TAURI__' in window;
+
 // Get system theme preference
 const getSystemTheme = (): 'dark' | 'light' => {
     if (typeof window !== 'undefined' && window.matchMedia) {
@@ -36,8 +39,18 @@ export const useThemeStore = create<ThemeState>((set, get) => ({
 
     initTheme: async () => {
         try {
-            const store = await load(STORE_PATH, { autoSave: true });
-            const savedTheme = (await store.get(THEME_KEY)) as Theme | null;
+            let savedTheme: Theme | null = null;
+
+            if (isTauri) {
+                // Tauri 환경: plugin-store 사용
+                const store = await load(STORE_PATH, { autoSave: true, defaults: {} });
+                savedTheme = (await store.get(THEME_KEY)) as Theme | null;
+            } else {
+                // 브라우저 환경: localStorage 사용
+                const saved = localStorage.getItem(THEME_KEY);
+                savedTheme = saved as Theme | null;
+            }
+
             const theme = savedTheme || 'dark';
             const effectiveTheme = theme === 'system' ? getSystemTheme() : theme;
 
@@ -68,9 +81,15 @@ export const useThemeStore = create<ThemeState>((set, get) => ({
         set({ theme, effectiveTheme });
 
         try {
-            const store = await load(STORE_PATH, { autoSave: true });
-            await store.set(THEME_KEY, theme);
-            await store.save();
+            if (isTauri) {
+                // Tauri 환경: plugin-store 사용
+                const store = await load(STORE_PATH, { autoSave: true, defaults: {} });
+                await store.set(THEME_KEY, theme);
+                await store.save();
+            } else {
+                // 브라우저 환경: localStorage 사용
+                localStorage.setItem(THEME_KEY, theme);
+            }
         } catch (e) {
             console.error('Failed to save theme:', e);
         }

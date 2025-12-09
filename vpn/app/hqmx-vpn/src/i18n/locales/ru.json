@@ -1,0 +1,82 @@
+{
+    "common": {
+        "loading": "Загрузка...",
+        "connect": "Подключить",
+        "disconnect": "Отключить",
+        "connecting": "Подключение...",
+        "disconnecting": "Отключение...",
+        "protected": "Защищено",
+        "unprotected": "Не защищено",
+        "error": "Ошибка"
+    },
+    "nav": {
+        "connect": "Подключить",
+        "stats": "Статистика",
+        "settings": "Настройки"
+    },
+    "login": {
+        "title": "С возвращением",
+        "register_title": "Создать аккаунт",
+        "subtitle": "Защитите свою цифровую жизнь с HQMX",
+        "email_placeholder": "Введите свой адрес электронной почты",
+        "password_placeholder": "Пароль",
+        "confirm_password_placeholder": "Подтвердите пароль",
+        "name_placeholder": "Имя (необязательно)",
+        "sign_in": "Войти",
+        "create_account": "Создать аккаунт",
+        "continue_with_google": "Продолжить с Google",
+        "new_account": "Нет аккаунта? Зарегистрироваться",
+        "have_account": "Уже есть аккаунт? Войти",
+        "sign_up": "Зарегистрироваться",
+        "terms_agreement": "Продолжая, вы соглашаетесь с нашими",
+        "terms": "Условиями",
+        "privacy_policy": "Политикой конфиденциальности",
+        "error_required_fields": "Требуются электронная почта и пароль",
+        "error_password_length": "Пароль должен содержать не менее 8 символов",
+        "error_password_mismatch": "Пароли не совпадают",
+        "error_login_failed": "Ошибка входа",
+        "error_register_failed": "Ошибка регистрации"
+    },
+    "node": {
+        "select_location": "Выбрать местоположение",
+        "node_mode_active": "Режим узла активен",
+        "earning_credits": "Заработок кредитов за счет совместного использования пропускной способности",
+        "ping": "мс"
+    },
+    "stats": {
+        "title": "Статистика сети",
+        "contribution": "Ваш вклад",
+        "download": "Скачать",
+        "upload": "Загрузить",
+        "total_shared": "Всего передано",
+        "active_time": "Активное время"
+    },
+    "settings": {
+        "title": "Настройки",
+        "general": {
+            "title": "Общие",
+            "auto_connect": "Автоматическое подключение при запуске",
+            "kill_switch": "Аварийный выключатель"
+        },
+        "appearance": {
+            "title": "Внешний вид",
+            "theme": "Тема",
+            "dark": "Темная",
+            "light": "Светлая",
+            "system": "Система"
+        },
+        "language": {
+            "title": "Язык"
+        },
+        "contribution": {
+            "title": "Вклад узла",
+            "enable_mode": "Включить режим узла",
+            "enable_desc": "Делитесь пропускной способностью для бесплатного использования",
+            "wifi_only": "Только Wi-Fi"
+        },
+        "account": {
+            "logout": "Выйти",
+            "version": "HQMX VPN v0.1.0"
+        }
+    }
+}

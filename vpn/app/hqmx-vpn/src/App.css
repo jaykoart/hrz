@@ -1,4 +1,10 @@
 /* Additional App Specific Styles */
+:root {
+  --primary-accent: #00ff88;
+  --primary-yellow: #ccff00;
+  --gradient-brand: linear-gradient(135deg, var(--primary-accent), var(--primary-yellow));
+}
+
 
 /* App Container Layout */
 .app-header {
@@ -82,8 +88,8 @@
 }
 
 .connect-btn.active {
-  background: linear-gradient(145deg, #004d2a, #00331b);
-  /* Dark green base */
+  background: var(--gradient-brand);
+  /* Green-Yellow Gradient */
   color: var(--primary-accent);
   box-shadow:
     inset 0 0 20px rgba(0, 255, 136, 0.3),

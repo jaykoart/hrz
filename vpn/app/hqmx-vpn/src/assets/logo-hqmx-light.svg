@@ -3,10 +3,11 @@
   <defs>
     <linearGradient id="hqmx-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00ff88"/>
-      <stop offset="100%" stop-color="#ccff00"/>
+      <stop offset="50%" stop-color="#00d4aa"/>
+      <stop offset="100%" stop-color="#00b8d4"/>
     </linearGradient>
   </defs>
   <text x="10" y="38" font-family="Inter, sans-serif" font-size="36" font-weight="700" letter-spacing="1">
-    <tspan fill="rgba(255,255,255,0.8)">HQM</tspan><tspan fill="url(#hqmx-gradient)">X</tspan>
+    <tspan fill="#1a1a2e">HQM</tspan><tspan fill="url(#hqmx-gradient)">X</tspan>
   </text>
 </svg>

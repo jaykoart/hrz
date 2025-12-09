@@ -20,7 +20,9 @@
         "decorations": true,
         "transparent": false,
         "alwaysOnTop": false,
-        "theme": "Dark"
+        "theme": "Dark",
+        "titleBarStyle": "Overlay",
+        "hiddenTitle": true
       }
     ],
     "trayIcon": {
@@ -36,7 +38,7 @@
       "endpoints": [
         "https://hqmx.net/releases/v1/latest.json"
       ],
-      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IHJzaWduIGVuY3J5cHRlZCBzZWNyZXQga2V5ClJXUlRZMEl5a3FKdGFxU1oxSkZ1eFJpc0NnajVsMnpjNFkyWk42SEtIRFdGdHNwb3ZoOEFBQkFBQUFBQUFBQUFBQUlBQUFBQXlVOHNHSDByMW5EcUJyUWVFeUtaUDJVVi9NVHhjcFViVDRNMWVDTWRMb0I2NkJPL2d3aSt4QVo4eDkyQk9wakVGWi9CcHc3dGVLWXRUd3ZDaFZBREpIeFJIcDNNRXM5enZYbFNTMTE3SmczcU5EN2k3bnhXRWU3WWx3YzBrK3ZQS1cvUktrdWF1RW89Cg=="
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDAxNUNDMzYxNDhBMjhEQkEKUldTNmphSklZY05jQVFlY1lGYys3RVErK3kzaGl2Nmc3OUNRVG1MZjVyMmdmYXBJT1ZoeHhKbjYK"
     },
     "deep-link": {
       "desktop": {

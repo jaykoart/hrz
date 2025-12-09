@@ -1,0 +1,82 @@
+{
+    "common": {
+        "loading": "Carregando...",
+        "connect": "Conectar",
+        "disconnect": "Desconectar",
+        "connecting": "Conectando...",
+        "disconnecting": "Desconectando...",
+        "protected": "Protegido",
+        "unprotected": "Não protegido",
+        "error": "Erro"
+    },
+    "nav": {
+        "connect": "Conectar",
+        "stats": "Estatísticas",
+        "settings": "Configurações"
+    },
+    "login": {
+        "title": "Bem-vindo de volta",
+        "register_title": "Criar conta",
+        "subtitle": "Proteja sua vida digital com HQMX",
+        "email_placeholder": "Digite seu e-mail",
+        "password_placeholder": "Senha",
+        "confirm_password_placeholder": "Confirme a senha",
+        "name_placeholder": "Nome (opcional)",
+        "sign_in": "Entrar",
+        "create_account": "Criar conta",
+        "continue_with_google": "Continuar com o Google",
+        "new_account": "Não tem uma conta? Inscreva-se",
+        "have_account": "Já tem uma conta? Entrar",
+        "sign_up": "Inscreva-se",
+        "terms_agreement": "Ao continuar, você concorda com nossos",
+        "terms": "Termos",
+        "privacy_policy": "Política de Privacidade",
+        "error_required_fields": "E-mail e senha são obrigatórios",
+        "error_password_length": "A senha deve ter pelo menos 8 caracteres",
+        "error_password_mismatch": "As senhas не coincidem",
+        "error_login_failed": "Falha no login",
+        "error_register_failed": "Falha no registro"
+    },
+    "node": {
+        "select_location": "Selecionar local",
+        "node_mode_active": "Modo de nó ativo",
+        "earning_credits": "Ganhando créditos compartilhando largura de banda",
+        "ping": "ms"
+    },
+    "stats": {
+        "title": "Estatísticas da rede",
+        "contribution": "Sua contribuição",
+        "download": "Baixar",
+        "upload": "Carregar",
+        "total_shared": "Total compartilhado",
+        "active_time": "Tempo ativo"
+    },
+    "settings": {
+        "title": "Configurações",
+        "general": {
+            "title": "Geral",
+            "auto_connect": "Conectar automaticamente no lançamento",
+            "kill_switch": "Kill Switch"
+        },
+        "appearance": {
+            "title": "Aparência",
+            "theme": "Tema",
+            "dark": "Escuro",
+            "light": "Claro",
+            "system": "Sistema"
+        },
+        "language": {
+            "title": "Idioma"
+        },
+        "contribution": {
+            "title": "Contribuição do nó",
+            "enable_mode": "Ativar modo de nó",
+            "enable_desc": "Compartilhe largura de banda para uso gratuito",
+            "wifi_only": "Apenas Wi-Fi"
+        },
+        "account": {
+            "logout": "Sair",
+            "version": "HQMX VPN v0.1.0"
+        }
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "common": {
+        "loading": "جار التحميل...",
+        "connect": "اتصل",
+        "disconnect": "قطع الاتصال",
+        "connecting": "جار الاتصال...",
+        "disconnecting": "جارٍ قطع الاتصال...",
+        "protected": "محمي",
+        "unprotected": "غير محمي",
+        "error": "خطأ"
+    },
+    "nav": {
+        "connect": "اتصل",
+        "stats": "الإحصائيات",
+        "settings": "الإعدادات"
+    },
+    "login": {
+        "title": "مرحبا بعودتك",
+        "register_title": "إنشاء حساب",
+        "subtitle": "قم بتأمين حياتك الرقمية مع HQMX",
+        "email_placeholder": "أدخل بريدك الإلكتروني",
+        "password_placeholder": "كلمة المرور",
+        "confirm_password_placeholder": "تأكيد كلمة المرور",
+        "name_placeholder": "الاسم (اختياري)",
+        "sign_in": "تسجيل الدخول",
+        "create_account": "إنشاء حساب",
+        "continue_with_google": "متابعة باستخدام جوجل",
+        "new_account": "ليس لديك حساب؟ اشتراك",
+        "have_account": "هل لديك حساب بالفعل؟ تسجيل الدخول",
+        "sign_up": "اشتراك",
+        "terms_agreement": "من خلال المتابعة، فإنك توافق على",
+        "terms": "الشروط",
+        "privacy_policy": "سياسة الخصوصية",
+        "error_required_fields": "البريد الإلكتروني وكلمة المرور مطلوبان",
+        "error_password_length": "يجب أن لا تقل كلمة المرور عن 8 أحرف",
+        "error_password_mismatch": "كلمات المرور غير متطابقة",
+        "error_login_failed": "فشل تسجيل الدخول",
+        "error_register_failed": "فشل التسجيل"
+    },
+    "node": {
+        "select_location": "اختر موقعا",
+        "node_mode_active": "وضع العقدة نشط",
+        "earning_credits": "كسب أرصدة من خلال مشاركة النطاق الترددي",
+        "ping": "مللي ثانية"
+    },
+    "stats": {
+        "title": "إحصائيات الشبكة",
+        "contribution": "مساهمتك",
+        "download": "تحميل",
+        "upload": "رفع",
+        "total_shared": "إجمالي المشاركة",
+        "active_time": "الوقت النشط"
+    },
+    "settings": {
+        "title": "الإعدادات",
+        "general": {
+            "title": "عام",
+            "auto_connect": "الاتصال التلقائي عند التشغيل",
+            "kill_switch": "مفتاح القفل"
+        },
+        "appearance": {
+            "title": "المظهر",
+            "theme": "المظهر",
+            "dark": "داكن",
+            "light": "فاتح",
+            "system": "النظام"
+        },
+        "language": {
+            "title": "اللغة"
+        },
+        "contribution": {
+            "title": "مساهمة العقدة",
+            "enable_mode": "تمكين وضع العقدة",
+            "enable_desc": "مشاركة النطاق الترددي للاستخدام المجاني",
+            "wifi_only": "Wi-Fi فقط"
+        },
+        "account": {
+            "logout": "تسجيل الخروج",
+            "version": "HQMX VPN v0.1.0"
+        }
+    }
+}

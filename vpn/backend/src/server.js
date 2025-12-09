@@ -23,7 +23,15 @@ const PORT = process.env.PORT || 3002;
 
 // Middleware
 app.use(cors({
-    origin: ['http://localhost:5500', 'http://127.0.0.1:5500', 'https://hqmx.net'],
+    origin: [
+        'http://localhost:5500',
+        'http://127.0.0.1:5500',
+        'http://localhost:1420',  // Tauri dev server
+        'http://127.0.0.1:1420',
+        'tauri://localhost',      // Tauri app origin
+        'https://tauri.localhost',
+        'https://hqmx.net'
+    ],
     credentials: true
 }));
 app.use(express.json());

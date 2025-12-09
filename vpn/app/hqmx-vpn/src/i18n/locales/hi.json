@@ -1,0 +1,82 @@
+{
+    "common": {
+        "loading": "लोड हो रहा है...",
+        "connect": "कनेक्ट करें",
+        "disconnect": "डिस्कनेक्ट करें",
+        "connecting": "कनेक्ट हो रहा है...",
+        "disconnecting": "डिस्कनेक्ट हो रहा ہے...",
+        "protected": "सुरक्षित",
+        "unprotected": "असुरक्षित",
+        "error": "त्रुटि"
+    },
+    "nav": {
+        "connect": "कनेक्ट करें",
+        "stats": "आंकड़े",
+        "settings": "समायोजन"
+    },
+    "login": {
+        "title": "वापसी पर स्वागत है",
+        "register_title": "खाता बनाएं",
+        "subtitle": "HQMX के साथ अपने डिजिटल जीवन को सुरक्षित करें",
+        "email_placeholder": "अपना ईमेल दर्ज करें",
+        "password_placeholder": "पासवर्ड",
+        "confirm_password_placeholder": "पासवर्ड की पुष्टि करें",
+        "name_placeholder": "नाम (वैकल्पिक)",
+        "sign_in": "साइन इन करें",
+        "create_account": "खाता बनाएं",
+        "continue_with_google": "Google के साथ जारी रखें",
+        "new_account": "खाता नहीं है? साइन अप करें",
+        "have_account": "पहले से ही एक खाता Dena? साइन इन करें",
+        "sign_up": "साइन अप करें",
+        "terms_agreement": "जारी रखकर, आप हमारे ਲਈ सहमत हैं",
+        "terms": "शर्तें",
+        "privacy_policy": "गोपनीयता नीति",
+        "error_required_fields": "ईमेल और पासवर्ड आवश्यक हैं",
+        "error_password_length": "पासवर्ड कम से कम 8 अक्षर का होना चाहिए",
+        "error_password_mismatch": "पासवर्ड मेल नहीं खाते",
+        "error_login_failed": "प्रवेश असफल",
+        "error_register_failed": "पंजीकरण विफल"
+    },
+    "node": {
+        "select_location": "स्थान चुनें",
+        "node_mode_active": "नोड मोड सक्रिय",
+        "earning_credits": "बैंडविड्थ साझा करके क्रेडिट अर्जित करना",
+        "ping": "ms"
+    },
+    "stats": {
+        "title": "नेटवर्क आंकड़े",
+        "contribution": "आपका योगदान",
+        "download": "डाउनलोड",
+        "upload": "अपलोड",
+        "total_shared": "कुल साझा",
+        "active_time": "सक्रिय समय"
+    },
+    "settings": {
+        "title": "समायोजन",
+        "general": {
+            "title": "सामान्य",
+            "auto_connect": "लॉन्च पर ऑटो-कनेक्ट",
+            "kill_switch": "किल स्विच"
+        },
+        "appearance": {
+            "title": "दिखावट",
+            "theme": "थीम",
+            "dark": "डार्क",
+            "light": "लाइट",
+            "system": "सिस्टम"
+        },
+        "language": {
+            "title": "भाषा"
+        },
+        "contribution": {
+            "title": "नोड योगदान",
+            "enable_mode": "नोड मोड सक्षम करें",
+            "enable_desc": "मुफ्त उपयोग के लिए बैंडविड्थ साझा करें",
+            "wifi_only": "केवल वाई-फाई"
+        },
+        "account": {
+            "logout": "लॉग आउट",
+            "version": "HQMX VPN v0.1.0"
+        }
+    }
+}

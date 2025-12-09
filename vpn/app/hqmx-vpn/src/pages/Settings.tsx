@@ -4,6 +4,21 @@ import { useVpnStore } from "../stores/vpnStore";
 import { useThemeStore } from "../stores/themeStore";
 import { useTranslation } from "react-i18next";
 
+const languageMap: { [key: string]: string } = {
+    en: 'English',
+    ko: '한국어',
+    ja: '日本語',
+    'zh-CN': '简体中文',
+    'zh-TW': '繁體中文',
+    es: 'Español',
+    fr: 'Français',
+    de: 'Deutsch',
+    pt: 'Português',
+    ru: 'Русский',
+    ar: 'العربية',
+    hi: 'हिन्दी',
+};
+
 export default function Settings() {
     const { logout } = useAuthStore();
     const {
@@ -24,136 +39,135 @@ export default function Settings() {
     };
 
     return (
-        <div className="flex-1 flex flex-col p-6 animate-fade-in overflow-y-auto">
-            <h2 className="text-xl font-bold mb-6">{t('settings.title')}</h2>
+        <div className="settings-page">
+            <div className="settings-container">
+                <h2 className="settings-title">{t('settings.title')}</h2>
 
-            <section className="mb-6">
-                <h3 className="text-xs font-bold text-muted uppercase tracking-wider mb-3">{t('settings.general.title')}</h3>
-                <div className="bg-white/5 rounded-xl border border-white/5 overflow-hidden">
-                    <div className="flex items-center justify-between p-4 border-b border-white/5">
-                        <span className="text-sm">{t('settings.general.auto_connect')}</span>
-                        <input
-                            type="checkbox"
-                            className="toggle toggle-success toggle-sm"
-                            checked={autoConnect}
-                            onChange={(e) => setAutoConnect(e.target.checked)}
-                        />
-                    </div>
-                    <div className="flex items-center justify-between p-4">
-                        <span className="text-sm">{t('settings.general.kill_switch')}</span>
-                        <input
-                            type="checkbox"
-                            className="toggle toggle-success toggle-sm"
-                            checked={killSwitch}
-                            onChange={(e) => setKillSwitch(e.target.checked)}
-                        />
-                    </div>
-                </div>
-            </section>
-
-            <section className="mb-6">
-                <h3 className="text-xs font-bold text-muted uppercase tracking-wider mb-3">{t('settings.appearance.title')}</h3>
-                <div className="bg-white/5 rounded-xl border border-white/5 overflow-hidden">
-                    {/* Theme Selector */}
-                    <div className="flex items-center justify-between p-4 border-b border-white/5">
-                        <span className="text-sm">{t('settings.appearance.theme')}</span>
-                        <div className="flex gap-1">
-                            <button
-                                onClick={() => setTheme('dark')}
-                                className={`px-3 py-1.5 text-xs rounded-lg transition-colors ${theme === 'dark'
-                                    ? 'bg-primary-accent/20 text-primary-accent border border-primary-accent/30'
-                                    : 'bg-white/5 text-muted hover:bg-white/10'
-                                    }`}
-                            >
-                                {t('settings.appearance.dark')}
-                            </button>
-                            <button
-                                onClick={() => setTheme('light')}
-                                className={`px-3 py-1.5 text-xs rounded-lg transition-colors ${theme === 'light'
-                                    ? 'bg-primary-accent/20 text-primary-accent border border-primary-accent/30'
-                                    : 'bg-white/5 text-muted hover:bg-white/10'
-                                    }`}
-                            >
-                                {t('settings.appearance.light')}
-                            </button>
-                            <button
-                                onClick={() => setTheme('system')}
-                                className={`px-3 py-1.5 text-xs rounded-lg transition-colors ${theme === 'system'
-                                    ? 'bg-primary-accent/20 text-primary-accent border border-primary-accent/30'
-                                    : 'bg-white/5 text-muted hover:bg-white/10'
-                                    }`}
-                            >
-                                {t('settings.appearance.system')}
-                            </button>
+                {/* General Settings */}
+                <section className="settings-section">
+                    <h3 className="section-label">{t('settings.general.title')}</h3>
+                    <div className="settings-card glass">
+                        <div className="setting-item">
+                            <span className="setting-label">{t('settings.general.auto_connect')}</span>
+                            <label className="toggle-switch">
+                                <input
+                                    type="checkbox"
+                                    checked={autoConnect}
+                                    onChange={(e) => setAutoConnect(e.target.checked)}
+                                />
+                                <span className="toggle-slider"></span>
+                            </label>
+                        </div>
+                        <div className="setting-item">
+                            <span className="setting-label">{t('settings.general.kill_switch')}</span>
+                            <label className="toggle-switch">
+                                <input
+                                    type="checkbox"
+                                    checked={killSwitch}
+                                    onChange={(e) => setKillSwitch(e.target.checked)}
+                                />
+                                <span className="toggle-slider"></span>
+                            </label>
                         </div>
                     </div>
+                </section>
 
-                    {/* Language Selector */}
-                    <div className="flex items-center justify-between p-4">
-                        <span className="text-sm">{t('settings.language.title')}</span>
-                        <div className="flex gap-1">
-                            <button
-                                onClick={() => changeLanguage('en')}
-                                className={`px-3 py-1.5 text-xs rounded-lg transition-colors ${i18n.language.startsWith('en')
-                                    ? 'bg-primary-accent/20 text-primary-accent border border-primary-accent/30'
-                                    : 'bg-white/5 text-muted hover:bg-white/10'
-                                    }`}
+                {/* Appearance Settings */}
+                <section className="settings-section">
+                    <h3 className="section-label">{t('settings.appearance.title')}</h3>
+                    <div className="settings-card glass">
+                        <div className="setting-item">
+                            <span className="setting-label">{t('settings.appearance.theme')}</span>
+                            <div className="button-group">
+                                <button
+                                    onClick={() => setTheme('dark')}
+                                    className={`group-btn ${theme === 'dark' ? 'active' : ''}`}
+                                >
+                                    {t('settings.appearance.dark')}
+                                </button>
+                                <button
+                                    onClick={() => setTheme('light')}
+                                    className={`group-btn ${theme === 'light' ? 'active' : ''}`}
+                                >
+                                    {t('settings.appearance.light')}
+                                </button>
+                                <button
+                                    onClick={() => setTheme('system')}
+                                    className={`group-btn ${theme === 'system' ? 'active' : ''}`}
+                                >
+                                    {t('settings.appearance.system')}
+                                </button>
+                            </div>
+                        </div>
+
+                        <div className="setting-item">
+                            <span className="setting-label">{t('settings.language.title')}</span>
+                            <select
+                                value={i18n.language}
+                                onChange={(e) => changeLanguage(e.target.value)}
+                                className="group-btn"
+                                style={{ WebkitAppearance: 'none', appearance: 'none', textAlign: 'center', paddingRight: '2rem' }}
                             >
-                                English
-                            </button>
-                            <button
-                                onClick={() => changeLanguage('ko')}
-                                className={`px-3 py-1.5 text-xs rounded-lg transition-colors ${i18n.language.startsWith('ko')
-                                    ? 'bg-primary-accent/20 text-primary-accent border border-primary-accent/30'
-                                    : 'bg-white/5 text-muted hover:bg-white/10'
-                                    }`}
-                            >
-                                한국어
-                            </button>
+                                {Object.keys(languageMap).map((lng) => (
+                                    <option key={lng} value={lng}>
+                                        {languageMap[lng]}
+                                    </option>
+                                ))}
+                            </select>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section className="mb-6">
-                <h3 className="text-xs font-bold text-muted uppercase tracking-wider mb-3">{t('settings.contribution.title')}</h3>
-                <div className="bg-white/5 rounded-xl border border-white/5 overflow-hidden">
-                    <div className="flex items-center justify-between p-4 border-b border-white/5">
-                        <div>
-                            <div className="text-sm">{t('settings.contribution.enable_mode')}</div>
-                            <div className="text-xs text-muted">{t('settings.contribution.enable_desc')}</div>
+                {/* Contribution Settings */}
+                <section className="settings-section">
+                    <h3 className="section-label">{t('settings.contribution.title')}</h3>
+                    <div className="settings-card glass">
+                        <div className="setting-item">
+                            <div className="setting-info">
+                                <div className="setting-label">{t('settings.contribution.enable_mode')}</div>
+                                <div className="setting-desc">{t('settings.contribution.enable_desc')}</div>
+                            </div>
+                            <label className="toggle-switch">
+                                <input
+                                    type="checkbox"
+                                    checked={isNodeModeEnabled}
+                                    onChange={(e) => setNodeMode(e.target.checked)}
+                                />
+                                <span className="toggle-slider"></span>
+                            </label>
                         </div>
-                        <input
-                            type="checkbox"
-                            className="toggle toggle-success toggle-sm"
-                            checked={isNodeModeEnabled}
-                            onChange={(e) => setNodeMode(e.target.checked)}
-                        />
+                        <div className="setting-item">
+                            <span className="setting-label">{t('settings.contribution.wifi_only')}</span>
+                            <label className="toggle-switch">
+                                <input
+                                    type="checkbox"
+                                    checked={wifiOnly}
+                                    onChange={(e) => setWifiOnly(e.target.checked)}
+                                />
+                                <span className="toggle-slider"></span>
+                            </label>
+                        </div>
                     </div>
-                    <div className="flex items-center justify-between p-4">
-                        <span className="text-sm">{t('settings.contribution.wifi_only')}</span>
-                        <input
-                            type="checkbox"
-                            className="toggle toggle-success toggle-sm"
-                            checked={wifiOnly}
-                            onChange={(e) => setWifiOnly(e.target.checked)}
-                        />
-                    </div>
-                </div>
-            </section>
+                </section>
 
-            <section>
-                <button
-                    onClick={handleLogout}
-                    className="w-full bg-red-500/10 text-red-500 hover:bg-red-500/20 border border-red-500/20 rounded-xl py-3 text-sm font-medium transition-colors"
-                >
-                    {t('settings.account.logout')}
-                </button>
-                <div className="text-center mt-4">
-                    <span className="text-xs text-muted">{t('settings.account.version')}</span>
-                </div>
-            </section>
+                {/* Logout */}
+                <section className="settings-section">
+                    <button
+                        onClick={handleLogout}
+                        className="logout-btn glass"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                            <polyline points="16 17 21 12 16 7"></polyline>
+                            <line x1="21" y1="12" x2="9" y2="12"></line>
+                        </svg>
+                        {t('settings.account.logout')}
+                    </button>
+                    <div className="version-text">
+                        {t('settings.account.version')}
+                    </div>
+                </section>
+            </div>
         </div>
     );
 }
-

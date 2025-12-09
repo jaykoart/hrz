@@ -1,11 +1,19 @@
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const express = require('express');
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 const router = express.Router();
 const userSettings = require('./services/userSettings');
 
+// JWT Secret (실제 환경에서는 환경변수 사용)
+const JWT_SECRET = process.env.JWT_SECRET || 'hqmx-vpn-secret-key-change-in-production';
+const JWT_EXPIRES_IN = '7d';
+
 // 인메모리 사용자 저장소 (실제 환경에서는 DB)
 const users = new Map();
+// 이메일 사용자 저장소 (email -> userId 매핑)
+const emailUsers = new Map();
 
 passport.serializeUser(function (user, done) {
     done(null, user);
@@ -199,5 +207,215 @@ router.get('/api/user/export', (req, res) => {
     });
 });
 
-module.exports = router;
+// ============================================
+// Email Authentication Routes
+// ============================================
 
+/**
+ * POST /api/auth/register
+ * 이메일 회원가입
+ */
+router.post('/api/auth/register', async (req, res) => {
+    try {
+        const { email, password, displayName } = req.body;
+
+        // 유효성 검사
+        if (!email || !password) {
+            return res.status(400).json({
+                error: 'Bad Request',
+                message: 'Email and password are required'
+            });
+        }
+
+        // 이메일 형식 검사
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            return res.status(400).json({
+                error: 'Bad Request',
+                message: 'Invalid email format'
+            });
+        }
+
+        // 비밀번호 강도 검사 (최소 8자)
+        if (password.length < 8) {
+            return res.status(400).json({
+                error: 'Bad Request',
+                message: 'Password must be at least 8 characters long'
+            });
+        }
+
+        // 이미 등록된 이메일인지 확인
+        const normalizedEmail = email.toLowerCase().trim();
+        if (emailUsers.has(normalizedEmail)) {
+            return res.status(409).json({
+                error: 'Conflict',
+                message: 'Email already registered'
+            });
+        }
+
+        // 비밀번호 해싱
+        const saltRounds = 10;
+        const hashedPassword = await bcrypt.hash(password, saltRounds);
+
+        // 사용자 ID 생성
+        const userId = `email_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+
+        // 사용자 저장
+        const user = {
+            id: userId,
+            email: normalizedEmail,
+            displayName: displayName?.trim() || normalizedEmail.split('@')[0],
+            password: hashedPassword,
+            photo: null,
+            provider: 'email',
+            createdAt: new Date().toISOString(),
+            lastLoginAt: new Date().toISOString()
+        };
+
+        users.set(userId, user);
+        emailUsers.set(normalizedEmail, userId);
+
+        // JWT 토큰 생성
+        const token = jwt.sign(
+            { userId, email: normalizedEmail, provider: 'email' },
+            JWT_SECRET,
+            { expiresIn: JWT_EXPIRES_IN }
+        );
+
+        // 응답 (비밀번호 제외)
+        const { password: _, ...userWithoutPassword } = user;
+
+        res.status(201).json({
+            success: true,
+            message: 'Account created successfully',
+            token,
+            user: userWithoutPassword
+        });
+
+    } catch (error) {
+        console.error('Registration error:', error);
+        res.status(500).json({
+            error: 'Internal Server Error',
+            message: 'Failed to create account'
+        });
+    }
+});
+
+/**
+ * POST /api/auth/login
+ * 이메일 로그인
+ */
+router.post('/api/auth/login', async (req, res) => {
+    try {
+        const { email, password } = req.body;
+
+        // 유효성 검사
+        if (!email || !password) {
+            return res.status(400).json({
+                error: 'Bad Request',
+                message: 'Email and password are required'
+            });
+        }
+
+        const normalizedEmail = email.toLowerCase().trim();
+
+        // 이메일로 사용자 찾기
+        const userId = emailUsers.get(normalizedEmail);
+        if (!userId) {
+            return res.status(401).json({
+                error: 'Unauthorized',
+                message: 'Invalid email or password'
+            });
+        }
+
+        const user = users.get(userId);
+        if (!user || user.provider !== 'email') {
+            return res.status(401).json({
+                error: 'Unauthorized',
+                message: 'Invalid email or password'
+            });
+        }
+
+        // 비밀번호 확인
+        const isValidPassword = await bcrypt.compare(password, user.password);
+        if (!isValidPassword) {
+            return res.status(401).json({
+                error: 'Unauthorized',
+                message: 'Invalid email or password'
+            });
+        }
+
+        // 마지막 로그인 시간 업데이트
+        user.lastLoginAt = new Date().toISOString();
+        users.set(userId, user);
+
+        // JWT 토큰 생성
+        const token = jwt.sign(
+            { userId, email: normalizedEmail, provider: 'email' },
+            JWT_SECRET,
+            { expiresIn: JWT_EXPIRES_IN }
+        );
+
+        // 응답 (비밀번호 제외)
+        const { password: _, ...userWithoutPassword } = user;
+
+        res.json({
+            success: true,
+            message: 'Login successful',
+            token,
+            user: userWithoutPassword
+        });
+
+    } catch (error) {
+        console.error('Login error:', error);
+        res.status(500).json({
+            error: 'Internal Server Error',
+            message: 'Failed to login'
+        });
+    }
+});
+
+/**
+ * GET /api/auth/verify
+ * JWT 토큰 검증
+ */
+router.get('/api/auth/verify', (req, res) => {
+    const authHeader = req.headers.authorization;
+
+    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+        return res.status(401).json({
+            error: 'Unauthorized',
+            message: 'No token provided'
+        });
+    }
+
+    const token = authHeader.split(' ')[1];
+
+    try {
+        const decoded = jwt.verify(token, JWT_SECRET);
+        const user = users.get(decoded.userId);
+
+        if (!user) {
+            return res.status(401).json({
+                error: 'Unauthorized',
+                message: 'User not found'
+            });
+        }
+
+        const { password: _, ...userWithoutPassword } = user;
+
+        res.json({
+            success: true,
+            valid: true,
+            user: userWithoutPassword
+        });
+
+    } catch (error) {
+        return res.status(401).json({
+            error: 'Unauthorized',
+            message: 'Invalid or expired token'
+        });
+    }
+});
+
+module.exports = router;

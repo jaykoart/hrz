@@ -1,0 +1,82 @@
+{
+    "common": {
+        "loading": "Cargando...",
+        "connect": "Conectar",
+        "disconnect": "Desconectar",
+        "connecting": "Conectando...",
+        "disconnecting": "Desconectando...",
+        "protected": "Protegido",
+        "unprotected": "No protegido",
+        "error": "Error"
+    },
+    "nav": {
+        "connect": "Conectar",
+        "stats": "Estadísticas",
+        "settings": "Ajustes"
+    },
+    "login": {
+        "title": "Bienvenido de nuevo",
+        "register_title": "Crear cuenta",
+        "subtitle": "Asegura tu vida digital con HQMX",
+        "email_placeholder": "Introduce tu correo electrónico",
+        "password_placeholder": "Contraseña",
+        "confirm_password_placeholder": "Confirmar contraseña",
+        "name_placeholder": "Nombre (opcional)",
+        "sign_in": "Iniciar sesión",
+        "create_account": "Crear cuenta",
+        "continue_with_google": "Continuar con Google",
+        "new_account": "¿No tienes una cuenta? Regístrate",
+        "have_account": "¿Ya tienes una cuenta? Inicia sesión",
+        "sign_up": "Regístrate",
+        "terms_agreement": "Al continuar, aceptas nuestros",
+        "terms": "Términos",
+        "privacy_policy": "Política de privacidad",
+        "error_required_fields": "Se requieren correo electrónico y contraseña",
+        "error_password_length": "La contraseña debe tener al menos 8 caracteres",
+        "error_password_mismatch": "Las contraseñas no coinciden",
+        "error_login_failed": "Error al iniciar sesión",
+        "error_register_failed": "Error de registro"
+    },
+    "node": {
+        "select_location": "Seleccionar ubicación",
+        "node_mode_active": "Modo de nodo activo",
+        "earning_credits": "Ganando créditos compartiendo ancho de banda",
+        "ping": "ms"
+    },
+    "stats": {
+        "title": "Estadísticas de red",
+        "contribution": "Tu contribución",
+        "download": "Descargar",
+        "upload": "Subir",
+        "total_shared": "Total compartido",
+        "active_time": "Tiempo activo"
+    },
+    "settings": {
+        "title": "Ajustes",
+        "general": {
+            "title": "General",
+            "auto_connect": "Conectar automáticamente al iniciar",
+            "kill_switch": "Interruptor de emergencia"
+        },
+        "appearance": {
+            "title": "Apariencia",
+            "theme": "Tema",
+            "dark": "Oscuro",
+            "light": "Claro",
+            "system": "Sistema"
+        },
+        "language": {
+            "title": "Idioma"
+        },
+        "contribution": {
+            "title": "Contribución de nodo",
+            "enable_mode": "Habilitar modo de nodo",
+            "enable_desc": "Comparte ancho de banda para uso gratuito",
+            "wifi_only": "Solo Wi-Fi"
+        },
+        "account": {
+            "logout": "Cerrar sesión",
+            "version": "HQMX VPN v0.1.0"
+        }
+    }
+}

@@ -9,8 +9,11 @@
 
     --primary-accent: #00ff88;
     /* Neon Plant Green */
+    --primary-yellow: #ccff00;
+    /* Electric Yellow */
     --secondary-accent: #7b2cbf;
     /* Deep Purple */
+    --gradient-brand: linear-gradient(135deg, var(--primary-accent), var(--primary-yellow));
 
     --glass-bg: rgba(255, 255, 255, 0.05);
     --glass-border: rgba(255, 255, 255, 0.1);
@@ -299,12 +302,14 @@ h1 {
     line-height: 1.1;
     margin-bottom: 1.5rem;
     font-weight: 800;
+    font-weight: 800;
     /* Track tightness removed */
 }
 
+/* Gradient Text for Headlines */
 .text-gradient {
-    /* Neon Green Gradient */
-    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--primary-accent) 100%);
+    /* Neon Green -> Yellow Gradient */
+    background: var(--gradient-brand);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -336,8 +341,10 @@ p.lead {
 
 /* Holographic Glass Button */
 .btn-primary {
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
+    background: var(--gradient-brand);
+    /* Gradient Background */
+    color: #050510;
+    /* Dark Text for Contrast on bright gradient */
     border: 1px solid var(--glass-border-dynamic, rgba(255, 255, 255, 0.3));
     box-shadow: 0 4px 15px rgba(0, 0, 0, var(--shadow-intensity, 0.2));
     position: relative;
@@ -375,11 +382,11 @@ p.lead {
 }
 
 [data-theme="light"] .btn-primary {
-    color: var(--text-dynamic);
-    /* Dark text for readability */
-    background: rgba(255, 255, 255, 0.6);
-    border-color: var(--primary-accent);
-    font-weight: 600;
+    color: #050510;
+    /* Always dark text on this bright gradient */
+    background: var(--gradient-brand);
+    border-color: transparent;
+    font-weight: 700;
 }
 
 [data-theme="light"] .btn-primary:hover {
@@ -762,4 +769,70 @@ p.lead {
 .lang-dropdown::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 4px;
+}
+
+/* === Light Mode Overrides for Toggles === */
+[data-theme="light"] .btn-icon {
+    border-color: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.7);
+}
+
+[data-theme="light"] .btn-icon:hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: #000;
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+/* === Mobile Navigation === */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-dynamic);
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 0.5rem;
+    line-height: 0;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+        /* Dark semi-transparent background */
+        backdrop-filter: blur(2px);
+        /* Requested 2px blur */
+        -webkit-backdrop-filter: blur(2px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s ease-in-out;
+        z-index: 999;
+        gap: 2rem;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Light Mode Mobile Menu Background */
+    [data-theme="light"] .nav-links {
+        background: rgba(255, 255, 255, 0.9);
+        color: #000;
+    }
+
+    .nav-links.mobile-active {
+        right: 0;
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+    }
 }

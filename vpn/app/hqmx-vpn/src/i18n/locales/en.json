@@ -16,13 +16,26 @@
     },
     "login": {
         "title": "Welcome Back",
+        "register_title": "Create Account",
         "subtitle": "Secure your digital life with HQMX",
         "email_placeholder": "Enter your email",
         "password_placeholder": "Password",
+        "confirm_password_placeholder": "Confirm password",
+        "name_placeholder": "Name (optional)",
         "sign_in": "Sign In",
+        "create_account": "Create Account",
         "continue_with_google": "Continue with Google",
-        "new_account": "Don't have an account?",
-        "sign_up": "Sign up"
+        "new_account": "Don't have an account? Sign up",
+        "have_account": "Already have an account? Sign in",
+        "sign_up": "Sign up",
+        "terms_agreement": "By continuing, you agree to our",
+        "terms": "Terms",
+        "privacy_policy": "Privacy Policy",
+        "error_required_fields": "Email and password are required",
+        "error_password_length": "Password must be at least 8 characters",
+        "error_password_mismatch": "Passwords do not match",
+        "error_login_failed": "Login failed",
+        "error_register_failed": "Registration failed"
     },
     "node": {
         "select_location": "Select Location",

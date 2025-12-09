@@ -1,0 +1,82 @@
+{
+    "common": {
+        "loading": "Wird geladen...",
+        "connect": "Verbinden",
+        "disconnect": "Trennen",
+        "connecting": "Verbinde...",
+        "disconnecting": "Trenne...",
+        "protected": "Geschützt",
+        "unprotected": "Ungeschützt",
+        "error": "Fehler"
+    },
+    "nav": {
+        "connect": "Verbinden",
+        "stats": "Statistiken",
+        "settings": "Einstellungen"
+    },
+    "login": {
+        "title": "Willkommen zurück",
+        "register_title": "Konto erstellen",
+        "subtitle": "Sichern Sie Ihr digitales Leben mit HQMX",
+        "email_placeholder": "Geben Sie Ihre E-Mail-Adresse ein",
+        "password_placeholder": "Passwort",
+        "confirm_password_placeholder": "Passwort bestätigen",
+        "name_placeholder": "Name (optional)",
+        "sign_in": "Anmelden",
+        "create_account": "Konto erstellen",
+        "continue_with_google": "Mit Google fortfahren",
+        "new_account": "Sie haben kein Konto? Registrieren",
+        "have_account": "Sie haben bereits ein Konto? Anmelden",
+        "sign_up": "Registrieren",
+        "terms_agreement": "Indem Sie fortfahren, stimmen Sie unseren zu",
+        "terms": "Nutzungsbedingungen",
+        "privacy_policy": "Datenschutzrichtlinie",
+        "error_required_fields": "E-Mail und Passwort sind erforderlich",
+        "error_password_length": "Das Passwort muss mindestens 8 Zeichen lang sein",
+        "error_password_mismatch": "Passwörter stimmen nicht überein",
+        "error_login_failed": "Anmeldung fehlgeschlagen",
+        "error_register_failed": "Registrierung fehlgeschlagen"
+    },
+    "node": {
+        "select_location": "Standort auswählen",
+        "node_mode_active": "Knotenmodus aktiv",
+        "earning_credits": "Credits durch Teilen der Bandbreite verdienen",
+        "ping": "ms"
+    },
+    "stats": {
+        "title": "Netzwerkstatistiken",
+        "contribution": "Ihr Beitrag",
+        "download": "Herunterladen",
+        "upload": "Hochladen",
+        "total_shared": "Insgesamt geteilt",
+        "active_time": "Aktive Zeit"
+    },
+    "settings": {
+        "title": "Einstellungen",
+        "general": {
+            "title": "Allgemein",
+            "auto_connect": "Beim Start automatisch verbinden",
+            "kill_switch": "Kill-Switch"
+        },
+        "appearance": {
+            "title": "Aussehen",
+            "theme": "Thema",
+            "dark": "Dunkel",
+            "light": "Hell",
+            "system": "System"
+        },
+        "language": {
+            "title": "Sprache"
+        },
+        "contribution": {
+            "title": "Knotenbeitrag",
+            "enable_mode": "Knotenmodus aktivieren",
+            "enable_desc": "Bandbreite für kostenlose Nutzung teilen",
+            "wifi_only": "Nur WLAN"
+        },
+        "account": {
+            "logout": "Abmelden",
+            "version": "HQMX VPN v0.1.0"
+        }
+    }
+}

@@ -1,11 +1,27 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useVpnStore } from '../stores/vpnStore';
 import { useTranslation } from 'react-i18next';
 
 export default function Connect() {
-    const { isConnected, isConnecting, statusText, currentLocation, connect, disconnect, availableNodes, selectNode } = useVpnStore();
+    const {
+        isConnected,
+        isConnecting,
+        statusText,
+        currentLocation,
+        connect,
+        disconnect,
+        availableNodes,
+        selectNode,
+        fetchNodes,
+        isLoadingNodes
+    } = useVpnStore();
     const { t } = useTranslation();
     const [isLocationModalOpen, setIsLocationModalOpen] = useState(false);
+
+    // Fetch nodes on mount
+    useEffect(() => {
+        fetchNodes();
+    }, [fetchNodes]);
 
     const toggleConnection = async () => {
         if (isConnected) {
@@ -27,73 +43,128 @@ export default function Connect() {
         }
         if (isConnected) return t('common.protected');
         return t('common.unprotected');
-    }
+    };
 
     return (
-        <div className="flex-1 flex flex-col items-center justify-center p-6 relative animate-fade-in">
-            {/* Connection Status Card */}
-            <div className={`connection-ring mb-8 ${isConnected ? 'connected' : ''}`}>
-                <div className={`ring-pulse ${isConnecting ? 'animate-pulse' : ''}`}></div>
-                <button
-                    className={`connect-btn ${isConnected ? 'active' : ''}`}
-                    onClick={toggleConnection}
-                    disabled={isConnecting}
-                >
-                    <div className="icon-wrapper">
-                        {/* Power Icon */}
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M378,108.33A223.51,223.51,0,0,1,464,256c0,123.71-100.29,224-224,224S16,379.71,16,256a223.51,223.51,0,0,1,86-147.67" style={{ fill: 'none', stroke: 'currentColor', strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '32px' }} /><line x1="256" y1="48" x2="256" y2="256" style={{ fill: 'none', stroke: 'currentColor', strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '32px' }} /></svg>
-                    </div>
-                </button>
-            </div>
+        <div className="connect-page">
+            {/* Ambient Background */}
+            <div className="ambient-glow" />
+            <div className="ambient-glow-2" />
 
-            <div className="status-display text-center mb-8">
-                <h2 className={`text-2xl font-bold mb-1 ${isConnected ? 'text-gradient' : 'text-muted'}`}>
-                    {getStatusText()}
-                </h2>
-                <p className="text-sm text-muted">
-                    {isConnected ? `Your IP is hidden: ${currentLocation.ip}` : 'Your real IP is exposed'}
-                </p>
-                {isConnecting && <p className="text-xs text-main mt-2">{t('common.loading')}</p>}
-            </div>
+            {/* Main Content */}
+            <div className="connect-container">
+                {/* Connection Ring - Premium Glass Style */}
+                <div className={`connection-ring ${isConnected ? 'connected' : ''} ${isConnecting ? 'connecting' : ''}`}>
+                    <div className="ring-outer" />
+                    <div className="ring-middle" />
+                    <div className="ring-inner" />
 
-            {/* Location Selector */}
-            <div className="w-full max-w-xs relative z-20">
-                <button
-                    onClick={() => setIsLocationModalOpen(!isLocationModalOpen)}
-                    disabled={isConnected}
-                    className={`country-select w-full flex items-center justify-between bg-white/5 hover:bg-white/10 p-3 rounded-xl border border-white/5 transition-all ${isConnected ? 'opacity-50 cursor-not-allowed' : ''}`}
-                >
-                    <div className="flex items-center gap-3">
-                        <span className="text-2xl">{currentLocation.flag}</span>
-                        <div className="text-left">
-                            <div className="text-sm font-medium text-white">{currentLocation.country}</div>
-                            <div className="text-xs text-muted">{currentLocation.city} • <span className="text-success">{currentLocation.ping}{t('node.ping')}</span></div>
+                    <button
+                        className={`connect-btn ${isConnected ? 'active' : ''}`}
+                        onClick={toggleConnection}
+                        disabled={isConnecting}
+                    >
+                        <div className="power-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path>
+                                <line x1="12" y1="2" x2="12" y2="12"></line>
+                            </svg>
                         </div>
-                    </div>
-                    <span className="text-muted">▼</span>
-                </button>
+                    </button>
+                </div>
 
-                {/* Dropdown Modal */}
-                {isLocationModalOpen && (
-                    <div className="absolute bottom-full left-0 w-full mb-2 bg-[#0a0a1a] border border-white/10 rounded-xl overflow-hidden shadow-2xl max-h-60 overflow-y-auto backdrop-blur-xl">
-                        {availableNodes.map((node) => (
-                            <button
-                                key={node.country}
-                                onClick={() => handleNodeSelect(node)}
-                                className="w-full flex items-center gap-3 p-3 hover:bg-white/5 transition-colors text-left border-b border-white/5 last:border-0"
-                            >
-                                <span className="text-xl">{node.flag}</span>
-                                <div className="flex-1">
-                                    <div className="text-sm text-white">{node.country}</div>
-                                    <div className="text-xs text-muted">{node.city}</div>
+                {/* Status Display */}
+                <div className="status-display">
+                    <h2 className={`status-title ${isConnected ? 'connected' : ''}`}>
+                        {getStatusText()}
+                    </h2>
+                    <p className="status-subtitle">
+                        {isConnected
+                            ? `${t('common.protected')} • ${currentLocation.ip}`
+                            : t('common.unprotected')
+                        }
+                    </p>
+                    {isConnecting && (
+                        <div className="loading-indicator">
+                            <div className="loading-dot" />
+                            <div className="loading-dot" />
+                            <div className="loading-dot" />
+                        </div>
+                    )}
+                </div>
+
+                {/* Location Selector - Premium Glass Card */}
+                <div className="location-selector">
+                    <button
+                        onClick={() => setIsLocationModalOpen(!isLocationModalOpen)}
+                        disabled={isConnected}
+                        className={`location-btn glass ${isConnected ? 'disabled' : ''}`}
+                    >
+                        <div className="location-info">
+                            <span className="location-flag">{currentLocation.flag}</span>
+                            <div className="location-details">
+                                <div className="location-country">{currentLocation.country}</div>
+                                <div className="location-meta">
+                                    {currentLocation.city} •
+                                    <span className={`ping ${currentLocation.ping < 50 ? 'excellent' : currentLocation.ping < 150 ? 'good' : 'fair'}`}>
+                                        {currentLocation.ping}{t('node.ping')}
+                                    </span>
                                 </div>
-                                <span className={`text-xs ${node.ping < 50 ? 'text-success' : node.ping < 150 ? 'text-yellow-400' : 'text-red-400'}`}>
-                                    {node.ping}{t('node.ping')}
-                                </span>
-                            </button>
-                        ))}
-                    </div>
-                )}
+                            </div>
+                        </div>
+                        <svg className="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+
+                    {/* Dropdown Modal - Premium Glass */}
+                    {isLocationModalOpen && (
+                        <>
+                            <div className="modal-backdrop" onClick={() => setIsLocationModalOpen(false)} />
+                            <div className="location-modal glass">
+                                <div className="modal-header">
+                                    <h3>{t('node.select_location')}</h3>
+                                    <button
+                                        className="modal-close"
+                                        onClick={() => setIsLocationModalOpen(false)}
+                                    >
+                                        ✕
+                                    </button>
+                                </div>
+                                <div className="modal-content">
+                                    {isLoadingNodes ? (
+                                        <div className="modal-loading">
+                                            <div className="loading-spinner" />
+                                            <p>{t('common.loading')}</p>
+                                        </div>
+                                    ) : (
+                                        <div className="nodes-list">
+                                            {availableNodes.map((node) => (
+                                                <button
+                                                    key={node.id || node.country}
+                                                    onClick={() => handleNodeSelect(node)}
+                                                    className="node-item"
+                                                >
+                                                    <span className="node-flag">{node.flag}</span>
+                                                    <div className="node-info">
+                                                        <div className="node-country">{node.country}</div>
+                                                        <div className="node-city">{node.city}</div>
+                                                    </div>
+                                                    <span className={`node-ping ${node.ping < 50 ? 'excellent' : node.ping < 150 ? 'good' : 'fair'}`}>
+                                                        {node.ping}{t('node.ping')}
+                                                    </span>
+                                                </button>
+                                            ))}
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+                        </>
+                    )}
+                </div>
+
+                {/* Node Mode Status - If Active */}
+                {/* This can be added later when node contribution is implemented */}
             </div>
         </div>
     );
