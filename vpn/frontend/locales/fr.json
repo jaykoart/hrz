@@ -1,0 +1,408 @@
+{
+    "meta": {
+        "language": "fr",
+        "name": "Français",
+        "version": "1.3.0"
+    },
+    "index": {
+        "hero": {
+            "badge": "Projet Plant AI",
+            "title": "Protégez<br>Votre Vie Privée,<br><gradient>Sauvez la Planète.</gradient>",
+            "subtitle": "Horizon VPN est plus qu'un outil. En partageant votre bande passante inutilisée, vous alimentez l'entraînement de <strong>Plant AI</strong>, le moteur qui résout la crise alimentaire mondiale.",
+            "cta": "Rejoindre la Mission",
+            "version": "v0.1.0",
+            "tagline": "Gratuit pour Toujours • La Terre d'Abord"
+        },
+        "features": {
+            "title": "Pourquoi <gradient>Horizon ?</gradient>",
+            "subtitle": "Chaque seconde où votre serveur est allumé, vous contribuez à sécuriser l'avenir de l'alimentation.",
+            "card1": {
+                "title": "Chiffrement WireGuard®",
+                "desc": "Profitez d'un chiffrement de qualité militaire gratuitement. Nous croyons que la vie privée est un droit humain, tout comme la nourriture."
+            },
+            "card2": {
+                "title": "Propulse Plant AI",
+                "desc": "Votre nœud collecte des données agricoles vitales sur le web. Ces données entraînent notre IA pour optimiser les rendements agricoles mondiaux."
+            },
+            "card3": {
+                "title": "Gratuit pour Toujours",
+                "desc": "Nous ne vous facturons pas d'argent car vous payez par votre contribution à la Terre. C'est un échange équitable pour un avenir meilleur."
+            }
+        },
+        "vpn_section": {
+            "title": "Le <gradient>Bouclier Invisible</gradient>",
+            "desc": "Nous avons repensé le VPN depuis le début. Fonctionnant sur une politique stricte de <strong>Zéro Log</strong> et alimenté par des <strong>Serveurs RAM Uniquement</strong>, vos données disparaissent dès que le courant est coupé.",
+            "feature1": "Chiffrement Militaire AES-256",
+            "feature2": "Architecture de Routage Multi-Sauts",
+            "feature3": "Clés Éphémères (Rotation Horaire)",
+            "cta": "Explorer la Sécurité"
+        },
+        "plant_section": {
+            "title": "Intelligence Artificielle pour la <gradient>Nature</gradient>",
+            "desc": "Nous construisons le plus grand moteur de données décentralisé au monde pour décoder le langage des plantes. Votre bande passante inutilisée alimente l'<strong>Intelligence Distribuée</strong> qui optimise la production alimentaire mondiale.",
+            "stat1": "Points de Données",
+            "stat2": "Coût Carbone",
+            "cta": "Découvrir Plant AI"
+        },
+        "cloud_section": {
+            "title": "<gradient>Infrastructure</gradient> Souveraine",
+            "desc": "Horizon Cloud redéfinit l'infrastructure décentralisée. Construit sur du <strong>Matériel de Qualité Entreprise</strong> et une <strong>Architecture Cloud Hybride</strong>, nous garantissons la souveraineté des données et une évolutivité sans limites sans verrouillage.",
+            "pill1": "Cœur Bare Metal",
+            "pill2": "VPS Haute Fréquence",
+            "pill3": "Edge Global",
+            "cta": "Voir la Feuille de Route"
+        },
+        "download_section": {
+            "title": "Prêt à rejoindre le <gradient>Réseau ?</gradient>",
+            "cta": "Télécharger Maintenant"
+        },
+        "tech": {
+            "title": "Cœur Technique"
+        },
+        "card": {
+            "powered_by": "Propulsé par la Nature"
+        }
+    },
+    "nav": {
+        "home": "Accueil",
+        "plant_ai": "Plant AI",
+        "vpn": "VPN",
+        "download": "Télécharger",
+        "cloud": "Cloud",
+        "login": "Connexion"
+    },
+    "plant_ai": {
+        "hero": {
+            "title": "L'Intelligence Artificielle pour la<br><gradient>Nature.</gradient>",
+            "subtitle": "Nous construisons le plus grand moteur de données décentralisé au monde pour décoder le langage des plantes et optimiser la production alimentaire mondiale."
+        },
+        "definition": {
+            "title": "Qu'est-ce que <gradient>Plant AI ?</gradient>",
+            "desc": "Plant AI est une <strong>Intelligence Artificielle Spécialisée</strong> entraînée sur les plus grandes données massives agricoles du monde. Contrairement aux LLM généraux, elle est conçue dans un but spécifique : <br><span style='color: var(--primary-accent); font-weight: 600;'>autonomiser chaque ferme sur Terre.</span>"
+        },
+        "core": {
+            "vision_title": "Vision & Diagnostic",
+            "vision_desc": "Les caméras remplacent les yeux humains. L'IA analyse les changements de couleur des feuilles, les motifs de taches et le stress thermique en temps réel.",
+            "action_title": "Décision & Action",
+            "action_desc": "Les systèmes autonomes prennent le relais. Une température élevée déclenche le déploiement de l'ombre ; un sol sec active des arroseurs de précision.",
+            "problem_title": "Le problème des <gradient>Données Inconnues.</gradient>",
+            "problem_desc1": "Pour construire cela, nous avons besoin de données que les géants de la technologie n'ont pas. Ils ont Wikipédia ; nous avons besoin de <strong>Rapports de Sol</strong>, de <strong>Registres de Récolte</strong> et de <strong>Journaux Climatiques Locaux</strong>.",
+            "problem_desc2": "C'est là que <strong>Horizon VPN</strong> intervient. Votre nœud collecte ces 'Données de Niche' auprès de milliers de sources locales, créant ainsi la 'Synapse Verte' de notre IA sur mesure."
+        },
+        "mission": {
+            "title": "Mener le <gradient>Changement Planétaire</gradient>",
+            "pillar1_title": "Sécurité Alimentaire",
+            "pillar1_desc": "Résoudre la faim dans le monde en optimisant les rendements des cultures. Nous veillons à ce que chaque graine plantée atteigne son plein potentiel.",
+            "pillar1_tag": "Faim Zéro",
+            "pillar2_title": "Réponse Climatique",
+            "pillar2_desc": "Réduire considérablement l'utilisation de l'eau et des pesticides. Nous luttons contre le changement climatique en rendant l'agriculture plus intelligente et plus propre.",
+            "pillar2_tag": "Éco-durabilité",
+            "pillar3_title": "Contributeur Numérique",
+            "pillar3_desc": "Vous n'êtes pas un consommateur ; vous êtes un gardien. Votre bande passante inutilisée contribue directement à la sauvegarde de la planète.",
+            "pillar3_tag": "Citoyen du Monde"
+        },
+        "goal": {
+            "title": "L'Objectif : <gradient>la Ferme d'une Personne</gradient>",
+            "liberation_title": "Libération du Travail",
+            "liberation_desc": "L'agriculture ne devrait pas signifier se casser le dos. Avec Plant AI, une seule personne peut gérer 100 acres via un tableau de bord. L'IA s'occupe de la micro-gestion.",
+            "expertise_title": "L'Expertise pour Tous",
+            "expertise_desc": "Que vous soyez un agronome chevronné ou un citadin avec un jardin sur le toit, Plant AI fournit des informations de niveau professionnel.",
+            "cta": "Alimenter cette Intelligence"
+        },
+        "dashboard": {
+            "status": "État du Système en Direct",
+            "zone1_name": "Zone A-1 (Tomate)",
+            "zone1_status": "Attention Requise",
+            "zone1_desc": "Déficit d'Azote Détecté (Action : Auto-dosage Démarré)",
+            "zone2_name": "Zone B-3 (Laitue)",
+            "zone2_status": "Optimal",
+            "zone2_desc": "Analyse de Croissance : +15% de Prévision par rapport à l'Année Dernière"
+        },
+        "distributed": {
+            "title": "Propulsé par l'<gradient>Intelligence Distribuée</gradient>",
+            "node_title": "Le Nœud Horizon",
+            "node_desc": "Chaque utilisateur exécutant Horizon VPN devient un <strong>micro-centre de données</strong>. Au lieu de construire des fermes de serveurs massives et énergivores, nous utilisons la puissance de calcul inutilisée de millions d'appareils.",
+            "node_item1": "<strong>Edge Computing :</strong> Les données sont traitées localement sur l'appareil.",
+            "node_item2": "<strong>Transport Chiffré :</strong> Toutes les contributions sont anonymisées via des tunnels WireGuard.",
+            "learning_title": "Apprentissage Fédéré",
+            "learning_desc": "Nous ne nous contentons pas de collecter des données ; nous entraînons l'IA collectivement. Votre appareil télécharge un petit modèle, l'améliore avec des données locales (par exemple, les modèles météorologiques locaux), et ne renvoie que l'<em>amélioration</em>.",
+            "learning_item1": "<strong>La Confidentialité d'abord :</strong> Les données brutes ne quittent jamais votre appareil.",
+            "learning_item2": "<strong>Intelligence d'Essaim :</strong> Le réseau devient plus intelligent avec chaque utilisateur."
+        },
+        "action": {
+            "title": "Plant AI en <gradient>Action</gradient>",
+            "case1_title": "Agriculture Domestique Urbaine",
+            "case1_scenario": "<strong>Scénario :</strong> Vous cultivez du basilic sur un balcon, mais il continue de se flétrir.",
+            "case1_solution1": "L'IA diagnostique un 'sous-arrosage'.",
+            "case1_solution2": "L'arroseur IoT s'active automatiquement.",
+            "case2_title": "Agriculture de Précision",
+            "case2_scenario": "<strong>Scénario :</strong> Un champ de maïs de 10 000 acres fait face à une épidémie de ravageurs inconnue.",
+            "case2_solution1": "Les scans de drones identifient le 'Secteur 7'.",
+            "case2_solution2": "Le traitement localisé réduit l'utilisation de pesticides de 90%.",
+            "case3_title": "Recherche sur le Climat",
+            "case3_scenario": "<strong>Scénario :</strong> Prédire les rendements des cultures dans un contexte de changement climatique erratique.",
+            "case3_solution1": "Données hyper-locales provenant de millions de nœuds.",
+            "case3_solution2": "Simulation de semences résistantes à la sécheresse."
+        },
+        "faq": {
+            "title": "Questions Fréquentes",
+            "q1": "Est-ce que cela ralentit ma connexion internet ?",
+            "a1": "Non. Le Nœud Horizon crée un 'Processus d'Arrière-plan Léger' qui n'utilise que la bande passante inutilisée lorsque vous ne streamez pas ou ne jouez pas.",
+            "q2": "Mes données personnelles sont-elles en sécurité ?",
+            "a2": "Absolument. Nous ne collectons que des données environnementales publiques. Vos fichiers personnels, votre historique de navigation et votre identité sont strictement interdits et techniquement inaccessibles au logiciel du nœud."
+        },
+        "report": {
+            "header": "Rapport de Projet : V3.0",
+            "title": "L'Architecture de<br><gradient>l'Abondance</gradient>",
+            "p1_title": "I. La Crise : 10 Milliards de Bouches vs. une Planète",
+            "p1_content": "D'ici 2050, la population mondiale dépassera les 9,8 milliards. Pour nourrir tout le monde, nous devons produire <strong>70 % de nourriture en plus</strong> qu'aujourd'hui. Pourtant, nous perdons des terres arables à un rythme de 100 000 kilomètres carrés par an en raison de la désertification et de l'urbanisation. L' 'Agriculture Industrielle' traditionnelle — qui repose sur l'utilisation généralisée de pesticides et une consommation excessive d'eau — a atteint ses limites. Elle détruit le sol même dont nous dépendons.",
+            "p2_title": "II. La Solution : Précision vs. Supposition",
+            "p2_content": "L'agriculture a toujours été un jeu d'estimations. Plant AI change ce paradigme en introduisant l'<strong>Hyper-Précision</strong>. En analysant des milliers de points de données — de la conductance stomatique des feuilles à l'activité microbienne du sol — nous pouvons optimiser chaque goutte d'eau et chaque milligramme de nutriment. Ce n'est pas seulement de l' 'Agriculture Intelligente' ; c'est de l'<strong>Agriculture Computationnelle</strong>. Nous transformons l'incertitude biologique en prévisibilité mathématique.",
+            "p3_title": "III. Évolutivité : L'Avantage Décentralisé",
+            "p3_content": "Un supercalculateur centralisé peut gérer quelques méga-fermes d'entreprise. Il ne peut pas gérer les milliards de petites exploitations agricoles qui produisent 70 % de la nourriture mondiale. Les <strong style='color: var(--primary-accent);'>Nœuds Horizon</strong> comblent cette lacune. En distribuant la charge de calcul à des millions d'appareils personnels, nous créons un <strong>Réseau Maillé Infini</strong> capable de traiter simultanément des données d'un jardin de Séoul à un champ de blé en Ukraine.",
+            "p4_title": "IV. Le Résultat : Une Terre qui s'Auto-guérit",
+            "p4_content": "L'objectif ultime de Plant AI est la <strong>Régénération</strong>. En minimisant les intrants chimiques et en optimisant les cycles de croissance, nous permettons au sol de guérir. Nous envisageons un avenir où l'agriculture agit comme un puits de carbone plutôt qu'une source, où la sécurité alimentaire est garantie par le code, et où chaque être humain peut contribuer à la survie mondiale simplement en gardant son ordinateur allumé."
+        },
+        "verdict": {
+            "title": "Le Verdict Final : <gradient>Pourquoi Maintenant ?</gradient>",
+            "item1_title": "Survie",
+            "item1_desc": "L'agriculture actuelle ne peut pas nourrir 10 milliards de personnes. Nous avons besoin d'une mise à niveau.",
+            "item2_title": "Restauration",
+            "item2_desc": "Nous devons guérir le sol de décennies d'abus chimiques.",
+            "item3_title": "Équité",
+            "item3_desc": "La technologie alimentaire devrait appartenir au peuple, pas aux entreprises.",
+            "item4_title": "Héritage",
+            "item4_desc": "Laisser une planète autonome pour la prochaine génération."
+        },
+        "cta": {
+            "title": "Faites Partie de la Solution",
+            "desc": "Chaque nœud Horizon que vous exécutez contribue à la construction de l'IA agricole la plus complète au monde. Votre bande passante inutilisée d'aujourd'hui devient la sécurité alimentaire de demain.",
+            "button": "Télécharger le Nœud Horizon"
+        },
+        "footer": {
+            "terms": "Conditions",
+            "privacy": "Confidentialité",
+            "copyright": "© 2025 Projet Horizon VPN. Open Source & Décentralisé."
+        }
+    },
+    "vpn": {
+        "hero": {
+            "title": "Le <gradient>Bouclier Éthique.</gradient>",
+            "subtitle": "Nous avons repensé le VPN pour vous protéger tout en renforçant la plus grande recherche en IA de la planète. <br><span style='color: var(--primary-accent); font-weight: 600;'>Zéro Journal. Zéro Coût. 100% Impact.</span>",
+            "cta": "Télécharger le Nœud"
+        },
+        "features": {
+            "card1_title": "Bouclier de Qualité Militaire",
+            "card1_desc": "Les tunnels de chiffrement AES-256 garantissent que vos données sont invisibles pour les FAI, les pirates et même pour nous. Nous adhérons à une politique stricte de <strong>non-conservation des journaux</strong>.",
+            "card2_title": "Vitesse WireGuard®",
+            "card2_desc": "Construit sur le protocole moderne WireGuard, Horizon offre des vitesses fulgurantes avec une latence minimale, parfait pour le streaming et les jeux.",
+            "card3_title": "Accès Mondial",
+            "card3_desc": "Contournez la censure et les blocages géographiques. Accédez au contenu de n'importe où dans le monde comme si vous étiez un local."
+        },
+        "invisible": {
+            "title": "Invisible pour<br><gradient>Tout le Monde.</gradient>",
+            "desc": "Votre FAI ne voit rien. Les pirates voient du bruit aléatoire. Même <strong>nous</strong> ne voyons rien.",
+            "feature1_title": "Clés Éphémères",
+            "feature1_desc": "Les clés de chiffrement sont générées en RAM et détruites toutes les 60 minutes.",
+            "feature2_title": "Routage Multi-Sauts",
+            "feature2_desc": "Le trafic passe par 3 nœuds aléatoires avant de sortir. Aucun nœud unique ne connaît le chemin complet."
+        },
+        "terminal": {
+            "title": "node-x7z-daemon — bash — 80x24",
+            "cmd1": "$ horizon-cli status --verbose",
+            "res1_1": "> Connexion au réseau Mesh... ",
+            "res1_2": "<span style=\"color:var(--primary-accent)\">[OK]</span>",
+            "res1_3": "> Handshake: Curve25519 ",
+            "res1_4": "<span style=\"color:var(--primary-accent)\">[SÉCURISÉ]</span>",
+            "res1_5": "> ID du tunnel: #9928-AX-22",
+            "res1_6": "> État du journal: ",
+            "res1_7": "<span style=\"color:#ff5f56\">DÉSACTIVÉ (MODE RAM UNIQUEMENT)</span>",
+            "cmd2": "$ traceroute target.com",
+            "res2_1": "1 192.168.1.1 (Local)",
+            "res2_2": "2 * * * (Masqué)",
+            "res2_3": "3 * * * (Masqué)",
+            "res2_4": "4 * * * (Masqué)",
+            "res2_5": "5 target.com [203.0.113.5]"
+        },
+        "how": {
+            "title": "Comment fonctionne le<br><gradient>Réseau</gradient>",
+            "step1_title": "Vous (Le Nœud)",
+            "step1_desc": "Vous bénéficiez d'une protection VPN premium gratuite. En échange, votre appareil traite de petits morceaux de données publiques anonymisées.",
+            "step2_title": "L'Intelligence",
+            "step2_desc": "Ces données publiques (journaux climatiques, prix du marché) alimentent le cerveau de Plant AI, aidant à résoudre la pénurie alimentaire mondiale.",
+            "step3_title": "Durabilité",
+            "step3_desc": "Les partenaires commerciaux paient pour l'infrastructure du réseau, maintenant le VPN 100% gratuit pour vous pour toujours."
+        },
+        "who": {
+            "title": "À qui s'adresse<br><gradient>Horizon ?</gradient>",
+            "user1": "Journalistes",
+            "user1_desc": "Contournez la censure et rapportez la vérité en toute sécurité depuis les zones de conflit.",
+            "user2": "Joueurs",
+            "user2_desc": "Évitez les attaques DDoS et accédez à des serveurs géo-bloqués avec un décalage minimal.",
+            "user3": "Travailleurs à Distance",
+            "user3_desc": "Sécurisez l'accès Wi-Fi public lorsque vous travaillez depuis des cafés ou des aéroports."
+        },
+        "faq": {
+            "title": "Questions<br><gradient>Fréquentes</gradient>",
+            "q1": "Est-ce que Horizon voit mon historique de navigation ?",
+            "a1": "<strong>Jamais.</strong> Nous fonctionnons sur une base stricte de Zéro Journal. Techniquement, nos nœuds ne peuvent pas inspecter le trafic chiffré à l'intérieur de votre tunnel VPN personnel. Votre navigation privée reste privée.",
+            "q2": "Est-ce que cela va ralentir ma connexion internet ?",
+            "a2": "<strong>Imperceptiblement.</strong> Le processus en arrière-plan est 'conscient des ressources'. Il ne s'active que lorsque votre système est inactif (par exemple, lorsque vous êtes loin de l'ordinateur) et limite strictement l'utilisation de la bande passante pour garantir que votre streaming ou vos jeux ne soient jamais interrompus.",
+            "q3": "Est-ce vraiment gratuit pour toujours ?",
+            "a3": "<strong>Oui.</strong> Nous n'avons pas besoin de l'argent de votre abonnement car notre modèle économique est basé sur l'intelligence des données B2B, et non sur la vente de logiciels B2C. Tant que vous contribuez au réseau, le service premium est à vous.",
+            "q4": "Mon IP peut-elle être utilisée pour des activités illégales ?",
+            "a4": "<strong>Non.</strong> Contrairement à d'autres réseaux P2P, Horizon sépare le 'Proxy Commercial' (utilisé par les entreprises) de votre IP résidentielle. Nous avons une vérification KYC (Connaître Votre Client) stricte pour tous les partenaires commerciaux accédant au réseau de données."
+        },
+        "transparency": {
+            "header": "Plongée Technique",
+            "title": "Rapport de<br><gradient>Transparence</gradient>",
+            "p1_title": "I. Infrastructure RAM-Uniquement",
+            "p1_content": "Les VPN traditionnels écrivent des journaux sur des disques durs, qui peuvent être saisis ou inspectés. Horizon fonctionne exclusivement sur des <strong>Serveurs RAM-Uniquement</strong>. Cela signifie qu'au moment où un serveur est redémarré — ou si le courant est coupé — chaque octet de données est instantanément effacé. Il n'y a pas de disque physique à partir duquel récupérer les données. Nous traitons votre historique de navigation comme des 'Données Toxiques' que nous refusons de stocker.",
+            "p2_title": "II. L'Architecture de Relais 'Aveugle'",
+            "p2_content": "Nous utilisons une architecture à 'Double Saut' pour la poignée de main initiale. Le nœud qui sait <em>qui vous êtes</em> (le nœud d'entrée) ne sait pas <em>ce que vous faites</em>. Le nœud qui sait <em>ce que vous faites</em> (le nœud de sortie) ne sait pas <em>qui vous êtes</em>. Cette séparation cryptographique garantit qu'aucune machine de notre réseau ne possède l'image complète de votre activité.",
+            "p3_title": "III. Clés Éphémères & Secret Parfait Avant",
+            "p3_content": "Horizon utilise le <strong>Secret Parfait Avant (PFS)</strong>. Nous générons une nouvelle clé de chiffrement pour chaque session, et les faisons tourner toutes les 60 minutes. Même si un supercalculateur parvenait à casser une clé d'une session passée (ce qui prendrait des milliards d'années), elle ne pourrait pas être utilisée pour déchiffrer les sessions futures ou passées. Votre vie privée est garantie mathématiquement, pas seulement promise.",
+            "p4_title": "IV. Le Pare-feu Commercial",
+            "p4_content": "Les critiques demandent : 'Si vous vendez des données, mes données ne sont-elles pas en danger ?' Non. Le réseau 'Proxy Commercial' est une couche logique complètement distincte. Les partenaires commerciaux accèdent à l'<em>internet public</em> via nos nœuds pour vérifier les prix des vols ou les emplacements publicitaires. Ils n'ont <strong>jamais</strong> accès au tunnel VPN interne où circule votre trafic personnel. Les deux mondes ne se touchent jamais."
+        },
+        "final": {
+            "title": "Le Dernier VPN dont vous<br><gradient>aurez Jamais Besoin.</gradient>",
+            "desc": "Arrêtez de payer pour la confidentialité. Commencez à contribuer à l'avenir.",
+            "cta": "Obtenir Horizon Gratuitement"
+        }
+    },
+    "download": {
+        "title": "Télécharger Horizon VPN | Rejoignez le Maillage",
+        "hero": {
+            "badge": "v0.1.0 Bêta",
+            "title": "Télécharger <gradient>Horizon</gradient>",
+            "subtitle": "Rejoignez le réseau de confidentialité décentralisé. Votre appareil devient un nœud dans le maillage mondial, protégeant des millions de personnes tout en gagnant des récompenses.",
+            "tag1": "Zéro Journal",
+            "tag2": "Protocole WireGuard",
+            "tag3": "Alimente Plant AI"
+        },
+        "desktop": {
+            "title": "Bureau",
+            "windows": "Windows",
+            "windows_desc": "Windows 10/11 (64-bit)",
+            "windows_btn": "Télécharger .exe",
+            "macos": "macOS",
+            "macos_desc": "Ventura ou ultérieur (Apple Silicon)",
+            "macos_btn": "Télécharger .dmg",
+            "linux": "Linux",
+            "linux_desc": "Ubuntu / Debian / Arch",
+            "linux_btn": "Télécharger .deb"
+        },
+        "mobile": {
+            "title": "Mobile",
+            "android": "Android",
+            "android_desc": "Android 10+",
+            "android_btn": "Télécharger APK",
+            "ios": "iOS",
+            "ios_desc": "iOS 15+",
+            "ios_btn": "App Store"
+        },
+        "coming_soon": "Bientôt Disponible",
+        "info": {
+            "item1_title": "Open Source",
+            "item1_desc": "Chaque ligne de code est auditable sur GitHub. La confiance par la transparence.",
+            "item2_title": "Vérifié par SHA-256",
+            "item2_desc": "Tous les binaires sont signés cryptographiquement et vérifiés par hachage.",
+            "item3_title": "Mises à Jour Automatiques",
+            "item3_desc": "Des mises à jour en arrière-plan transparentes vous protègent sans effort."
+        },
+        "github": {
+            "title": "Compiler depuis la Source",
+            "desc": "Pour les développeurs et les chercheurs en sécurité qui préfèrent compiler depuis le code source. Instructions de compilation complètes incluses.",
+            "btn": "Voir sur GitHub"
+        }
+    },
+    "cloud": {
+        "title": "Horizon Cloud | Le Futur de l'Infrastructure",
+        "hero": {
+            "pre_title": "Initiative d'Infrastructure Mondiale",
+            "title": "Souveraineté. Échelle.<br><gradient>Performance.</gradient>",
+            "subtitle": "Horizon Cloud redéfinit la norme de l'infrastructure décentralisée. Construit sur du <strong>Matériel de Qualité Entreprise</strong> et propulsé par une <strong>Architecture Cloud Hybride</strong> conçue pour la sécurité et une évolutivité sans limites.",
+            "cta1": "Découvrez Nos Valeurs",
+            "cta2": "Spécifications Techniques",
+            "status_title": "ÉTAT DU SYSTÈME : EN LIGNE",
+            "status1": "> Initialisation de la Région : KR-CORE-1",
+            "status2": "> Nombre de Nœuds : <span style=\"color: #fff;\">Actif</span>",
+            "status3": "> Liaison Hybride : <span style=\"color: #4facfe;\">AWS Direct Connect</span>",
+            "status4": "> Sécurité : <span style=\"color: var(--secondary-accent);\">Pare-feu OPNsense Activé</span>",
+            "status5": "> Stockage : ZFS RAID-Z2 Optimisé"
+        },
+        "values": {
+            "title": "Valeurs<br><gradient>Fondamentales</gradient>",
+            "subtitle": "Nous ne construisons pas simplement un autre fournisseur de cloud. Nous construisons un écosystème d'infrastructure souverain guidé par trois principes innovants.",
+            "card1_title": "Souveraineté de l'Infrastructure",
+            "card1_desc": "Le véritable contrôle commence avec le matériel. Nous possédons nos propres serveurs physiques. En maintenant nos propres racks haute densité, nous éliminons les risques spécifiques de 'verrouillage du cloud public' et garantissons une intégrité absolue des données depuis le métal.",
+            "card2_title": "Performance Hybride",
+            "card2_desc": "Nous combinons la puissance brute et la sécurité du matériel sur site avec l'élasticité d'AWS. Cette architecture 'Cœur Hybride' nous permet de gérer des charges de travail sensibles localement tout en nous développant globalement en quelques millisecondes.",
+            "card3_title": "Vision Globale",
+            "card3_desc": "Notre feuille de route est sans frontières. De notre empreinte physique initiale à un siège mondial stratégique à Dubaï, nous construisons une entité juridiquement solide et fiscalement avantageuse, conçue pour une expansion internationale rapide."
+        },
+        "roadmap": {
+            "title": "Feuille de Route<br><gradient>Stratégique</gradient>",
+            "phase1_tag": "Phase 1 : La Fondation",
+            "phase1_title": "Cœur Physique & MVP",
+            "phase1_desc": "Établir le socle physique. Nous déployons des serveurs bare metal de qualité entreprise pour valider notre architecture haute performance.",
+            "phase1_item1_title": "Actif Physique",
+            "phase1_item1_desc": "Cluster Dell PowerEdge R730xd",
+            "phase1_item2_title": "Lancement du Service",
+            "phase1_item2_desc": "VPS Haute Fréquence, Hébergement Géré",
+            "phase2_tag": "Phase 2 : Expansion des Cas d'Usage",
+            "phase2_title": "Mise à l'Échelle de la Plateforme",
+            "phase2_desc": "Évoluer du matériel à la plateforme. Nous lancerons des produits <strong>Plateforme en tant que Service (PaaS)</strong> axés sur l'automatisation et une fiabilité inégalée.",
+            "phase2_item1": "Constitution de la Société",
+            "phase2_item2": "Partenariats Commerciaux",
+            "phase2_item3": "Lancement de Produit SaaS",
+            "phase3_tag": "Phase 3 : Domination Mondiale",
+            "phase3_title": "Siège Mondial à Dubaï",
+            "phase3_desc": "Établissement de notre siège stratégique dans une <strong>Zone Franche de Dubaï</strong>. Cela crée une structure juridique et financière hyper-efficace pour les opérations mondiales.",
+            "phase3_item1_title": "Objectif d'IPO Mondiale",
+            "phase3_item1_desc": "Cibler les marchés de capitaux mondiaux.",
+            "phase3_item2_title": "Hub Stratégique",
+            "phase3_item2_desc": "Connecter les marchés de l'Est et de l'Ouest."
+        },
+        "specs": {
+            "title": "Plongée Technique<br><gradient>Approfondie</gradient>",
+            "hardware_title": "Le Fer : Dell PowerEdge R730xd",
+            "hw_spec1_name": "Architecture CPU",
+            "hw_spec1_val": "Double Intel Xeon E5-2600 v4",
+            "hw_spec2_name": "Capacité Mémoire",
+            "hw_spec2_val": "DDR4 ECC (Extensible à 768 Go)",
+            "hw_spec3_name": "Tissu de Stockage",
+            "hw_spec3_val": "Baie Hybride 24 baies NVMe/SAS",
+            "hw_spec4_name": "Système de Fichiers",
+            "hw_spec4_val": "ZFS (Zettabyte File System)",
+            "hw_spec5_name": "Contrôleur Raid",
+            "hw_spec5_val": "PERC H730P (Flashé en Mode IT)",
+            "software_title": "Le Cerveau : Pile Cloud Hybride",
+            "sw_spec1_name": "Hyperviseur",
+            "sw_spec1_val": "Proxmox VE 8.x (Basé sur Debian)",
+            "sw_spec2_name": "Pont Cloud",
+            "sw_spec2_val": "AWS Site-to-Site VPN / Direct Connect",
+            "sw_spec3_name": "Conteneurisation",
+            "sw_spec3_val": "Support Natif Docker & LXC",
+            "sw_spec4_name": "Noyau de Sécurité",
+            "sw_spec4_val": "OPNsense + Snort IDS/IPS",
+            "sw_spec5_name": "Surveillance",
+            "sw_spec5_val": "Tableaux de bord Zabbix + Grafana"
+        },
+        "diagram": {
+            "title": "Architecture Cloud Hybride",
+            "box1_title": "Noyau Sécurisé",
+            "box1_desc": "Données Sensibles & IOPS Élevés",
+            "connector_top": "Tunnel Chiffré",
+            "connector_bottom": "Latence < 10ms",
+            "box2_title": "Rafale AWS",
+            "box2_desc": "CDN Mondial & Mise à l'Échelle Élastique"
+        },
+        "cta": {
+            "title": "Prêt à<br><gradient>Passer à l'Échelle ?</gradient>",
+            "desc": "Rejoignez le programme pilote pour la Phase 1 de Horizon Cloud.",
+            "button": "Contacter les Relations Investisseurs"
+        }
+    }
+}

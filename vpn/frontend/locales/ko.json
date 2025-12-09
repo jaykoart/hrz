@@ -1,0 +1,408 @@
+{
+    "meta": {
+        "language": "ko",
+        "name": "한국어",
+        "version": "1.3.0"
+    },
+    "index": {
+        "hero": {
+            "badge": "Plant AI 프로젝트",
+            "title": "당신의<br>프라이버시를 지키고,<br><gradient>지구를 구하세요.</gradient>",
+            "subtitle": "Horizon VPN은 단순한 도구가 아닙니다. 당신의 유휴 대역폭을 공유함으로써 전 세계 식량 위기를 해결하는 엔진인 <strong>Plant AI</strong>의 학습을 지원하게 됩니다.",
+            "cta": "미션 참여하기",
+            "version": "v0.1.0",
+            "tagline": "평생 무료 • 지구를 먼저 생각합니다"
+        },
+        "features": {
+            "title": "왜 <gradient>Horizon</gradient> 인가요?",
+            "subtitle": "서버가 켜져 있는 매 순간, 당신은 식량의 미래를 지키기 위한 데이터를 기여하고 있습니다.",
+            "card1": {
+                "title": "WireGuard® 암호화",
+                "desc": "군사 등급의 강력한 암호화를 무료로 누리세요. 음식과 마찬가지로 프라이버시 또한 기본적인 인권이라고 믿습니다."
+            },
+            "card2": {
+                "title": "Plant AI 구동",
+                "desc": "당신의 노드는 웹 전역에서 중요한 농업 데이터를 수집합니다. 이 데이터는 AI를 훈련시켜 전 세계 작물 수확량을 최적화합니다."
+            },
+            "card3": {
+                "title": "평생 무료",
+                "desc": "우리는 돈을 요구하지 않습니다. 당신은 '지구에 대한 기여'로 지불하고 있기 때문입니다. 더 나은 미래를 위한 공정한 교환입니다."
+            }
+        },
+        "vpn_section": {
+            "title": "<gradient>보이지 않는 방패</gradient>",
+            "desc": "우리는 VPN을 원점에서 재설계했습니다. 엄격한 <strong>제로 로그(Zero-Logs)</strong> 정책과 <strong>RAM-Only 서버</strong>를 기반으로 운영되며, 전원이 차단되는 즉시 당신의 데이터는 소멸합니다.",
+            "feature1": "AES-256 군사급 암호화",
+            "feature2": "멀티-홉(Multi-Hop) 라우팅 아키텍처",
+            "feature3": "임시 키 (매시간 자동 교체)",
+            "cta": "보안 기능 탐구"
+        },
+        "plant_section": {
+            "title": "<gradient>자연</gradient>을 위한 인공지능",
+            "desc": "우리는 식물의 언어를 해독하기 위해 세계 최대의 탈중앙화 데이터 엔진을 구축하고 있습니다. 당신의 유휴 대역폭이 전 세계 식량 생산을 최적화하는 <strong>분산 지능(Distributed Intelligence)</strong>을 구동합니다.",
+            "stat1": "데이터 포인트",
+            "stat2": "탄소 비용",
+            "cta": "Plant AI 만나보기"
+        },
+        "cloud_section": {
+            "title": "주권 <gradient>인프라</gradient>",
+            "desc": "Horizon Cloud는 탈중앙화 인프라를 재정의합니다. <strong>엔터프라이즈급 하드웨어</strong>와 <strong>하이브리드 클라우드 아키텍처</strong>를 기반으로, 락인(Lock-in) 없는 데이터 주권과 무한한 확장성을 보장합니다.",
+            "pill1": "베어메탈 코어",
+            "pill2": "고성능 VPS",
+            "pill3": "글로벌 엣지",
+            "cta": "로드맵 보기"
+        },
+        "download_section": {
+            "title": "<gradient>네트워크</gradient>에 참여할 준비가 되셨나요?",
+            "cta": "지금 다운로드"
+        },
+        "tech": {
+            "title": "기술 코어"
+        },
+        "card": {
+            "powered_by": "자연의 힘으로"
+        }
+    },
+    "nav": {
+        "home": "홈",
+        "plant_ai": "Plant AI",
+        "vpn": "VPN",
+        "download": "다운로드",
+        "cloud": "클라우드",
+        "login": "로그인"
+    },
+    "plant_ai": {
+        "hero": {
+            "title": "자연을 위한<br><gradient>인공지능.</gradient>",
+            "subtitle": "우리는 식물의 언어를 해독하고 전 지구적 식량 생산을 최적화하기 위해, 세계에서 가장 거대한 탈중앙화 데이터 엔진을 구축하고 있습니다."
+        },
+        "definition": {
+            "title": "Plant AI란 <gradient>무엇인가?</gradient>",
+            "desc": "Plant AI는 세계 최대 규모의 농업 빅데이터로 훈련된 <strong>특화 인공지능</strong>입니다. 일반적인 LLM과 달리, <span style='color: var(--primary-accent); font-weight: 600;'>지구상의 모든 농장을 자동화</span>하는 단 하나의 명확한 목표를 위해 설계되었습니다."
+        },
+        "core": {
+            "vision_title": "관찰 & 진단",
+            "vision_desc": "카메라가 인간의 눈을 대체합니다. AI는 잎의 색 변화, 반점 패턴, 열 스트레스를 실시간으로 분석합니다.",
+            "action_title": "판단 & 실행",
+            "action_desc": "자율 시스템이 작업을 수행합니다. 높은 온도는 차광막을 전개시키고, 건조한 토양은 정밀 스프링클러를 활성화합니다.",
+            "problem_title": "<gradient>미지의 데이터</gradient> 문제.",
+            "problem_desc1": "이것을 구축하기 위해, 우리는 빅테크가 가지고 있지 않은 데이터가 필요합니다. 그들에게는 위키피디아가 있지만, 우리에게는 <strong>토양 보고서</strong>, <strong>수확 기록</strong>, <strong>지역 기후 로그</strong>가 필요합니다.",
+            "problem_desc2": "바로 이 지점에서 <strong>Horizon VPN</strong>이 등장합니다. 당신의 노드는 수천 개의 지역 소스로부터 이 '틈새 데이터'를 수집하여, 우리 맞춤형 AI의 '녹색 시냅스(Green Synapse)'를 생성합니다."
+        },
+        "mission": {
+            "title": "<gradient>행성의 변화</gradient>를 주도합니다",
+            "pillar1_title": "식량 안보",
+            "pillar1_desc": "작물 수확량을 최적화하여 전 세계적인 기아 문제를 해결합니다. 우리는 모든 씨앗이 잠재력을 최대한 발휘하도록 보장합니다.",
+            "pillar1_tag": "기아 종식",
+            "pillar2_title": "기후 대응",
+            "pillar2_desc": "물과 살충제 사용을 극적으로 줄입니다. 우리는 농업을 더 스마트하고 깨끗하게 만들어 기후 변화에 맞서 싸웁니다.",
+            "pillar2_tag": "환경 지속성",
+            "pillar3_title": "디지털 기여자",
+            "pillar3_desc": "당신은 소비자가 아닌, 수호자입니다. 당신의 유휴 대역폭은 지구를 구하는 데 직접적으로 기여합니다.",
+            "pillar3_tag": "글로벌 시티즌"
+        },
+        "goal": {
+            "title": "목표: <gradient>1인 농장</gradient>",
+            "liberation_title": "노동으로부터의 해방",
+            "liberation_desc": "농업이 더 이상 허리를 부러뜨리는 일이 되어서는 안 됩니다. Plant AI와 함께라면, 단 한 사람이 대시보드를 통해 100에이커를 관리할 수 있습니다. AI가 모든 미세 관리를 처리합니다.",
+            "expertise_title": "모두를 위한 전문성",
+            "expertise_desc": "당신이 베테랑 농학자이든, 옥상 텃밭을 가꾸는 도시인이든, Plant AI는 전문가 수준의 통찰력을 제공합니다.",
+            "cta": "이 지능에 힘을 보태주세요"
+        },
+        "dashboard": {
+            "status": "실시간 시스템 상태",
+            "zone1_name": "A-1 구역 (토마토)",
+            "zone1_status": "주의 필요",
+            "zone1_desc": "질소 결핍 감지 (조치: 자동 투여 시작됨)",
+            "zone2_name": "B-3 구역 (상추)",
+            "zone2_status": "최적",
+            "zone2_desc": "성장 분석: 작년 대비 +15% 예측"
+        },
+        "distributed": {
+            "title": "<gradient>분산 지능</gradient>의 힘",
+            "node_title": "Horizon 노드",
+            "node_desc": "Horizon VPN을 실행하는 모든 사용자는 하나의 <strong>마이크로 데이터 센터</strong>가 됩니다. 우리는 거대하고 에너지 소모가 큰 서버 팜을 구축하는 대신, 수백만 장치의 유휴 컴퓨팅 파워를 활용합니다.",
+            "node_item1": "<strong>엣지 컴퓨팅:</strong> 데이터는 장치에서 로컬로 처리됩니다.",
+            "node_item2": "<strong>암호화된 전송:</strong> 모든 기여는 WireGuard 터널을 통해 익명화됩니다.",
+            "learning_title": "연합 학습",
+            "learning_desc": "우리는 단순히 데이터를 수집하는 것을 넘어, 집단적으로 AI를 훈련시킵니다. 당신의 장치는 작은 모델을 다운로드하고, 로컬 데이터(예: 지역 날씨 패턴)로 이를 개선한 뒤, 오직 그 <em>개선점</em>만을 다시 보냅니다.",
+            "learning_item1": "<strong>프라이버시 우선:</strong> 원본 데이터는 절대 당신의 장치를 떠나지 않습니다.",
+            "learning_item2": "<strong>군집 지능:</strong> 네트워크는 모든 사용자와 함께 더 스마트해집니다."
+        },
+        "action": {
+            "title": "<gradient>실행</gradient> 중인 Plant AI",
+            "case1_title": "도시의 가정 농업",
+            "case1_scenario": "<strong>시나리오:</strong> 발코니에서 바질을 키우고 있지만 계속 시들고 있습니다.",
+            "case1_solution1": "AI가 '물 부족'으로 진단합니다.",
+            "case1_solution2": "IoT 스프링클러가 자동으로 활성화됩니다.",
+            "case2_title": "정밀 농업",
+            "case2_scenario": "<strong>시나리오:</strong> 10,000에이커의 옥수수 밭이 알려지지 않은 해충의 공격을 받고 있습니다.",
+            "case2_solution1": "드론 스캔이 '섹터 7'을 식별합니다.",
+            "case2_solution2": "정밀 타격 처리로 살충제를 90% 절감합니다.",
+            "case3_title": "글로벌 연구",
+            "case3_scenario": "<strong>시나리오:</strong> 불규칙한 기후 변화 속에서 작물 수확량을 예측합니다.",
+            "case3_solution1": "수백만 노드로부터의 초지역적(Hyper-local) 데이터.",
+            "case3_solution2": "가뭄 저항성 씨앗 시뮬레이션."
+        },
+        "faq": {
+            "title": "자주 묻는 질문",
+            "q1": "인터넷 속도가 느려지나요?",
+            "a1": "아니요. Horizon 노드는 '경량 백그라운드 프로세스'를 생성하여, 당신이 스트리밍이나 게임을 하지 않을 때의 유휴 대역폭만을 사용합니다.",
+            "q2": "제 개인 정보는 안전한가요?",
+            "a2": "물론입니다. 우리는 오직 공개된 환경 데이터만을 수집합니다. 당신의 개인 파일, 브라우징 기록, 신원은 엄격히 접근이 금지되어 있으며 기술적으로 노드 소프트웨어가 접근할 수 없습니다."
+        },
+        "report": {
+            "header": "프로젝트 보고서: V3.0",
+            "title": "풍요의<br><gradient>아키텍처</gradient>",
+            "p1_title": "I. 위기: 100억 인구 vs. 단 하나의 행성",
+            "p1_content": "2050년까지 세계 인구는 98억 명을 넘어설 것입니다. 모두를 먹여 살리기 위해, 우리는 현재보다 <strong>70% 더 많은 식량</strong>을 생산해야 합니다. 그러나 사막화와 도시화로 인해 매년 10만 제곱킬로미터의 경작지를 잃고 있습니다. 전면적인 살충제 사용과 과도한 물 소비에 의존하는 전통적인 '산업 농업'은 한계에 도달했습니다. 그것은 우리가 의존하는 바로 그 토양을 파괴하고 있습니다.",
+            "p2_title": "II. 해결책: 추측이 아닌 정밀함",
+            "p2_content": "농업은 역사적으로 추정의 게임이었습니다. Plant AI는 <strong>초정밀성(Hyper-Precision)</strong>을 도입하여 이 패러다임을 바꿉니다. 잎의 기공 전도도부터 토양 미생물 활동에 이르기까지 수천 개의 데이터 포인트를 분석하여, 모든 물 한 방울과 영양소 한 밀리그램을 최적화할 수 있습니다. 이것은 단순한 '스마트 파밍'이 아닌, <strong>계산 농업(Computational Agriculture)</strong>입니다. 우리는 생물학적 불확실성을 수학적 예측 가능성으로 바꾸고 있습니다.",
+            "p3_title": "III. 확장성: 탈중앙화의 이점",
+            "p3_content": "중앙 집중식 슈퍼컴퓨터는 몇몇 기업형 거대 농장을 관리할 수 있습니다. 하지만 세계 식량의 70%를 생산하는 수십억 개의 소규모 농장을 관리할 수는 없습니다. <strong style='color: var(--primary-accent);'>Horizon 노드</strong>가 이 간극을 메웁니다. 수백만 개의 개인 장치에 계산 부하를 분산함으로써, 우리는 서울의 뒷마당 텃밭에서 우크라이나의 밀밭에 이르기까지 동시에 데이터를 처리할 수 있는 <strong>무한한 메시 네트워크(Infinite Mesh Network)</strong>를 생성합니다.",
+            "p4_title": "IV. 결과: 자가 치유하는 지구",
+            "p4_content": "Plant AI의 궁극적인 목표는 <strong>재생(Regeneration)</strong>입니다. 화학적 투입을 최소화하고 성장 주기를 최적화함으로써, 우리는 토양이 스스로 치유되도록 합니다. 우리는 농업이 탄소 배출원이 아닌 탄소 흡수원 역할을 하고, 식량 안보가 코드로 보장되며, 모든 인류가 컴퓨터를 켜두는 것만으로 지구의 생존에 기여할 수 있는 미래를 구상합니다."
+        },
+        "verdict": {
+            "title": "최종 결론: <gradient>왜 지금인가?</gradient>",
+            "item1_title": "생존",
+            "item1_desc": "현재의 농업은 100억 인구를 먹여 살릴 수 없습니다. 우리에게는 업그레이드가 필요합니다.",
+            "item2_title": "복원",
+            "item2_desc": "수십 년간의 화학 물질 남용으로부터 토양을 치유해야 합니다.",
+            "item3_title": "형평성",
+            "item3_desc": "식량 기술은 기업이 아닌, 사람들의 것이어야 합니다.",
+            "item4_title": "유산",
+            "item4_desc": "다음 세대를 위해 자립 가능한 행성을 남기는 것."
+        },
+        "cta": {
+            "title": "솔루션의 일부가 되어주세요",
+            "desc": "당신이 실행하는 모든 Horizon 노드는 세계에서 가장 포괄적인 농업 AI를 구축하는 데 기여합니다. 당신의 오늘의 유휴 대역폭이 내일의 식량 안보가 됩니다.",
+            "button": "Horizon 노드 다운로드"
+        },
+        "footer": {
+            "terms": "이용약관",
+            "privacy": "개인정보보호",
+            "copyright": "© 2025 Horizon VPN 프로젝트. 오픈소스 & 탈중앙화."
+        }
+    },
+    "vpn": {
+        "hero": {
+            "title": "<gradient>윤리적인 방패.</gradient>",
+            "subtitle": "우리는 당신을 보호하는 동시에 지구 최대의 AI 연구에 힘을 보태도록 VPN을 재설계했습니다. <br><span style='color: var(--primary-accent); font-weight: 600;'>제로 로그. 제로 비용. 100% 임팩트.</span>",
+            "cta": "노드 다운로드"
+        },
+        "features": {
+            "card1_title": "군사 등급의 방패",
+            "card1_desc": "AES-256 암호화 터널은 당신의 데이터가 ISP, 해커, 심지어 우리에게도 보이지 않도록 보장합니다. 우리는 엄격한 <strong>무로그 정책(No-Logs Policy)</strong>을 준수합니다.",
+            "card2_title": "WireGuard® 속도",
+            "card2_desc": "최신 WireGuard 프로토콜 기반으로 구축된 Horizon은 스트리밍과 게임에 완벽한, 최소한의 지연 시간으로 놀랍도록 빠른 속도를 제공합니다.",
+            "card3_title": "글로벌 액세스",
+            "card3_desc": "검열과 지역 차단을 우회하세요. 마치 현지인처럼 전 세계 어디서든 콘텐츠에 액세스하세요."
+        },
+        "invisible": {
+            "title": "모두에게 <gradient>보이지 않습니다.</gradient>",
+            "desc": "당신의 ISP는 아무것도 보지 못합니다. 해커는 무작위 노이즈를 봅니다. 심지어 <strong>우리</strong>조차 아무것도 볼 수 없습니다.",
+            "feature1_title": "임시 키 (Ephemeral Keys)",
+            "feature1_desc": "암호화 키는 RAM에서 생성되어 매 60분마다 파기됩니다.",
+            "feature2_title": "멀티-홉 라우팅",
+            "feature2_desc": "트래픽은 외부로 나가기 전 3개의 무작위 노드를 거칩니다. 어떤 단일 노드도 전체 경로를 알지 못합니다."
+        },
+        "terminal": {
+            "title": "node-x7z-daemon — bash — 80x24",
+            "cmd1": "$ horizon-cli status --verbose",
+            "res1_1": "> 메시 네트워크에 연결 중...",
+            "res1_2": "[OK]",
+            "res1_3": "> 핸드셰이크: Curve25519",
+            "res1_4": "[SECURE]",
+            "res1_5": "> 터널 ID: #9928-AX-22",
+            "res1_6": "> 로그 상태:",
+            "res1_7": "비활성화됨 (RAM-ONLY 모드)",
+            "cmd2": "$ traceroute target.com",
+            "res2_1": "1 192.168.1.1 (로컬)",
+            "res2_2": "2 * * * (마스킹됨)",
+            "res2_3": "3 * * * (마스킹됨)",
+            "res2_4": "4 * * * (마스킹됨)",
+            "res2_5": "5 target.com [203.0.113.5]"
+        },
+        "how": {
+            "title": "네트워크는 어떻게 <gradient>작동하나요?</gradient>",
+            "step1_title": "당신 (노드)",
+            "step1_desc": "당신은 무료 프리미엄 VPN 보호를 받습니다. 그 대가로, 당신의 장치는 작고 익명화된 공공 데이터 조각을 처리합니다.",
+            "step2_title": "지능",
+            "step2_desc": "이 공공 데이터(기후 로그, 시장 가격 등)는 Plant AI의 두뇌에 공급되어, 전 세계 식량 부족 문제를 해결하는 데 도움을 줍니다.",
+            "step3_title": "지속가능성",
+            "step3_desc": "상업 파트너들이 네트워크 인프라 비용을 지불하여, 당신에게 VPN을 영원히 100% 무료로 유지합니다."
+        },
+        "who": {
+            "title": "<gradient>Horizon</gradient>은 누구를 위한 것인가요?",
+            "user1": "언론인",
+            "user1_desc": "검열을 우회하고 분쟁 지역에서 안전하게 진실을 보도하세요.",
+            "user2": "게이머",
+            "user2_desc": "DDoS 공격을 피하고 최소한의 렉으로 지역 제한 서버에 접속하세요.",
+            "user3": "원격 근무자",
+            "user3_desc": "카페나 공항에서 작업하는 동안 공용 와이파이 접속을 보호하세요."
+        },
+        "faq": {
+            "title": "자주 묻는 <gradient>질문</gradient>",
+            "q1": "Horizon이 제 브라우징 기록을 볼 수 있나요?",
+            "a1": "<strong>절대 아닙니다.</strong> 우리는 엄격한 제로 로그 정책으로 운영됩니다. 기술적으로, 우리 노드는 당신의 개인 VPN 터널 내부의 암호화된 트래픽을 검사할 수 없습니다. 당신의 사적인 브라우징은 비공개로 유지됩니다.",
+            "q2": "인터넷 연결 속도가 느려지나요?",
+            "a2": "<strong>거의 감지할 수 없을 정도입니다.</strong> 백그라운드 프로세스는 '자원 인식(Resource-Aware)' 기능이 있어, 당신의 시스템이 유휴 상태일 때만(예: 컴퓨터를 사용하지 않을 때) 활성화되며, 스트리밍이나 게임이 절대 중단되지 않도록 대역폭 사용을 엄격히 제한합니다.",
+            "q3": "정말로 영원히 무료인가요?",
+            "a3": "<strong>네.</strong> 우리의 비즈니스 모델은 B2C 소프트웨어 판매가 아닌, B2B 데이터 인텔리전스를 기반으로 하기 때문에 당신의 구독료가 필요하지 않습니다. 당신이 네트워크에 기여하는 한, 프리미엄 서비스는 당신의 것입니다.",
+            "q4": "제 IP가 불법 활동에 사용될 수 있나요?",
+            "a4": "<strong>아니요.</strong> 다른 P2P 네트워크와 달리, Horizon은 기업이 사용하는 '상업용 프록시'를 당신의 주거용 IP와 분리합니다. 우리는 데이터 네트워크에 접속하는 모든 비즈니스 파트너에 대해 엄격한 KYC(고객 신원 확인) 심사를 진행합니다."
+        },
+        "transparency": {
+            "header": "엔지니어링 심층 분석",
+            "title": "투명성<br><gradient>보고서</gradient>",
+            "p1_title": "I. RAM-Only 인프라",
+            "p1_content": "전통적인 VPN은 로그를 하드 드라이브에 기록하며, 이는 압수되거나 검사될 수 있습니다. Horizon은 오직 <strong>RAM-Only 서버</strong>에서만 운영됩니다. 이는 서버가 재부팅되거나 전원이 차단되는 순간, 모든 데이터 바이트가 즉시 삭제됨을 의미합니다. 데이터를 복구할 물리적 디스크가 존재하지 않습니다. 우리는 당신의 브라우징 기록을 저장하기를 거부하는 '유해 데이터'로 취급합니다.",
+            "p2_title": "II. '블라인드' 릴레이 아키텍처",
+            "p2_content": "우리는 초기 핸드셰이크에 '더블-홉' 아키텍처를 활용합니다. <em>당신이 누구인지</em> 아는 노드(진입 노드)는 <em>당신이 무엇을 하는지</em> 알지 못합니다. <em>당신이 무엇을 하는지</em> 아는 노드(출구 노드)는 <em>당신이 누구인지</em> 알지 못합니다. 이 암호학적 분리는 우리 네트워크의 어떤 단일 머신도 당신의 활동에 대한 완전한 그림을 가질 수 없음을 보장합니다.",
+            "p3_title": "III. 임시 키 & 완전 순방향 비밀성",
+            "p3_content": "Horizon은 <strong>완전 순방향 비밀성(PFS)</strong>을 사용합니다. 우리는 모든 단일 세션에 대해 새로운 암호화 키를 생성하고, 60분마다 교체합니다. 만약 슈퍼컴퓨터가 과거 세션의 키를 해독한다 해도(수십억 년이 걸릴 것이지만), 그 키는 미래나 과거의 다른 세션을 해독하는 데 사용될 수 없습니다. 당신의 프라이버시는 약속이 아닌, 수학적으로 보장됩니다.",
+            "p4_title": "IV. 비즈니스 방화벽",
+            "p4_content": "비평가들은 묻습니다: '데이터를 판매한다면, 내 데이터도 위험에 처하는 것 아닌가?' 아닙니다. '상업용 프록시' 네트워크는 완전히 분리된 논리적 계층입니다. 비즈니스 파트너들은 항공권 가격이나 광고 배치를 확인하기 위해 우리 노드를 통해 <em>공용 인터넷</em>에 접속합니다. 그들은 당신의 개인 트래픽이 흐르는 내부 VPN 터널에는 <strong>절대</strong> 접근할 수 없습니다. 두 세계는 결코 만나지 않습니다."
+        },
+        "final": {
+            "title": "당신에게 필요한 마지막 <gradient>VPN.</gradient>",
+            "desc": "더 이상 프라이버시를 위해 돈을 내지 마세요. 미래에 기여를 시작하세요.",
+            "cta": "Horizon 무료로 받기"
+        }
+    },
+    "download": {
+        "title": "Horizon VPN 다운로드 | 메시에 참여하세요",
+        "hero": {
+            "badge": "v0.1.0 베타",
+            "title": "<gradient>Horizon</gradient> 다운로드",
+            "subtitle": "분산형 프라이버시 네트워크에 참여하세요. 당신의 기기는 글로벌 메시의 노드가 되어 수백만 명을 보호하고 보상을 획득합니다.",
+            "tag1": "제로 로그",
+            "tag2": "WireGuard 프로토콜",
+            "tag3": "Plant AI 지원"
+        },
+        "desktop": {
+            "title": "데스크톱",
+            "windows": "Windows",
+            "windows_desc": "Windows 10/11 (64비트)",
+            "windows_btn": ".exe 다운로드",
+            "macos": "macOS",
+            "macos_desc": "Ventura 또는 이후 버전 (Apple Silicon)",
+            "macos_btn": ".dmg 다운로드",
+            "linux": "Linux",
+            "linux_desc": "Ubuntu / Debian / Arch",
+            "linux_btn": ".deb 다운로드"
+        },
+        "mobile": {
+            "title": "모바일",
+            "android": "Android",
+            "android_desc": "Android 10 이상",
+            "android_btn": "APK 다운로드",
+            "ios": "iOS",
+            "ios_desc": "iOS 15 이상",
+            "ios_btn": "App Store"
+        },
+        "coming_soon": "출시 예정",
+        "info": {
+            "item1_title": "오픈 소스",
+            "item1_desc": "모든 코드는 GitHub에서 감사가능합니다. 투명성을 통한 신뢰.",
+            "item2_title": "SHA-256 검증",
+            "item2_desc": "모든 바이너리는 암호화 서명 및 해시 검증을 거칩니다.",
+            "item3_title": "자동 업데이트",
+            "item3_desc": "원활한 백그라운드 업데이트가 최소한의 노력으로 당신을 보호합니다."
+        },
+        "github": {
+            "title": "소스에서 직접 빌드",
+            "desc": "소스로부터 직접 컴파일하기를 선호하는 개발자 및 보안 연구원을 위합니다. 전체 빌드 설명서가 포함되어 있습니다.",
+            "btn": "GitHub에서 보기"
+        }
+    },
+    "cloud": {
+        "title": "Horizon Cloud | 인프라의 미래",
+        "hero": {
+            "pre_title": "글로벌 인프라 이니셔티브",
+            "title": "주권. 확장성.<br><gradient>성능.</gradient>",
+            "subtitle": "Horizon Cloud는 분산형 인프라의 기준을 재정의합니다. <strong>엔터프라이즈급 하드웨어</strong>에 구축되고 보안과 무한한 확장성을 위해 설계된 <strong>하이브리드 클라우드 아키텍처</strong>로 구동됩니다.",
+            "cta1": "우리의 가치 보기",
+            "cta2": "기술 사양",
+            "status_title": "시스템 상태: 온라인",
+            "status1": "> 리전 초기화 중: KR-CORE-1",
+            "status2": "> 노드 수: <span style=\"color: #fff;\">활성</span>",
+            "status3": "> 하이브리드 업링크: <span style=\"color: #4facfe;\">AWS Direct Connect</span>",
+            "status4": "> 보안: <span style=\"color: var(--secondary-accent);\">OPNsense 방화벽 활성화됨</span>",
+            "status5": "> 스토리지: ZFS RAID-Z2 최적화됨"
+        },
+        "values": {
+            "title": "핵심 <gradient>가치</gradient>",
+            "subtitle": "우리는 또 하나의 클라우드 제공업체를 만드는 것이 아닙니다. 우리는 세 가지 혁신적인 원칙에 따라 주권적인 인프라 생태계를 구축하고 있습니다.",
+            "card1_title": "인프라 주권",
+            "card1_desc": "진정한 통제는 하드웨어에서 시작됩니다. 우리는 자체 물리적 서버를 소유합니다. 자체 고밀도 랙을 유지함으로써 '퍼블릭 클라우드 종속'의 특정 위험을 제거하고 메탈부터 절대적인 데이터 무결성을 보장합니다.",
+            "card2_title": "하이브리드 성능",
+            "card2_desc": "우리는 온프레미스 하드웨어의 원시적인 성능과 보안을 AWS의 탄력성과 결합합니다. 이 '하이브리드 코어' 아키텍처를 통해 민감한 워크로드를 로컬에서 처리하면서 전 세계적으로 밀리초 단위로 확장할 수 있습니다.",
+            "card3_title": "글로벌 비전",
+            "card3_desc": "우리의 로드맵은 국경이 없습니다. 초기 물리적 거점부터 두바이의 전략적 글로벌 본사까지, 우리는 신속한 국제적 확장을 위해 설계된 세금 효율적이고 법적으로 견고한 법인을 구축하고 있습니다."
+        },
+        "roadmap": {
+            "title": "전략적 <gradient>로드맵</gradient>",
+            "phase1_tag": "1단계: 기반 구축",
+            "phase1_title": "물리적 코어 & MVP",
+            "phase1_desc": "물리적 기반을 구축합니다. 고성능 아키텍처를 검증하기 위해 엔터프라이즈급 베어메탈 서버를 배포하고 있습니다.",
+            "phase1_item1_title": "물리적 자산",
+            "phase1_item1_desc": "Dell PowerEdge R730xd 클러스터",
+            "phase1_item2_title": "서비스 출시",
+            "phase1_item2_desc": "고주파 VPS, 매니지드 호스팅",
+            "phase2_tag": "2단계: 사용 사례 확장",
+            "phase2_title": "플랫폼 확장",
+            "phase2_desc": "하드웨어에서 플랫폼으로 진화합니다. 자동화와 탁월한 신뢰성에 중점을 둔 <strong>PaaS(Platform-as-a-Service)</strong> 제품을 출시할 것입니다.",
+            "phase2_item1": "법인 설립",
+            "phase2_item2": "상업적 파트너십",
+            "phase2_item3": "SaaS 제품 출시",
+            "phase3_tag": "3단계: 글로벌 지배",
+            "phase3_title": "두바이 글로벌 본사",
+            "phase3_desc": "<strong>두바이 자유 구역</strong>에 전략적 본사를 설립합니다. 이는 글로벌 운영을 위한 초효율적인 법률 및 재무 구조를 만듭니다.",
+            "phase3_item1_title": "글로벌 IPO 목표",
+            "phase3_item1_desc": "글로벌 자본 시장을 목표로 합니다.",
+            "phase3_item2_title": "전략적 허브",
+            "phase3_item2_desc": "동서양 시장을 연결합니다."
+        },
+        "specs": {
+            "title": "엔지니어링 <gradient>심층 분석</gradient>",
+            "hardware_title": "The Iron: Dell PowerEdge R730xd",
+            "hw_spec1_name": "CPU 아키텍처",
+            "hw_spec1_val": "듀얼 Intel Xeon E5-2600 v4",
+            "hw_spec2_name": "메모리 용량",
+            "hw_spec2_val": "DDR4 ECC (768GB까지 확장 가능)",
+            "hw_spec3_name": "스토리지 패브릭",
+            "hw_spec3_val": "24베이 NVMe/SAS 하이브리드 배열",
+            "hw_spec4_name": "파일 시스템",
+            "hw_spec4_val": "ZFS (제타바이트 파일 시스템)",
+            "hw_spec5_name": "레이드 컨트롤러",
+            "hw_spec5_val": "PERC H730P (IT 모드 플래시됨)",
+            "software_title": "The Brain: 하이브리드 클라우드 스택",
+            "sw_spec1_name": "하이퍼바이저",
+            "sw_spec1_val": "Proxmox VE 8.x (Debian 기반)",
+            "sw_spec2_name": "클라우드 브리지",
+            "sw_spec2_val": "AWS Site-to-Site VPN / Direct Connect",
+            "sw_spec3_name": "컨테이너화",
+            "sw_spec3_val": "Docker & LXC 네이티브 지원",
+            "sw_spec4_name": "보안 코어",
+            "sw_spec4_val": "OPNsense + Snort IDS/IPS",
+            "sw_spec5_name": "모니터링",
+            "sw_spec5_val": "Zabbix + Grafana 대시보드"
+        },
+        "diagram": {
+            "title": "하이브리드 클라우드 아키텍처",
+            "box1_title": "시큐어 코어",
+            "box1_desc": "민감 데이터 & 높은 IOPS",
+            "connector_top": "암호화된 터널",
+            "connector_bottom": "지연 시간 < 10ms",
+            "box2_title": "AWS 버스트",
+            "box2_desc": "글로벌 CDN & 탄력적 확장"
+        },
+        "cta": {
+            "title": "확장할 <gradient>준비가 되셨나요?</gradient>",
+            "desc": "Horizon Cloud 1단계 파일럿 프로그램에 참여하세요.",
+            "button": "투자자 문의"
+        }
+    }
+}

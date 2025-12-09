@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Horizon VPN | Join the Mesh</title>
+    <title data-i18n="download.title">Download Horizon VPN | Join the Mesh</title>
     <link rel="stylesheet" href="style.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -99,7 +99,7 @@
         }
 
         .coming-soon::after {
-            content: 'Coming Soon';
+            content: attr(data-i18n-after);
             position: absolute;
             top: 1rem;
             right: 1rem;
@@ -177,10 +177,11 @@
         <header>
             <a href="index.html" class="logo">Hor<img src="assets/neon-i.svg" class="neon-i-img" alt="i">zon</a>
             <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="plant-ai.html">Plant AI</a>
-                <a href="vpn.html">VPN</a>
-                <a href="download.html" class="active">Download</a>
+                <a href="index.html" data-i18n="nav.home">Home</a>
+                <a href="plant-ai.html" data-i18n="nav.plant_ai">Plant AI</a>
+                <a href="vpn.html" data-i18n="nav.vpn">VPN</a>
+                <a href="download.html" class="active" data-i18n="nav.download">Download</a>
+                <a href="cloud.html" data-i18n="nav.cloud">Cloud</a>
             </nav>
             <div class="nav-utils">
                 <button class="btn-icon" id="lang-btn" title="Language">
@@ -189,107 +190,108 @@
                 <button class="btn-icon" id="theme-btn" title="Toggle Theme">
                     <ion-icon name="moon-outline"></ion-icon>
                 </button>
-                <a href="#" class="btn-login" id="login-btn">Login</a>
+                <a href="#" class="btn-login" id="login-btn" data-i18n="nav.login">Login</a>
             </div>
         </header>
 
         <!-- Hero Section -->
         <section class="download-hero">
-            <span class="version-badge">
+            <span class="version-badge" data-i18n="download.hero.badge">
                 <ion-icon name="rocket-outline" style="vertical-align: middle; margin-right: 5px;"></ion-icon>
                 v0.1.0 Beta
             </span>
-            <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Download <span class="text-gradient">Horizon</span></h1>
-            <p class="lead" style="margin: 0 auto 2rem; max-width: 600px;">
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem;" data-i18n="download.hero.title">Download <span
+                    class="text-gradient">Horizon</span></h1>
+            <p class="lead" style="margin: 0 auto 2rem; max-width: 600px;" data-i18n="download.hero.subtitle">
                 Join the decentralized privacy network. Your device becomes a node in the global mesh, protecting
                 millions while earning rewards.
             </p>
             <div
                 style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; color: var(--text-muted); font-size: 0.9rem;">
-                <span><ion-icon name="shield-checkmark"
+                <span data-i18n="download.hero.tag1"><ion-icon name="shield-checkmark"
                         style="color: var(--primary-accent); vertical-align: middle;"></ion-icon> Zero Logs</span>
-                <span><ion-icon name="flash" style="color: #4facfe; vertical-align: middle;"></ion-icon> WireGuard
-                    Protocol</span>
-                <span><ion-icon name="leaf" style="color: #2ed573; vertical-align: middle;"></ion-icon> Powers Plant
-                    AI</span>
+                <span data-i18n="download.hero.tag2"><ion-icon name="flash"
+                        style="color: #4facfe; vertical-align: middle;"></ion-icon> WireGuard Protocol</span>
+                <span data-i18n="download.hero.tag3"><ion-icon name="leaf"
+                        style="color: #2ed573; vertical-align: middle;"></ion-icon> Powers Plant AI</span>
             </div>
         </section>
 
         <!-- Desktop Section -->
         <div class="section-divider">
-            <h2>Desktop</h2>
+            <h2 data-i18n="download.desktop.title">Desktop</h2>
         </div>
 
         <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
             <!-- Windows -->
-            <div class="glass glass-card platform-card coming-soon">
+            <div class="glass glass-card platform-card coming-soon" data-i18n-after="download.coming_soon">
                 <div class="icon-wrapper">
                     <ion-icon name="logo-windows" style="color: #00a4ef;"></ion-icon>
                 </div>
-                <h3>Windows</h3>
-                <p class="version">Windows 10/11 (64-bit)</p>
+                <h3 data-i18n="download.desktop.windows">Windows</h3>
+                <p class="version" data-i18n="download.desktop.windows_desc">Windows 10/11 (64-bit)</p>
                 <a href="#" class="btn-download">
                     <ion-icon name="download-outline"></ion-icon>
-                    Download .exe
+                    <span data-i18n="download.desktop.windows_btn">Download .exe</span>
                 </a>
             </div>
 
             <!-- macOS -->
-            <div class="glass glass-card platform-card coming-soon">
+            <div class="glass glass-card platform-card coming-soon" data-i18n-after="download.coming_soon">
                 <div class="icon-wrapper">
                     <ion-icon name="logo-apple" style="color: #fff;"></ion-icon>
                 </div>
-                <h3>macOS</h3>
-                <p class="version">Ventura or later (Apple Silicon)</p>
+                <h3 data-i18n="download.desktop.macos">macOS</h3>
+                <p class="version" data-i18n="download.desktop.macos_desc">Ventura or later (Apple Silicon)</p>
                 <a href="#" class="btn-download">
                     <ion-icon name="download-outline"></ion-icon>
-                    Download .dmg
+                    <span data-i18n="download.desktop.macos_btn">Download .dmg</span>
                 </a>
             </div>
 
             <!-- Linux -->
-            <div class="glass glass-card platform-card coming-soon">
+            <div class="glass glass-card platform-card coming-soon" data-i18n-after="download.coming_soon">
                 <div class="icon-wrapper">
                     <ion-icon name="logo-tux" style="color: #fcc624;"></ion-icon>
                 </div>
-                <h3>Linux</h3>
-                <p class="version">Ubuntu / Debian / Arch</p>
+                <h3 data-i18n="download.desktop.linux">Linux</h3>
+                <p class="version" data-i18n="download.desktop.linux_desc">Ubuntu / Debian / Arch</p>
                 <a href="#" class="btn-download">
                     <ion-icon name="download-outline"></ion-icon>
-                    Download .deb
+                    <span data-i18n="download.desktop.linux_btn">Download .deb</span>
                 </a>
             </div>
         </div>
 
         <!-- Mobile Section -->
         <div class="section-divider">
-            <h2>Mobile</h2>
+            <h2 data-i18n="download.mobile.title">Mobile</h2>
         </div>
 
         <div class="grid" style="grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 700px; margin: 0 auto;">
             <!-- Android -->
-            <div class="glass glass-card platform-card coming-soon">
+            <div class="glass glass-card platform-card coming-soon" data-i18n-after="download.coming_soon">
                 <div class="icon-wrapper">
                     <ion-icon name="logo-android" style="color: #3ddc84;"></ion-icon>
                 </div>
-                <h3>Android</h3>
-                <p class="version">Android 10+</p>
+                <h3 data-i18n="download.mobile.android">Android</h3>
+                <p class="version" data-i18n="download.mobile.android_desc">Android 10+</p>
                 <a href="#" class="btn-download">
                     <ion-icon name="download-outline"></ion-icon>
-                    Download APK
+                    <span data-i18n="download.mobile.android_btn">Download APK</span>
                 </a>
             </div>
 
             <!-- iOS -->
-            <div class="glass glass-card platform-card coming-soon">
+            <div class="glass glass-card platform-card coming-soon" data-i18n-after="download.coming_soon">
                 <div class="icon-wrapper">
                     <ion-icon name="logo-apple-appstore" style="color: #007aff;"></ion-icon>
                 </div>
-                <h3>iOS</h3>
-                <p class="version">iOS 15+</p>
+                <h3 data-i18n="download.mobile.ios">iOS</h3>
+                <p class="version" data-i18n="download.mobile.ios_desc">iOS 15+</p>
                 <a href="#" class="btn-download">
                     <ion-icon name="logo-apple-appstore"></ion-icon>
-                    App Store
+                    <span data-i18n="download.mobile.ios_btn">App Store</span>
                 </a>
             </div>
         </div>
@@ -298,46 +300,51 @@
         <div class="info-grid">
             <div class="info-item">
                 <ion-icon name="code-slash-outline"></ion-icon>
-                <h4>Open Source</h4>
-                <p>Every line of code is auditable on GitHub. Trust through transparency.</p>
+                <h4 data-i18n="download.info.item1_title">Open Source</h4>
+                <p data-i18n="download.info.item1_desc">Every line of code is auditable on GitHub. Trust through
+                    transparency.</p>
             </div>
             <div class="info-item">
                 <ion-icon name="finger-print-outline"></ion-icon>
-                <h4>SHA-256 Verified</h4>
-                <p>All binaries are cryptographically signed and hash-verified.</p>
+                <h4 data-i18n="download.info.item2_title">SHA-256 Verified</h4>
+                <p data-i18n="download.info.item2_desc">All binaries are cryptographically signed and hash-verified.</p>
             </div>
             <div class="info-item">
                 <ion-icon name="git-branch-outline"></ion-icon>
-                <h4>Auto Updates</h4>
-                <p>Seamless background updates keep you protected with zero effort.</p>
+                <h4 data-i18n="download.info.item3_title">Auto Updates</h4>
+                <p data-i18n="download.info.item3_desc">Seamless background updates keep you protected with zero effort.
+                </p>
             </div>
         </div>
 
         <!-- GitHub CTA -->
         <div class="glass glass-card" style="text-align: center; margin: 4rem 0; padding: 3rem;">
             <ion-icon name="logo-github" style="font-size: 3rem; margin-bottom: 1rem;"></ion-icon>
-            <h3 style="margin-bottom: 1rem;">Build from Source</h3>
-            <p
-                style="color: var(--text-muted); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto;">
+            <h3 style="margin-bottom: 1rem;" data-i18n="download.github.title">Build from Source</h3>
+            <p style="color: var(--text-muted); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto;"
+                data-i18n="download.github.desc">
                 For developers and security researchers who prefer to compile from source. Full build instructions
                 included.
             </p>
             <a href="https://github.com/jaykoart/hrz" target="_blank" class="btn btn-primary"
                 style="background: #333; border-color: #555;">
                 <ion-icon name="logo-github" style="vertical-align: middle; margin-right: 8px;"></ion-icon>
-                View on GitHub
+                <span data-i18n="download.github.btn">View on GitHub</span>
             </a>
         </div>
 
         <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.8rem;">
             <p style="margin-bottom: 1rem;">
-                <a href="terms.html" style="color: var(--text-main); text-decoration: none; margin: 0 10px;">Terms</a>
-                <a href="privacy.html"
-                    style="color: var(--text-main); text-decoration: none; margin: 0 10px;">Privacy</a>
+                <a href="terms.html" style="color: var(--text-main); text-decoration: none; margin: 0 10px;"
+                    data-i18n="plant_ai.footer.terms">Terms</a>
+                <a href="privacy.html" style="color: var(--text-main); text-decoration: none; margin: 0 10px;"
+                    data-i18n="plant_ai.footer.privacy">Privacy</a>
             </p>
-            <p>&copy; 2025 Horizon VPN Project. Open Source & Decentralized.</p>
+            <p data-i18n="plant_ai.footer.copyright">&copy; 2025 Horizon VPN Project. Open Source & Decentralized.</p>
         </footer>
     </div>
+    <script src="i18n.js"></script>
+    <script src="solar-adaptive-theme.js"></script>
     <script src="script.js"></script>
 </body>
 

@@ -9,6 +9,9 @@
     <!-- Ionicons for clean iconography -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        /* Specific page styles can go here */
+    </style>
 </head>
 
 <body>
@@ -25,6 +28,7 @@
                 <a href="plant-ai.html">Plant AI</a>
                 <a href="vpn.html">VPN</a>
                 <a href="download.html">Download</a>
+                <a href="cloud.html">Cloud</a>
             </nav>
             <div class="nav-utils">
                 <button class="btn-icon" id="lang-btn" title="Language">
@@ -36,54 +40,95 @@
                 <a href="#" class="btn-login" id="login-btn">Login</a>
             </div>
         </header>
+    </div>
 
-        <!-- Hero Section -->
-        <section class="hero">
+    <!-- Hero Section -->
+    <section class="hero" style="position: relative; overflow: hidden;">
+        <div class="container"
+            style="position: relative; z-index: 2; width: 100%; height: 100%; display: flex; align-items: center;">
             <div class="hero-content">
                 <span
-                    style="color: var(--primary-accent); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 1rem; display: block;">Project
+                    style="color: var(--primary-accent); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 1rem; display: block;"
+                    data-i18n="index.hero.badge">Project
                     Plant AI</span>
-                <h1>Protect Your Privacy,<br> <span class="text-gradient">Save the Planet.</span></h1>
-                <p class="lead">Horizon VPN is more than a tool. By sharing your idle bandwidth, you power the training
+                <h1 data-i18n="index.hero.title">Protect<br>Your Privacy,<br> <span class="text-gradient">Save the
+                        Planet.</span></h1>
+                <p class="lead" data-i18n="index.hero.subtitle">Horizon VPN is more than a tool. By sharing your idle
+                    bandwidth, you power the training
                     of <strong>Plant AI</strong>, the engine solving the global food crisis.</p>
-                <a href="download.html" class="btn btn-primary" id="downloadBtn">Join the Mission</a>
+                <a href="download.html" class="btn btn-primary" id="downloadBtn" data-i18n="index.hero.cta">Join the
+                    Mission</a>
                 <div
                     style="margin-top: 2rem; display: flex; align-items: center; gap: 1rem; color: var(--text-muted); font-size: 0.9rem;">
-                    <span class="glass" style="padding: 5px 10px; border-radius: 5px;">v0.1.0</span>
-                    <span>Free Forever • Earth First</span>
+                    <span class="glass" style="padding: 5px 10px; border-radius: 5px;"
+                        data-i18n="index.hero.version">v0.1.0</span>
+                    <span data-i18n="index.hero.tagline">Free Forever • Earth First</span>
                 </div>
             </div>
-            <!-- Visual Element -->
+            <!-- Visual Element with Background Slider -->
             <div class="glass glass-card"
-                style="position: absolute; right: 0; width: 400px; height: 300px; z-index: 1; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(40px);">
-                <div style="text-align: center;">
+                style="position: absolute; right: 0; width: 400px; height: 300px; z-index: 1; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(40px); overflow: hidden;">
+                <!-- Background Slider inside card -->
+                <div class="card-bg-slider" id="cardSlider"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;">
+                    <div class="card-slide active"
+                        style="background-image: url('assets/1.webp'); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; transition: opacity 1.5s ease-in-out;">
+                    </div>
+                    <div class="card-slide"
+                        style="background-image: url('assets/2.webp'); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; transition: opacity 1.5s ease-in-out;">
+                    </div>
+                    <div class="card-slide"
+                        style="background-image: url('assets/3.webp'); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; transition: opacity 1.5s ease-in-out;">
+                    </div>
+                    <div class="card-slide"
+                        style="background-image: url('assets/4.webp'); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; transition: opacity 1.5s ease-in-out;">
+                    </div>
+                    <div class="card-slide"
+                        style="background-image: url('assets/5.webp'); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; transition: opacity 1.5s ease-in-out;">
+                    </div>
+                </div>
+                <!-- Card overlay for glass effect -->
+                <div
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 15, 25, 0.6); z-index: 1;">
+                </div>
+                <!-- Content -->
+                <div style="text-align: center; position: relative; z-index: 2;">
                     <ion-icon name="leaf-outline"
-                        style="font-size: 8rem; color: var(--primary-accent); margin-bottom: 1rem; opacity: 0.8;"></ion-icon>
-                    <p style="font-weight: 600;">Powered by Nature</p>
+                        style="font-size: 8rem; color: var(--primary-accent); margin-bottom: 1rem; filter: drop-shadow(0 0 15px var(--primary-accent));"></ion-icon>
+                    <p style="font-weight: 600; text-shadow: 0 0 10px var(--primary-accent);"
+                        data-i18n="index.card.powered_by">Powered by Nature</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Features Section -->
+    <div class="container">
+
+
+        <!-- Features Section (Why Horizon?) -->
         <section class="features">
-            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Why <span class="text-gradient">Horizon?</span></h2>
-            <p style="color: var(--text-muted); max-width: 600px;">Every second your server is on, you are contributing
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;" data-i18n="index.features.title">Why <span
+                    class="text-gradient">Horizon?</span></h2>
+            <p style="color: var(--text-muted); max-width: 600px; margin-bottom: 3rem;"
+                data-i18n="index.features.subtitle">Every second your server is on, you are contributing
                 data to secure the future of food.</p>
 
             <div class="grid">
                 <!-- Feature 1 -->
                 <div class="glass glass-card">
                     <ion-icon name="shield-checkmark-outline" class="feature-icon"></ion-icon>
-                    <h3>WireGuard® Encrypted</h3>
-                    <p>Enjoy premium, military-grade encryption for free. We believe privacy is a human right, just like
+                    <h3 data-i18n="index.features.card1.title">WireGuard® Encrypted</h3>
+                    <p data-i18n="index.features.card1.desc">Enjoy premium, military-grade encryption for free. We
+                        believe privacy is a human right, just like
                         food.</p>
                 </div>
 
                 <!-- Feature 2 -->
                 <div class="glass glass-card">
                     <ion-icon name="earth-outline" class="feature-icon"></ion-icon>
-                    <h3>Powering Plant AI</h3>
-                    <p>Your node collects vital agricultural data from across the web. This data trains our AI to
+                    <h3 data-i18n="index.features.card2.title">Powering Plant AI</h3>
+                    <p data-i18n="index.features.card2.desc">Your node collects vital agricultural data from across the
+                        web. This data trains our AI to
                         optimize global crop yields.</p>
                 </div>
 
@@ -91,35 +136,169 @@
                 <div class="glass glass-card">
                     <ion-icon name="infinite-outline" class="feature-icon"
                         style="color: var(--secondary-accent);"></ion-icon>
-                    <h3>Free Forever</h3>
-                    <p>We don't charge you money because you pay with your contribution to Earth. It's a fair exchange
+                    <h3 data-i18n="index.features.card3.title">Free Forever</h3>
+                    <p data-i18n="index.features.card3.desc">We don't charge you money because you pay with your
+                        contribution to Earth. It's a fair exchange
                         for a better future.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Technical Deep Dive (Simplified) -->
-        <section class="download-section">
-            <div class="glass glass-card" style="display: inline-block; width: 100%;">
-                <h2>Technical Core</h2>
-                <div style="display: flex; justify-content: center; gap: 4rem; margin-top: 3rem; flex-wrap: wrap;">
-                    <div style="text-align: center;">
-                        <ion-icon name="logo-electron"
-                            style="font-size: 3rem; color: #fff; margin-bottom: 0.5rem;"></ion-icon>
-                        <p>Electron</p>
+        <!-- VPN Section Summary -->
+        <section class="download-section" style="padding: 4rem 0; text-align: left;">
+            <div class="glass glass-card" style="display: flex; flex-direction: column; gap: 2rem;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <ion-icon name="lock-closed-outline"
+                        style="font-size: 2rem; color: var(--primary-accent);"></ion-icon>
+                    <h2 style="margin: 0; font-size: 2rem;" data-i18n="index.vpn_section.title">The <span
+                            class="text-gradient">Invisible Shield</span></h2>
+                </div>
+                <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 0;">
+                    <div>
+                        <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-muted);"
+                            data-i18n="index.vpn_section.desc">
+                            We've redesigned the VPN from the ground up. Operating on a strict
+                            <strong>Zero-Logs</strong> policy and powered by <strong>RAM-Only Servers</strong>, your
+                            data vanishes the moment power is cut.
+                        </p>
+                        <ul style="margin-top: 1.5rem; list-style: none; padding: 0; color: var(--text-main);">
+                            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <ion-icon name="checkmark-circle-outline"
+                                    style="color: var(--primary-accent);"></ion-icon>
+                                <span data-i18n="index.vpn_section.feature1">AES-256 Military Encryption</span>
+                            </li>
+                            <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <ion-icon name="checkmark-circle-outline"
+                                    style="color: var(--primary-accent);"></ion-icon>
+                                <span data-i18n="index.vpn_section.feature2">Multi-Hop Routing Architecture</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 0.5rem;">
+                                <ion-icon name="checkmark-circle-outline"
+                                    style="color: var(--primary-accent);"></ion-icon>
+                                <span data-i18n="index.vpn_section.feature3">Ephemeral Keys (Rotated Hourly)</span>
+                            </li>
+                        </ul>
+                        <a href="vpn.html" class="btn btn-primary" style="margin-top: 2rem;"
+                            data-i18n="index.vpn_section.cta">Explore Security</a>
                     </div>
-                    <div style="text-align: center;">
-                        <ion-icon name="code-slash-outline"
-                            style="font-size: 3rem; color: #00add8; margin-bottom: 0.5rem;"></ion-icon>
-                        <p>Go & WireGuard</p>
-                    </div>
-                    <div style="text-align: center;">
-                        <ion-icon name="globe-outline"
-                            style="font-size: 3rem; color: #ff5722; margin-bottom: 0.5rem;"></ion-icon>
-                        <p>WebRTC</p>
+                    <div
+                        style="background: rgba(0,0,0,0.2); border-radius: 12px; padding: 1.5rem; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                        <!-- Abstract Network Visual -->
+                        <div
+                            style="position: absolute; width: 200%; height: 200%; background: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0, 255, 136, 0.03) 10px, rgba(0, 255, 136, 0.03) 20px); animation: flow 20s linear infinite;">
+                        </div>
+                        <ion-icon name="shield-half-outline"
+                            style="font-size: 6rem; color: rgba(255,255,255,0.1); position: relative; z-index: 1;"></ion-icon>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Plant AI Section Summary -->
+        <section class="download-section" style="padding: 2rem 0; text-align: right;">
+            <div class="glass glass-card" style="display: flex; flex-direction: column; gap: 2rem;">
+                <div style="display: flex; align-items: center; gap: 1rem; justify-content: flex-end;">
+                    <h2 style="margin: 0; font-size: 2rem;" data-i18n="index.plant_section.title">Artificial
+                        Intelligence for <span class="text-gradient">Nature</span></h2>
+                    <ion-icon name="leaf-outline" style="font-size: 2rem; color: var(--primary-accent);"></ion-icon>
+                </div>
+                <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 0; direction: rtl;">
+                    <div style="direction: ltr; text-align: right;">
+                        <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-muted);"
+                            data-i18n="index.plant_section.desc">
+                            We are building the world's largest decentralized data engine to decode the language of
+                            plants. Your idle bandwidth powers the <strong>Distributed Intelligence</strong> that
+                            optimizes global food production.
+                        </p>
+                        <div style="margin-top: 1.5rem; display: flex; gap: 1rem; justify-content: flex-end;">
+                            <div style="text-align: center;">
+                                <h4 style="font-size: 1.5rem; color: var(--text-main);">10B+</h4>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);"
+                                    data-i18n="index.plant_section.stat1">Data Points</span>
+                            </div>
+                            <div style="width: 1px; background: rgba(255,255,255,0.1);"></div>
+                            <div style="text-align: center;">
+                                <h4 style="font-size: 1.5rem; color: var(--text-main);">Zero</h4>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);"
+                                    data-i18n="index.plant_section.stat2">Carbon Cost</span>
+                            </div>
+                        </div>
+                        <a href="plant-ai.html" class="btn btn-primary" style="margin-top: 2rem;"
+                            data-i18n="index.plant_section.cta">Meet Plant AI</a>
+                    </div>
+                    <div
+                        style="background: rgba(0,0,0,0.2); border-radius: 12px; padding: 1.5rem; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; direction: ltr;">
+                        <div
+                            style="position: absolute; top:0; left:0; width: 100%; height: 100%; opacity: 0.3; background-image: radial-gradient(circle, var(--primary-accent) 1px, transparent 1px); background-size: 20px 20px;">
+                        </div>
+                        <ion-icon name="hardware-chip-outline"
+                            style="font-size: 6rem; color: rgba(255,255,255,0.1); position: relative; z-index: 1;"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cloud Section Summary -->
+        <section class="download-section" style="padding: 2rem 0; text-align: left;">
+            <div class="glass glass-card" style="display: flex; flex-direction: column; gap: 2rem;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <ion-icon name="cloud-done-outline"
+                        style="font-size: 2rem; color: var(--secondary-accent);"></ion-icon>
+                    <h2 style="margin: 0; font-size: 2rem;" data-i18n="index.cloud_section.title">Sovereign <span
+                            class="text-gradient">Infrastructure</span></h2>
+                </div>
+                <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-muted); max-width: 800px;"
+                    data-i18n="index.cloud_section.desc">
+                    Horizon Cloud redefines decentralized infrastructure. Built on <strong>Enterprise-Grade
+                        Hardware</strong> and a <strong>Hybrid Cloud Architecture</strong>, we ensure data sovereignty
+                    and boundless scalability without lock-in.
+                </p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <span class="glass"
+                        style="padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.9rem; color: var(--text-main);">
+                        <ion-icon name="cube-outline" style="vertical-align: middle; margin-right: 5px;"></ion-icon>
+                        <span data-i18n="index.cloud_section.pill1">Bare Metal Core</span>
+                    </span>
+                    <span class="glass"
+                        style="padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.9rem; color: var(--text-main);">
+                        <ion-icon name="flash-outline" style="vertical-align: middle; margin-right: 5px;"></ion-icon>
+                        <span data-i18n="index.cloud_section.pill2">High-Freq VPS</span>
+                    </span>
+                    <span class="glass"
+                        style="padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.9rem; color: var(--text-main);">
+                        <ion-icon name="globe-outline" style="vertical-align: middle; margin-right: 5px;"></ion-icon>
+                        <span data-i18n="index.cloud_section.pill3">Global Edge</span>
+                    </span>
+                </div>
+                <a href="cloud.html" class="btn btn-primary" style="align-self: flex-start;"
+                    data-i18n="index.cloud_section.cta">View Roadmap</a>
+            </div>
+        </section>
+
+        <section style="padding: 4rem 0; text-align: center;">
+            <h2 style="font-size: 2rem; margin-bottom: 2rem;" data-i18n="index.download_section.title">Ready to Join the
+                <span class="text-gradient">Network?</span>
+            </h2>
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                <div style="text-align: center; opacity: 0.7;">
+                    <ion-icon name="logo-windows" style="font-size: 2.5rem; margin-bottom: 0.5rem;"></ion-icon>
+                    <p style="font-size: 0.8rem;">Windows</p>
+                </div>
+                <div style="text-align: center; opacity: 0.7;">
+                    <ion-icon name="logo-apple" style="font-size: 2.5rem; margin-bottom: 0.5rem;"></ion-icon>
+                    <p style="font-size: 0.8rem;">macOS</p>
+                </div>
+                <div style="text-align: center; opacity: 0.7;">
+                    <ion-icon name="logo-tux" style="font-size: 2.5rem; margin-bottom: 0.5rem;"></ion-icon>
+                    <p style="font-size: 0.8rem;">Linux</p>
+                </div>
+                <div style="text-align: center; opacity: 0.7;">
+                    <ion-icon name="logo-android" style="font-size: 2.5rem; margin-bottom: 0.5rem;"></ion-icon>
+                    <p style="font-size: 0.8rem;">Android</p>
+                </div>
+            </div>
+            <a href="download.html" class="btn btn-primary" style="margin-top: 2rem;"
+                data-i18n="index.download_section.cta">Download Now</a>
         </section>
 
         <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.8rem;">
@@ -132,7 +311,28 @@
         </footer>
     </div>
 
+    <script src="i18n.js"></script>
+    <script src="solar-adaptive-theme.js"></script>
     <script src="script.js"></script>
+    <script>
+        // Card background slider
+        const cardSlides = document.querySelectorAll('.card-slide');
+        let cardCurrentSlide = 0;
+
+        function nextCardSlide() {
+            cardSlides[cardCurrentSlide].style.opacity = '0';
+            cardSlides[cardCurrentSlide].classList.remove('active');
+            cardCurrentSlide = (cardCurrentSlide + 1) % cardSlides.length;
+            cardSlides[cardCurrentSlide].style.opacity = '1';
+            cardSlides[cardCurrentSlide].classList.add('active');
+        }
+
+        if (cardSlides.length > 0) {
+            // Initialize first slide
+            cardSlides[0].style.opacity = '1';
+            setInterval(nextCardSlide, 5000);
+        }
+    </script>
 </body>
 
 </html>

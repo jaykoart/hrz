@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="cloud.title">Horizon Cloud | The Future of Infrastructure</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ionicons for clean iconography -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .phase-card {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 2px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .phase-card::before {
+            content: '';
+            position: absolute;
+            left: -11px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background: var(--bg-color);
+            border: 2px solid var(--primary-accent);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--primary-accent);
+        }
+
+        .phase-card:hover {
+            border-left-color: var(--primary-accent);
+            padding-left: 2.5rem;
+        }
+
+        .spec-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background Elements -->
+    <div class="ambient-glow"></div>
+    <div class="ambient-glow-2"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <a href="index.html" class="logo">Hor<img src="assets/neon-i.svg" class="neon-i-img" alt="i">zon</a>
+            <nav class="nav-links">
+                <a href="index.html" data-i18n="nav.home">Home</a>
+                <a href="plant-ai.html" data-i18n="nav.plant_ai">Plant AI</a>
+                <a href="vpn.html" data-i18n="nav.vpn">VPN</a>
+                <a href="download.html" data-i18n="nav.download">Download</a>
+                <a href="cloud.html" class="active" data-i18n="nav.cloud">Cloud</a>
+            </nav>
+            <div class="nav-utils">
+                <button class="btn-icon" id="lang-btn" title="Language">
+                    <ion-icon name="globe-outline"></ion-icon>
+                </button>
+                <button class="btn-icon" id="theme-btn" title="Toggle Theme">
+                    <ion-icon name="moon-outline"></ion-icon>
+                </button>
+                <a href="#" class="btn-login" id="login-btn" data-i18n="nav.login">Login</a>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" style="min-height: 80vh; display: flex; align-items: center;">
+            <div class="hero-content" style="max-width: 800px;">
+                <span data-i18n="cloud.hero.pre_title"
+                    style="color: var(--primary-accent); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 1rem; display: block;">
+                    Global Infrastructure Initiative
+                </span>
+                <h1 style="font-size: 4.5rem; line-height: 1.1; margin-bottom: 1.5rem;" data-i18n="cloud.hero.title">
+                    Sovereignty. Scale. <br> <span class="text-gradient">Performance.</span>
+                </h1>
+                <p class="lead" style="font-size: 1.2rem; max-width: 600px; color: var(--text-muted);"
+                    data-i18n="cloud.hero.subtitle">
+                    Horizon Cloud is redefining the standard for decentralized infrastructure.
+                    Built on <strong>Enterprise-Grade Hardware</strong> and powered by a <strong>Hybrid Cloud
+                        Architecture</strong> designed for security and boundless scalability.
+                </p>
+                <div style="margin-top: 2.5rem; display: flex; gap: 1.5rem;">
+                    <a href="#vision" class="btn btn-primary" style="padding: 1rem 2.5rem;"
+                        data-i18n="cloud.hero.cta1">Explore Our Values</a>
+                    <a href="#specs" class="btn"
+                        style="background: rgba(255,255,255,0.05); border: 1px solid var(--primary-accent); box-shadow: 0 0 10px var(--primary-accent); color: #fff;"
+                        data-i18n="cloud.hero.cta2">Technical
+                        Specs</a>
+                </div>
+            </div>
+
+            <!-- Abstract Network Visual -->
+            <div class="glass glass-card"
+                style="position: absolute; right: 0; width: 450px; height: 450px; z-index: -1; opacity: 0.8; display: flex; align-items: center; justify-content: center; border-radius: 50%; filter: blur(60px); background: radial-gradient(circle, rgba(0,255,136,0.1) 0%, rgba(0,0,0,0) 70%);">
+            </div>
+            <div class="glass glass-card"
+                style="position: absolute; right: 5%; top: 25%; width: 400px; padding: 2rem; z-index: 1; backdrop-filter: blur(20px);">
+                <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+                    <div
+                        style="width: 10px; height: 10px; background: #2ed573; border-radius: 50%; margin-right: 10px; box-shadow: 0 0 10px #2ed573;">
+                    </div>
+                    <span style="font-family: monospace; color: #2ed573;" data-i18n="cloud.hero.status_title">SYSTEM
+                        STATUS: ONLINE</span>
+                </div>
+                <div style="font-family: monospace; font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+                    <span data-i18n="cloud.hero.status1">> Initializing Region: KR-CORE-1</span><br>
+                    <span data-i18n="cloud.hero.status2">> Node Count: <span
+                            style="color: #fff;">Active</span></span><br>
+                    <span data-i18n="cloud.hero.status3">> Hybrid Uplink: <span style="color: #4facfe;">AWS Direct
+                            Connect</span></span><br>
+                    <span data-i18n="cloud.hero.status4">> Security: <span
+                            style="color: var(--secondary-accent);">OPNsense Firewall Enabled</span></span><br>
+                    <span data-i18n="cloud.hero.status5">> Storage: ZFS RAID-Z2 Optimized</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision / Values Section -->
+        <section id="vision" style="padding: 4rem 0;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 3rem; margin-bottom: 1rem;" data-i18n="cloud.values.title">Core <span
+                        class="text-gradient">Values</span></h2>
+                <p style="color: var(--text-muted); max-width: 700px; margin: 0 auto;"
+                    data-i18n="cloud.values.subtitle">
+                    We are not just building another cloud provider. We are building a sovereign infrastructure
+                    ecosystem guided by three innovative principles.
+                </p>
+            </div>
+
+            <div class="grid" style="gap: 3rem;">
+                <!-- Value 1 -->
+                <div class="glass glass-card" style="padding: 3rem;">
+                    <ion-icon name="lock-closed-outline"
+                        style="font-size: 3rem; color: var(--primary-accent); margin-bottom: 1.5rem;"></ion-icon>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: #fff;"
+                        data-i18n="cloud.values.card1_title">Infrastructure Sovereignty</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6;" data-i18n="cloud.values.card1_desc">
+                        True control starts with the hardware. We own our physical servers. By maintaining our own
+                        high-density racks, we eliminate the specific risks of "Public Cloud Lock-in" and ensure
+                        absolute data integrity from the metal up.
+                    </p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="glass glass-card" style="padding: 3rem;">
+                    <ion-icon name="flash-outline"
+                        style="font-size: 3rem; color: #4facfe; margin-bottom: 1.5rem;"></ion-icon>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: #fff;"
+                        data-i18n="cloud.values.card2_title">Hybrid Performance</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6;" data-i18n="cloud.values.card2_desc">
+                        We combine the raw power and security of on-premise hardware with the elasticity of AWS. This
+                        "Hybrid Core" architecture allows us to handle sensitive workloads locally while bursting
+                        globally in milliseconds.
+                    </p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="glass glass-card" style="padding: 3rem;">
+                    <ion-icon name="globe-outline"
+                        style="font-size: 3rem; color: var(--secondary-accent); margin-bottom: 1.5rem;"></ion-icon>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: #fff;"
+                        data-i18n="cloud.values.card3_title">Global Vision</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6;" data-i18n="cloud.values.card3_desc">
+                        Our roadmap is borderless. From our initial physical footprint to a strategic global
+                        headquarters in Dubai, we are building a tax-efficient, legally robust entity designed for rapid
+                        international scaling.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategic Roadmap -->
+        <section style="padding: 4rem 0;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 3rem; margin-bottom: 1rem;" data-i18n="cloud.roadmap.title">Strategic <span
+                        class="text-gradient">Roadmap</span>
+                </h2>
+            </div>
+
+            <div class="grid" style="grid-template-columns: 1fr; gap: 3rem;">
+                <!-- Phase 1 -->
+                <div class="glass glass-card" style="padding: 3rem;">
+                    <div class="phase-card">
+                        <span
+                            style="color: var(--primary-accent); font-weight: 600; letter-spacing: 1px; text-transform: uppercase;"
+                            data-i18n="cloud.roadmap.phase1_tag">Phase
+                            1: The Foundation</span>
+                        <h3 style="font-size: 2rem; margin: 0.5rem 0 1rem; color: #fff;"
+                            data-i18n="cloud.roadmap.phase1_title">Physical Core & MVP</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 1.5rem;"
+                            data-i18n="cloud.roadmap.phase1_desc">
+                            Establishing the physical bedrock. We are deploying enterprise-grade bare metal servers to
+                            validate our high-performance architecture.
+                        </p>
+                        <div class="tech-grid" style="margin-top: 0;">
+                            <div>
+                                <h4 style="color: #fff; margin-bottom: 0.5rem;"><ion-icon name="server-outline"
+                                        style="color: var(--primary-accent); vertical-align: middle;"></ion-icon>
+                                    <span data-i18n="cloud.roadmap.phase1_item1_title">Physical Asset</span>
+                                </h4>
+                                <p style="font-size: 0.9rem; color: var(--text-muted);"
+                                    data-i18n="cloud.roadmap.phase1_item1_desc">Dell PowerEdge R730xd Cluster
+                                </p>
+                            </div>
+                            <div>
+                                <h4 style="color: #fff; margin-bottom: 0.5rem;"><ion-icon name="cube-outline"
+                                        style="color: var(--primary-accent); vertical-align: middle;"></ion-icon>
+                                    <span data-i18n="cloud.roadmap.phase1_item2_title">Service Launch</span>
+                                </h4>
+                                <p style="font-size: 0.9rem; color: var(--text-muted);"
+                                    data-i18n="cloud.roadmap.phase1_item2_desc">High-Frequency VPS, Managed
+                                    Hosting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="glass glass-card" style="padding: 3rem;">
+                    <div class="phase-card" style="border-left-color: rgba(255,255,255,0.2);">
+                        <span style="color: #4facfe; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;"
+                            data-i18n="cloud.roadmap.phase2_tag">Phase
+                            2: Use Case Expansion</span>
+                        <h3 style="font-size: 2rem; margin: 0.5rem 0 1rem; color: #fff;"
+                            data-i18n="cloud.roadmap.phase2_title">Platform Scaling</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 1.5rem;"
+                            data-i18n="cloud.roadmap.phase2_desc">
+                            Evolving from hardware to platform. We will launch <strong>Platform-as-a-Service
+                                (PaaS)</strong> products focused on automation and unparalleled reliability.
+                        </p>
+                        <ul style="color: var(--text-muted); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <li data-i18n="cloud.roadmap.phase2_item1"><ion-icon name="checkmark-circle"
+                                    style="color: #4facfe; margin-right: 5px;"></ion-icon>
+                                Corporate Incorporation</li>
+                            <li data-i18n="cloud.roadmap.phase2_item2"><ion-icon name="checkmark-circle"
+                                    style="color: #4facfe; margin-right: 5px;"></ion-icon>
+                                Commercial Partnerships</li>
+                            <li data-i18n="cloud.roadmap.phase2_item3"><ion-icon name="checkmark-circle"
+                                    style="color: #4facfe; margin-right: 5px;"></ion-icon>
+                                SaaS Product Launch</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Phase 3 -->
+                <div class="glass glass-card" style="padding: 3rem;">
+                    <div class="phase-card" style="border-left-color: rgba(255,255,255,0.2);">
+                        <span
+                            style="color: var(--secondary-accent); font-weight: 600; letter-spacing: 1px; text-transform: uppercase;"
+                            data-i18n="cloud.roadmap.phase3_tag">Phase
+                            3: Global Dominance</span>
+                        <h3 style="font-size: 2rem; margin: 0.5rem 0 1rem; color: #fff;"
+                            data-i18n="cloud.roadmap.phase3_title">Dubai Global HQ</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 1.5rem;"
+                            data-i18n="cloud.roadmap.phase3_desc">
+                            Establishing our strategic headquarters in a <strong>Dubai Free Zone</strong>. This creates
+                            a hyper-efficient legal and financial structure for global operations.
+                        </p>
+                        <div class="tech-grid" style="margin-top: 0;">
+                            <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 10px;">
+                                <h4 style="color: #fff; margin-bottom: 0.5rem;"
+                                    data-i18n="cloud.roadmap.phase3_item1_title">Global IPO Goal</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-muted);"
+                                    data-i18n="cloud.roadmap.phase3_item1_desc">Targeting global capital
+                                    markets.</p>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 10px;">
+                                <h4 style="color: #fff; margin-bottom: 0.5rem;"
+                                    data-i18n="cloud.roadmap.phase3_item2_title">Strategic Hub</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-muted);"
+                                    data-i18n="cloud.roadmap.phase3_item2_desc">Connecting East and West
+                                    markets.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Deep Dive -->
+        <section id="specs" style="padding: 4rem 0;">
+            <h2 style="font-size: 3rem; margin-bottom: 3rem; text-align: center;" data-i18n="cloud.specs.title">
+                Engineering <span class="text-gradient">Deep Dive</span></h2>
+
+            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 4rem;">
+                <!-- Hardware Specs -->
+                <div>
+                    <h3 style="margin-bottom: 2rem; color: #fff; display: flex; align-items: center; gap: 10px;">
+                        <ion-icon name="hardware-chip-outline"
+                            style="font-size: 2rem; color: var(--primary-accent);"></ion-icon>
+                        <span data-i18n="cloud.specs.hardware_title">The Iron: Dell PowerEdge R730xd</span>
+                    </h3>
+                    <div class="glass glass-card" style="padding: 2rem;">
+                        <div class="spec-item">
+                            <span style="color: #fff;" data-i18n="cloud.specs.hw_spec1_name">CPU Architecture</span>
+                            <span style="color: var(--text-muted); font-family: monospace;"
+                                data-i18n="cloud.specs.hw_spec1_val">Dual Intel Xeon E5-2600
+                                v4</span>
+                        </div>
+                        <div class="spec-item">
+                            <span style="color: #fff;" data-i18n="cloud.specs.hw_spec2_name">Memory Capacity</span>
+                            <span style="color: var(--text-muted); font-family: monospace;"
+                                data-i18n="cloud.specs.hw_spec2_val">DDR4 ECC (Expandable to
+                                768GB)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span style="color: #fff;" data-i18n="cloud.specs.hw_spec3_name">Storage Fabric</span>
+                            <span style="color: var(--text-muted); font-family: monospace;"
+                                data-i18n="cloud.specs.hw_spec3_val">24-Bay NVMe/SAS Hybrid
+                                Array</span>
+                        </div>
+                        <div class="spec-item">
+                            <span style="color: #fff;" data-i18n="cloud.specs.hw_spec4_name">File System</span>
+                            <span style="color: var(--text-muted); font-family: monospace;"
+                                data-i18n="cloud.specs.hw_spec4_val">ZFS (Zettabyte File
+                                System)</span>
+                        </div>
+                        <div class="spec-item" style="border-bottom: none;">
+                            <span style="color: #fff;" data-i18n="cloud.specs.hw_spec5_name">Raid Controller</span>
+                            <span style="color: var(--text-muted); font-family: monospace;"
+                                data-i18n="cloud.specs.hw_spec5_val">PERC H730P (IT Mode
+                                Flashed)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Software Stack -->
+                <div>
+                    <h3 style="margin-bottom: 2rem; color: #fff; display: flex; align-items: center; gap: 10px;">
+                        <ion-icon name="code-working-outline" style="font-size: 2rem; color: #4facfe;"></ion-icon>
+                        <span data-i18n="cloud.specs.software_title">The Brain: Hybrid Cloud Stack</span>
+                    </h3>
+                    <div class="glass glass-card" style="padding: 2rem;">
+                        <div class="spec-item">
+                            <span style="color: #fff;" data-i18n="cloud.specs.sw_spec1_name">Hypervisor</span>
+                            <span style="color: var(--text-muted); font-family: monospace;"
+                                data-i18n="cloud.specs.sw_spec1_val">Proxmox VE 8.x (Debian
+                                Based)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span style="color: #fff;" data-i18n="cloud.specs.sw_spec2_name">Cloud Bridge</span>
+                            <span style="color: var(--text-muted); font-family: monospace;"
+                                data-i18n="cloud.specs.sw_spec2_val">AWS Site-to-Site VPN /
+                                Direct Connect</span>
+                        </div>
+                        <div class="spec-item">
+                            <span style="color: #fff;" data-i18n="cloud.specs.sw_spec3_name">Containerization</span>
+                            <span style="color: var(--text-muted); font-family: monospace;"
+                                data-i18n="cloud.specs.sw_spec3_val">Docker & LXC Native
+                                Support</span>
+                        </div>
+                        <div class="spec-item">
+                            <span style="color: #fff;" data-i18n="cloud.specs.sw_spec4_name">Security Core</span>
+                            <span style="color: var(--text-muted); font-family: monospace;"
+                                data-i18n="cloud.specs.sw_spec4_val">OPNsense + Snort
+                                IDS/IPS</span>
+                        </div>
+                        <div class="spec-item" style="border-bottom: none;">
+                            <span style="color: #fff;" data-i18n="cloud.specs.sw_spec5_name">Monitoring</span>
+                            <span style="color: var(--text-muted); font-family: monospace;"
+                                data-i18n="cloud.specs.sw_spec5_val">Zabbix + Grafana
+                                Dashboards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infrastructure Diagram (CSS representation) -->
+        <section style="padding: 4rem 0;">
+            <div class="glass glass-card" style="padding: 4rem; text-align: center;">
+                <h3 style="margin-bottom: 3rem; color: #fff;" data-i18n="cloud.diagram.title">Hybrid Cloud
+                    Architecture</h3>
+                <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap;">
+
+                    <!-- On-Premise -->
+                    <div
+                        style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 15px; border: 1px solid var(--primary-accent);">
+                        <ion-icon name="server"
+                            style="font-size: 3rem; color: var(--primary-accent); margin-bottom: 1rem;"></ion-icon>
+                        <h4 style="color: #fff;" data-i18n="cloud.diagram.box1_title">Secure Core</h4>
+                        <p style="font-size: 0.8rem; color: var(--text-muted);" data-i18n="cloud.diagram.box1_desc">
+                            Sensitive Data & High IOPS</p>
+                    </div>
+
+                    <!-- Connection -->
+                    <div style="display: flex; flex-direction: column; align-items: center; color: var(--text-muted);">
+                        <span style="font-size: 0.8rem; margin-bottom: 5px;"
+                            data-i18n="cloud.diagram.connector_top">Encrypted Tunnel</span>
+                        <div
+                            style="width: 100px; height: 2px; background: linear-gradient(90deg, var(--primary-accent), #FF9900);">
+                        </div>
+                        <span style="font-size: 0.8rem; margin-top: 5px;"
+                            data-i18n="cloud.diagram.connector_bottom">Latency < 10ms</span>
+                    </div>
+
+                    <!-- Public Cloud -->
+                    <div
+                        style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 15px; border: 1px solid #FF9900;">
+                        <ion-icon name="cloudy"
+                            style="font-size: 3rem; color: #FF9900; margin-bottom: 1rem;"></ion-icon>
+                        <h4 style="color: #fff;" data-i18n="cloud.diagram.box2_title">AWS Burst</h4>
+                        <p style="font-size: 0.8rem; color: var(--text-muted);" data-i18n="cloud.diagram.box2_desc">
+                            Global CDN & Elastic Scaling</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CTA -->
+        <div style="text-align: center; margin: 6rem 0;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 2rem;" data-i18n="cloud.cta.title">Ready to <span
+                    class="text-gradient">Scale?</span></h2>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;" data-i18n="cloud.cta.desc">Join the pilot program
+                for Horizon Cloud Phase 1.
+            </p>
+            <a href="mailto:invest@horizon-vpn.io" class="btn btn-primary"
+                style="font-size: 1.2rem; padding: 1.2rem 3rem;" data-i18n="cloud.cta.button">Contact Investor
+                Relations</a>
+        </div>
+
+        <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.8rem;">
+            <p style="margin-bottom: 1rem;">
+                <a href="terms.html" style="color: var(--text-main); text-decoration: none; margin: 0 10px;"
+                    data-i18n="plant_ai.footer.terms">Terms</a>
+                <a href="privacy.html" style="color: var(--text-main); text-decoration: none; margin: 0 10px;"
+                    data-i18n="plant_ai.footer.privacy">Privacy</a>
+            </p>
+            <p data-i18n="plant_ai.footer.copyright">&copy; 2025 Horizon VPN Project. Open Source & Decentralized.</p>
+        </footer>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="solar-adaptive-theme.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

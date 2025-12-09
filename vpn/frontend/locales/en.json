@@ -1,0 +1,408 @@
+{
+    "meta": {
+        "language": "en",
+        "name": "English",
+        "version": "1.3.0"
+    },
+    "index": {
+        "hero": {
+            "badge": "Plant AI Project",
+            "title": "Protect<br>Your Privacy,<br><gradient>Save the Planet.</gradient>",
+            "subtitle": "Horizon VPN is more than a tool. By sharing your idle bandwidth, you power the training of <strong>Plant AI</strong>, the engine solving the global food crisis.",
+            "cta": "Join the Mission",
+            "version": "v0.1.0",
+            "tagline": "Free Forever • Earth First"
+        },
+        "features": {
+            "title": "Why <gradient>Horizon?</gradient>",
+            "subtitle": "Every second your server is on, you are contributing data to secure the future of food.",
+            "card1": {
+                "title": "WireGuard® Encrypted",
+                "desc": "Enjoy premium, military-grade encryption for free. We believe privacy is a human right, just like food."
+            },
+            "card2": {
+                "title": "Powering Plant AI",
+                "desc": "Your node collects vital agricultural data from across the web. This data trains our AI to optimize global crop yields."
+            },
+            "card3": {
+                "title": "Free Forever",
+                "desc": "We don't charge you money because you pay with your contribution to Earth. It's a fair exchange for a better future."
+            }
+        },
+        "vpn_section": {
+            "title": "The <gradient>Invisible Shield</gradient>",
+            "desc": "We've redesigned the VPN from the ground up. Operating on a strict <strong>Zero-Logs</strong> policy and powered by <strong>RAM-Only Servers</strong>, your data vanishes the moment power is cut.",
+            "feature1": "AES-256 Military Encryption",
+            "feature2": "Multi-Hop Routing Architecture",
+            "feature3": "Ephemeral Keys (Rotated Hourly)",
+            "cta": "Explore Security"
+        },
+        "plant_section": {
+            "title": "Artificial Intelligence for <gradient>Nature</gradient>",
+            "desc": "We are building the world's largest decentralized data engine to decode the language of plants. Your idle bandwidth powers the <strong>Distributed Intelligence</strong> that optimizes global food production.",
+            "stat1": "Data Points",
+            "stat2": "Carbon Cost",
+            "cta": "Meet Plant AI"
+        },
+        "cloud_section": {
+            "title": "Sovereign <gradient>Infrastructure</gradient>",
+            "desc": "Horizon Cloud redefines decentralized infrastructure. Built on <strong>Enterprise-Grade Hardware</strong> and a <strong>Hybrid Cloud Architecture</strong>, we ensure data sovereignty and boundless scalability without lock-in.",
+            "pill1": "Bare Metal Core",
+            "pill2": "High-Freq VPS",
+            "pill3": "Global Edge",
+            "cta": "View Roadmap"
+        },
+        "download_section": {
+            "title": "Ready to Join the <gradient>Network?</gradient>",
+            "cta": "Download Now"
+        },
+        "tech": {
+            "title": "Technical Core"
+        },
+        "card": {
+            "powered_by": "Powered by Nature"
+        }
+    },
+    "nav": {
+        "home": "Home",
+        "plant_ai": "Plant AI",
+        "vpn": "VPN",
+        "download": "Download",
+        "cloud": "Cloud",
+        "login": "Login"
+    },
+    "plant_ai": {
+        "hero": {
+            "title": "Artificial Intelligence for <br><gradient>Nature.</gradient>",
+            "subtitle": "We are building the world's largest decentralized data engine to decode the language of plants and optimize global food production."
+        },
+        "definition": {
+            "title": "What is <gradient>Plant AI?</gradient>",
+            "desc": "Plant AI is a <strong>Specialized Artificial Intelligence</strong> trained on the world's largest agricultural big data. Unlike general LLMs, it is designed for one specific purpose: <br><span style='color: var(--primary-accent); font-weight: 600;'>To autonomy every farm on Earth.</span>"
+        },
+        "core": {
+            "vision_title": "Vision & Diagnosis",
+            "vision_desc": "Cameras replace human eyes. The AI analyzes leaf color changes, spot patterns, and thermal stress in real-time.",
+            "action_title": "Decision & Action",
+            "action_desc": "Autonomous systems take over. High temperature triggers shade deployment; dry soil activates precision sprinklers.",
+            "problem_title": "The <gradient>Unknown Data</gradient> problem.",
+            "problem_desc1": "To build this, we need data that Big Tech doesn't have. They have Wikipedia; we need <strong>Soil Reports</strong>, <strong>Harvest Records</strong>, and <strong>Local Climate Logs</strong>.",
+            "problem_desc2": "This is where <strong>Horizon VPN</strong> comes in. Your node collects this \"Niche Data\" from thousands of local sources, creating the \"Green Synapse\" of our tailored AI."
+        },
+        "mission": {
+            "title": "Driving <gradient>Planetary Change</gradient>",
+            "pillar1_title": "Food Security",
+            "pillar1_desc": "Solving global hunger by optimizing crop yields. We ensure every seed planted reaches its full potential.",
+            "pillar1_tag": "Zero Hunger",
+            "pillar2_title": "Climate Response",
+            "pillar2_desc": "Drastically reducing water and pesticide usage. We fight climate change by making agriculture smarter and cleaner.",
+            "pillar2_tag": "Eco-Sustainability",
+            "pillar3_title": "Digital Contributor",
+            "pillar3_desc": "You are not a consumer; you are a guardian. Your idle bandwidth contributes directly to saving the planet.",
+            "pillar3_tag": "Global Citizen"
+        },
+        "goal": {
+            "title": "The Goal: <gradient>One-Person Farm</gradient>",
+            "liberation_title": "Liberation from Labor",
+            "liberation_desc": "Farming shouldn't mean breaking your back. With Plant AI, a single person can manage 100 acres via a dashboard. The AI handles the micro-management.",
+            "expertise_title": "Expertise for All",
+            "expertise_desc": "Whether you are a veteran agronomist or a city dweller with a rooftop garden, Plant AI provides professional-grade insights.",
+            "cta": "Power This Intelligence"
+        },
+        "dashboard": {
+            "status": "Live System Status",
+            "zone1_name": "Zone A-1 (Tomato)",
+            "zone1_status": "Attention Needed",
+            "zone1_desc": "Nitrogen Deficit Detected (Action: Auto-Dosing Started)",
+            "zone2_name": "Zone B-3 (Lettuce)",
+            "zone2_status": "Optimal",
+            "zone2_desc": "Growth Analysis: +15% Prediction vs Last Year"
+        },
+        "distributed": {
+            "title": "Powered by <gradient>Distributed Intelligence</gradient>",
+            "node_title": "The Horizon Node",
+            "node_desc": "Every user running Horizon VPN becomes a <strong>micro-data center</strong>. Instead of building massive, energy-hungry server farms, we utilize the idle computing power of millions of devices.",
+            "node_item1": "<strong>Edge Computing:</strong> Data is processed locally on-device.",
+            "node_item2": "<strong>Encrypted Transport:</strong> All contributions are anonymized via WireGuard tunnels.",
+            "learning_title": "Federated Learning",
+            "learning_desc": "We don't just collect data; we train the AI collectively. Your device downloads a small model, improves it with local data (e.g., local weather patterns), and sends only the <em>improvement</em> back.",
+            "learning_item1": "<strong>Privacy First:</strong> Raw data never leaves your device.",
+            "learning_item2": "<strong>Swarm Intelligence:</strong> The network gets smarter with every user."
+        },
+        "action": {
+            "title": "Plant AI in <gradient>Action</gradient>",
+            "case1_title": "Urban Home Farming",
+            "case1_scenario": "<strong>Scenario:</strong> You are growing basil on a balcony, but it keeps wilting.",
+            "case1_solution1": "AI diagnoses \"Under-watering\".",
+            "case1_solution2": "IoT sprinkler activates automatically.",
+            "case2_title": "Precision Agriculture",
+            "case2_scenario": "<strong>Scenario:</strong> A 10,000-acre corn field faces an unknown pest outbreak.",
+            "case2_solution1": "Drone scans identify \"Sector 7\".",
+            "case2_solution2": "Pinpoint treatment reduces pesticide by 90%.",
+            "case3_title": "Climate Research",
+            "case3_scenario": "<strong>Scenario:</strong> Predicting crop yields amidst erratic climate change.",
+            "case3_solution1": "Hyper-local data from millions of nodes.",
+            "case3_solution2": "Drought-resistant seed simulation."
+        },
+        "faq": {
+            "title": "Common Questions",
+            "q1": "Does this slow down my internet?",
+            "a1": "No. The Horizon Node creates a \"Lightweight Background Process\" that only uses idle bandwidth when you aren't streaming or gaming.",
+            "q2": "Is my personal data safe?",
+            "a2": "Absolutely. We only collect public environmental data. Your personal files, browsing history, and identity are strictly off-limits and technically inaccessible to the node software."
+        },
+        "report": {
+            "header": "Project Report: V3.0",
+            "title": "The Architecture of <br><gradient>Abundance</gradient>",
+            "p1_title": "I. The Crisis: 10 Billion Mouths vs. One Planet",
+            "p1_content": "By 2050, the global population will exceed 9.8 billion. To feed everyone, we must produce <strong>70% more food</strong> than we do today. Yet, we are losing arable land at a rate of 100,000 square kilometers per year due to desertification and urbanization. Traditional \"Industrial Agriculture\"—which relies on blanket pesticide use and excessive water consumption—has reached its limit. It is destroying the very soil we depend on.",
+            "p2_title": "II. The Solution: Precision vs. Guesswork",
+            "p2_content": "Farming has historically been a game of estimation. Plant AI changes this paradigm by introducing <strong>Hyper-Precision</strong>. By analyzing thousands of data points—from leaf stomatal conductance to soil microbial activity—we can optimize every drop of water and milligram of nutrient. This isn't just \"Smart Farming\"; it is <strong>Computational Agriculture</strong>. We are turning biological uncertainty into mathematical predictability.",
+            "p3_title": "III. Scalability: The Decentralized Advantage",
+            "p3_content": "A centralized supercomputer can manage a few corporate mega-farms. It cannot manage the billions of small-holder farms that produce 70% of the world's food. <strong style=\"color: var(--primary-accent);\">Horizon Nodes</strong> bridge this gap. By distributing the computational load to millions of personal devices, we create an <strong>Infinite Mesh Network</strong> capable of processing data from a backyard garden in Seoul to a wheat field in Ukraine simultaneously.",
+            "p4_title": "IV. The Outcome: A Self-Healing Earth",
+            "p4_content": "The ultimate goal of Plant AI is <strong>Regeneration</strong>. By minimizing chemical inputs and optimizing growth cycles, we allow the soil to heal. We envision a future where agriculture acts as a carbon sink rather than a source, where food security is guaranteed by code, and where every human being can contribute to global survival simply by keeping their computer on."
+        },
+        "verdict": {
+            "title": "The Final Verdict: <gradient>Why Now?</gradient>",
+            "item1_title": "Survival",
+            "item1_desc": "Current farming cannot feed 10 billion people. We need an upgrade.",
+            "item2_title": "Restoration",
+            "item2_desc": "We must heal the soil from decades of chemical abuse.",
+            "item3_title": "Equity",
+            "item3_desc": "Food technology should belong to the people, not corporations.",
+            "item4_title": "Legacy",
+            "item4_desc": "Leaving a self-sustaining planet for the next generation."
+        },
+        "cta": {
+            "title": "Be Part of the Solution",
+            "desc": "Every Horizon node you run contributes to building the world's most comprehensive agricultural AI. Your idle bandwidth today becomes tomorrow's food security.",
+            "button": "Download Horizon Node"
+        },
+        "footer": {
+            "terms": "Terms",
+            "privacy": "Privacy",
+            "copyright": "&copy; 2025 Horizon VPN Project. Open Source & Decentralized."
+        }
+    },
+    "vpn": {
+        "hero": {
+            "title": "The <gradient>Ethical Shield.</gradient>",
+            "subtitle": "We've redesigned the VPN to protect you while empowering the planet's largest AI research. <br><span style='color: var(--primary-accent); font-weight: 600;'>Zero Logs. Zero Cost. 100% Impact.</span>",
+            "cta": "Download Node"
+        },
+        "features": {
+            "card1_title": "Military-Grade Shield",
+            "card1_desc": "AES-256 encryption tunnels ensure your data is invisible to ISPs, hackers, and even us. We adhere to a strict <strong>No-Logs Policy</strong>.",
+            "card2_title": "WireGuard® Speed",
+            "card2_desc": "Built on the modern WireGuard protocol, Horizon delivers blazing fast speeds with minimal latency, perfect for streaming and gaming.",
+            "card3_title": "Global Access",
+            "card3_desc": "Bypass censorship and geo-blocks. Access content from anywhere in the world as if you were a local."
+        },
+        "invisible": {
+            "title": "Invisible <gradient>to Everyone.</gradient>",
+            "desc": "Your ISP sees nothing. Hackers see random noise. Even <strong>we</strong> see nothing.",
+            "feature1_title": "Ephemeral Keys",
+            "feature1_desc": "Encryption keys are generated in RAM and destroyed every 60 minutes.",
+            "feature2_title": "Multi-Hop Routing",
+            "feature2_desc": "Traffic jumps through 3 random nodes before exiting. No single node knows the full path."
+        },
+        "terminal": {
+            "title": "node-x7z-daemon — bash — 80x24",
+            "cmd1": "$ horizon-cli status --verbose",
+            "res1_1": "> Connecting to Mesh Network... ",
+            "res1_2": "<span style=\"color:var(--primary-accent)\">[OK]</span>",
+            "res1_3": "> Handshake: Curve25519 ",
+            "res1_4": "<span style=\"color:var(--primary-accent)\">[SECURE]</span>",
+            "res1_5": "> Tunnel ID: #9928-AX-22",
+            "res1_6": "> Log Status: ",
+            "res1_7": "<span style=\"color:#ff5f56\">DISABLED (RAM-ONLY MODE)</span>",
+            "cmd2": "$ traceroute target.com",
+            "res2_1": "1 192.168.1.1 (Local)",
+            "res2_2": "2 * * * (Masked)",
+            "res2_3": "3 * * * (Masked)",
+            "res2_4": "4 * * * (Masked)",
+            "res2_5": "5 target.com [203.0.113.5]"
+        },
+        "how": {
+            "title": "How the <gradient>Network Works</gradient>",
+            "step1_title": "You (The Node)",
+            "step1_desc": "You get free, premium VPN protection. In exchange, your device processes small, anonymized public data chunks.",
+            "step2_title": "The Intelligence",
+            "step2_desc": "This public data (climate logs, market prices) feeds the Plant AI brain, helping to solve global food scarcity.",
+            "step3_title": "Sustainability",
+            "step3_desc": "Commercial partners pay for the network infrastructure, keeping the VPN 100% free for you forever."
+        },
+        "who": {
+            "title": "Who is <gradient>Horizon For?</gradient>",
+            "user1": "Journalists",
+            "user1_desc": "Bypass censorship and report the truth safely from conflict zones.",
+            "user2": "Gamers",
+            "user2_desc": "Avoid DDoS attacks and access geo-locked servers with minimal lag.",
+            "user3": "Remote Workers",
+            "user3_desc": "Secure public Wi-Fi access while working from cafes or airports."
+        },
+        "faq": {
+            "title": "Frequently Asked <gradient>Questions</gradient>",
+            "q1": "Does Horizon see my browsing history?",
+            "a1": "<strong>Never.</strong> We operate on a strict Zero-Logs basis. Technically, our nodes cannot inspect the encrypted traffic inside your personal VPN tunnel. Your private browsing remains private.",
+            "q2": "Will it slow down my internet connection?",
+            "a2": "<strong>Imperceptibly.</strong> The background process is 'Resource-Aware'. It only activates when your system is idle (e.g., you are away from the computer) and strictly limits bandwidth usage to ensure your streaming or gaming is never interrupted.",
+            "q3": "Is it really free forever?",
+            "a3": "<strong>Yes.</strong> We don't need your subscription money because our business model is built on B2B data intelligence, not B2C software sales. As long as you contribute to the network, the premium service is yours.",
+            "q4": "Can my IP be used for illegal activities?",
+            "a4": "<strong>No.</strong> Unlike other P2P networks, Horizon separates the \"Commercial Proxy\" (used by businesses) from your residential IP. We have strict KYC (Know Your Customer) vetting for all business partners accessing the data network."
+        },
+        "transparency": {
+            "header": "Engineering Deep Dive",
+            "title": "Transparency <br><gradient>Report</gradient>",
+            "p1_title": "I. RAM-Only Infrastructure",
+            "p1_content": "Traditional VPNs write logs to hard drives, which can be seized or inspected. Horizon operates exclusively on <strong>RAM-Only Servers</strong>. This means that the moment a server is rebooted—or if power is cut—every single byte of data is instantly wiped. There is no physical disk to recover data from. We treat your browsing history as \"Toxic Data\" that we refuse to store.",
+            "p2_title": "II. The 'Blind' Relay Architecture",
+            "p2_content": "We utilize a \"Double-Hop\" architecture for the initial handshake. The node that knows <em>who you are</em> (the entry node) does not know <em>what you are doing</em>. The node that knows <em>what you are doing</em> (the exit node) does not know <em>who you are</em>. This cryptographic separation ensures that no single machine in our network possesses the complete picture of your activity.",
+            "p3_title": "III. Ephemeral Keys & Forward Secrecy",
+            "p3_content": "Horizon uses <strong>Perfect Forward Secrecy (PFS)</strong>. We generate a new encryption key for every single session, and rotate them every 60 minutes. Even if a supercomputer were to crack a key from a past session (which would take billions of years), it could not be used to decrypt any future or past sessions. Your privacy is mathematically guaranteed, not just promised.",
+            "p4_title": "IV. The Business Firewall",
+            "p4_content": "Critics ask: \"If you sell data, isn't my data at risk?\" No. The \"Commercial Proxy\" network is a completely separate logical layer. Business partners access the <em>public internet</em> through our nodes to check flight prices or ad placements. They <strong>never</strong> have access to the internal VPN tunnel where your personal traffic flows. The two worlds never touch."
+        },
+        "final": {
+            "title": "The Last VPN You'll <gradient>Ever Need.</gradient>",
+            "desc": "Stop paying for privacy. Start contributing to the future.",
+            "cta": "Get Horizon Free"
+        }
+    },
+    "download": {
+        "title": "Download Horizon VPN | Join the Mesh",
+        "hero": {
+            "badge": "v0.1.0 Beta",
+            "title": "Download <gradient>Horizon</gradient>",
+            "subtitle": "Join the decentralized privacy network. Your device becomes a node in the global mesh, protecting millions while earning rewards.",
+            "tag1": "Zero Logs",
+            "tag2": "WireGuard Protocol",
+            "tag3": "Powers Plant AI"
+        },
+        "desktop": {
+            "title": "Desktop",
+            "windows": "Windows",
+            "windows_desc": "Windows 10/11 (64-bit)",
+            "windows_btn": "Download .exe",
+            "macos": "macOS",
+            "macos_desc": "Ventura or later (Apple Silicon)",
+            "macos_btn": "Download .dmg",
+            "linux": "Linux",
+            "linux_desc": "Ubuntu / Debian / Arch",
+            "linux_btn": "Download .deb"
+        },
+        "mobile": {
+            "title": "Mobile",
+            "android": "Android",
+            "android_desc": "Android 10+",
+            "android_btn": "Download APK",
+            "ios": "iOS",
+            "ios_desc": "iOS 15+",
+            "ios_btn": "App Store"
+        },
+        "coming_soon": "Coming Soon",
+        "info": {
+            "item1_title": "Open Source",
+            "item1_desc": "Every line of code is auditable on GitHub. Trust through transparency.",
+            "item2_title": "SHA-256 Verified",
+            "item2_desc": "All binaries are cryptographically signed and hash-verified.",
+            "item3_title": "Auto Updates",
+            "item3_desc": "Seamless background updates keep you protected with zero effort."
+        },
+        "github": {
+            "title": "Build from Source",
+            "desc": "For developers and security researchers who prefer to compile from source. Full build instructions included.",
+            "btn": "View on GitHub"
+        }
+    },
+    "cloud": {
+        "title": "Horizon Cloud | The Future of Infrastructure",
+        "hero": {
+            "pre_title": "Global Infrastructure Initiative",
+            "title": "Sovereignty. Scale. <br> <gradient>Performance.</gradient>",
+            "subtitle": "Horizon Cloud is redefining the standard for decentralized infrastructure. Built on <strong>Enterprise-Grade Hardware</strong> and powered by a <strong>Hybrid Cloud Architecture</strong> designed for security and boundless scalability.",
+            "cta1": "Explore Our Values",
+            "cta2": "Technical Specs",
+            "status_title": "SYSTEM STATUS: ONLINE",
+            "status1": "> Initializing Region: KR-CORE-1",
+            "status2": "> Node Count: <span style=\"color: #fff;\">Active</span>",
+            "status3": "> Hybrid Uplink: <span style=\"color: #4facfe;\">AWS Direct Connect</span>",
+            "status4": "> Security: <span style=\"color: var(--secondary-accent);\">OPNsense Firewall Enabled</span>",
+            "status5": "> Storage: ZFS RAID-Z2 Optimized"
+        },
+        "values": {
+            "title": "Core <gradient>Values</gradient>",
+            "subtitle": "We are not just building another cloud provider. We are building a sovereign infrastructure ecosystem guided by three innovative principles.",
+            "card1_title": "Infrastructure Sovereignty",
+            "card1_desc": "True control starts with the hardware. We own our physical servers. By maintaining our own high-density racks, we eliminate the specific risks of \"Public Cloud Lock-in\" and ensure absolute data integrity from the metal up.",
+            "card2_title": "Hybrid Performance",
+            "card2_desc": "We combine the raw power and security of on-premise hardware with the elasticity of AWS. This \"Hybrid Core\" architecture allows us to handle sensitive workloads locally while bursting globally in milliseconds.",
+            "card3_title": "Global Vision",
+            "card3_desc": "Our roadmap is borderless. From our initial physical footprint to a strategic global headquarters in Dubai, we are building a tax-efficient, legally robust entity designed for rapid international scaling."
+        },
+        "roadmap": {
+            "title": "Strategic <gradient>Roadmap</gradient>",
+            "phase1_tag": "Phase 1: The Foundation",
+            "phase1_title": "Physical Core & MVP",
+            "phase1_desc": "Establishing the physical bedrock. We are deploying enterprise-grade bare metal servers to validate our high-performance architecture.",
+            "phase1_item1_title": "Physical Asset",
+            "phase1_item1_desc": "Dell PowerEdge R730xd Cluster",
+            "phase1_item2_title": "Service Launch",
+            "phase1_item2_desc": "High-Frequency VPS, Managed Hosting",
+            "phase2_tag": "Phase 2: Use Case Expansion",
+            "phase2_title": "Platform Scaling",
+            "phase2_desc": "Evolving from hardware to platform. We will launch <strong>Platform-as-a-Service (PaaS)</strong> products focused on automation and unparalleled reliability.",
+            "phase2_item1": "Corporate Incorporation",
+            "phase2_item2": "Commercial Partnerships",
+            "phase2_item3": "SaaS Product Launch",
+            "phase3_tag": "Phase 3: Global Dominance",
+            "phase3_title": "Dubai Global HQ",
+            "phase3_desc": "Establishing our strategic headquarters in a <strong>Dubai Free Zone</strong>. This creates a hyper-efficient legal and financial structure for global operations.",
+            "phase3_item1_title": "Global IPO Goal",
+            "phase3_item1_desc": "Targeting global capital markets.",
+            "phase3_item2_title": "Strategic Hub",
+            "phase3_item2_desc": "Connecting East and West markets."
+        },
+        "specs": {
+            "title": "Engineering <gradient>Deep Dive</gradient>",
+            "hardware_title": "The Iron: Dell PowerEdge R730xd",
+            "hw_spec1_name": "CPU Architecture",
+            "hw_spec1_val": "Dual Intel Xeon E5-2600 v4",
+            "hw_spec2_name": "Memory Capacity",
+            "hw_spec2_val": "DDR4 ECC (Expandable to 768GB)",
+            "hw_spec3_name": "Storage Fabric",
+            "hw_spec3_val": "24-Bay NVMe/SAS Hybrid Array",
+            "hw_spec4_name": "File System",
+            "hw_spec4_val": "ZFS (Zettabyte File System)",
+            "hw_spec5_name": "Raid Controller",
+            "hw_spec5_val": "PERC H730P (IT Mode Flashed)",
+            "software_title": "The Brain: Hybrid Cloud Stack",
+            "sw_spec1_name": "Hypervisor",
+            "sw_spec1_val": "Proxmox VE 8.x (Debian Based)",
+            "sw_spec2_name": "Cloud Bridge",
+            "sw_spec2_val": "AWS Site-to-Site VPN / Direct Connect",
+            "sw_spec3_name": "Containerization",
+            "sw_spec3_val": "Docker & LXC Native Support",
+            "sw_spec4_name": "Security Core",
+            "sw_spec4_val": "OPNsense + Snort IDS/IPS",
+            "sw_spec5_name": "Monitoring",
+            "sw_spec5_val": "Zabbix + Grafana Dashboards"
+        },
+        "diagram": {
+            "title": "Hybrid Cloud Architecture",
+            "box1_title": "Secure Core",
+            "box1_desc": "Sensitive Data & High IOPS",
+            "connector_top": "Encrypted Tunnel",
+            "connector_bottom": "Latency < 10ms",
+            "box2_title": "AWS Burst",
+            "box2_desc": "Global CDN & Elastic Scaling"
+        },
+        "cta": {
+            "title": "Ready to <gradient>Scale?</gradient>",
+            "desc": "Join the pilot program for Horizon Cloud Phase 1.",
+            "button": "Contact Investor Relations"
+        }
+    }
+}

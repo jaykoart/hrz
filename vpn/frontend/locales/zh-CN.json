@@ -1,0 +1,408 @@
+{
+    "meta": {
+        "language": "zh-CN",
+        "name": "简体中文",
+        "version": "1.3.0"
+    },
+    "index": {
+        "hero": {
+            "badge": "Plant AI 计划",
+            "title": "捍卫<br>您的隐私，<br><gradient>拯救我们的星球。</gradient>",
+            "subtitle": "Horizon VPN 不仅仅是一个工具。通过分享您的闲置带宽，您正在为解决全球粮食危机的引擎 —— <strong>Plant AI</strong> 提供训练动力。",
+            "cta": "加入使命",
+            "version": "v0.1.0",
+            "tagline": "永久免费 • 地球至上"
+        },
+        "features": {
+            "title": "为何选择 <gradient>Horizon?</gradient>",
+            "subtitle": "您的服务器每运行一秒，都在为保护粮食的未来贡献数据。",
+            "card1": {
+                "title": "WireGuard® 加密",
+                "desc": "免费享受军用级高级加密。我们坚信，隐私与食物一样，是一项基本人权。"
+            },
+            "card2": {
+                "title": "驱动 Plant AI",
+                "desc": "您的节点从网络各处收集重要的农业数据。这些数据用于训练我们的 AI，以优化全球作物产量。"
+            },
+            "card3": {
+                "title": "永久免费",
+                "desc": "我们不收取费用，因为您已通过'对地球的贡献'支付了代价。这是为了更美好未来的公平交换。"
+            }
+        },
+        "vpn_section": {
+            "title": "<gradient>隐形护盾</gradient>",
+            "desc": "我们从零开始重新设计了 VPN。基于严格的<strong>零日志</strong>政策和<strong>纯 RAM 服务器</strong>运行，断电瞬间数据即刻消失。",
+            "feature1": "AES-256 军用级加密",
+            "feature2": "多跳路由架构",
+            "feature3": "临时密钥 (每小时轮换)",
+            "cta": "探索安全性"
+        },
+        "plant_section": {
+            "title": "<gradient>自然</gradient>人工智能",
+            "desc": "我们正在构建世界上最大的去中心化数据引擎来解码植物的语言。您的闲置带宽为优化全球粮食生产的<strong>分布式智能</strong>提供动力。",
+            "stat1": "数据点",
+            "stat2": "碳成本",
+            "cta": "遇见 Plant AI"
+        },
+        "cloud_section": {
+            "title": "主权<gradient>基础设施</gradient>",
+            "desc": "Horizon Cloud 重新定义了去中心化基础设施。建立在<strong>企业级硬件</strong>和<strong>混合云架构</strong>之上，我们确保数据主权和无锁定的无限扩展性。",
+            "pill1": "裸金属核心",
+            "pill2": "高频 VPS",
+            "pill3": "全球边缘",
+            "cta": "查看路线图"
+        },
+        "download_section": {
+            "title": "准备好加入<gradient>网络</gradient>了吗？",
+            "cta": "立即下载"
+        },
+        "tech": {
+            "title": "技术核心"
+        },
+        "card": {
+            "powered_by": "自然驱动"
+        }
+    },
+    "nav": {
+        "home": "主页",
+        "plant_ai": "Plant AI",
+        "vpn": "VPN",
+        "download": "下载",
+        "cloud": "云",
+        "login": "登录"
+    },
+    "plant_ai": {
+        "hero": {
+            "title": "为<br><gradient>自然</gradient>打造的人工智能。",
+            "subtitle": "我们正在构建世界上最大的去中心化数据引擎，以解码植物的语言并优化全球粮食生产。"
+        },
+        "definition": {
+            "title": "什么是<gradient>Plant AI？</gradient>",
+            "desc": "Plant AI 是一种<strong>专门的人工智能</strong>，它在世界上最大的农业大数据上进行训练。与通用的大型语言模型不同，它专为实现一个特定目标而设计：<br><span style='color: var(--primary-accent); font-weight: 600;'>让地球上的每一个农场实现自治。</span>"
+        },
+        "core": {
+            "vision_title": "视觉与诊断",
+            "vision_desc": "摄像头取代了人眼。人工智能实时分析叶片颜色的变化、斑点模式和热应激。",
+            "action_title": "决策与行动",
+            "action_desc": "自主系统接管一切。高温会触发遮阳部署；干燥的土壤会激活精准喷灌器。",
+            "problem_title": "<gradient>未知数据</gradient>问题。",
+            "problem_desc1": "要构建这个系统，我们需要大型科技公司所没有的数据。他们有维基百科；我们需要的是<strong>土壤报告</strong>、<strong>收获记录</strong>和<strong>当地气候日志</strong>。",
+            "problem_desc2": "这就是<strong>Horizon VPN</strong>发挥作用的地方。您的节点从数千个本地来源收集这些“利基数据”，为我们量身定制的人工智能创建“绿色突触”。"
+        },
+        "mission": {
+            "title": "推动<gradient>全球变革</gradient>",
+            "pillar1_title": "粮食安全",
+            "pillar1_desc": "通过优化作物产量解决全球饥饿问题。我们确保每一颗播下的种子都能发挥其全部潜力。",
+            "pillar1_tag": "零饥饿",
+            "pillar2_title": "气候响应",
+            "pillar2_desc": "大幅减少水和杀虫剂的使用。我们通过使农业更智能、更清洁来应对气候变化。",
+            "pillar2_tag": "生态可持续性",
+            "pillar3_title": "数字贡献者",
+            "pillar3_desc": "您不是消费者；您是守护者。您的闲置带宽直接为拯救地球做出贡献。",
+            "pillar3_tag": "全球公民"
+        },
+        "goal": {
+            "title": "目标：<gradient>一人农场</gradient>",
+            "liberation_title": "从劳动中解放",
+            "liberation_desc": "耕作不应该意味着辛勤劳作。有了Plant AI，一个人可以通过仪表板管理100英亩的土地。人工智能会处理微观管理。",
+            "expertise_title": "人人皆可专家",
+            "expertise_desc": "无论您是经验丰富的农学家，还是拥有屋顶花园的城市居民，Plant AI都能提供专业级的见解。",
+            "cta": "为智能赋能"
+        },
+        "dashboard": {
+            "status": "实时系统状态",
+            "zone1_name": "A-1区（番茄）",
+            "zone1_status": "需要注意",
+            "zone1_desc": "检测到氮缺乏（行动：已开始自动投药）",
+            "zone2_name": "B-3区（生菜）",
+            "zone2_status": "最佳",
+            "zone2_desc": "生长分析：与去年相比预测+15%"
+        },
+        "distributed": {
+            "title": "由<gradient>分布式智能</gradient>驱动",
+            "node_title": "地平线节点",
+            "node_desc": "每个运行Horizon VPN的用户都成为一个<strong>微型数据中心</strong>。我们不建立庞大、耗能的服务器农场，而是利用数百万设备的闲置计算能力。",
+            "node_item1": "<strong>边缘计算：</strong>数据在设备上本地处理。",
+            "node_item2": "<strong>加密传输：</strong>所有贡献都通过WireGuard隧道进行匿名化处理。",
+            "learning_title": "联邦学习",
+            "learning_desc": "我们不仅仅是收集数据；我们还集体训练人工智能。您的设备下载一个小模型，用本地数据（例如，当地天气模式）对其进行改进，然后只将<em>改进之处</em>发送回去。",
+            "learning_item1": "<strong>隐私第一：</strong>原始数据绝不会离开您的设备。",
+            "learning_item2": "<strong>群体智能：</strong>网络随着每个用户的加入而变得更智能。"
+        },
+        "action": {
+            "title": "Plant AI在<gradient>行动</gradient>",
+            "case1_title": "城市家庭农业",
+            "case1_scenario": "<strong>情景：</strong>您在阳台上种的罗勒总是枯萎。",
+            "case1_solution1": "人工智能诊断为“浇水不足”。",
+            "case1_solution2": "物联网喷灌器自动启动。",
+            "case2_title": "精准农业",
+            "case2_scenario": "<strong>情景：</strong>一个10000英亩的玉米田面临未知的害虫爆发。",
+            "case2_solution1": "无人机扫描确定了“第7区”。",
+            "case2_solution2": "精准处理使农药使用量减少了90%。",
+            "case3_title": "气候研究",
+            "case3_scenario": "<strong>情景：</strong>在不稳定的气候变化中预测作物产量。",
+            "case3_solution1": "来自数百万节点的超本地数据。",
+            "case3_solution2": "抗旱种子的模拟。"
+        },
+        "faq": {
+            "title": "常见问题",
+            "q1": "这会减慢我的网速吗？",
+            "a1": "不会。地平线节点创建了一个“轻量级后台进程”，只在您不进行流媒体或游戏时使用闲置带宽。",
+            "q2": "我的个人数据安全吗？",
+            "a2": "绝对安全。我们只收集公共环境数据。您的个人文件、浏览历史和身份都严格在限制范围之外，节点软件在技术上无法访问。"
+        },
+        "report": {
+            "header": "项目报告：V3.0",
+            "title": "富足的<br><gradient>架构</gradient>",
+            "p1_title": "I. 危机：100亿人口 vs. 一个地球",
+            "p1_content": "到2050年，全球人口将超过98亿。为了养活所有人，我们必须比现在多生产<strong>70%的食物</strong>。然而，由于荒漠化和城市化，我们每年正以10万平方公里的速度失去可耕地。依赖全面使用杀虫剂和过度用水的传统“工业化农业”已达到极限。它正在摧毁我们赖以生存的土壤。",
+            "p2_title": "II. 解决方案：精准 vs. 猜测",
+            "p2_content": "农业在历史上一直是一场估计的游戏。Plant AI通过引入<strong>超高精度</strong>来改变这一模式。通过分析数千个数据点——从叶片气孔导度到土壤微生物活动——我们可以优化每一滴水和每一毫克的养分。这不仅仅是“智能农业”；这是<strong>计算农业</strong>。我们正在将生物学的不确定性转化为数学的可预测性。",
+            "p3_title": "III. 可扩展性：去中心化的优势",
+            "p3_content": "一台中央集权的超级计算机可以管理几家大型企业农场。但它无法管理生产全球70%粮食的数十亿个小农户。<strong style='color: var(--primary-accent);'>地平线节点</strong>弥合了这一差距。通过将计算负荷分配给数百万台个人设备，我们创建了一个能够同时处理从首尔的后院花园到乌克兰的麦田数据的<strong>无限网状网络</strong>。",
+            "p4_title": "IV. 结果：一个自我修复的地球",
+            "p4_content": "Plant AI的最终目标是<strong>再生</strong>。通过最大限度地减少化学投入和优化生长周期，我们让土壤得以恢复。我们设想未来，农业将充当碳汇而不是碳源，粮食安全由代码保障，每个人都可以通过简单地保持电脑开机来为全球生存做出贡献。"
+        },
+        "verdict": {
+            "title": "最终结论：<gradient>为何是现在？</gradient>",
+            "item1_title": "生存",
+            "item1_desc": "当前的农业无法养活100亿人。我们需要升级。",
+            "item2_title": "恢复",
+            "item2_desc": "我们必须治愈几十年来化学滥用对土壤的伤害。",
+            "item3_title": "公平",
+            "item3_desc": "食品技术应该属于人民，而不是公司。",
+            "item4_title": "遗产",
+            "item4_desc": "为下一代留下一个自我维持的星球。"
+        },
+        "cta": {
+            "title": "成为解决方案的一部分",
+            "desc": "您运行的每一个地平线节点都有助于构建世界上最全面的农业人工智能。您今天的闲置带宽将成为明天的粮食安全。",
+            "button": "下载地平线节点"
+        },
+        "footer": {
+            "terms": "条款",
+            "privacy": "隐私",
+            "copyright": "© 2025 Horizon VPN 项目。开源与去中心化。"
+        }
+    },
+    "vpn": {
+        "hero": {
+            "title": "道德之<gradient>盾。</gradient>",
+            "subtitle": "我们重新设计了VPN，以保护您，同时为全球最大的人工智能研究赋能。<br><span style='color: var(--primary-accent); font-weight: 600;'>零日志。零成本。100%影响力。</span>",
+            "cta": "下载节点"
+        },
+        "features": {
+            "card1_title": "军用级护盾",
+            "card1_desc": "AES-256加密隧道确保您的数据对ISP、黑客甚至我们都不可见。我们遵守严格的<strong>无日志政策</strong>。",
+            "card2_title": "WireGuard®速度",
+            "card2_desc": "基于现代WireGuard协议构建，Horizon提供极快的速度和最小的延迟，非常适合流媒体和游戏。",
+            "card3_title": "全球访问",
+            "card3_desc": "绕过审查和地理封锁。像本地人一样从世界任何地方访问内容。"
+        },
+        "invisible": {
+            "title": "对<br><gradient>所有人</gradient>隐形。",
+            "desc": "您的ISP什么也看不见。黑客看到的是随机噪音。甚至<strong>我们</strong>也什么都看不见。",
+            "feature1_title": "临时密钥",
+            "feature1_desc": "加密密钥在RAM中生成，每60分钟销毁一次。",
+            "feature2_title": "多跳路由",
+            "feature2_desc": "流量在退出前会经过3个随机节点。没有单个节点知道完整路径。"
+        },
+        "terminal": {
+            "title": "node-x7z-daemon — bash — 80x24",
+            "cmd1": "$ horizon-cli status --verbose",
+            "res1_1": "> 正在连接到网状网络... ",
+            "res1_2": "<span style=\"color:var(--primary-accent)\">[确定]</span>",
+            "res1_3": "> 握手协议: Curve25519 ",
+            "res1_4": "<span style=\"color:var(--primary-accent)\">[安全]</span>",
+            "res1_5": "> 隧道ID: #9928-AX-22",
+            "res1_6": "> 日志状态: ",
+            "res1_7": "<span style=\"color:#ff5f56\">已禁用 (纯RAM模式)</span>",
+            "cmd2": "$ traceroute target.com",
+            "res2_1": "1 192.168.1.1 (本地)",
+            "res2_2": "2 * * * (已屏蔽)",
+            "res2_3": "3 * * * (已屏蔽)",
+            "res2_4": "4 * * * (已屏蔽)",
+            "res2_5": "5 target.com [203.0.113.5]"
+        },
+        "how": {
+            "title": "网络<br><gradient>如何运作</gradient>",
+            "step1_title": "您 (节点)",
+            "step1_desc": "您将获得免费的优质VPN保护。作为交换，您的设备会处理小块匿名的公共数据。",
+            "step2_title": "智能",
+            "step2_desc": "这些公共数据（气候日志、市场价格）为Plant AI的大脑提供养料，帮助解决全球粮食短缺问题。",
+            "step3_title": "可持续性",
+            "step3_desc": "商业合作伙伴支付网络基础设施费用，使VPN永远对您100%免费。"
+        },
+        "who": {
+            "title": "<gradient>Horizon</gradient>为谁而生？",
+            "user1": "记者",
+            "user1_desc": "绕过审查，从冲突地区安全地报道真相。",
+            "user2": "游戏玩家",
+            "user2_desc": "避免DDoS攻击，以最小延迟访问有地理限制的服务器。",
+            "user3": "远程工作者",
+            "user3_desc": "在咖啡馆或机场工作时，确保公共Wi-Fi的访问安全。"
+        },
+        "faq": {
+            "title": "常见<br><gradient>问题</gradient>",
+            "q1": "Horizon会看到我的浏览历史吗？",
+            "a1": "<strong>绝不。</strong>我们严格执行零日志政策。从技术上讲，我们的节点无法检查您个人VPN隧道内的加密流量。您的私人浏览行为将保持私密。",
+            "q2": "它会减慢我的网速吗？",
+            "a2": "<strong>几乎不会。</strong>后台进程是“资源感知”的。它仅在您的系统空闲时（例如，您离开电脑时）激活，并严格限制带宽使用，以确保您的流媒体或游戏永远不会中断。",
+            "q3": "它真的永远免费吗？",
+            "a3": "<strong>是的。</strong>我们不需要您的订阅费，因为我们的商业模式建立在B2B数据智能之上，而不是B2C软件销售。只要您为网络做出贡献，高级服务就属于您。",
+            "q4": "我的IP会被用于非法活动吗？",
+            "a4": "<strong>不会。</strong>与其他P2P网络不同，Horizon将“商业代理”（企业使用）与您的住宅IP分开。我们对所有访问数据网络的商业伙伴都有严格的KYC（了解您的客户）审查。"
+        },
+        "transparency": {
+            "header": "工程深度解析",
+            "title": "透明度<br><gradient>报告</gradient>",
+            "p1_title": "I. 纯RAM基础设施",
+            "p1_content": "传统的VPN会将日志写入硬盘，这些硬盘可能会被查封或检查。Horizon完全在<strong>纯RAM服务器</strong>上运行。这意味着一旦服务器重新启动——或者断电——每一字节的数据都会被立即清除。没有可以从中恢复数据的物理磁盘。我们将您的浏览历史视为我们拒绝存储的“有毒数据”。",
+            "p2_title": "II. “盲”中继架构",
+            "p2_content": "我们为初始握手采用“双跳”架构。知道<em>您是谁</em>的节点（入口节点）不知道<em>您在做什么</em>。知道<em>您在做什么</em>的节点（出口节点）不知道<em>您是谁</em>。这种加密分离确保我们网络中的任何一台机器都无法拥有您活动的全貌。",
+            "p3_title": "III. 临时密钥与完全正向保密",
+            "p3_content": "Horizon使用<strong>完全正向保密（PFS）</strong>。我们为每个会话生成一个新的加密密钥，并每60分钟轮换一次。即使超级计算机破解了过去会话的密钥（这将需要数十亿年），它也无法用于解密任何未来或过去的会话。您的隐私是数学上得到保证的，而不仅仅是承诺。",
+            "p4_title": "IV. 商业防火墙",
+            "p4_content": "批评者会问：“如果你们出售数据，我的数据不是有风险吗？”不会。“商业代理”网络是一个完全独立的逻辑层。商业伙伴通过我们的节点访问<em>公共互联网</em>以查询机票价格或广告投放位置。他们<strong>永远</strong>无法访问您个人流量流动的内部VPN隧道。这两个世界永远不会接触。"
+        },
+        "final": {
+            "title": "您<br><gradient>永远需要的最后一个VPN。</gradient>",
+            "desc": "停止为隐私付费。开始为未来做贡献。",
+            "cta": "免费获取Horizon"
+        }
+    },
+    "download": {
+        "title": "下载Horizon VPN | 加入网络",
+        "hero": {
+            "badge": "v0.1.0 Beta",
+            "title": "下载<gradient>Horizon</gradient>",
+            "subtitle": "加入去中心化隐私网络。您的设备将成为全球网络中的一个节点，在保护数百万人的同时赚取奖励。",
+            "tag1": "零日志",
+            "tag2": "WireGuard协议",
+            "tag3": "驱动Plant AI"
+        },
+        "desktop": {
+            "title": "桌面版",
+            "windows": "Windows",
+            "windows_desc": "Windows 10/11 (64位)",
+            "windows_btn": "下载 .exe",
+            "macos": "macOS",
+            "macos_desc": "Ventura 或更高版本 (Apple Silicon)",
+            "macos_btn": "下载 .dmg",
+            "linux": "Linux",
+            "linux_desc": "Ubuntu / Debian / Arch",
+            "linux_btn": "下载 .deb"
+        },
+        "mobile": {
+            "title": "移动版",
+            "android": "Android",
+            "android_desc": "Android 10+",
+            "android_btn": "下载 APK",
+            "ios": "iOS",
+            "ios_desc": "iOS 15+",
+            "ios_btn": "App Store"
+        },
+        "coming_soon": "即将推出",
+        "info": {
+            "item1_title": "开源",
+            "item1_desc": "每一行代码都可以在GitHub上进行审计。透明带来信任。",
+            "item2_title": "SHA-256 验证",
+            "item2_desc": "所有二进制文件都经过加密签名和哈希验证。",
+            "item3_title": "自动更新",
+            "item3_desc": "无缝的后台更新让您毫不费力地保持安全。"
+        },
+        "github": {
+            "title": "从源代码构建",
+            "desc": "适用于喜欢从源代码编译的开发者和安全研究人员。包含完整的构建说明。",
+            "btn": "在GitHub上查看"
+        }
+    },
+    "cloud": {
+        "title": "Horizon Cloud | 基础设施的未来",
+        "hero": {
+            "pre_title": "全球基础设施倡议",
+            "title": "主权。规模。<br><gradient>性能。</gradient>",
+            "subtitle": "Horizon Cloud 正在重新定义去中心化基础设施的标准。它建立在<strong>企业级硬件</strong>之上，并由专为安全和无限可扩展性而设计的<strong>混合云架构</strong>提供支持。",
+            "cta1": "探索我们的价值观",
+            "cta2": "技术规格",
+            "status_title": "系统状态：在线",
+            "status1": "> 正在初始化区域：KR-CORE-1",
+            "status2": "> 节点数：<span style=\"color: #fff;\">活动</span>",
+            "status3": "> 混合上行链路：<span style=\"color: #4facfe;\">AWS Direct Connect</span>",
+            "status4": "> 安全性：<span style=\"color: var(--secondary-accent);\">OPNsense 防火墙已启用</span>",
+            "status5": "> 存储：ZFS RAID-Z2 已优化"
+        },
+        "values": {
+            "title": "核心<br><gradient>价值观</gradient>",
+            "subtitle": "我们不只是在建立另一个云服务提供商。我们正在建立一个由三个创新原则指导的主权基础设施生态系统。",
+            "card1_title": "基础设施主权",
+            "card1_desc": "真正的控制始于硬件。我们拥有自己的物理服务器。通过维护我们自己的高密度机架，我们消除了“公有云锁定”的特定风险，并确保从金属层开始的绝对数据完整性。",
+            "card2_title": "混合性能",
+            "card2_desc": "我们将本地硬件的原始能力和安全性与AWS的弹性相结合。这种“混合核心”架构使我们能够在本地处理敏感工作负载，同时在全球毫秒级内爆发。",
+            "card3_title": "全球视野",
+            "card3_desc": "我们的路线图没有国界。从我们最初的物理足迹到在迪拜的战略性全球总部，我们正在建立一个税收高效、法律健全的实体，旨在实现快速的国际扩张。"
+        },
+        "roadmap": {
+            "title": "战略<br><gradient>路线图</gradient>",
+            "phase1_tag": "第一阶段：基础",
+            "phase1_title": "物理核心与MVP",
+            "phase1_desc": "建立物理基础。我们正在部署企业级裸金属服务器，以验证我们的高性能架构。",
+            "phase1_item1_title": "物理资产",
+            "phase1_item1_desc": "Dell PowerEdge R730xd 集群",
+            "phase1_item2_title": "服务启动",
+            "phase1_item2_desc": "高频VPS，托管主机",
+            "phase2_tag": "第二阶段：用例扩展",
+            "phase2_title": "平台扩展",
+            "phase2_desc": "从硬件向平台演进。我们将推出专注于自动化和无与伦比可靠性的<strong>平台即服务（PaaS）</strong>产品。",
+            "phase2_item1": "公司注册",
+            "phase2_item2": "商业合作",
+            "phase2_item3": "SaaS产品发布",
+            "phase3_tag": "第三阶段：全球主导",
+            "phase3_title": "迪拜全球总部",
+            "phase3_desc": "在<strong>迪拜自由区</strong>建立我们的战略总部。这将为全球运营创造一个超高效的法律和财务结构。",
+            "phase3_item1_title": "全球IPO目标",
+            "phase3_item1_desc": "瞄准全球资本市场。",
+            "phase3_item2_title": "战略枢纽",
+            "phase3_item2_desc": "连接东西方市场。"
+        },
+        "specs": {
+            "title": "工程<br><gradient>深度解析</gradient>",
+            "hardware_title": "钢铁之躯：Dell PowerEdge R730xd",
+            "hw_spec1_name": "CPU架构",
+            "hw_spec1_val": "双路 Intel Xeon E5-2600 v4",
+            "hw_spec2_name": "内存容量",
+            "hw_spec2_val": "DDR4 ECC（可扩展至768GB）",
+            "hw_spec3_name": "存储结构",
+            "hw_spec3_val": "24盘位 NVMe/SAS 混合阵列",
+            "hw_spec4_name": "文件系统",
+            "hw_spec4_val": "ZFS（Zettabyte文件系统）",
+            "hw_spec5_name": "Raid控制器",
+            "hw_spec5_val": "PERC H730P（已刷IT模式）",
+            "software_title": "大脑：混合云技术栈",
+            "sw_spec1_name": "虚拟机监控程序",
+            "sw_spec1_val": "Proxmox VE 8.x（基于Debian）",
+            "sw_spec2_name": "云桥接",
+            "sw_spec2_val": "AWS Site-to-Site VPN / Direct Connect",
+            "sw_spec3_name": "容器化",
+            "sw_spec3_val": "原生支持Docker和LXC",
+            "sw_spec4_name": "安全核心",
+            "sw_spec4_val": "OPNsense + Snort IDS/IPS",
+            "sw_spec5_name": "监控",
+            "sw_spec5_val": "Zabbix + Grafana 仪表板"
+        },
+        "diagram": {
+            "title": "混合云架构",
+            "box1_title": "安全核心",
+            "box1_desc": "敏感数据和高IOPS",
+            "connector_top": "加密隧道",
+            "connector_bottom": "延迟 < 10毫秒",
+            "box2_title": "AWS突发",
+            "box2_desc": "全球CDN和弹性扩展"
+        },
+        "cta": {
+            "title": "准备好<br><gradient>扩展了吗？</gradient>",
+            "desc": "加入Horizon Cloud第一阶段的试点项目。",
+            "button": "联系投资者关系"
+        }
+    }
+}

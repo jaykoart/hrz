@@ -14,24 +14,36 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Scroll-driven Holographic Effect
-    window.addEventListener('scroll', () => {
-        const scrolled = window.scrollY;
-        // Map scroll pixels directly to position for immediate response
-        // Start at -120% (just outside left)
-        // Scroll 1px = Move 0.5% (Very sensitive)
-        const startPos = -120;
-        const sensitivity = 0.5;
+    // Scroll-driven Holographic Effect (Position-based per button)
+    const updateHologramEffect = () => {
+        const buttons = document.querySelectorAll('.btn-primary');
+        const viewportCenter = window.innerHeight / 2;
+        const effectRange = window.innerHeight * 0.4; // 40% of viewport height as active zone
 
-        let currentPos = startPos + (scrolled * sensitivity);
+        buttons.forEach(btn => {
+            const rect = btn.getBoundingClientRect();
+            const btnCenter = rect.top + rect.height / 2;
+            const distanceFromCenter = Math.abs(btnCenter - viewportCenter);
 
-        // Loop the effect every 400% movement to keep it alive during long scrolls
-        if (currentPos > 200) {
-            currentPos = startPos + ((currentPos - startPos) % 320);
-        }
+            if (distanceFromCenter < effectRange) {
+                // Button is near center - activate hologram effect
+                // Closer to center = further along the animation
+                const progress = 1 - (distanceFromCenter / effectRange);
+                const hologramPos = -50 + (progress * 100); // -50% to 50%
+                btn.style.setProperty('--hologram-pos', `${hologramPos}%`);
+            } else {
+                // Button is outside active zone - reset to hidden state
+                btn.style.setProperty('--hologram-pos', '-150%');
+            }
+        });
+    };
 
-        document.documentElement.style.setProperty('--hologram-pos', `${currentPos}%`);
-    });
+    // Run on scroll and resize
+    window.addEventListener('scroll', updateHologramEffect, { passive: true });
+    window.addEventListener('resize', updateHologramEffect, { passive: true });
+
+    // Initial run
+    updateHologramEffect();
 
     // Optional: Add scroll reveals or parallax here if needed.
 });
