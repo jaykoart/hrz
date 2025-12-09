@@ -1,0 +1,23 @@
+{
+    "version": "0.1.0",
+    "notes": "Initial release of HQMX VPN.",
+    "pub_date": "2025-12-10T00:00:00Z",
+    "platforms": {
+        "darwin-aarch64": {
+            "signature": "",
+            "url": "https://hqmx.net/releases/v0.1.0/HQMX_VPN_0.1.0_aarch64.app.tar.gz"
+        },
+        "darwin-x86_64": {
+            "signature": "",
+            "url": "https://hqmx.net/releases/v0.1.0/HQMX_VPN_0.1.0_x64.app.tar.gz"
+        },
+        "windows-x86_64": {
+            "signature": "",
+            "url": "https://hqmx.net/releases/v0.1.0/HQMX_VPN_0.1.0_x64-setup.nsis.zip"
+        },
+        "linux-x86_64": {
+            "signature": "",
+            "url": "https://hqmx.net/releases/v0.1.0/HQMX_VPN_0.1.0_amd64.AppImage.tar.gz"
+        }
+    }
+}

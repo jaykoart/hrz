@@ -55,7 +55,7 @@
 - [x] React + TypeScript 설정
 - [x] 기본 윈도우 구성 (크기, 타이틀바, 아이콘)
 - [x] 시스템 트레이 아이콘 설정
-- [ ] 자동 업데이트 설정 (Tauri Updater)
+- [x] 자동 업데이트 설정 (Tauri Updater)
 
 ### Phase 2: 인증 및 사용자 관리
 > Google OAuth 연동
@@ -79,7 +79,7 @@
   - [x] Quit 메뉴
 - [x] 알림 시스템
   - [x] 연결/해제 알림
-  - [ ] 업데이트 알림
+  - [x] 업데이트 알림
 - [ ] 관리자 권한 요청 (VPN 설정용)
 
 ### Phase 6: UI/UX 개선
