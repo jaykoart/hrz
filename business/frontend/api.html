@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation | Horizon Data</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        :root {
+            --bg-main: #0a0e17;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --bg-code: #1a1f2e;
+            --text-main: #ffffff;
+            --text-muted: #8a94a6;
+            --primary: #3b82f6;
+            --primary-glow: rgba(59, 130, 246, 0.3);
+            --secondary: #10b981;
+            --border: rgba(255, 255, 255, 0.08);
+            --code-string: #a5d6ff;
+            --code-keyword: #ff7b72;
+            --code-comment: #8b949e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            color: var(--text-main);
+        }
+
+        nav a.active {
+            color: var(--primary);
+        }
+
+        /* Main Layout */
+        .docs-layout {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 4rem;
+            padding: 3rem 0;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 2rem;
+            height: fit-content;
+        }
+
+        .sidebar h4 {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            margin-bottom: 0.5rem;
+        }
+
+        .sidebar a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: block;
+            padding: 0.5rem 0;
+        }
+
+        .sidebar a:hover,
+        .sidebar a.active {
+            color: var(--primary);
+        }
+
+        /* Content */
+        .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .content h2 {
+            font-size: 1.5rem;
+            margin: 3rem 0 1rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .content h3 {
+            font-size: 1.1rem;
+            margin: 2rem 0 0.5rem;
+        }
+
+        .content p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        /* Code Blocks */
+        pre {
+            background: var(--bg-code);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1rem 0 2rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+
+        code {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .inline-code {
+            background: var(--bg-code);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        .code-comment {
+            color: var(--code-comment);
+        }
+
+        .code-string {
+            color: var(--code-string);
+        }
+
+        .code-keyword {
+            color: var(--code-keyword);
+        }
+
+        /* Endpoint Badge */
+        .endpoint {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--bg-code);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            margin: 1rem 0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        .method {
+            font-weight: 700;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+        }
+
+        .method.get {
+            background: #10b981;
+            color: #fff;
+        }
+
+        .method.post {
+            background: #3b82f6;
+            color: #fff;
+        }
+
+        .method.put {
+            background: #f59e0b;
+            color: #000;
+        }
+
+        .method.delete {
+            background: #ef4444;
+            color: #fff;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0 2rem;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+        }
+
+        td {
+            font-size: 0.9rem;
+        }
+
+        .param-name {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--primary);
+        }
+
+        .param-required {
+            color: var(--code-keyword);
+            font-size: 0.75rem;
+        }
+
+        footer {
+            padding: 3rem 0;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="logo">Horizon <span>Data</span></a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="api.html" class="active">API Docs</a>
+                <a href="index.html#pricing">Pricing</a>
+            </nav>
+        </header>
+    </div>
+
+    <div class="container docs-layout">
+        <aside class="sidebar">
+            <h4>Getting Started</h4>
+            <ul>
+                <li><a href="#authentication">Authentication</a></li>
+                <li><a href="#quickstart">Quickstart</a></li>
+            </ul>
+            <h4 style="margin-top: 2rem;">API Reference</h4>
+            <ul>
+                <li><a href="#proxy-request">Proxy Request</a></li>
+                <li><a href="#batch-request">Batch Request</a></li>
+                <li><a href="#session">Session Management</a></li>
+                <li><a href="#geo">Geo Targeting</a></li>
+            </ul>
+            <h4 style="margin-top: 2rem;">SDKs</h4>
+            <ul>
+                <li><a href="#python">Python</a></li>
+                <li><a href="#nodejs">Node.js</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <h1>API Documentation</h1>
+            <p>Welcome to the Horizon Data API. Use our RESTful endpoints to route HTTP requests through our residential
+                IP network.</p>
+
+            <h2 id="authentication">Authentication</h2>
+            <p>All API requests require an API key passed via the <code class="inline-code">Authorization</code> header.
+            </p>
+            <pre><span class="code-comment"># Header format</span>
+Authorization: Bearer YOUR_API_KEY</pre>
+            <p>To obtain an API key, <a href="mailto:enterprise@hqmx.net" style="color: var(--primary);">contact our
+                    sales team</a>.</p>
+
+            <h2 id="quickstart">Quickstart</h2>
+            <p>Make your first proxied request in seconds:</p>
+            <pre><span class="code-comment"># cURL example</span>
+curl -X POST https://api.horizon-data.io/v1/proxy/request \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    <span class="code-string">"targetUrl"</span>: <span class="code-string">"https://example.com"</span>,
+    <span class="code-string">"method"</span>: <span class="code-string">"GET"</span>
+  }'</pre>
+
+            <h2 id="proxy-request">Proxy Request</h2>
+            <p>Send a single HTTP request through a residential IP.</p>
+            <div class="endpoint">
+                <span class="method post">POST</span>
+                <code>/v1/proxy/request</code>
+            </div>
+
+            <h3>Request Body</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="param-name">targetUrl</span> <span class="param-required">required</span></td>
+                        <td>string</td>
+                        <td>The URL you want to fetch through the proxy.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="param-name">method</span></td>
+                        <td>string</td>
+                        <td>HTTP method (GET, POST, PUT, DELETE). Default: GET</td>
+                    </tr>
+                    <tr>
+                        <td><span class="param-name">headers</span></td>
+                        <td>object</td>
+                        <td>Custom headers to include in the request.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="param-name">body</span></td>
+                        <td>string</td>
+                        <td>Request body for POST/PUT requests.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="param-name">country</span></td>
+                        <td>string</td>
+                        <td>ISO 3166-1 alpha-2 country code for geo-targeting (e.g., "US", "KR").</td>
+                    </tr>
+                    <tr>
+                        <td><span class="param-name">sessionId</span></td>
+                        <td>string</td>
+                        <td>Use the same sessionId to maintain a sticky IP for up to 30 minutes.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Response</h3>
+            <pre>{
+  <span class="code-string">"success"</span>: <span class="code-keyword">true</span>,
+  <span class="code-string">"requestId"</span>: <span class="code-string">"req_abc123"</span>,
+  <span class="code-string">"statusCode"</span>: 200,
+  <span class="code-string">"headers"</span>: { ... },
+  <span class="code-string">"body"</span>: <span class="code-string">"..."</span>,
+  <span class="code-string">"proxyIp"</span>: <span class="code-string">"203.0.113.45"</span>,
+  <span class="code-string">"country"</span>: <span class="code-string">"US"</span>,
+  <span class="code-string">"latencyMs"</span>: 342
+}</pre>
+
+            <h2 id="batch-request">Batch Request</h2>
+            <p>Send multiple requests in a single API call for efficient large-scale data collection.</p>
+            <div class="endpoint">
+                <span class="method post">POST</span>
+                <code>/v1/proxy/batch</code>
+            </div>
+            <pre><span class="code-comment"># Batch request example</span>
+{
+  <span class="code-string">"requests"</span>: [
+    { <span class="code-string">"targetUrl"</span>: <span class="code-string">"https://example.com/page1"</span> },
+    { <span class="code-string">"targetUrl"</span>: <span class="code-string">"https://example.com/page2"</span> },
+    { <span class="code-string">"targetUrl"</span>: <span class="code-string">"https://example.com/page3"</span> }
+  ],
+  <span class="code-string">"concurrency"</span>: 5
+}</pre>
+
+            <h2 id="session">Session Management</h2>
+            <p>Use <code class="inline-code">sessionId</code> to keep the same IP for multiple sequential requests
+                (e.g., login flows).</p>
+            <pre><span class="code-comment"># Session sticky example</span>
+{
+  <span class="code-string">"targetUrl"</span>: <span class="code-string">"https://example.com/login"</span>,
+  <span class="code-string">"sessionId"</span>: <span class="code-string">"my-session-123"</span>,
+  <span class="code-string">"sessionTtlMinutes"</span>: 30
+}</pre>
+
+            <h2 id="geo">Geo Targeting</h2>
+            <p>Target specific countries or cities for localized data collection.</p>
+            <pre><span class="code-comment"># Geo targeting example</span>
+{
+  <span class="code-string">"targetUrl"</span>: <span class="code-string">"https://example.com"</span>,
+  <span class="code-string">"country"</span>: <span class="code-string">"KR"</span>,
+  <span class="code-string">"city"</span>: <span class="code-string">"Seoul"</span>
+}</pre>
+
+            <h2 id="python">Python SDK</h2>
+            <pre><span class="code-keyword">import</span> requests
+
+API_KEY = <span class="code-string">"YOUR_API_KEY"</span>
+BASE_URL = <span class="code-string">"https://api.horizon-data.io/v1"</span>
+
+<span class="code-keyword">def</span> <span style="color:#d2a8ff">fetch_via_proxy</span>(url, country=<span class="code-keyword">None</span>):
+    payload = {<span class="code-string">"targetUrl"</span>: url}
+    <span class="code-keyword">if</span> country:
+        payload[<span class="code-string">"country"</span>] = country
+    
+    response = requests.post(
+        f<span class="code-string">"{BASE_URL}/proxy/request"</span>,
+        headers={<span class="code-string">"Authorization"</span>: f<span class="code-string">"Bearer {API_KEY}"</span>},
+        json=payload
+    )
+    <span class="code-keyword">return</span> response.json()
+
+<span class="code-comment"># Usage</span>
+result = fetch_via_proxy(<span class="code-string">"https://example.com"</span>, country=<span class="code-string">"US"</span>)
+print(result[<span class="code-string">"body"</span>])</pre>
+
+            <h2 id="nodejs">Node.js SDK</h2>
+            <pre><span class="code-keyword">const</span> axios = require(<span class="code-string">'axios'</span>);
+
+<span class="code-keyword">const</span> API_KEY = <span class="code-string">'YOUR_API_KEY'</span>;
+<span class="code-keyword">const</span> BASE_URL = <span class="code-string">'https://api.horizon-data.io/v1'</span>;
+
+<span class="code-keyword">async function</span> <span style="color:#d2a8ff">fetchViaProxy</span>(url, country) {
+  <span class="code-keyword">const</span> response = <span class="code-keyword">await</span> axios.post(
+    `${BASE_URL}/proxy/request`,
+    { targetUrl: url, country },
+    { headers: { Authorization: `Bearer ${API_KEY}` } }
+  );
+  <span class="code-keyword">return</span> response.data;
+}
+
+<span class="code-comment">// Usage</span>
+fetchViaProxy(<span class="code-string">'https://example.com'</span>, <span class="code-string">'KR'</span>)
+  .then(data => console.log(data.body));</pre>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Horizon Data Infrastructure. A division of HQMX.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

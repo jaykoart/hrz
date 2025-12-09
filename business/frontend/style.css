@@ -5,7 +5,7 @@
     /* === Static Theme Colors (폴백용) === */
     --bg-color: #050510;
     --text-main: #ffffff;
-    --text-muted: #b8c5d6;
+    --text-muted: #8b9bb4;
 
     --primary-accent: #00ff88;
     /* Neon Plant Green */
@@ -29,7 +29,7 @@
     /* 동적 배경/텍스트 색상 */
     --bg-dynamic: #050510;
     --text-dynamic: #ffffff;
-    --text-muted-dynamic: #b8c5d6;
+    --text-muted-dynamic: #8b9bb4;
 
     /* 동적 유리 효과 */
     --glass-bg-dynamic: rgba(255, 255, 255, 0.05);
@@ -297,8 +297,7 @@ h1 {
 p.lead {
     font-size: 1.35rem;
     /* Larger, readable size */
-    color: var(--text-dynamic, rgba(255, 255, 255, 0.9));
-    opacity: 0.9;
+    color: rgba(255, 255, 255, 0.8);
     margin-bottom: 2.5rem;
     font-weight: 400;
 }
@@ -715,89 +714,4 @@ p.lead {
 .lang-dropdown::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 4px;
-}
-
-/* ============================================
-   Light Mode Overrides
-   ============================================ */
-[data-theme-mode="light"] {
-    /* Text colors */
-    color: var(--text-dynamic);
-}
-
-[data-theme-mode="light"] h1,
-[data-theme-mode="light"] h2,
-[data-theme-mode="light"] h3,
-[data-theme-mode="light"] h4 {
-    color: var(--text-dynamic);
-}
-
-[data-theme-mode="light"] .text-gradient {
-    background: linear-gradient(135deg, #1a1a2e 0%, #00aa66 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-[data-theme-mode="light"] .logo {
-    color: var(--text-dynamic);
-}
-
-[data-theme-mode="light"] .nav-links a {
-    color: var(--text-muted-dynamic);
-}
-
-[data-theme-mode="light"] .nav-links a:hover,
-[data-theme-mode="light"] .nav-links a.active {
-    color: var(--text-dynamic);
-}
-
-[data-theme-mode="light"] .btn-primary {
-    background: rgba(0, 0, 0, 0.05);
-    color: var(--text-dynamic);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-[data-theme-mode="light"] .btn-login {
-    color: #00aa66;
-    border-color: #00aa66;
-}
-
-[data-theme-mode="light"] .btn-login:hover {
-    background: #00aa66;
-    color: #fff;
-}
-
-[data-theme-mode="light"] .glass-card h3,
-[data-theme-mode="light"] .glass-card p {
-    color: var(--text-dynamic);
-}
-
-[data-theme-mode="light"] .glass-card p {
-    opacity: 0.8;
-}
-
-[data-theme-mode="light"] .btn-icon {
-    border-color: rgba(0, 0, 0, 0.15);
-    background: rgba(0, 0, 0, 0.03);
-    color: var(--text-muted-dynamic);
-}
-
-[data-theme-mode="light"] .btn-icon:hover {
-    background: rgba(0, 0, 0, 0.08);
-    color: var(--text-dynamic);
-}
-
-[data-theme-mode="light"] .lang-dropdown {
-    background: rgba(255, 255, 255, 0.95);
-    border-color: rgba(0, 0, 0, 0.1);
-}
-
-[data-theme-mode="light"] .lang-option {
-    color: var(--text-muted-dynamic);
-}
-
-[data-theme-mode="light"] .lang-option:hover {
-    background: rgba(0, 0, 0, 0.05);
-    color: var(--text-dynamic);
 }

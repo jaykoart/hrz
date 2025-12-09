@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Data | Enterprise Residential Proxy Infrastructure</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ionicons for clean iconography -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        /* B2B Specific Accent Override */
+        :root {
+            --primary-accent: #4facfe;
+            --secondary-accent: #00f2fe;
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background Elements -->
+    <div class="ambient-glow"></div>
+    <div class="ambient-glow-2"></div>
+
+    <div class="container">
+        <!-- Header with Horizon Logo -->
+        <header>
+            <a href="index.html" class="logo"><img src="assets/logo-full.svg" alt="Horizon" class="logo-img"
+                    style="height: 32px;"></a>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="api.html">API Docs</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="dashboard.html">Dashboard</a>
+            </nav>
+            <div class="nav-utils">
+                <button class="btn-icon" id="theme-btn" title="Toggle Theme">
+                    <ion-icon name="moon-outline"></ion-icon>
+                </button>
+                <a href="#" class="btn-login" id="login-btn">Enterprise Login</a>
+            </div>
+        </header>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" style="position: relative; overflow: hidden;">
+        <div class="container"
+            style="position: relative; z-index: 2; width: 100%; height: 100%; display: flex; align-items: center;">
+            <div class="hero-content">
+                <span
+                    style="color: var(--primary-accent); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 1rem; display: block;">Enterprise
+                    Data Infrastructure</span>
+                <h1>Residential IP<br>Network for<br> <span class="text-gradient">AI & Data.</span></h1>
+                <p class="lead">Access millions of ethically-sourced residential IPs. Power your AI training,
+                    market research, and web scraping with IPs that <strong>never get blocked</strong>.</p>
+                <a href="api.html" class="btn btn-primary" id="downloadBtn">View API Documentation</a>
+                <div
+                    style="margin-top: 2rem; display: flex; align-items: center; gap: 1rem; color: var(--text-muted); font-size: 0.9rem;">
+                    <span class="glass" style="padding: 5px 10px; border-radius: 5px;">99.9% Uptime</span>
+                    <span>Enterprise SLA • 24/7 Support</span>
+                </div>
+            </div>
+            <!-- Visual Element -->
+            <div class="glass glass-card"
+                style="position: absolute; right: 0; width: 400px; height: 300px; z-index: 1; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(40px); overflow: hidden;">
+                <!-- Abstract Network Background -->
+                <div
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 15, 25, 0.6); z-index: 1;">
+                </div>
+                <!-- Content -->
+                <div style="text-align: center; position: relative; z-index: 2;">
+                    <ion-icon name="analytics-outline"
+                        style="font-size: 8rem; color: var(--primary-accent); margin-bottom: 1rem; filter: drop-shadow(0 0 15px var(--primary-accent));"></ion-icon>
+                    <p style="font-weight: 600; text-shadow: 0 0 10px var(--primary-accent);">Enterprise-Grade Proxy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <!-- Stats Section -->
+        <section style="padding: 3rem 0;">
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 2rem;">
+                <div style="text-align: center;">
+                    <h3 style="font-size: 3rem; color: var(--primary-accent);">50M+</h3>
+                    <p style="color: var(--text-muted);">Residential IPs</p>
+                </div>
+                <div style="text-align: center;">
+                    <h3 style="font-size: 3rem; color: var(--primary-accent);">195</h3>
+                    <p style="color: var(--text-muted);">Countries</p>
+                </div>
+                <div style="text-align: center;">
+                    <h3 style="font-size: 3rem; color: var(--primary-accent);">99.9%</h3>
+                    <p style="color: var(--text-muted);">Success Rate</p>
+                </div>
+                <div style="text-align: center;">
+                    <h3 style="font-size: 3rem; color: var(--primary-accent);">
+                        < 100ms</h3>
+                            <p style="color: var(--text-muted);">Avg Latency</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Horizon Data Section -->
+        <section class="features">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Why <span class="text-gradient">Horizon Data?</span>
+            </h2>
+            <p style="color: var(--text-muted); max-width: 600px; margin-bottom: 3rem;">Unlike generic proxy providers,
+                we own and operate the entire infrastructure — from IP acquisition to delivery.</p>
+
+            <div class="grid">
+                <!-- Feature 1 -->
+                <div class="glass glass-card">
+                    <ion-icon name="home-outline" class="feature-icon"></ion-icon>
+                    <h3>True Residential IPs</h3>
+                    <p>Our IPs come from real households with full ISP assignment.
+                        Not datacenter IPs masked as residential — real trust scores that pass any detection.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="glass glass-card">
+                    <ion-icon name="hand-right-outline" class="feature-icon"></ion-icon>
+                    <h3>Ethically Sourced</h3>
+                    <p>Every IP is from a user who explicitly consented to share their idle bandwidth.
+                        No botnets, no lawsuits, no surprises. Full compliance with GDPR and CCPA.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="glass glass-card">
+                    <ion-icon name="flash-outline" class="feature-icon"
+                        style="color: var(--secondary-accent);"></ion-icon>
+                    <h3>AI-Optimized Infrastructure</h3>
+                    <p>Purpose-built for web scraping and AI training data collection.
+                        Our dual-overlay network separates VPN and proxy traffic for maximum performance.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases Section -->
+        <section class="download-section" style="padding: 4rem 0; text-align: left;">
+            <div class="glass glass-card" style="display: flex; flex-direction: column; gap: 2rem;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <ion-icon name="briefcase-outline"
+                        style="font-size: 2rem; color: var(--primary-accent);"></ion-icon>
+                    <h2 style="margin: 0; font-size: 2rem;">Enterprise <span class="text-gradient">Use Cases</span></h2>
+                </div>
+                <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 0;">
+                    <div>
+                        <ul style="margin-top: 0; list-style: none; padding: 0; color: var(--text-main);">
+                            <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 0.5rem;">
+                                <ion-icon name="checkmark-circle-outline"
+                                    style="color: var(--primary-accent); margin-top: 4px;"></ion-icon>
+                                <div>
+                                    <strong>AI & LLM Training</strong>
+                                    <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0.25rem 0 0 0;">
+                                        Collect training data from websites that block datacenter IPs.</p>
+                                </div>
+                            </li>
+                            <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 0.5rem;">
+                                <ion-icon name="checkmark-circle-outline"
+                                    style="color: var(--primary-accent); margin-top: 4px;"></ion-icon>
+                                <div>
+                                    <strong>E-Commerce Price Monitoring</strong>
+                                    <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0.25rem 0 0 0;">Track
+                                        competitor pricing without getting blocked by anti-bot systems.</p>
+                                </div>
+                            </li>
+                            <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 0.5rem;">
+                                <ion-icon name="checkmark-circle-outline"
+                                    style="color: var(--primary-accent); margin-top: 4px;"></ion-icon>
+                                <div>
+                                    <strong>Ad Verification</strong>
+                                    <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0.25rem 0 0 0;">
+                                        Verify ad placements from real consumer perspectives across geos.</p>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; gap: 0.5rem;">
+                                <ion-icon name="checkmark-circle-outline"
+                                    style="color: var(--primary-accent); margin-top: 4px;"></ion-icon>
+                                <div>
+                                    <strong>Market Research</strong>
+                                    <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0.25rem 0 0 0;">
+                                        Access geo-restricted content and localized search results.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="api.html" class="btn btn-primary" style="margin-top: 2rem;">Get Started</a>
+                    </div>
+                    <div
+                        style="background: rgba(0,0,0,0.2); border-radius: 12px; padding: 1.5rem; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                        <!-- Abstract Network Visual -->
+                        <div
+                            style="position: absolute; width: 200%; height: 200%; background: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(79, 172, 254, 0.03) 10px, rgba(79, 172, 254, 0.03) 20px); animation: flow 20s linear infinite;">
+                        </div>
+                        <ion-icon name="git-network-outline"
+                            style="font-size: 6rem; color: rgba(255,255,255,0.1); position: relative; z-index: 1;"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- API Preview Section -->
+        <section class="download-section" style="padding: 2rem 0; text-align: left;">
+            <div class="glass glass-card" style="display: flex; flex-direction: column; gap: 2rem;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <ion-icon name="code-slash-outline"
+                        style="font-size: 2rem; color: var(--secondary-accent);"></ion-icon>
+                    <h2 style="margin: 0; font-size: 2rem;">Simple <span class="text-gradient">API Integration</span>
+                    </h2>
+                </div>
+                <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-muted); max-width: 800px;">
+                    One line of code to access millions of residential IPs.
+                    We handle rotation, session management, and geo-targeting for you.
+                </p>
+
+                <!-- Code Example -->
+                <div
+                    style="background: rgba(0,0,0,0.4); border-radius: 12px; padding: 1.5rem; font-family: monospace; font-size: 0.9rem; overflow-x: auto;">
+                    <div style="color: #888; margin-bottom: 0.5rem;"># Python Example</div>
+                    <div><span style="color: #c586c0;">import</span> <span style="color: #9cdcfe;">requests</span></div>
+                    <div style="margin-top: 1rem;"><span style="color: #9cdcfe;">response</span> = <span
+                            style="color: #9cdcfe;">requests</span>.<span style="color: #dcdcaa;">get</span>(</div>
+                    <div style="padding-left: 2rem;"><span
+                            style="color: #ce9178;">"https://api.horizondata.io/v1/proxy"</span>,</div>
+                    <div style="padding-left: 2rem;"><span style="color: #9cdcfe;">params</span>={<span
+                            style="color: #ce9178;">"target"</span>: <span
+                            style="color: #ce9178;">"https://example.com"</span>, <span
+                            style="color: #ce9178;">"country"</span>: <span style="color: #ce9178;">"US"</span>},</div>
+                    <div style="padding-left: 2rem;"><span style="color: #9cdcfe;">headers</span>={<span
+                            style="color: #ce9178;">"Authorization"</span>: <span style="color: #ce9178;">"Bearer
+                            YOUR_API_KEY"</span>}</div>
+                    <div>)</div>
+                </div>
+
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <span class="glass"
+                        style="padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.9rem; color: var(--text-main);">
+                        <ion-icon name="swap-horizontal-outline"
+                            style="vertical-align: middle; margin-right: 5px;"></ion-icon>
+                        Auto IP Rotation
+                    </span>
+                    <span class="glass"
+                        style="padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.9rem; color: var(--text-main);">
+                        <ion-icon name="location-outline" style="vertical-align: middle; margin-right: 5px;"></ion-icon>
+                        Geo-Targeting
+                    </span>
+                    <span class="glass"
+                        style="padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.9rem; color: var(--text-main);">
+                        <ion-icon name="time-outline" style="vertical-align: middle; margin-right: 5px;"></ion-icon>
+                        Sticky Sessions
+                    </span>
+                </div>
+                <a href="api.html" class="btn btn-primary" style="align-self: flex-start;">View Full API Reference</a>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section style="padding: 4rem 0; text-align: center;">
+            <h2 style="font-size: 2rem; margin-bottom: 2rem;">Ready to Scale Your<br>
+                <span class="text-gradient">Data Collection?</span>
+            </h2>
+            <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto 2rem;">
+                Start with our free trial. No credit card required. Scale to millions of requests when you're ready.
+            </p>
+            <a href="dashboard.html" class="btn btn-primary" style="margin-top: 1rem;">Start Free Trial</a>
+        </section>
+
+        <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.8rem;">
+            <p style="margin-bottom: 1rem;">
+                <a href="terms.html" style="color: var(--text-main); text-decoration: none; margin: 0 10px;">Terms</a>
+                <a href="privacy.html"
+                    style="color: var(--text-main); text-decoration: none; margin: 0 10px;">Privacy</a>
+                <a href="mailto:enterprise@horizondata.io"
+                    style="color: var(--text-main); text-decoration: none; margin: 0 10px;">Contact</a>
+            </p>
+            <p>&copy; 2025 Horizon Data. Enterprise Infrastructure.</p>
+        </footer>
+    </div>
+
+    <script src="solar-adaptive-theme.js"></script>
+</body>
+
+</html>
