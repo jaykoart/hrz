@@ -228,7 +228,7 @@ header {
 
 /* HQMX SVG Logo in header */
 .logo-img {
-    height: 28px;
+    height: 35px;
     width: auto;
     vertical-align: middle;
     /* Inherit text color for currentColor in SVG */
@@ -800,4 +800,57 @@ p.lead {
 [data-theme-mode="light"] .lang-option:hover {
     background: rgba(0, 0, 0, 0.05);
     color: var(--text-dynamic);
+}
+
+/* Light Mode Overrides for Icons & Specific Elements */
+[data-theme-mode="light"] ion-icon {
+    color: var(--text-dynamic);
+}
+
+/* Keep feature icons accented */
+[data-theme-mode="light"] .feature-icon {
+    color: #00aa66;
+}
+
+[data-theme-mode="light"] .nav-utils ion-icon {
+    color: inherit;
+}
+
+[data-theme-mode="light"] ul li {
+    color: var(--text-dynamic);
+}
+
+[data-theme-mode="light"] footer {
+    color: var(--text-muted-dynamic);
+}
+
+[data-theme-mode="light"] footer a {
+    color: var(--text-dynamic);
+}
+
+[data-theme-mode="light"] .process-icon {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.1);
+    color: #00aa66;
+    box-shadow: 0 0 20px rgba(0, 170, 102, 0.1);
+}
+
+[data-theme-mode="light"] .terminal-window {
+    background: #ffffff;
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme-mode="light"] .terminal-header {
+    background: #f0f1f3;
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme-mode="light"] .terminal-title,
+[data-theme-mode="light"] .output {
+    color: #4a5568;
+}
+
+[data-theme-mode="light"] .terminal-body {
+    color: #00aa66;
 }
