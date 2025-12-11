@@ -69,7 +69,7 @@
 │   ├── services/main/current/   # hqmx.net/ (VPN 메인)
 │   └── releases/                # Tauri Updater 배포
 └── hqmx/services/
-    ├── main/current/            # 기존 Tools → hqmx.net/webtools.html
+    ├── webtools/current/            # 기존 Tools → hqmx.net/webtools.html
     ├── converter/current/       # hqmx.net/converter/
     ├── downloader/current/      # hqmx.net/downloader/
     ├── generator/current/       # hqmx.net/generator/

@@ -643,6 +643,10 @@ p.lead {
     z-index: 1;
 }
 
+[data-theme="light"] .hero-overlay {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1));
+}
+
 .card-overlay-dim {
     position: absolute;
     top: 0;
