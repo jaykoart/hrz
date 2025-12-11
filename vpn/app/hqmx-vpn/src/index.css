@@ -16,8 +16,9 @@
     /* VPN Primary Colors - Match Web */
     --primary-accent: #00ff88;
     --primary-yellow: #ccff00;
+    --primary-blue: #2196F3;
     --secondary-accent: #7b2cbf;
-    --gradient-brand: linear-gradient(135deg, var(--primary-accent), var(--primary-yellow));
+    --gradient-brand: linear-gradient(135deg, var(--primary-blue), var(--primary-accent), var(--primary-yellow));
 
     /* Status Colors */
     --success: #00ff88;

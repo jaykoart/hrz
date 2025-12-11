@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 200 50">
+  <!-- Generator: Adobe Illustrator 29.4.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 152)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#_무제_그라디언트_130);
+      }
+
+      .st1 {
+        fill: url(#_무제_그라디언트_137);
+      }
+
+      .st2 {
+        font-family: Helvetica-Bold, Helvetica;
+        font-size: 36px;
+        font-weight: 700;
+        isolation: isolate;
+        letter-spacing: .03em;
+      }
+    </style>
+    <linearGradient id="_무제_그라디언트_137" data-name="무제 그라디언트 137" x1="97.97" y1="25" x2="120.57" y2="25" gradientUnits="userSpaceOnUse">
+      <stop offset=".48" stop-color="#ffc031"/>
+      <stop offset="1" stop-color="#00f17c"/>
+    </linearGradient>
+    <linearGradient id="_무제_그라디언트_130" data-name="무제 그라디언트 130" x1="97.57" y1="25" x2="120.08" y2="25" gradientUnits="userSpaceOnUse">
+      <stop offset=".38" stop-color="#0083fa"/>
+      <stop offset="1" stop-color="#00d780"/>
+    </linearGradient>
+  </defs>
+  <text class="st2" transform="translate(10 38)"><tspan x="0" y="0">HQM</tspan></text>
+  <g>
+    <polygon class="st1" points="113.99 37.96 97.97 12.04 104.44 12.04 120.57 37.96 113.99 37.96"/>
+    <polygon class="st0" points="97.57 37.96 113.82 12.04 120.08 12.04 103.86 37.96 97.57 37.96"/>
+  </g>
+</svg>

@@ -26,7 +26,7 @@
             },
             "card3": {
                 "title": "Free Forever",
-                "desc": "We don't charge you money because you pay with your contribution to Earth. It's a fair exchange for a better future."
+                "desc": "We are 100% free because we are community-powered. By running a node, you help build a better future for everyone."
             }
         },
         "vpn_section": {
@@ -277,7 +277,7 @@
         "hero": {
             "badge": "v0.1.0 Beta",
             "title": "Download <gradient>HQMX</gradient>",
-            "subtitle": "Join the decentralized privacy network. Your device becomes a node in the global mesh, protecting millions while earning rewards.",
+            "subtitle": "Join the decentralized privacy network. Your device becomes a node in the global mesh, protecting millions with a free, open-source VPN.",
             "tag1": "Zero Logs",
             "tag2": "WireGuard Protocol",
             "tag3": "Powers Plant AI"

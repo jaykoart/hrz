@@ -11,9 +11,11 @@
     /* Neon Plant Green */
     --primary-yellow: #ccff00;
     /* Electric Yellow */
+    --primary-blue: #2196F3;
+    /* Brand Blue */
     --secondary-accent: #7b2cbf;
     /* Deep Purple */
-    --gradient-brand: linear-gradient(135deg, var(--primary-accent), var(--primary-yellow));
+    --gradient-brand: linear-gradient(135deg, var(--primary-blue), var(--primary-accent), var(--primary-yellow));
 
     --glass-bg: rgba(255, 255, 255, 0.05);
     --glass-border: rgba(255, 255, 255, 0.1);

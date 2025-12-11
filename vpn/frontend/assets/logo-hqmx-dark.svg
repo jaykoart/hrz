@@ -1,12 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="200" height="50" class="logo-svg">
+<svg id="_레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 200 50">
+  <!-- Generator: Adobe Illustrator 29.4.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 152)  -->
   <defs>
-    <linearGradient id="hqmx-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00ff88"/>
-      <stop offset="100%" stop-color="#ccff00"/>
+    <style>
+      .st0 {
+        opacity: .92;
+      }
+
+      .st0, .st1 {
+        isolation: isolate;
+      }
+
+      .st2 {
+        fill: url(#_무제_그라디언트);
+      }
+
+      .st3 {
+        fill: url(#_무제_그라디언트_2);
+      }
+
+      .st1 {
+        fill: #efefefff;
+        font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 35px;
+        font-weight: 800;
+        letter-spacing: 1;
+      }
+    </style>
+    <linearGradient id="_무제_그라디언트" data-name="무제 그라디언트" x1="97.97" y1="27" x2="120.57" y2="27" gradientTransform="translate(0 52) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset=".48" stop-color="#ffc031"/>
+      <stop offset="1" stop-color="#00ff79"/>
+    </linearGradient>
+    <linearGradient id="_무제_그라디언트_2" data-name="무제 그라디언트 2" x1="97.57" y1="27" x2="120.08" y2="27" gradientTransform="translate(0 52) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset=".38" stop-color="#0096fa"/>
+      <stop offset="1" stop-color="#00ff79"/>
     </linearGradient>
   </defs>
-  <text x="10" y="38" font-family="Inter, sans-serif" font-size="36" font-weight="700" letter-spacing="1">
-    <tspan fill="rgba(255,255,255,0.8)">HQM</tspan><tspan fill="url(#hqmx-gradient)">X</tspan>
-  </text>
+  <g class="st0">
+    <text class="st1" transform="translate(10 38)"><tspan x="0" y="0">HQM</tspan></text>
+  </g>
+  <!-- [위치 조절] translate(x, y) 
+       x: 가로 이동 (양수=우측, 음수=좌측)
+       y: 세로 이동 (양수=아래, 음수=위) -->
+  <g id="x-symbol-group" transform="translate(-2, 0.7)">
+    <!-- Inner group for resizing around center point (~109, 25) -->
+    <!-- X 크기 조절: scale(...) 값을 변경하세요. 예: scale(1.1) -->
+    <g transform="translate(109, 25) scale(0.95) translate(-109, -25)">
+      <polygon class="st2" points="113.99 37.96 97.97 12.04 104.44 12.04 120.57 37.96 113.99 37.96"/>
+      <polygon class="st3" points="97.57 37.96 113.82 12.04 120.08 12.04 103.86 37.96 97.57 37.96"/>
+    </g>
+  </g>
 </svg>

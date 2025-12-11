@@ -4,21 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="download.title">Download HQMX VPN | Join the Mesh</title>
+    <title data-i18n="download.title">Download App | Join the Mesh</title>
     <link rel="stylesheet" href="style.css?v=2.2.1">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <style>
         .download-hero {
             min-height: 50vh;
-            padding-top: 8rem;
+            padding-top: 6rem;
             text-align: center;
             position: relative;
         }
 
+        .app-icon-hero {
+            width: 140px;
+            height: 140px;
+            margin-bottom: 2.5rem;
+            filter: drop-shadow(0 0 40px rgba(0, 255, 136, 0.3));
+            border-radius: 32px;
+            /* Smooth corners for app icon look */
+        }
+
         .version-badge {
             display: inline-block;
-            background: rgba(0, 255, 136, 0.1);
+            background: rgba(0, 255, 136, 0.05);
             border: 1px solid rgba(0, 255, 136, 0.3);
             color: var(--primary-accent);
             padding: 0.5rem 1.5rem;
@@ -26,6 +35,7 @@
             font-size: 0.85rem;
             font-weight: 600;
             margin-bottom: 1.5rem;
+            backdrop-filter: blur(5px);
         }
 
         .platform-card {
@@ -39,6 +49,7 @@
         .platform-card:hover {
             transform: translateY(-5px);
             border-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
         }
 
         .platform-card .icon-wrapper {
@@ -55,7 +66,7 @@
 
         .platform-card:hover .icon-wrapper {
             transform: scale(1.1);
-            background: var(--glass-bg-dynamic);
+            background: rgba(255, 255, 255, 0.1);
         }
 
         .platform-card ion-icon {
@@ -88,9 +99,13 @@
         }
 
         .btn-download:hover {
-            background: var(--primary-accent);
-            border-color: var(--primary-accent);
-            color: var(--bg-color);
+            background: var(--gradient-brand);
+            /* Uses globally defined gradient */
+            border-color: transparent;
+            color: #050510;
+            /* Dark text on bright gradient */
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
+            font-weight: 600;
         }
 
         .coming-soon {
@@ -200,15 +215,17 @@
 
         <!-- Hero Section -->
         <section class="download-hero">
+            <img src="assets/app-icon.png" alt="HQMX VPN App Icon" class="app-icon-hero">
+            <br>
             <span class="version-badge" data-i18n="download.hero.badge">
                 <ion-icon name="rocket-outline" style="vertical-align: middle; margin-right: 5px;"></ion-icon>
                 v0.1.0 Beta
             </span>
             <h1 style="font-size: 3.5rem; margin-bottom: 1rem;" data-i18n="download.hero.title">Download <span
-                    class="text-gradient">HQMX</span></h1>
+                    class="text-gradient">VPN</span></h1>
             <p class="lead" style="margin: 0 auto 2rem; max-width: 600px;" data-i18n="download.hero.subtitle">
                 Join the decentralized privacy network. Your device becomes a node in the global mesh, protecting
-                millions while earning rewards.
+                millions with a free, open-source VPN.
             </p>
             <div
                 style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; color: var(--text-muted); font-size: 0.9rem;">
