@@ -236,7 +236,7 @@ vpn/app/
 
 ### 1. Tauri 프로젝트 생성
 ```bash
-cd /Users/wonjunjang/hrz/vpn/app
+cd /Users/wonjunjang/projects/hrz/vpn/app
 npm create tauri-app@latest . -- --template react-ts
 ```
 

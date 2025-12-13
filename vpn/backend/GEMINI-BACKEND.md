@@ -17,7 +17,7 @@ HQMX는 P2P 기반의 분산형 VPN 서비스로, 사용자의 유휴 대역폭�
 
 ## 🔌 서버 정보
 - **Port**: `3002` (HQMX EC2 공유, 충돌 방지)
-- **로컬 경로**: `/Users/wonjunjang/hrz/vpn/backend`
+- **로컬 경로**: `/Users/wonjunjang/projects/hrz/vpn/backend`
 - **서버 경로**: `/home/ubuntu/hrz/services/vpn-backend`
 
 ---
@@ -108,7 +108,7 @@ vpn/backend/
 
 ## 🚀 개발 시작 명령어
 ```bash
-cd /Users/wonjunjang/hrz/vpn/backend
+cd /Users/wonjunjang/projects/hrz/vpn/backend
 npm install
 npm run dev  # nodemon 사용
 ```

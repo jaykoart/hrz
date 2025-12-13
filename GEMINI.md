@@ -43,7 +43,7 @@
 |------|-----|
 | **Elastic IP** | `23.21.183.81` |
 | **SSH 접속** | `ssh -i hqmx-ec2.pem ubuntu@23.21.183.81` |
-| **PEM 키** | `/Users/wonjunjang/hrz/hqmx-ec2.pem` |
+| **PEM 키** | `/Users/wonjunjang/projects/hrz/hqmx-ec2.pem` |
 | **도메인** | `hqmx.net` |
 
 ---
@@ -52,7 +52,7 @@
 
 ### 로컬 (개발)
 ```
-/Users/wonjunjang/hrz/
+/Users/wonjunjang/projects/hrz/
 ├── vpn/
 │   ├── frontend/           # VPN 랜딩 페이지 (메인)
 │   ├── app/hqmx-vpn/       # Tauri 데스크톱 앱
@@ -109,21 +109,21 @@
 ### VPN 메인 페이지 배포
 ```bash
 # VPN 프론트엔드 배포 (메인 사이트)
-rsync -avz -e "ssh -i /Users/wonjunjang/hrz/hqmx-ec2.pem" --delete \
+rsync -avz -e "ssh -i /Users/wonjunjang/projects/hrz/hqmx-ec2.pem" --delete \
   ./vpn/frontend/ ubuntu@23.21.183.81:/home/ubuntu/hrz/services/main/current/
 
 # Nginx 리로드
-ssh -i /Users/wonjunjang/hrz/hqmx-ec2.pem ubuntu@23.21.183.81 \
+ssh -i /Users/wonjunjang/projects/hrz/hqmx-ec2.pem ubuntu@23.21.183.81 \
   "sudo nginx -t && sudo systemctl reload nginx"
 ```
 
 ### Nginx 설정 배포
 ```bash
 # Nginx 설정 업로드 및 적용
-rsync -avz -e "ssh -i /Users/wonjunjang/hrz/hqmx-ec2.pem" \
+rsync -avz -e "ssh -i /Users/wonjunjang/projects/hrz/hqmx-ec2.pem" \
   ./vpn/nginx/hqmx.net.conf ubuntu@23.21.183.81:/tmp/
 
-ssh -i /Users/wonjunjang/hrz/hqmx-ec2.pem ubuntu@23.21.183.81 \
+ssh -i /Users/wonjunjang/projects/hrz/hqmx-ec2.pem ubuntu@23.21.183.81 \
   "sudo cp /tmp/hqmx.net.conf /etc/nginx/sites-available/hqmx.net && \
    sudo nginx -t && sudo systemctl reload nginx"
 ```

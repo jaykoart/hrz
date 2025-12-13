@@ -15,7 +15,7 @@
 | **Elastic IP** | `23.21.183.81` | ⚠️ 이 IP는 HQMX 전용 |
 | **인스턴스 타입** | `t3.medium` | 2 vCPU, 4GB RAM |
 | **SSH 접속** | `ssh -i hqmx-ec2.pem ubuntu@23.21.183.81` | |
-| **PEM 키 파일** | `/Users/wonjunjang/hqmx/hqmx-ec2.pem` | HQMX 루트 전용 |
+| **PEM 키 파일** | `/Users/wonjunjang/projects/hqmx/hqmx-ec2.pem` | HQMX 루트 전용 |
 | **도메인** | `hqmx.net` | |
 
 ---
@@ -52,7 +52,7 @@
 ## 📂 로컬 프로젝트 경로 (HQMX)
 
 ```
-/Users/wonjunjang/hqmx/           # HQMX 프로젝트 루트
+/Users/wonjunjang/projects/hqmx/           # HQMX 프로젝트 루트
 ├── calculator/                   # Calculator 서비스
 ├── converter/                    # Converter 서비스
 ├── downloader/                   # Downloader 서비스
@@ -101,7 +101,7 @@
 /Users/wonjunjang/new-project/      # 새 프로젝트
 
 # ❌ 비권장: HQMX 폴더 내부
-/Users/wonjunjang/hqmx/new-project/ # HQMX와 충돌 가능
+/Users/wonjunjang/projects/hqmx/new-project/ # HQMX와 충돌 가능
 ```
 
 ### 2. 배포 대상 분리
@@ -205,7 +205,7 @@ HQMX 서비스에 문제가 발생한 경우:
 
 ```bash
 # 1. 서비스 상태 확인
-ssh -i /Users/wonjunjang/hqmx/hqmx-ec2.pem ubuntu@23.21.183.81
+ssh -i /Users/wonjunjang/projects/hqmx/hqmx-ec2.pem ubuntu@23.21.183.81
 
 # 2. Nginx 상태
 sudo systemctl status nginx
